@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#2d6a4f" />
+  <meta name="description" content="CodeCrib Junior: welkom, profielen en stickerpad." />
+  <title>CodeCrib Junior</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fredoka:wght@500;600&family=IBM+Plex+Mono:wght@400;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/kids.css" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+</head>
+<body class="kids-page">
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" /><span data-i18n="brand">CodeCrib</span></a>
+    <button type="button" class="menu-toggle" aria-expanded="false" data-i18n="menu">Menu</button>
+    <nav class="nav">
+      <a href="index.html" data-nav="home" data-i18n="nav_home">Home</a>
+      <a href="kids.html" data-nav="kids">Junior</a>
+      <a href="kids-projects.html" id="nav-projects">Mijn projecten</a>
+      <a href="index.html#courses" data-nav="course" data-i18n="nav_course">Cursussen</a>
+      <button type="button" class="lang-btn" data-lang="nl">NL</button>
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+    </nav>
+  </header>
+  <main>
+    <div id="view"></div>
+  </main>
+  <footer class="site-footer">
+    <div data-i18n="footer">made by JustyTCCD</div>
+    <div class="tiny" id="privacy-note"></div>
+  </footer>
+  <script src="js/i18n.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/kids-settings.js"></script>
+  <script src="js/kids-profiles.js"></script>
+  <script src="js/kids-progress.js"></script>
+  <script src="js/kids-fx.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+  const LESSON_META = [
+    { id:1, sticker:"star", title:{nl:"Hallo wereld",en:"Hello world"} },
+    { id:2, sticker:"heart", title:{nl:"Doosjes",en:"Boxes"} },
+    { id:3, sticker:"smile", title:{nl:"Vragen",en:"Questions"} },
+    { id:4, sticker:"rocket", title:{nl:"Als-dan",en:"If-then"} },
+    { id:5, sticker:"moon", title:{nl:"Herhalen",en:"Loops"} },
+    { id:6, sticker:"fish", title:{nl:"Raadspel",en:"Guessing"} },
+    { id:7, sticker:"flower", title:{nl:"Tekenen",en:"Drawing"} },
+    { id:8, sticker:"tree", title:{nl:"Schat",en:"Treasure"} }
+  ];
+  function T(nl, en){ return CodeCribI18n.getLang()==="en" ? en : nl; }
+  function render(){
+    CodeCribKidsSettings.apply();
+    const root = document.getElementById("view");
+    root.innerHTML = "";
+    document.getElementById("privacy-note").textContent = T(
+      "Alleen op deze computer. Geen e-mail, geen echte naam, niets wordt online gestuurd.",
+      "Only on this computer. No email, no real name, nothing is sent online."
+    );
+    document.getElementById("nav-projects").textContent = T("Mijn projecten","My projects");
+    const cur = CodeCribKidsProfiles.current();
+    if (!cur) return renderGate(root);
+    return renderHome(root, cur);
+  }
+  function renderGate(root){
+    const hero = document.createElement("section");
+    hero.className = "kids-welcome-hero";
+    const mascotHost = document.createElement("div");
+    hero.appendChild(mascotHost);
+    const h = document.createElement("h1");
+    h.textContent = T("Welkom bij CodeCrib Junior!","Welcome to CodeCrib Junior!");
+    hero.appendChild(h);
+    const p = document.createElement("p");
+    p.className = "tagline";
+    p.textContent = T(
+      "Kies je profiel of maak een nieuw. Alleen een bijnaam, een diertje en 3 plaatjes als wachtwoord.",
+      "Pick your profile or make a new one. Just a nickname, an animal and 3 picture passwords."
+    );
+    hero.appendChild(p);
+    root.appendChild(hero);
+    CodeCribKidsFx.mountMascot(mascotHost, "wave");
+    const hi = T("Hoi! Ik ben Cribby. Laten we samen coderen.","Hi! I am Cribby. Let's code together.");
+    CodeCribKidsFx.say(mascotHost, hi, true);
+
+    const list = document.createElement("div");
+    list.className = "kids-panel kids-slide-in";
+    list.innerHTML = "<h2>"+T("Wie ben jij?","Who are you?")+"</h2>";
+    const profiles = CodeCribKidsProfiles.list();
+    const ul = document.createElement("div");
+    ul.className = "kids-profile-list";
+    profiles.forEach((pr)=>{
+      const b = document.createElement("button");
+      b.type="button"; b.className="kids-profile-card";
+      b.innerHTML = '<img alt="" /><span></span>';
+      b.querySelector("img").src = CodeCribKidsProfiles.avatarUrl(pr.avatar);
+      b.querySelector("span").textContent = pr.nick;
+      b.onclick = ()=> renderLogin(root, pr);
+      ul.appendChild(b);
+    });
+    list.appendChild(ul);
+    const neu = document.createElement("button");
+    neu.type="button"; neu.className="btn kids-big-start";
+    neu.textContent = T("Nieuw profiel maken","Create new profile");
+    neu.onclick = ()=> renderCreate(root);
+    list.appendChild(neu);
+    root.appendChild(list);
+  }
+  function renderLogin(root, pr){
+    root.innerHTML="";
+    const box = document.createElement("section");
+    box.className="kids-panel kids-slide-in";
+    box.innerHTML = "<h2>"+T("Hoi ","Hi ")+pr.nick+"</h2><p>"+T("Klik 3 plaatjes in de goede volgorde.","Click 3 pictures in the right order.")+"</p>";
+    const slots = document.createElement("div"); slots.className="kids-pass-slots";
+    const chosen=[];
+    function paintSlots(){
+      slots.innerHTML="";
+      for(let i=0;i<3;i++){
+        const s=document.createElement("div"); s.className="slot";
+        if(chosen[i]){ const im=document.createElement("img"); im.src=CodeCribKidsProfiles.picUrl(chosen[i]); s.appendChild(im); }
+        slots.appendChild(s);
+      }
+    }
+    paintSlots();
+    box.appendChild(slots);
+    const grid=document.createElement("div"); grid.className="kids-pic-grid";
+    CodeCribKidsProfiles.PICS.forEach((name)=>{
+      const b=document.createElement("button"); b.type="button";
+      b.innerHTML='<img alt="" />'; b.querySelector("img").src=CodeCribKidsProfiles.picUrl(name);
+      b.onclick=()=>{
+        if(chosen.length>=3) return;
+        chosen.push(name); paintSlots();
+        if(chosen.length===3){
+          if(CodeCribKidsProfiles.login(pr.id, chosen)){ render(); }
+          else {
+            chosen.length=0; paintSlots();
+            alert(T("Bijna! Probeer de 3 plaatjes opnieuw.","Almost! Try the 3 pictures again."));
+          }
+        }
+      };
+      grid.appendChild(b);
+    });
+    box.appendChild(grid);
+    const back=document.createElement("button"); back.type="button"; back.className="btn ghost";
+    back.textContent=T("Terug","Back"); back.onclick=()=>render();
+    box.appendChild(back);
+    root.appendChild(box);
+  }
+  function renderCreate(root){
+    root.innerHTML="";
+    const box=document.createElement("section");
+    box.className="kids-panel kids-slide-in";
+    box.innerHTML="<h2>"+T("Nieuw profiel","New profile")+"</h2>";
+    const nick=document.createElement("input");
+    nick.type="text"; nick.maxLength=16; nick.placeholder=T("Bijnaam (geen echte naam)","Nickname (no real name)");
+    nick.style.cssText="width:100%;padding:.8rem;border-radius:.75rem;border:2px solid var(--highlight);background:var(--panel-2);color:var(--text);font:inherit;margin:.5rem 0 1rem";
+    box.appendChild(nick);
+    box.appendChild(Object.assign(document.createElement("p"),{textContent:T("Kies een diertje","Pick an animal"),style:"font-weight:800"}));
+    let avatar="fox";
+    const ag=document.createElement("div"); ag.className="kids-avatar-grid";
+    CodeCribKidsProfiles.AVATARS.forEach((name)=>{
+      const b=document.createElement("button"); b.type="button";
+      if(name===avatar) b.classList.add("selected");
+      b.innerHTML='<img alt="" />'; b.querySelector("img").src=CodeCribKidsProfiles.avatarUrl(name);
+      b.onclick=()=>{ avatar=name; ag.querySelectorAll("button").forEach(x=>x.classList.remove("selected")); b.classList.add("selected"); };
+      ag.appendChild(b);
+    });
+    box.appendChild(ag);
+    box.appendChild(Object.assign(document.createElement("p"),{textContent:T("Kies 3 plaatjes als wachtwoord (onthoud de volgorde!)","Pick 3 pictures as password (remember the order!)"),style:"font-weight:800"}));
+    const chosen=[];
+    const slots=document.createElement("div"); slots.className="kids-pass-slots";
+    function paintSlots(){ slots.innerHTML=""; for(let i=0;i<3;i++){ const s=document.createElement("div"); s.className="slot"; if(chosen[i]){const im=document.createElement("img"); im.src=CodeCribKidsProfiles.picUrl(chosen[i]); s.appendChild(im);} slots.appendChild(s);} }
+    paintSlots(); box.appendChild(slots);
+    const grid=document.createElement("div"); grid.className="kids-pic-grid";
+    CodeCribKidsProfiles.PICS.forEach((name)=>{
+      const b=document.createElement("button"); b.type="button";
+      b.innerHTML='<img alt="" />'; b.querySelector("img").src=CodeCribKidsProfiles.picUrl(name);
+      b.onclick=()=>{ if(chosen.length>=3) chosen.length=0; chosen.push(name); paintSlots(); };
+      grid.appendChild(b);
+    });
+    box.appendChild(grid);
+    const row=document.createElement("div"); row.style.display="flex"; row.style.gap=".5rem"; row.style.flexWrap="wrap";
+    const save=document.createElement("button"); save.type="button"; save.className="btn kids-big-start";
+    save.textContent=T("Opslaan en starten","Save and start");
+    save.onclick=()=>{
+      try{
+        CodeCribKidsProfiles.create({ nick: nick.value, avatar, picPass: chosen.slice(0,3) });
+        render();
+      }catch(e){
+        alert(T("Vul een bijnaam in en kies 3 plaatjes.","Enter a nickname and pick 3 pictures."));
+      }
+    };
+    const back=document.createElement("button"); back.type="button"; back.className="btn ghost";
+    back.textContent=T("Terug","Back"); back.onclick=()=>render();
+    row.appendChild(save); row.appendChild(back); box.appendChild(row);
+    root.appendChild(box);
+  }
+  function renderHome(root, cur){
+    const hero=document.createElement("section");
+    hero.className="kids-welcome-hero";
+    const top=document.createElement("div"); top.className="kids-home-cta";
+    const mascotHost=document.createElement("div");
+    top.appendChild(mascotHost);
+    const text=document.createElement("div");
+    text.innerHTML = "<h1>"+T("Hoi ","Hi ")+cur.nick+"!</h1><p class='tagline'>"+T("Dit is jouw stickerpad. Kies een les of maak een project.","This is your sticker path. Pick a lesson or make a project.")+"</p>";
+    top.appendChild(text);
+    hero.appendChild(top);
+    const actions=document.createElement("div"); actions.className="hero-actions";
+    const start=document.createElement("a"); start.className="btn kids-big-start"; start.href="lesson-kids.html?course=python-kids&id=1";
+    start.textContent=T("Start les 1","Start lesson 1");
+    const proj=document.createElement("a"); proj.className="btn secondary"; proj.href="kids-projects.html";
+    proj.textContent=T("Mijn projecten","My projects");
+    const out=document.createElement("button"); out.type="button"; out.className="btn ghost";
+    out.textContent=T("Wissel profiel","Switch profile");
+    out.onclick=()=>{ CodeCribKidsProfiles.logout(); render(); };
+    const exp=document.createElement("button"); exp.type="button"; exp.className="btn ghost";
+    exp.textContent=T("Docent: exporteer profiel","Teacher: export profile");
+    exp.onclick=()=>{
+      const data=CodeCribKidsProfiles.exportProfile();
+      CodeCribKidsProjects && CodeCribKidsProjects.downloadJson
+        ? CodeCribKidsProjects.downloadJson(data, "codecrib-"+cur.nick+".json")
+        : download(data, "codecrib-"+cur.nick+".json");
+    };
+    actions.appendChild(start); actions.appendChild(proj); actions.appendChild(out); actions.appendChild(exp);
+    hero.appendChild(actions);
+    root.appendChild(hero);
+    CodeCribKidsFx.mountMascot(mascotHost, "wave");
+    CodeCribKidsFx.say(mascotHost, T("Klik op een ster om verder te gaan!","Click a star to continue!"), false);
+
+    const path=document.createElement("div"); path.className="kids-path";
+    const stickers=CodeCribKidsStickers.list("python-kids");
+    LESSON_META.forEach((les, idx)=>{
+      const a=document.createElement("a");
+      a.className="kids-path-node"+(stickers[les.id]?" done":"");
+      a.href="lesson-kids.html?course=python-kids&id="+les.id;
+      a.innerHTML='<img alt="" /><span></span>';
+      a.querySelector("img").src="assets/stickers/"+les.sticker+".svg";
+      a.querySelector("span").textContent = les.id+". "+les.title[CodeCribI18n.getLang()];
+      if(stickers[les.id]) a.classList.add("kids-pop");
+      path.appendChild(a);
+    });
+    root.appendChild(path);
+  }
+  function download(obj, name){
+    const blob=new Blob([JSON.stringify(obj,null,2)],{type:"application/json"});
+    const a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download=name; a.click();
+  }
+  document.addEventListener("DOMContentLoaded", ()=>{ CodeCribI18n.apply(); render(); });
+  document.addEventListener("codecrib:lang", render);
+  </script>
+</body>
+</html>

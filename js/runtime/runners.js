@@ -101,6 +101,49 @@
     return fengariReady;
   }
 
+  function kidsAskInput(promptText) {
+    return new Promise((resolve) => {
+      let overlay = document.getElementById("cc-input-overlay");
+      if (!overlay) {
+        overlay = document.createElement("div");
+        overlay.id = "cc-input-overlay";
+        overlay.innerHTML = '<div class="cc-input-card" role="dialog" aria-modal="true">' +
+          '<p class="cc-input-prompt"></p>' +
+          '<input type="text" class="cc-input-field" autocomplete="off" />' +
+          '<div class="cc-input-actions"><button type="button" class="btn cc-input-ok">OK</button></div>' +
+          '</div>';
+        document.body.appendChild(overlay);
+      }
+      overlay.classList.add("open");
+      const promptEl = overlay.querySelector(".cc-input-prompt");
+      const field = overlay.querySelector(".cc-input-field");
+      const ok = overlay.querySelector(".cc-input-ok");
+      const L = (w.CodeCribI18n && CodeCribI18n.getLang && CodeCribI18n.getLang() === "en") ? "en" : "nl";
+      promptEl.textContent = String(promptText || (L === "en" ? "Type something:" : "Typ iets:"));
+      ok.textContent = "OK";
+      field.value = "";
+      function done() {
+        overlay.classList.remove("open");
+        field.onkeydown = null;
+        ok.onclick = null;
+        resolve(String(field.value));
+      }
+      ok.onclick = done;
+      field.onkeydown = (ev) => { if (ev.key === "Enter") done(); };
+      setTimeout(() => field.focus(), 30);
+    });
+  }
+
+  function extractInputPrompts(code) {
+    const prompts = [];
+    const re = /\binput\s*\(\s*((["'\`])([\s\S]*?)\2)?\s*\)/g;
+    let m;
+    while ((m = re.exec(code))) {
+      prompts.push(m[3] != null ? m[3] : "");
+    }
+    return prompts;
+  }
+
   async function runPython(code) {
     const py = await ensurePyodide();
     await py.runPythonAsync(`
@@ -108,6 +151,24 @@ import sys
 from io import StringIO
 sys.stdout = StringIO()
 sys.stderr = StringIO()
+`);
+    // Friendly input: ask in-page for each input() before running (works offline, no sync bridge needed)
+    const prompts = extractInputPrompts(code);
+    const answers = [];
+    for (let i = 0; i < prompts.length; i++) {
+      answers.push(await kidsAskInput(prompts[i]));
+    }
+    py.globals.set("__cc_input_answers", py.toPy(answers));
+    await py.runPythonAsync(`
+__cc_q = [str(x) for x in list(__cc_input_answers)]
+def input(prompt=""):
+    if prompt:
+        print(prompt, end="")
+    if __cc_q:
+        v = __cc_q.pop(0)
+        print(v)
+        return v
+    return ""
 `);
     try {
       await py.runPythonAsync(code);

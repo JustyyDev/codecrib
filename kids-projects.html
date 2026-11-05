@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#2d6a4f" />
+  <meta name="description" content="CodeCrib Junior: mijn projecten." />
+  <title>Mijn projecten - CodeCrib Junior</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fredoka:wght@500;600&family=IBM+Plex+Mono:wght@400;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/kids.css" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+</head>
+<body class="kids-page">
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" /><span data-i18n="brand">CodeCrib</span></a>
+    <button type="button" class="menu-toggle" aria-expanded="false" data-i18n="menu">Menu</button>
+    <nav class="nav">
+      <a href="kids.html">Junior</a>
+      <a href="kids-projects.html">Mijn projecten</a>
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <button type="button" class="lang-btn" data-lang="nl">NL</button>
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+    </nav>
+  </header>
+  <main id="main"></main>
+  <footer class="site-footer">
+    <div data-i18n="footer">made by JustyTCCD</div>
+    <div class="tiny" id="privacy-note"></div>
+  </footer>
+  <script src="js/i18n.js"></script>
+  <script src="js/kids-settings.js"></script>
+  <script src="js/kids-profiles.js"></script>
+  <script src="js/kids-projects.js"></script>
+  <script src="js/kids-fx.js"></script>
+  <script src="js/runtime/runners.js"></script>
+  <script src="js/runtime/editor.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+  function T(nl,en){ return CodeCribI18n.getLang()==="en"?en:nl; }
+  let editor=null, currentId=null;
+  async function boot(){
+    CodeCribI18n.apply();
+    CodeCribKidsSettings.apply();
+    document.getElementById("privacy-note").textContent = T(
+      "Projecten blijven op deze computer in jouw profiel. Gebruik meeneem-code om ze mee te nemen.",
+      "Projects stay on this computer in your profile. Use a take-along code to move them."
+    );
+    const main=document.getElementById("main");
+    main.innerHTML="";
+    if(!CodeCribKidsProfiles.current()){
+      main.innerHTML = '<section class="kids-panel"><h1>'+T("Eerst inloggen","Please log in first")+'</h1><p><a class="btn" href="kids.html">'+T("Naar Junior","Go to Junior")+'</a></p></section>';
+      return;
+    }
+    const u=new URL(location.href);
+    const openId=u.searchParams.get("id");
+    if(openId) return openEditor(main, openId);
+    return showList(main);
+  }
+  function showList(main){
+    const cur=CodeCribKidsProfiles.current();
+    const hero=document.createElement("section");
+    hero.className="kids-welcome-hero kids-slide-in";
+    const mh=document.createElement("div");
+    hero.appendChild(mh);
+    hero.innerHTML += "<h1>"+T("Mijn projecten","My projects")+"</h1><p class='tagline'>"+T("Hoi ","Hi ")+cur.nick+T(", maak iets leuks!"," , make something fun!")+"</p>";
+    main.appendChild(hero);
+    // remount mascot after innerHTML wipe of first child - fix:
+    hero.innerHTML="";
+    const wrap=document.createElement("div"); wrap.className="kids-home-cta";
+    const mascotHost=document.createElement("div"); wrap.appendChild(mascotHost);
+    const tx=document.createElement("div");
+    tx.innerHTML="<h1>"+T("Mijn projecten","My projects")+"</h1><p class='tagline'>"+T("Hoi ","Hi ")+cur.nick+"!</p>";
+    wrap.appendChild(tx); hero.appendChild(wrap);
+    CodeCribKidsFx.mountMascot(mascotHost,"cheer");
+    CodeCribKidsFx.say(mascotHost,T("Kies een sjabloon of open een project.","Pick a template or open a project."),false);
+
+    const tools=document.createElement("div"); tools.className="hero-actions"; tools.style.margin="1rem 0";
+    const templates=CodeCribKidsProjects.TEMPLATES;
+    Object.keys(templates).forEach((key)=>{
+      const t=templates[key];
+      const b=document.createElement("button"); b.type="button"; b.className="btn secondary";
+      b.textContent = T("Nieuw: ","New: ")+(t.title[CodeCribI18n.getLang()]||t.title.nl);
+      b.onclick=()=>{
+        const p=CodeCribKidsProjects.create({ template:key });
+        location.href="kids-projects.html?id="+p.id;
+      };
+      tools.appendChild(b);
+    });
+    const imp=document.createElement("button"); imp.type="button"; imp.className="btn ghost";
+    imp.textContent=T("Importeer meeneem-code","Import take-along code");
+    imp.onclick=()=>{
+      const raw=prompt(T("Plak de JSON meeneem-code:","Paste the JSON take-along code:"));
+      if(!raw) return;
+      try{
+        const data=JSON.parse(raw);
+        const p=CodeCribKidsProjects.importOne(data);
+        location.href="kids-projects.html?id="+p.id;
+      }catch(e){ alert(T("Die code lukte niet.","That code did not work.")); }
+    };
+    const fileBtn=document.createElement("label");
+    fileBtn.className="btn ghost"; fileBtn.textContent=T("Importeer .json bestand","Import .json file");
+    const file=document.createElement("input"); file.type="file"; file.accept="application/json,.json"; file.hidden=true;
+    file.onchange=async ()=>{
+      try{
+        const txt=await file.files[0].text();
+        const data=JSON.parse(txt);
+        const p=CodeCribKidsProjects.importOne(data);
+        location.href="kids-projects.html?id="+p.id;
+      }catch(e){ alert(T("Import mislukt.","Import failed.")); }
+    };
+    fileBtn.appendChild(file); fileBtn.onclick=()=>file.click();
+    tools.appendChild(imp); tools.appendChild(fileBtn);
+    main.appendChild(tools);
+
+    const grid=document.createElement("div"); grid.className="kids-project-grid";
+    const items=CodeCribKidsProjects.list();
+    if(!items.length){
+      const empty=document.createElement("p"); empty.className="tagline";
+      empty.textContent=T("Nog geen projecten. Kies hierboven een sjabloon!","No projects yet. Pick a template above!");
+      main.appendChild(empty);
+    }
+    items.forEach((p)=>{
+      const card=document.createElement("article"); card.className="kids-project-card";
+      card.innerHTML="<h3></h3><div class='meta'></div>";
+      card.querySelector("h3").textContent=p.name;
+      card.querySelector(".meta").textContent = new Date(p.updatedAt||p.createdAt).toLocaleString();
+      const acts=document.createElement("div"); acts.className="kids-project-actions";
+      const open=document.createElement("a"); open.className="btn"; open.href="kids-projects.html?id="+p.id; open.textContent=T("Open","Open");
+      const dup=document.createElement("button"); dup.type="button"; dup.className="btn secondary"; dup.textContent=T("Kopie","Copy");
+      dup.onclick=()=>{ CodeCribKidsProjects.duplicate(p.id); boot(); };
+      const exp=document.createElement("button"); exp.type="button"; exp.className="btn ghost"; exp.textContent=T("Meeneem","Take-along");
+      exp.onclick=()=>{
+        const data=CodeCribKidsProjects.exportOne(p.id);
+        CodeCribKidsProjects.downloadJson(data, (p.name||"project").replace(/\s+/g,"_")+".json");
+      };
+      const del=document.createElement("button"); del.type="button"; del.className="btn ghost"; del.textContent=T("Wis","Delete");
+      del.onclick=()=>{
+        if(confirm(T("Echt dit project wissen?","Really delete this project?"))){ CodeCribKidsProjects.remove(p.id); boot(); }
+      };
+      acts.appendChild(open); acts.appendChild(dup); acts.appendChild(exp); acts.appendChild(del);
+      card.appendChild(acts); grid.appendChild(card);
+    });
+    main.appendChild(grid);
+  }
+  async function openEditor(main, id){
+    const proj=CodeCribKidsProjects.get(id);
+    if(!proj){ location.href="kids-projects.html"; return; }
+    currentId=id;
+    const panel=document.createElement("section"); panel.className="kids-panel kids-slide-in";
+    const titleRow=document.createElement("div"); titleRow.style.display="flex"; titleRow.style.gap=".5rem"; titleRow.style.flexWrap="wrap"; titleRow.style.alignItems="center";
+    const name=document.createElement("input"); name.type="text"; name.value=proj.name; name.maxLength=40;
+    name.style.cssText="flex:1;min-width:160px;padding:.65rem .8rem;border-radius:.65rem;border:2px solid var(--highlight);background:var(--panel-2);color:var(--text);font:inherit;font-weight:800";
+    const saveBtn=document.createElement("button"); saveBtn.type="button"; saveBtn.className="btn"; saveBtn.textContent=T("Opslaan","Save");
+    const back=document.createElement("a"); back.className="btn ghost"; back.href="kids-projects.html"; back.textContent=T("Terug","Back");
+    titleRow.appendChild(name); titleRow.appendChild(saveBtn); titleRow.appendChild(back);
+    panel.appendChild(titleRow);
+    const host=document.createElement("div"); panel.appendChild(host);
+    main.appendChild(panel);
+    editor = await CodeCribEditor.mount(host, {
+      lang: "python",
+      langLabel: "python",
+      value: proj.code,
+      runLabel: T("Run","Run")
+    });
+    saveBtn.onclick=()=>{
+      CodeCribKidsProjects.save(id, { name: name.value, code: editor.getValue ? editor.getValue() : (editor.cm && editor.cm.getValue()) });
+      CodeCribKidsFx.softConfetti(document.body);
+      alert(T("Opgeslagen!","Saved!"));
+    };
+    // autosave code on run via toolbar is enough; also save periodically soft
+    const saveCode=()=>{
+      const code = editor.getValue ? editor.getValue() : (editor.cm && editor.cm.getValue && editor.cm.getValue());
+      if(code!=null) CodeCribKidsProjects.save(id, { name: name.value, code });
+    };
+    setInterval(saveCode, 15000);
+  }
+  document.addEventListener("DOMContentLoaded", ()=>boot().catch(console.error));
+  document.addEventListener("codecrib:lang", ()=>boot().catch(console.error));
+  </script>
+</body>
+</html>

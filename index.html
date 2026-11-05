@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=IBM+Plex+Mono:wght@400;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/kids.css" />
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
 </head>
 <body>
@@ -33,10 +34,14 @@
       <h1 data-i18n="hero_title"></h1>
       <p class="tagline" data-i18n="hero_tag"></p>
       <p><a class="pill" id="due-home" href="review.html"></a></p>
-      <div class="hero-actions">
-        <a class="btn" href="#courses" data-i18n="cta_start"></a>
-        <a class="btn secondary" href="playground.html" data-i18n="nav_play"></a>
-        <a class="btn ghost" href="certificate.html" data-i18n="nav_cert"></a>
+      <div class="hero-actions kids-home-cta">
+        <img src="assets/kids/mascot.svg" alt="" width="88" height="88" />
+        <div style="display:flex;flex-wrap:wrap;gap:.75rem;align-items:center">
+          <a class="btn kids-big-start" href="kids.html" id="cta-kids">Junior voor kids</a>
+          <a class="btn" href="#courses" data-i18n="cta_start"></a>
+          <a class="btn secondary" href="playground.html" data-i18n="nav_play"></a>
+          <a class="btn ghost" href="certificate.html" data-i18n="nav_cert"></a>
+        </div>
       </div>
     </section>
     <section class="grid cards">
@@ -92,7 +97,12 @@
       const el = document.getElementById("due-home");
       if (el) el.textContent = CodeCribI18n.t("review_due") + ": " + n;
     }
-    document.addEventListener("DOMContentLoaded", () => { renderPicker(); paintDue(); });
-    document.addEventListener("codecrib:lang", () => { renderPicker(); paintDue(); });
+    function paintKidsCta(){
+      const el = document.getElementById("cta-kids");
+      if (!el) return;
+      el.textContent = CodeCribI18n.getLang() === "en" ? "Junior for kids" : "Junior voor kids";
+    }
+    document.addEventListener("DOMContentLoaded", () => { renderPicker(); paintDue(); paintKidsCta(); });
+    document.addEventListener("codecrib:lang", () => { renderPicker(); paintDue(); paintKidsCta(); });
   </script>
 </body></html>

@@ -2,6 +2,7 @@
   const KEY = "codecrib_kids_settings_v1";
   const defaults = {
     calm: false,
+    animOff: false,
     dyslexia: false,
     bigText: true,
     letterSpacing: false,
@@ -9,20 +10,35 @@
     sound: false,
     readAloud: false
   };
-  function load() {
+  function fromProfile() {
     try {
-      return Object.assign({}, defaults, JSON.parse(localStorage.getItem(KEY) || "{}"));
+      if (w.CodeCribKidsProfiles && CodeCribKidsProfiles.current()) {
+        const s = CodeCribKidsProfiles.current().settings;
+        if (s) return s;
+      }
+    } catch (e) {}
+    return null;
+  }
+  function load() {
+    const profileSettings = fromProfile();
+    try {
+      const local = Object.assign({}, defaults, JSON.parse(localStorage.getItem(KEY) || "{}"));
+      return Object.assign({}, defaults, local, profileSettings || {});
     } catch (e) {
-      return Object.assign({}, defaults);
+      return Object.assign({}, defaults, profileSettings || {});
     }
   }
   function save(s) {
     localStorage.setItem(KEY, JSON.stringify(s));
+    if (w.CodeCribKidsProfiles && CodeCribKidsProfiles.currentId()) {
+      CodeCribKidsProfiles.saveSettings(s);
+    }
   }
   function apply(s) {
     s = s || load();
     const root = document.documentElement;
     root.classList.toggle("kids-calm", !!s.calm);
+    root.classList.toggle("kids-anim-off", !!s.animOff);
     root.classList.toggle("kids-dyslexia", !!s.dyslexia);
     root.classList.toggle("kids-big-text", !!s.bigText);
     root.classList.toggle("kids-letter-spacing", !!s.letterSpacing);
@@ -38,7 +54,6 @@
   }
   function get() { return load(); }
   function speak(text) {
-    const s = load();
     if (!("speechSynthesis" in w)) return;
     try { w.speechSynthesis.cancel(); } catch (e) {}
     const u = new SpeechSynthesisUtterance(String(text || ""));

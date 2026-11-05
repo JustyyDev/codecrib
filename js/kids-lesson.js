@@ -19,7 +19,8 @@
       teacher_mistakes: { nl: "Vaak mis", en: "Common mistakes" },
       teacher_break: { nl: "Pauze-idee", en: "Break idea" },
       settings: { nl: "Instellingen", en: "Settings" },
-      calm: { nl: "Kalme modus", en: "Calm mode" },
+      calm: { nl: "Zachtere animaties", en: "Softer animations" },
+      anim_off: { nl: "Animaties uit", en: "Animations off" },
       dyslexia: { nl: "Dyslexie-vriendelijk", en: "Dyslexia-friendly" },
       big: { nl: "Grote letters", en: "Big text" },
       spacing: { nl: "Meer letterruimte", en: "More letter space" },
@@ -55,6 +56,7 @@
       host.appendChild(lab);
     }
     toggle("calm", "calm");
+    toggle("animOff", "anim_off");
     toggle("dyslexia", "dyslexia");
     toggle("bigText", "big");
     toggle("letterSpacing", "spacing");
@@ -104,7 +106,12 @@
     const bar = document.createElement("div");
     root.appendChild(bar);
 
+    const mascotSlot = document.createElement("div");
+    mascotSlot.id = "kids-mascot-slot";
+    root.appendChild(mascotSlot);
+    if (w.CodeCribKidsFx) CodeCribKidsFx.mountMascot(mascotSlot, "wave");
     const title = document.createElement("h1");
+    title.className = "kids-slide-in";
     title.textContent = CodeCribI18n.t("lesson") + " " + lesson.id + ": " + lesson.title[L];
     root.appendChild(title);
 
@@ -265,6 +272,7 @@
       img.src = "assets/stickers/" + sticker + ".svg";
       img.alt = "";
       wrap.appendChild(img);
+      if (w.CodeCribKidsFx) CodeCribKidsFx.popIn(img);
       const msg = document.createElement("p");
       msg.textContent = (lesson.reward && lesson.reward.text && lesson.reward.text[L]) || tKids("nice");
       wrap.appendChild(msg);
@@ -275,6 +283,12 @@
 
       CodeCribKidsStickers.award(cid, lesson.id, sticker);
       CodeCribProgress.markLesson(cid, lesson.id);
+      if (w.CodeCribKidsProfiles) CodeCribKidsProfiles.markLesson(cid, lesson.id);
+      if (w.CodeCribKidsFx) {
+        CodeCribKidsFx.softConfetti(document.body);
+        const m = document.getElementById("kids-mascot-slot");
+        if (m) { CodeCribKidsFx.setMood(m, "cheer"); CodeCribKidsFx.say(m, tKids("nice"), false); }
+      }
 
       const shelfTitle = document.createElement("h2");
       shelfTitle.textContent = tKids("your_stickers");

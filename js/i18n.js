@@ -68,6 +68,7 @@
       playground_intro: "Teken met canvas + JS. Run updatet de preview.",
 
       nav_review: "Herhalen",
+      nav_kids: "Junior",
       review_title: "Herhalen (spaced repetition)",
       review_intro: "Leitner-kaarten: fouten komen snel terug, goed later (1, 3, 7, 14, 30 dagen). Alleen jij lokaal in deze browser.",
       review_due: "Nu te herhalen",
@@ -146,6 +147,7 @@
       playground_intro: "Draw with canvas + JS. Run updates the preview.",
 
       nav_review: "Review",
+      nav_kids: "Junior",
       review_title: "Review (spaced repetition)",
       review_intro: "Leitner cards: wrong answers return soon, right ones later (1, 3, 7, 14, 30 days). Local to your browser only.",
       review_due: "Due now",
