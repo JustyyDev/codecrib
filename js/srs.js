@@ -42,12 +42,13 @@
     if (ok) {
       card.correct += 1;
       card.box = Math.min(5, (card.box || 1) + 1);
+      const days = INTERVALS[card.box] != null ? INTERVALS[card.box] : 30;
+      card.due = Date.now() + dayMs(days);
     } else {
       card.wrong += 1;
       card.box = 1;
+      card.due = Date.now(); // back immediately for repetition
     }
-    const days = INTERVALS[card.box] != null ? INTERVALS[card.box] : 30;
-    card.due = Date.now() + dayMs(days);
     card.last = Date.now();
     save(d);
     return card;
