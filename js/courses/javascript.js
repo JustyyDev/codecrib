@@ -72,7 +72,21 @@
             "en": "In the browser."
           }
         }
-      ]
+      ],
+      "exercise": {
+        "lang": "javascript",
+        "instructions": {
+          "nl": "Log Hallo CodeCrib",
+          "en": "Log Hallo CodeCrib"
+        },
+        "starter": "console.log(\"Hallo CodeCrib\");\n",
+        "tests": [
+          {
+            "type": "equals",
+            "value": "Hallo CodeCrib"
+          }
+        ]
+      }
     },
     {
       "id": 2,
@@ -577,6 +591,83 @@
           }
         }
       ]
+    },
+    {
+      "id": 10,
+      "title": {
+        "nl": "Canvas playground",
+        "en": "Canvas playground"
+      },
+      "body": {
+        "nl": "<p>Met <code class=\"inline\">canvas</code> teken je pixels. Open ook de aparte <a href=\"playground.html\">playground</a>.</p><pre>const c = document.createElement('canvas');\n// in de echte pagina pak je getContext('2d')</pre><p>Hieronder: schrijf JS dat <code class=\"inline\">OK</code> logt als warm-up (canvas live zit in playground.html).</p>",
+        "en": "<p>With <code class=\"inline\">canvas</code> you draw pixels. Also open the separate <a href=\"playground.html\">playground</a>.</p><pre>const c = document.createElement('canvas');\n// on a real page you call getContext('2d')</pre><p>Below: write JS that logs <code class=\"inline\">OK</code> as a warm-up (live canvas is on playground.html).</p>"
+      },
+      "quiz": [
+        {
+          "q": {
+            "nl": "getContext('2d')?",
+            "en": "getContext('2d')?"
+          },
+          "choices": {
+            "nl": [
+              "SQL",
+              "2D teken-API",
+              "Lua",
+              "C malloc"
+            ],
+            "en": [
+              "SQL",
+              "2D drawing API",
+              "Lua",
+              "C malloc"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Canvas 2D.",
+            "en": "Canvas 2D."
+          }
+        },
+        {
+          "q": {
+            "nl": "fillRect?",
+            "en": "fillRect?"
+          },
+          "choices": {
+            "nl": [
+              "audio",
+              "rechthoek vullen",
+              "cert",
+              "pip"
+            ],
+            "en": [
+              "audio",
+              "fill rectangle",
+              "cert",
+              "pip"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Draw rect.",
+            "en": "Draw rect."
+          }
+        }
+      ],
+      "exercise": {
+        "lang": "javascript",
+        "instructions": {
+          "nl": "Log OK naar de console.",
+          "en": "Log OK to the console."
+        },
+        "starter": "console.log(\"OK\");\n",
+        "tests": [
+          {
+            "type": "equals",
+            "value": "OK"
+          }
+        ]
+      }
     }
   ],
   "exam": [
@@ -1099,6 +1190,47 @@
         "nl": "Origineel.",
         "en": "Original."
       }
+    }
+  ],
+  "challenges": [
+    {
+      "id": "c1",
+      "title": {
+        "nl": "Som printen",
+        "en": "Print a sum"
+      },
+      "prompt": {
+        "nl": "Schrijf code die 2+3 print via console.log (uitkomst 5).",
+        "en": "Write code that prints 2+3 via console.log (result 5)."
+      },
+      "lang": "javascript",
+      "starter": "console.log(2 + 3);\n",
+      "tests": [
+        {
+          "type": "equals",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "title": {
+        "nl": "Hallo naam",
+        "en": "Hello name"
+      },
+      "prompt": {
+        "nl": "Maak const name='Justy' en log Hello Justy.",
+        "en": "Make const name='Justy' and log Hello Justy."
+      },
+      "lang": "javascript",
+      "starter": "const name = \"Justy\";\nconsole.log(\"Hello \" + name);\n",
+      "tests": [
+        {
+          "type": "equals",
+          "value": "Hello Justy"
+        }
+      ],
+      "starterHint": true
     }
   ]
 };

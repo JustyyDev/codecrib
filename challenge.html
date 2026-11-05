@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#c2185b" />
+  <title>CodeCrib challenge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=IBM+Plex+Mono:wght@400;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" /><span data-i18n="brand">CodeCrib</span></a>
+    <button type="button" class="menu-toggle" aria-expanded="false" data-i18n="menu">Menu</button>
+    <nav class="nav">
+      <a href="index.html" data-nav="home" data-i18n="nav_home">Home</a>
+      <a href="index.html#courses" data-nav="course" data-i18n="nav_course">Cursussen</a>
+      <a href="exam.html" data-nav="exam" data-i18n="nav_exam">Proefexamen</a>
+      <a href="playground.html" data-nav="play" data-i18n="nav_play">Playground</a>
+      <a href="certificate.html" data-nav="cert" data-i18n="nav_cert">Certificaat</a>
+      <button type="button" class="lang-btn" data-lang="nl">NL</button>
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+    </nav>
+  </header>
+
+  <main>
+    <p><a id="back-link" href="course.html" data-i18n="back_course"></a></p>
+    <section class="hero">
+      <h1 id="ch-title"></h1>
+      <p class="tagline" id="ch-prompt"></p>
+    </section>
+    <div id="editor-host"></div>
+    <p id="ch-status" class="feedback"></p>
+  </main>
+
+  <footer class="site-footer">
+    <div data-i18n="footer">made by JustyTCCD</div>
+    <div class="tiny" data-i18n="footer_note"></div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/courses-registry.js"></script>
+  <script src="js/course-utils.js"></script>
+  <script src="js/runtime/runners.js"></script>
+  <script src="js/runtime/editor.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    let COURSE=null, CH=null, editor=null;
+    async function boot(){
+      COURSE=await CodeCribUtil.ensureCourse(CodeCribUtil.courseId());
+      const id=CodeCribUtil.param("id","c1");
+      CH=(COURSE.challenges||[]).find(c=>c.id===id)||(COURSE.challenges||[])[0];
+      await render();
+    }
+    async function render(){
+      const L=CodeCribI18n.getLang(); const cid=COURSE.id;
+      document.getElementById("back-link").href="course.html?course="+cid;
+      document.getElementById("ch-title").textContent=CodeCribI18n.t("challenge")+": "+CH.title[L];
+      document.getElementById("ch-prompt").textContent=CH.prompt[L];
+      document.title="CodeCrib - "+CH.title[L];
+      const host=document.getElementById("editor-host"); host.innerHTML="";
+      editor=await CodeCribEditor.mount(host,{
+        lang: CH.lang, langLabel: CH.lang, value: CH.starter||"",
+        expected: CH.expected, tests: CH.tests, preview: !!CH.preview,
+        runLabel: CodeCribI18n.t("run_check")
+      });
+      const status=document.getElementById("ch-status");
+      if(CodeCribProgress.isChallengeDone(cid, CH.id)){
+        status.className="feedback ok"; status.textContent=CodeCribI18n.t("challenge_pass");
+      } else { status.textContent=""; }
+      const origRun=editor.run;
+      editor.run = async function(){
+        const res = await origRun();
+        if(res && res.ok){
+          CodeCribProgress.markChallenge(cid, CH.id);
+          status.className="feedback ok"; status.textContent=CodeCribI18n.t("challenge_pass");
+        } else {
+          status.className="feedback bad"; status.textContent=CodeCribI18n.t("challenge_fail");
+        }
+        return res;
+      };
+    }
+    document.addEventListener("DOMContentLoaded",()=>boot().catch(console.error));
+    document.addEventListener("codecrib:lang",()=>{ if(COURSE&&CH) render(); });
+  </script>
+</body></html>

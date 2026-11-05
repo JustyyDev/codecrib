@@ -72,7 +72,25 @@
             "en": "main."
           }
         }
-      ]
+      ],
+      "exercise": {
+        "lang": "go",
+        "instructions": {
+          "nl": "Println Hallo",
+          "en": "Println Hallo"
+        },
+        "starter": "package main\nimport \"fmt\"\nfunc main(){ fmt.Println(\"Hallo\") }\n",
+        "tests": [
+          {
+            "type": "code_contains",
+            "value": "fmt.Println"
+          },
+          {
+            "type": "code_contains",
+            "value": "Hallo"
+          }
+        ]
+      }
     },
     {
       "id": 2,
@@ -514,6 +532,69 @@
           }
         }
       ]
+    },
+    {
+      "id": 9,
+      "title": {
+        "nl": "defer tip",
+        "en": "defer tip"
+      },
+      "body": {
+        "nl": "<p><code class=\"inline\">defer f.Close()</code> runt aan het eind van de functie. Handig voor cleanup.</p>",
+        "en": "<p><code class=\"inline\">defer f.Close()</code> runs at function end. Handy for cleanup.</p>"
+      },
+      "quiz": [
+        {
+          "q": {
+            "nl": "defer wanneer?",
+            "en": "defer when?"
+          },
+          "choices": {
+            "nl": [
+              "meteen",
+              "einde functie",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "immediately",
+              "end of function",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "End.",
+            "en": "End."
+          }
+        },
+        {
+          "q": {
+            "nl": "meerdere defer?",
+            "en": "multiple defer?"
+          },
+          "choices": {
+            "nl": [
+              "error",
+              "LIFO volgorde",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "error",
+              "LIFO order",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "LIFO.",
+            "en": "LIFO."
+          }
+        }
+      ]
     }
   ],
   "exam": [
@@ -906,6 +987,50 @@
         "nl": "Origineel.",
         "en": "Original."
       }
+    }
+  ],
+  "challenges": [
+    {
+      "id": "c1",
+      "title": {
+        "nl": "Println Hello",
+        "en": "Println Hello"
+      },
+      "prompt": {
+        "nl": "fmt.Println Hello.",
+        "en": "fmt.Println Hello."
+      },
+      "lang": "go",
+      "starter": "package main\nimport \"fmt\"\nfunc main() {\n\n}\n",
+      "tests": [
+        {
+          "type": "code_contains",
+          "value": "fmt.Println"
+        },
+        {
+          "type": "code_contains",
+          "value": "Hello"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "title": {
+        "nl": "short declare",
+        "en": "short declare"
+      },
+      "prompt": {
+        "nl": "Gebruik := ergens.",
+        "en": "Use := somewhere."
+      },
+      "lang": "go",
+      "starter": "package main\nimport \"fmt\"\nfunc main() {\n\n}\n",
+      "tests": [
+        {
+          "type": "code_contains",
+          "value": ":="
+        }
+      ]
     }
   ]
 };

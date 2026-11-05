@@ -72,7 +72,21 @@
             "en": "Optional, not required."
           }
         }
-      ]
+      ],
+      "exercise": {
+        "lang": "python",
+        "instructions": {
+          "nl": "Print Hallo CodeCrib",
+          "en": "Print Hallo CodeCrib"
+        },
+        "starter": "print(\"Hallo CodeCrib\")\n",
+        "tests": [
+          {
+            "type": "equals",
+            "value": "Hallo CodeCrib"
+          }
+        ]
+      }
     },
     {
       "id": 2,
@@ -1099,6 +1113,46 @@
         "nl": "Origineel.",
         "en": "Original."
       }
+    }
+  ],
+  "challenges": [
+    {
+      "id": "c1",
+      "title": {
+        "nl": "Som printen",
+        "en": "Print a sum"
+      },
+      "prompt": {
+        "nl": "Print 2+3 (uitkomst 5).",
+        "en": "Print 2+3 (result 5)."
+      },
+      "lang": "python",
+      "starter": "print(2 + 3)\n",
+      "tests": [
+        {
+          "type": "equals",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "title": {
+        "nl": "Lijst lengte",
+        "en": "List length"
+      },
+      "prompt": {
+        "nl": "Maak nums=[10,20,30] en print len(nums).",
+        "en": "Make nums=[10,20,30] and print len(nums)."
+      },
+      "lang": "python",
+      "starter": "nums = [10, 20, 30]\nprint(len(nums))\n",
+      "tests": [
+        {
+          "type": "equals",
+          "value": "3"
+        }
+      ]
     }
   ]
 };

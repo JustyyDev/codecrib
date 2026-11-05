@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#c2185b" />
+  <title>CodeCrib verify</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=IBM+Plex+Mono:wght@400;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" /><span data-i18n="brand">CodeCrib</span></a>
+    <button type="button" class="menu-toggle" aria-expanded="false" data-i18n="menu">Menu</button>
+    <nav class="nav">
+      <a href="index.html" data-nav="home" data-i18n="nav_home">Home</a>
+      <a href="index.html#courses" data-nav="course" data-i18n="nav_course">Cursussen</a>
+      <a href="exam.html" data-nav="exam" data-i18n="nav_exam">Proefexamen</a>
+      <a href="playground.html" data-nav="play" data-i18n="nav_play">Playground</a>
+      <a href="certificate.html" data-nav="cert" data-i18n="nav_cert">Certificaat</a>
+      <button type="button" class="lang-btn" data-lang="nl">NL</button>
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 data-i18n="verify_title"></h1>
+      <p class="tagline" data-i18n="verify_intro"></p>
+      <form class="cert-form" id="vf">
+        <input id="vid" placeholder="CC1...." style="width:100%" />
+        <button class="btn" type="submit" data-i18n="verify_btn"></button>
+      </form>
+      <div id="vres" class="callout" hidden></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div data-i18n="footer">made by JustyTCCD</div>
+    <div class="tiny" data-i18n="footer_note"></div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/certs.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    async function show(id){
+      const r=await CodeCribCerts.verifyId(id);
+      const box=document.getElementById("vres"); box.hidden=false;
+      if(r.ok){
+        box.className="callout";
+        box.innerHTML="<strong>"+CodeCribI18n.t("verify_ok")+"</strong><br>Name: "+r.body.n+"<br>Course: "+r.body.c+"<br>Date: "+r.body.d+"<br>Title: "+(r.body.t||"");
+      } else {
+        box.className="callout";
+        box.innerHTML="<strong>"+CodeCribI18n.t("verify_bad")+"</strong> ("+r.reason+")";
+      }
+    }
+    document.addEventListener("DOMContentLoaded",()=>{
+      const u=new URL(location.href);
+      const q=u.searchParams.get("id");
+      if(q){ document.getElementById("vid").value=q; show(q); }
+      document.getElementById("vf").addEventListener("submit",(ev)=>{
+        ev.preventDefault();
+        show(document.getElementById("vid").value.trim());
+      });
+    });
+  </script>
+</body></html>

@@ -72,7 +72,25 @@
             "en": "std."
           }
         }
-      ]
+      ],
+      "exercise": {
+        "lang": "cpp",
+        "instructions": {
+          "nl": "cout Hallo",
+          "en": "cout Hallo"
+        },
+        "starter": "#include <iostream>\nint main(){ std::cout<<\"Hallo\\n\"; }\n",
+        "tests": [
+          {
+            "type": "code_contains",
+            "value": "cout"
+          },
+          {
+            "type": "code_contains",
+            "value": "Hallo"
+          }
+        ]
+      }
     },
     {
       "id": 2,
@@ -514,6 +532,69 @@
           }
         }
       ]
+    },
+    {
+      "id": 9,
+      "title": {
+        "nl": "References tip",
+        "en": "References tip"
+      },
+      "body": {
+        "nl": "<p><code class=\"inline\">int&amp; r = x;</code> is een alias. Handig voor grote objecten zonder copy.</p>",
+        "en": "<p><code class=\"inline\">int&amp; r = x;</code> is an alias. Handy for big objects without copying.</p>"
+      },
+      "quiz": [
+        {
+          "q": {
+            "nl": "&amp; in type?",
+            "en": "&amp; in type?"
+          },
+          "choices": {
+            "nl": [
+              "bitwise only",
+              "referentie",
+              "SQL",
+              "Lua"
+            ],
+            "en": [
+              "bitwise only",
+              "reference",
+              "SQL",
+              "Lua"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Ref.",
+            "en": "Ref."
+          }
+        },
+        {
+          "q": {
+            "nl": "copy vs ref?",
+            "en": "copy vs ref?"
+          },
+          "choices": {
+            "nl": [
+              "altijd zelfde cost",
+              "ref vermijdt copy",
+              "GPU",
+              "cert"
+            ],
+            "en": [
+              "always same cost",
+              "ref avoids copy",
+              "GPU",
+              "cert"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Cheaper.",
+            "en": "Cheaper."
+          }
+        }
+      ]
     }
   ],
   "exam": [
@@ -906,6 +987,54 @@
         "nl": "Origineel.",
         "en": "Original."
       }
+    }
+  ],
+  "challenges": [
+    {
+      "id": "c1",
+      "title": {
+        "nl": "Hello output",
+        "en": "Hello output"
+      },
+      "prompt": {
+        "nl": "Schrijf een cpp programma dat Hello print (gebruik cout).",
+        "en": "Write a cpp program that prints Hello (use cout)."
+      },
+      "lang": "cpp",
+      "starter": "// TODO Hello via cout\n",
+      "tests": [
+        {
+          "type": "code_contains",
+          "value": "cout"
+        },
+        {
+          "type": "code_contains",
+          "value": "Hello"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "title": {
+        "nl": "Variabele score",
+        "en": "Score variable"
+      },
+      "prompt": {
+        "nl": "Maak een variabele score (of Score) en gebruik het getal 10.",
+        "en": "Make a score variable and use the number 10."
+      },
+      "lang": "cpp",
+      "starter": "\n",
+      "tests": [
+        {
+          "type": "code_regex",
+          "value": "(?i)score"
+        },
+        {
+          "type": "code_contains",
+          "value": "10"
+        }
+      ]
     }
   ]
 };

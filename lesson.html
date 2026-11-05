@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#c2185b" />
-  <meta name="description" content="CodeCrib: free friendly coding lessons in many languages. NL and EN." />
+  <meta name="description" content="CodeCrib: free coding lessons with live editor, challenges and certificates." />
   <title>CodeCrib lesson</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,19 +20,24 @@
       <a href="index.html" data-nav="home" data-i18n="nav_home">Home</a>
       <a href="index.html#courses" data-nav="course" data-i18n="nav_course">Cursussen</a>
       <a href="exam.html" data-nav="exam" data-i18n="nav_exam">Proefexamen</a>
+      <a href="playground.html" data-nav="play" data-i18n="nav_play">Playground</a>
+      <a href="certificate.html" data-nav="cert" data-i18n="nav_cert">Certificaat</a>
       <button type="button" class="lang-btn" data-lang="nl">NL</button>
       <button type="button" class="lang-btn" data-lang="en">EN</button>
     </nav>
   </header>
 
   <main>
-    <p><a id="back-link" href="course.html" data-i18n="back_course">Terug naar cursus</a></p>
+    <p><a id="back-link" href="course.html" data-i18n="back_course"></a></p>
     <article class="content card" id="lesson-body"></article>
-    <h2 data-i18n="quiz_title">Check jezelf</h2>
+    <h2 data-i18n="exercise" id="ex-title" hidden></h2>
+    <p id="ex-instructions" class="tagline" hidden></p>
+    <div id="editor-host" hidden></div>
+    <h2 data-i18n="quiz_title"></h2>
     <div class="quiz" id="quiz"></div>
     <div class="lesson-nav">
       <a class="btn ghost" id="prev-link" href="#">←</a>
-      <button type="button" class="btn secondary" id="mark-done" data-i18n="mark_done">Markeer les als klaar</button>
+      <button type="button" class="btn secondary" id="mark-done" data-i18n="mark_done"></button>
       <a class="btn" id="next-link" href="#">→</a>
     </div>
   </main>
@@ -47,38 +52,55 @@
   <script src="js/courses-registry.js"></script>
   <script src="js/course-utils.js"></script>
   <script src="js/quiz.js"></script>
+  <script src="js/runtime/runners.js"></script>
+  <script src="js/runtime/editor.js"></script>
   <script src="js/app.js"></script>
   <script>
-    let COURSE = null; let LES = null;
-    async function boot() {
-      const cid = CodeCribUtil.courseId();
-      COURSE = await CodeCribUtil.ensureCourse(cid);
-      const id = parseInt(CodeCribUtil.param("id", "1"), 10) || 1;
-      LES = COURSE.lessons.find((x) => x.id === id) || COURSE.lessons[0];
-      render();
+    let COURSE=null, LES=null, editor=null;
+    async function boot(){
+      COURSE = await CodeCribUtil.ensureCourse(CodeCribUtil.courseId());
+      const id = parseInt(CodeCribUtil.param("id","1"),10)||1;
+      LES = COURSE.lessons.find(x=>x.id===id) || COURSE.lessons[0];
+      await render();
     }
-    function render() {
-      const L = CodeCribI18n.getLang();
-      const cid = COURSE.id;
-      document.getElementById("back-link").href = "course.html?course=" + cid;
-      document.title = "CodeCrib - " + LES.title[L];
-      document.getElementById("lesson-body").innerHTML = "<h1>" + CodeCribI18n.t("lesson") + " " + LES.id + ": " + LES.title[L] + "</h1>" + LES.body[L];
+    async function render(){
+      const L=CodeCribI18n.getLang(); const cid=COURSE.id;
+      document.getElementById("back-link").href="course.html?course="+cid;
+      document.title="CodeCrib - "+LES.title[L];
+      document.getElementById("lesson-body").innerHTML="<h1>"+CodeCribI18n.t("lesson")+" "+LES.id+": "+LES.title[L]+"</h1>"+LES.body[L];
       CodeCribQuiz.renderQuiz(document.getElementById("quiz"), LES.quiz, L);
-      const prev = COURSE.lessons.find((x) => x.id === LES.id - 1);
-      const next = COURSE.lessons.find((x) => x.id === LES.id + 1);
-      const prevLink = document.getElementById("prev-link");
-      const nextLink = document.getElementById("next-link");
-      if (prev) { prevLink.href = "lesson.html?course=" + cid + "&id=" + prev.id; prevLink.textContent = "<- " + CodeCribI18n.t("prev"); prevLink.style.visibility = "visible"; }
-      else prevLink.style.visibility = "hidden";
-      if (next) { nextLink.href = "lesson.html?course=" + cid + "&id=" + next.id; nextLink.textContent = CodeCribI18n.t("next") + " ->"; }
-      else { nextLink.href = "exam.html?course=" + cid; nextLink.textContent = CodeCribI18n.t("cta_exam") + " ->"; }
-      nextLink.style.visibility = "visible";
-      const mark = document.getElementById("mark-done");
-      mark.textContent = CodeCribProgress.isDone(cid, LES.id) ? CodeCribI18n.t("done") : CodeCribI18n.t("mark_done");
-      mark.onclick = () => { CodeCribProgress.markLesson(cid, LES.id); mark.textContent = CodeCribI18n.t("done"); };
+      const host=document.getElementById("editor-host");
+      const exTitle=document.getElementById("ex-title");
+      const exInst=document.getElementById("ex-instructions");
+      if (LES.exercise){
+        exTitle.hidden=false; exInst.hidden=false; host.hidden=false;
+        exInst.textContent=LES.exercise.instructions[L];
+        host.innerHTML="";
+        editor = await CodeCribEditor.mount(host, {
+          lang: LES.exercise.lang,
+          langLabel: LES.exercise.lang,
+          value: LES.exercise.starter || "",
+          expected: LES.exercise.expected,
+          tests: LES.exercise.tests,
+          preview: !!LES.exercise.preview,
+          runLabel: CodeCribI18n.t("run_check")
+        });
+      } else {
+        exTitle.hidden=true; exInst.hidden=true; host.hidden=true; host.innerHTML="";
+      }
+      const prev=COURSE.lessons.find(x=>x.id===LES.id-1);
+      const next=COURSE.lessons.find(x=>x.id===LES.id+1);
+      const prevLink=document.getElementById("prev-link");
+      const nextLink=document.getElementById("next-link");
+      if(prev){prevLink.href="lesson.html?course="+cid+"&id="+prev.id; prevLink.textContent="<- "+CodeCribI18n.t("prev"); prevLink.style.visibility="visible";}
+      else prevLink.style.visibility="hidden";
+      if(next){nextLink.href="lesson.html?course="+cid+"&id="+next.id; nextLink.textContent=CodeCribI18n.t("next")+" ->";}
+      else {nextLink.href="course.html?course="+cid; nextLink.textContent=CodeCribI18n.t("challenges")+" ->";}
+      const mark=document.getElementById("mark-done");
+      mark.textContent=CodeCribProgress.isDone(cid,LES.id)?CodeCribI18n.t("done"):CodeCribI18n.t("mark_done");
+      mark.onclick=()=>{CodeCribProgress.markLesson(cid,LES.id); mark.textContent=CodeCribI18n.t("done");};
     }
-    document.addEventListener("DOMContentLoaded", () => boot().catch(console.error));
-    document.addEventListener("codecrib:lang", () => { if (COURSE && LES) render(); });
+    document.addEventListener("DOMContentLoaded",()=>boot().catch(console.error));
+    document.addEventListener("codecrib:lang",()=>{ if(COURSE&&LES) render(); });
   </script>
-</body>
-</html>
+</body></html>

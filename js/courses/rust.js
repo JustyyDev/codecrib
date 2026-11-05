@@ -72,7 +72,25 @@
             "en": "Entry."
           }
         }
-      ]
+      ],
+      "exercise": {
+        "lang": "rust",
+        "instructions": {
+          "nl": "println Hallo",
+          "en": "println Hallo"
+        },
+        "starter": "fn main(){ println!(\"Hallo\"); }\n",
+        "tests": [
+          {
+            "type": "code_contains",
+            "value": "println!"
+          },
+          {
+            "type": "code_contains",
+            "value": "Hallo"
+          }
+        ]
+      }
     },
     {
       "id": 2,
@@ -514,6 +532,69 @@
           }
         }
       ]
+    },
+    {
+      "id": 9,
+      "title": {
+        "nl": "Option tip",
+        "en": "Option tip"
+      },
+      "body": {
+        "nl": "<p><code class=\"inline\">Some(x)</code> / <code class=\"inline\">None</code>. Match of <code class=\"inline\">if let</code>.</p>",
+        "en": "<p><code class=\"inline\">Some(x)</code> / <code class=\"inline\">None</code>. Match or <code class=\"inline\">if let</code>.</p>"
+      },
+      "quiz": [
+        {
+          "q": {
+            "nl": "None is?",
+            "en": "None is?"
+          },
+          "choices": {
+            "nl": [
+              "null Java spelling",
+              "geen waarde",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "null Java spelling",
+              "no value",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "None.",
+            "en": "None."
+          }
+        },
+        {
+          "q": {
+            "nl": "unwrap risk?",
+            "en": "unwrap risk?"
+          },
+          "choices": {
+            "nl": [
+              "altijd veilig",
+              "kan panic",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "always safe",
+              "can panic",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Panic.",
+            "en": "Panic."
+          }
+        }
+      ]
     }
   ],
   "exam": [
@@ -906,6 +987,54 @@
         "nl": "Origineel.",
         "en": "Original."
       }
+    }
+  ],
+  "challenges": [
+    {
+      "id": "c1",
+      "title": {
+        "nl": "println Hello",
+        "en": "println Hello"
+      },
+      "prompt": {
+        "nl": "Gebruik println! met Hello.",
+        "en": "Use println! with Hello."
+      },
+      "lang": "rust",
+      "starter": "fn main() {\n\n}\n",
+      "tests": [
+        {
+          "type": "code_contains",
+          "value": "println!"
+        },
+        {
+          "type": "code_contains",
+          "value": "Hello"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "title": {
+        "nl": "mut hp",
+        "en": "mut hp"
+      },
+      "prompt": {
+        "nl": "Gebruik let mut hp.",
+        "en": "Use let mut hp."
+      },
+      "lang": "rust",
+      "starter": "fn main() {\n\n}\n",
+      "tests": [
+        {
+          "type": "code_contains",
+          "value": "mut"
+        },
+        {
+          "type": "code_contains",
+          "value": "hp"
+        }
+      ]
     }
   ]
 };

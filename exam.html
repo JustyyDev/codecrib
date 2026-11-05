@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#c2185b" />
-  <meta name="description" content="CodeCrib: free friendly coding lessons in many languages. NL and EN." />
   <title>CodeCrib exam</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,6 +19,8 @@
       <a href="index.html" data-nav="home" data-i18n="nav_home">Home</a>
       <a href="index.html#courses" data-nav="course" data-i18n="nav_course">Cursussen</a>
       <a href="exam.html" data-nav="exam" data-i18n="nav_exam">Proefexamen</a>
+      <a href="playground.html" data-nav="play" data-i18n="nav_play">Playground</a>
+      <a href="certificate.html" data-nav="cert" data-i18n="nav_cert">Certificaat</a>
       <button type="button" class="lang-btn" data-lang="nl">NL</button>
       <button type="button" class="lang-btn" data-lang="en">EN</button>
     </nav>
@@ -27,16 +28,16 @@
 
   <main>
     <section class="hero">
-      <h1 id="exam-title" data-i18n="exam_title">Proefexamen</h1>
+      <h1 id="exam-title" data-i18n="exam_title"></h1>
       <p class="tagline" id="exam-intro" data-i18n="exam_intro"></p>
       <div class="hero-actions">
-        <button type="button" class="btn" id="submit" data-i18n="submit_exam">Bereken score</button>
-        <button type="button" class="btn secondary" id="again" data-i18n="again">Opnieuw</button>
-        <a class="btn ghost" id="course-link" href="course.html">Cursus</a>
+        <button type="button" class="btn" id="submit" data-i18n="submit_exam"></button>
+        <button type="button" class="btn secondary" id="again" data-i18n="again"></button>
+        <a class="btn ghost" id="course-link" href="course.html"></a>
       </div>
     </section>
     <div id="score-box" class="score-box" hidden>
-      <div data-i18n="your_score">Jouw score</div>
+      <div data-i18n="your_score"></div>
       <div class="big" id="score-num">0/0</div>
     </div>
     <div class="quiz" id="exam"></div>
@@ -54,36 +55,31 @@
   <script src="js/quiz.js"></script>
   <script src="js/app.js"></script>
   <script>
-    let COURSE = null; let ctrl = null;
-    async function boot() {
-      const id = CodeCribUtil.courseId();
-      COURSE = await CodeCribUtil.ensureCourse(id);
-      renderExam();
+    let COURSE=null, ctrl=null;
+    async function boot(){ COURSE=await CodeCribUtil.ensureCourse(CodeCribUtil.courseId()); renderExam(); }
+    function renderExam(){
+      const L=CodeCribI18n.getLang();
+      document.getElementById("exam-title").textContent=CodeCribI18n.t("exam_title")+": "+COURSE.title[L];
+      document.getElementById("course-link").href="course.html?course="+COURSE.id;
+      document.getElementById("course-link").textContent=COURSE.title[L];
+      document.getElementById("score-box").hidden=true;
+      ctrl=CodeCribQuiz.renderExam(document.getElementById("exam"), COURSE.exam, L, true);
+      document.title="CodeCrib - "+COURSE.title[L]+" exam";
     }
-    function renderExam() {
-      const L = CodeCribI18n.getLang();
-      document.getElementById("exam-title").textContent = CodeCribI18n.t("exam_title") + ": " + COURSE.title[L];
-      document.getElementById("course-link").href = "course.html?course=" + COURSE.id;
-      document.getElementById("course-link").textContent = COURSE.title[L];
-      document.getElementById("score-box").hidden = true;
-      ctrl = CodeCribQuiz.renderExam(document.getElementById("exam"), COURSE.exam, L, true);
-      document.title = "CodeCrib - " + COURSE.title[L] + " exam";
-    }
-    document.addEventListener("DOMContentLoaded", () => {
+    document.addEventListener("DOMContentLoaded",()=>{
       boot().catch(console.error);
-      document.getElementById("submit").addEventListener("click", () => {
-        if (!ctrl) return;
-        const r = ctrl.score();
+      document.getElementById("submit").addEventListener("click",()=>{
+        if(!ctrl) return;
+        const r=ctrl.score();
         CodeCribProgress.saveExam(COURSE.id, r.score, r.total);
         ctrl.reveal(r);
-        const box = document.getElementById("score-box");
-        box.hidden = false;
-        document.getElementById("score-num").textContent = r.score + "/" + r.total;
-        box.scrollIntoView({ behavior: "smooth", block: "center" });
+        const box=document.getElementById("score-box");
+        box.hidden=false;
+        document.getElementById("score-num").textContent=r.score+"/"+r.total+" ("+Math.round(r.score/r.total*100)+"%)";
+        box.scrollIntoView({behavior:"smooth",block:"center"});
       });
-      document.getElementById("again").addEventListener("click", () => { if (COURSE) renderExam(); });
+      document.getElementById("again").addEventListener("click",()=>{ if(COURSE) renderExam(); });
     });
-    document.addEventListener("codecrib:lang", () => { if (COURSE) renderExam(); });
+    document.addEventListener("codecrib:lang",()=>{ if(COURSE) renderExam(); });
   </script>
-</body>
-</html>
+</body></html>

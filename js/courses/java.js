@@ -72,7 +72,25 @@
             "en": "main."
           }
         }
-      ]
+      ],
+      "exercise": {
+        "lang": "java",
+        "instructions": {
+          "nl": "println Hallo",
+          "en": "println Hallo"
+        },
+        "starter": "class M{ public static void main(String[] a){ System.out.println(\"Hallo\"); }}\n",
+        "tests": [
+          {
+            "type": "code_contains",
+            "value": "System.out.println"
+          },
+          {
+            "type": "code_contains",
+            "value": "Hallo"
+          }
+        ]
+      }
     },
     {
       "id": 2,
@@ -514,6 +532,69 @@
           }
         }
       ]
+    },
+    {
+      "id": 9,
+      "title": {
+        "nl": "ArrayList tip",
+        "en": "ArrayList tip"
+      },
+      "body": {
+        "nl": "<p><code class=\"inline\">list.add</code>, <code class=\"inline\">list.get(0)</code>, generics <code class=\"inline\">List&lt;String&gt;</code>.</p>",
+        "en": "<p><code class=\"inline\">list.add</code>, <code class=\"inline\">list.get(0)</code>, generics <code class=\"inline\">List&lt;String&gt;</code>.</p>"
+      },
+      "quiz": [
+        {
+          "q": {
+            "nl": "get(0)?",
+            "en": "get(0)?"
+          },
+          "choices": {
+            "nl": [
+              "laatste",
+              "eerste element",
+              "SQL",
+              "Lua 1"
+            ],
+            "en": [
+              "last",
+              "first element",
+              "SQL",
+              "Lua 1"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "First.",
+            "en": "First."
+          }
+        },
+        {
+          "q": {
+            "nl": "generics?",
+            "en": "generics?"
+          },
+          "choices": {
+            "nl": [
+              "CSS",
+              "type parameters",
+              "GPU",
+              "cert leak"
+            ],
+            "en": [
+              "CSS",
+              "type parameters",
+              "GPU",
+              "cert leak"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Generics.",
+            "en": "Generics."
+          }
+        }
+      ]
     }
   ],
   "exam": [
@@ -906,6 +987,54 @@
         "nl": "Origineel.",
         "en": "Original."
       }
+    }
+  ],
+  "challenges": [
+    {
+      "id": "c1",
+      "title": {
+        "nl": "Hello output",
+        "en": "Hello output"
+      },
+      "prompt": {
+        "nl": "Schrijf een java programma dat Hello print (gebruik System.out.println).",
+        "en": "Write a java program that prints Hello (use System.out.println)."
+      },
+      "lang": "java",
+      "starter": "// TODO Hello via System.out.println\n",
+      "tests": [
+        {
+          "type": "code_contains",
+          "value": "System.out.println"
+        },
+        {
+          "type": "code_contains",
+          "value": "Hello"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "title": {
+        "nl": "Variabele score",
+        "en": "Score variable"
+      },
+      "prompt": {
+        "nl": "Maak een variabele score (of Score) en gebruik het getal 10.",
+        "en": "Make a score variable and use the number 10."
+      },
+      "lang": "java",
+      "starter": "\n",
+      "tests": [
+        {
+          "type": "code_regex",
+          "value": "(?i)score"
+        },
+        {
+          "type": "code_contains",
+          "value": "10"
+        }
+      ]
     }
   ]
 };

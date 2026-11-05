@@ -72,7 +72,25 @@
             "en": "C# uses Console.WriteLine and usually ends statements with a semicolon."
           }
         }
-      ]
+      ],
+      "exercise": {
+        "lang": "csharp",
+        "instructions": {
+          "nl": "Schrijf WriteLine Hallo (check op code).",
+          "en": "Write WriteLine Hallo (code check)."
+        },
+        "starter": "Console.WriteLine(\"Hallo\");\n",
+        "tests": [
+          {
+            "type": "code_contains",
+            "value": "Console.WriteLine"
+          },
+          {
+            "type": "code_contains",
+            "value": "Hallo"
+          }
+        ]
+      }
     },
     {
       "id": 2,
@@ -1422,6 +1440,54 @@
         "nl": "Altijd origineel.",
         "en": "Always original."
       }
+    }
+  ],
+  "challenges": [
+    {
+      "id": "c1",
+      "title": {
+        "nl": "WriteLine som",
+        "en": "WriteLine sum"
+      },
+      "prompt": {
+        "nl": "Schrijf C# die 2+3 zou printen. Code moet Console.WriteLine bevatten en 2+3 of 5.",
+        "en": "Write C# that would print 2+3. Must include Console.WriteLine and 2+3 or 5."
+      },
+      "lang": "csharp",
+      "starter": "using System;\nclass P {\n  static void Main() {\n    // print 5\n  }\n}\n",
+      "tests": [
+        {
+          "type": "code_contains",
+          "value": "Console.WriteLine"
+        },
+        {
+          "type": "code_regex",
+          "value": "2\\s*\\+\\s*3|WriteLine\\(5\\)"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "title": {
+        "nl": "If klaar",
+        "en": "If ready"
+      },
+      "prompt": {
+        "nl": "Gebruik if en Console.WriteLine.",
+        "en": "Use if and Console.WriteLine."
+      },
+      "lang": "csharp",
+      "starter": "using System;\nclass P { static void Main() {\nint x=5;\n\n}}\n",
+      "tests": [
+        {
+          "type": "code_contains",
+          "value": "if"
+        },
+        {
+          "type": "code_contains",
+          "value": "Console.WriteLine"
+        }
+      ]
     }
   ]
 };

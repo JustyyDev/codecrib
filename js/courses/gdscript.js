@@ -72,7 +72,25 @@
             "en": "print."
           }
         }
-      ]
+      ],
+      "exercise": {
+        "lang": "gdscript",
+        "instructions": {
+          "nl": "print Hallo",
+          "en": "print Hallo"
+        },
+        "starter": "print(\"Hallo\")\n",
+        "tests": [
+          {
+            "type": "code_contains",
+            "value": "print"
+          },
+          {
+            "type": "code_contains",
+            "value": "Hallo"
+          }
+        ]
+      }
     },
     {
       "id": 2,
@@ -514,6 +532,69 @@
           }
         }
       ]
+    },
+    {
+      "id": 9,
+      "title": {
+        "nl": "Signalen kort",
+        "en": "Signals briefly"
+      },
+      "body": {
+        "nl": "<p>Signalen verbinden emitters en listeners. <code class=\"inline\">emit_signal</code> / <code class=\"inline\">connect</code>.</p>",
+        "en": "<p>Signals connect emitters and listeners. <code class=\"inline\">emit_signal</code> / <code class=\"inline\">connect</code>.</p>"
+      },
+      "quiz": [
+        {
+          "q": {
+            "nl": "signal is?",
+            "en": "signal is?"
+          },
+          "choices": {
+            "nl": [
+              "SQL",
+              "event-achtig",
+              "CSS",
+              "C pointer"
+            ],
+            "en": [
+              "SQL",
+              "event-like",
+              "CSS",
+              "C pointer"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Event.",
+            "en": "Event."
+          }
+        },
+        {
+          "q": {
+            "nl": "connect?",
+            "en": "connect?"
+          },
+          "choices": {
+            "nl": [
+              "USB only",
+              "listener koppelen",
+              "pip",
+              "Lua 0-index"
+            ],
+            "en": [
+              "USB only",
+              "hook listener",
+              "pip",
+              "Lua 0-index"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Connect.",
+            "en": "Connect."
+          }
+        }
+      ]
     }
   ],
   "exam": [
@@ -906,6 +987,54 @@
         "nl": "Origineel.",
         "en": "Original."
       }
+    }
+  ],
+  "challenges": [
+    {
+      "id": "c1",
+      "title": {
+        "nl": "Print Hello",
+        "en": "Print Hello"
+      },
+      "prompt": {
+        "nl": "Gebruik print(\"Hello\").",
+        "en": "Use print(\"Hello\")."
+      },
+      "lang": "gdscript",
+      "starter": "extends Node\n",
+      "tests": [
+        {
+          "type": "code_contains",
+          "value": "print"
+        },
+        {
+          "type": "code_contains",
+          "value": "Hello"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "title": {
+        "nl": "coins var",
+        "en": "coins var"
+      },
+      "prompt": {
+        "nl": "var coins := 0 en een func collect.",
+        "en": "var coins := 0 and a func collect."
+      },
+      "lang": "gdscript",
+      "starter": "extends Node\n",
+      "tests": [
+        {
+          "type": "code_contains",
+          "value": "coins"
+        },
+        {
+          "type": "code_contains",
+          "value": "func"
+        }
+      ]
     }
   ]
 };

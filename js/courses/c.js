@@ -72,7 +72,25 @@
             "en": "OK status."
           }
         }
-      ]
+      ],
+      "exercise": {
+        "lang": "c",
+        "instructions": {
+          "nl": "printf Hallo",
+          "en": "printf Hallo"
+        },
+        "starter": "#include <stdio.h>\nint main(void){ printf(\"Hallo\\n\"); }\n",
+        "tests": [
+          {
+            "type": "code_contains",
+            "value": "printf"
+          },
+          {
+            "type": "code_contains",
+            "value": "Hallo"
+          }
+        ]
+      }
     },
     {
       "id": 2,
@@ -514,6 +532,69 @@
           }
         }
       ]
+    },
+    {
+      "id": 9,
+      "title": {
+        "nl": "Pointers tip",
+        "en": "Pointers tip"
+      },
+      "body": {
+        "nl": "<p><code class=\"inline\">int *p = &amp;x;</code> en <code class=\"inline\">*p</code> om te lezen/schrijven. Pas op dangling pointers.</p>",
+        "en": "<p><code class=\"inline\">int *p = &amp;x;</code> and <code class=\"inline\">*p</code> to read/write. Beware dangling pointers.</p>"
+      },
+      "quiz": [
+        {
+          "q": {
+            "nl": "*p betekent?",
+            "en": "*p means?"
+          },
+          "choices": {
+            "nl": [
+              "multiply p always",
+              "dereference",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "multiply p always",
+              "dereference",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Deref.",
+            "en": "Deref."
+          }
+        },
+        {
+          "q": {
+            "nl": "&amp;x?",
+            "en": "&amp;x?"
+          },
+          "choices": {
+            "nl": [
+              "and",
+              "adres van x",
+              "SQL",
+              "Lua"
+            ],
+            "en": [
+              "and",
+              "address of x",
+              "SQL",
+              "Lua"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Address.",
+            "en": "Address."
+          }
+        }
+      ]
     }
   ],
   "exam": [
@@ -906,6 +987,54 @@
         "nl": "Origineel.",
         "en": "Original."
       }
+    }
+  ],
+  "challenges": [
+    {
+      "id": "c1",
+      "title": {
+        "nl": "Hello output",
+        "en": "Hello output"
+      },
+      "prompt": {
+        "nl": "Schrijf een c programma dat Hello print (gebruik printf).",
+        "en": "Write a c program that prints Hello (use printf)."
+      },
+      "lang": "c",
+      "starter": "// TODO Hello via printf\n",
+      "tests": [
+        {
+          "type": "code_contains",
+          "value": "printf"
+        },
+        {
+          "type": "code_contains",
+          "value": "Hello"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "title": {
+        "nl": "Variabele score",
+        "en": "Score variable"
+      },
+      "prompt": {
+        "nl": "Maak een variabele score (of Score) en gebruik het getal 10.",
+        "en": "Make a score variable and use the number 10."
+      },
+      "lang": "c",
+      "starter": "\n",
+      "tests": [
+        {
+          "type": "code_regex",
+          "value": "(?i)score"
+        },
+        {
+          "type": "code_contains",
+          "value": "10"
+        }
+      ]
     }
   ]
 };

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#c2185b" />
+  <title>CodeCrib certificate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=IBM+Plex+Mono:wght@400;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" /><span data-i18n="brand">CodeCrib</span></a>
+    <button type="button" class="menu-toggle" aria-expanded="false" data-i18n="menu">Menu</button>
+    <nav class="nav">
+      <a href="index.html" data-nav="home" data-i18n="nav_home">Home</a>
+      <a href="index.html#courses" data-nav="course" data-i18n="nav_course">Cursussen</a>
+      <a href="exam.html" data-nav="exam" data-i18n="nav_exam">Proefexamen</a>
+      <a href="playground.html" data-nav="play" data-i18n="nav_play">Playground</a>
+      <a href="certificate.html" data-nav="cert" data-i18n="nav_cert">Certificaat</a>
+      <button type="button" class="lang-btn" data-lang="nl">NL</button>
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 data-i18n="cert_title"></h1>
+      <p class="tagline" data-i18n="cert_intro"></p>
+      <p class="tiny" data-i18n="cert_note"></p>
+      <label for="course-select" data-i18n="course_title"></label>
+      <select id="course-select" style="display:block;margin:.5rem 0 1rem;padding:.5rem;border-radius:.5rem;background:#2c2636;color:#f6f3ee;border:2px solid #46425f;font:inherit;max-width:420px"></select>
+      <div id="lock" class="callout" hidden data-i18n="cert_locked"></div>
+      <form class="cert-form" id="cert-form" hidden>
+        <label data-i18n="cert_name"></label>
+        <input id="cert-name" required maxlength="80" placeholder="Justy" />
+        <button class="btn" type="submit" data-i18n="cert_make"></button>
+      </form>
+    </section>
+    <div id="cert-sheet" class="cert-sheet" hidden>
+      <div>CodeCrib</div>
+      <h1 data-i18n="cert_title"></h1>
+      <div class="who" id="cert-who"></div>
+      <div id="cert-course"></div>
+      <div class="meta" id="cert-date"></div>
+      <div class="meta" id="cert-id"></div>
+      <p class="tiny">Completion certificate (not an accredited diploma)</p>
+      <div class="hero-actions" style="justify-content:center;margin-top:1rem">
+        <button type="button" class="btn" id="dl" data-i18n="cert_download"></button>
+        <button type="button" class="btn secondary" id="print" data-i18n="cert_print"></button>
+        <a class="btn ghost" id="verify-link" href="verify.html">Verify</a>
+      </div>
+    </div>
+    <canvas id="cert-canvas" width="1200" height="700" style="display:none"></canvas>
+  </main>
+
+  <footer class="site-footer">
+    <div data-i18n="footer">made by JustyTCCD</div>
+    <div class="tiny" data-i18n="footer_note"></div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/courses-registry.js"></script>
+  <script src="js/course-utils.js"></script>
+  <script src="js/certs.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    let COURSE=null; let lastId=null;
+    async function ensureSelected(){
+      const id=document.getElementById("course-select").value;
+      COURSE=await CodeCribUtil.ensureCourse(id);
+      refreshGate();
+    }
+    function refreshGate(){
+      const L=CodeCribI18n.getLang();
+      const ids=(COURSE.challenges||[]).map(c=>c.id);
+      const ok=CodeCribProgress.examPassed(COURSE.id,80) && CodeCribProgress.allChallengesDone(COURSE.id, ids) && ids.length>0;
+      document.getElementById("lock").hidden=ok;
+      document.getElementById("cert-form").hidden=!ok;
+    }
+    function paintCanvas(name, courseTitle, date, id){
+      const c=document.getElementById("cert-canvas");
+      const ctx=c.getContext("2d");
+      ctx.fillStyle="#1e1821"; ctx.fillRect(0,0,c.width,c.height);
+      ctx.strokeStyle="#ffd84a"; ctx.lineWidth=10; ctx.strokeRect(30,30,c.width-60,c.height-60);
+      ctx.fillStyle="#ffd84a"; ctx.font="bold 54px Fredoka, sans-serif"; ctx.textAlign="center";
+      ctx.fillText("CodeCrib Certificate", c.width/2, 140);
+      ctx.fillStyle="#f6f3ee"; ctx.font="28px Nunito, sans-serif";
+      ctx.fillText("This completion badge is awarded to", c.width/2, 240);
+      ctx.font="bold 56px Fredoka, sans-serif"; ctx.fillStyle="#e83a7a";
+      ctx.fillText(name, c.width/2, 330);
+      ctx.fillStyle="#f6f3ee"; ctx.font="30px Nunito, sans-serif";
+      ctx.fillText(courseTitle, c.width/2, 410);
+      ctx.fillStyle="#c7c3cf"; ctx.font="22px Nunito, sans-serif";
+      ctx.fillText(date, c.width/2, 470);
+      ctx.font="16px IBM Plex Mono, monospace";
+      ctx.fillText(id, c.width/2, 530);
+      ctx.fillText("Not an accredited diploma", c.width/2, 580);
+      return c;
+    }
+    document.addEventListener("DOMContentLoaded", async ()=>{
+      const sel=document.getElementById("course-select");
+      CodeCribRegistry.forEach(c=>{
+        const o=document.createElement("option"); o.value=c.id; o.textContent=c.title.nl+" / "+c.title.en; sel.appendChild(o);
+      });
+      const preset=CodeCribUtil.courseId();
+      if([...sel.options].some(o=>o.value===preset)) sel.value=preset;
+      sel.addEventListener("change",()=>ensureSelected().catch(console.error));
+      await ensureSelected();
+      document.getElementById("cert-form").addEventListener("submit", async (ev)=>{
+        ev.preventDefault();
+        const name=document.getElementById("cert-name").value.trim();
+        if(!name) return;
+        const L=CodeCribI18n.getLang();
+        const date=new Date().toISOString().slice(0,10);
+        const {id, body}=await CodeCribCerts.makeId({name, courseId:COURSE.id, date, courseTitle:COURSE.title[L]});
+        CodeCribCerts.saveCert(id, body);
+        lastId=id;
+        document.getElementById("cert-sheet").hidden=false;
+        document.getElementById("cert-who").textContent=name;
+        document.getElementById("cert-course").textContent=COURSE.title[L];
+        document.getElementById("cert-date").textContent=date;
+        document.getElementById("cert-id").textContent=id;
+        document.getElementById("verify-link").href="verify.html?id="+encodeURIComponent(id);
+        paintCanvas(name, COURSE.title[L], date, id);
+      });
+      document.getElementById("dl").addEventListener("click",()=>{
+        const c=document.getElementById("cert-canvas");
+        const a=document.createElement("a");
+        a.href=c.toDataURL("image/png");
+        a.download="codecrib-certificate.png";
+        a.click();
+      });
+      document.getElementById("print").addEventListener("click",()=>window.print());
+    });
+    document.addEventListener("codecrib:lang",()=>refreshGate());
+  </script>
+</body></html>

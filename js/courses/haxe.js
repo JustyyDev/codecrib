@@ -72,7 +72,25 @@
             "en": "Mods."
           }
         }
-      ]
+      ],
+      "exercise": {
+        "lang": "haxe",
+        "instructions": {
+          "nl": "trace Hallo",
+          "en": "trace Hallo"
+        },
+        "starter": "trace(\"Hallo\");\n",
+        "tests": [
+          {
+            "type": "code_contains",
+            "value": "trace"
+          },
+          {
+            "type": "code_contains",
+            "value": "Hallo"
+          }
+        ]
+      }
     },
     {
       "id": 2,
@@ -1099,6 +1117,54 @@
         "nl": "Origineel.",
         "en": "Original."
       }
+    }
+  ],
+  "challenges": [
+    {
+      "id": "c1",
+      "title": {
+        "nl": "Hello output",
+        "en": "Hello output"
+      },
+      "prompt": {
+        "nl": "Schrijf een haxe programma dat Hello print (gebruik trace).",
+        "en": "Write a haxe program that prints Hello (use trace)."
+      },
+      "lang": "haxe",
+      "starter": "// TODO Hello via trace\n",
+      "tests": [
+        {
+          "type": "code_contains",
+          "value": "trace"
+        },
+        {
+          "type": "code_contains",
+          "value": "Hello"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "title": {
+        "nl": "Variabele score",
+        "en": "Score variable"
+      },
+      "prompt": {
+        "nl": "Maak een variabele score (of Score) en gebruik het getal 10.",
+        "en": "Make a score variable and use the number 10."
+      },
+      "lang": "haxe",
+      "starter": "\n",
+      "tests": [
+        {
+          "type": "code_regex",
+          "value": "(?i)score"
+        },
+        {
+          "type": "code_contains",
+          "value": "10"
+        }
+      ]
     }
   ]
 };

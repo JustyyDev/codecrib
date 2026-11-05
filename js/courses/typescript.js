@@ -72,7 +72,21 @@
             "en": " : type."
           }
         }
-      ]
+      ],
+      "exercise": {
+        "lang": "typescript",
+        "instructions": {
+          "nl": "Log Hallo CodeCrib",
+          "en": "Log Hallo CodeCrib"
+        },
+        "starter": "const msg: string = \"Hallo CodeCrib\";\nconsole.log(msg);\n",
+        "tests": [
+          {
+            "type": "equals",
+            "value": "Hallo CodeCrib"
+          }
+        ]
+      }
     },
     {
       "id": 2,
@@ -906,6 +920,46 @@
         "nl": "Origineel.",
         "en": "Original."
       }
+    }
+  ],
+  "challenges": [
+    {
+      "id": "c1",
+      "title": {
+        "nl": "Typed add",
+        "en": "Typed add"
+      },
+      "prompt": {
+        "nl": "Maak function add(a:number,b:number):number en log add(2,3).",
+        "en": "Make function add(a:number,b:number):number and log add(2,3)."
+      },
+      "lang": "typescript",
+      "starter": "function add(a: number, b: number): number {\n  return a + b;\n}\n",
+      "tests": [
+        {
+          "type": "equals",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "title": {
+        "nl": "Interface user",
+        "en": "Interface user"
+      },
+      "prompt": {
+        "nl": "Maak interface User {name:string} en log name van een user Justy.",
+        "en": "Make interface User {name:string} and log the name of a Justy user."
+      },
+      "lang": "typescript",
+      "starter": "interface User { name: string }\nconst u: User = { name: \"Justy\" };\n",
+      "tests": [
+        {
+          "type": "contains",
+          "value": "Justy"
+        }
+      ]
     }
   ]
 };

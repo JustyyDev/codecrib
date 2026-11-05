@@ -72,7 +72,21 @@
             "en": "print."
           }
         }
-      ]
+      ],
+      "exercise": {
+        "lang": "lua",
+        "instructions": {
+          "nl": "Print Hallo CodeCrib",
+          "en": "Print Hallo CodeCrib"
+        },
+        "starter": "print(\"Hallo CodeCrib\")\n",
+        "tests": [
+          {
+            "type": "equals",
+            "value": "Hallo CodeCrib"
+          }
+        ]
+      }
     },
     {
       "id": 2,
@@ -1099,6 +1113,46 @@
         "nl": "Origineel.",
         "en": "Original."
       }
+    }
+  ],
+  "challenges": [
+    {
+      "id": "c1",
+      "title": {
+        "nl": "Som printen",
+        "en": "Print a sum"
+      },
+      "prompt": {
+        "nl": "Print 2+3.",
+        "en": "Print 2+3."
+      },
+      "lang": "lua",
+      "starter": "-- print 5\n",
+      "tests": [
+        {
+          "type": "equals",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "title": {
+        "nl": "Table index 1",
+        "en": "Table index 1"
+      },
+      "prompt": {
+        "nl": "nums={10,20,30}; print nums[1] (moet 10 zijn in Lua).",
+        "en": "nums={10,20,30}; print nums[1] (should be 10 in Lua)."
+      },
+      "lang": "lua",
+      "starter": "local nums = {10,20,30}\n",
+      "tests": [
+        {
+          "type": "equals",
+          "value": "10"
+        }
+      ]
     }
   ]
 };

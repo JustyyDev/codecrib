@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#c2185b" />
-  <meta name="description" content="CodeCrib: free friendly coding lessons in many languages. NL and EN." />
+  <meta name="description" content="CodeCrib: free coding lessons with live editor, challenges and certificates." />
   <title>CodeCrib course</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,6 +20,8 @@
       <a href="index.html" data-nav="home" data-i18n="nav_home">Home</a>
       <a href="index.html#courses" data-nav="course" data-i18n="nav_course">Cursussen</a>
       <a href="exam.html" data-nav="exam" data-i18n="nav_exam">Proefexamen</a>
+      <a href="playground.html" data-nav="play" data-i18n="nav_play">Playground</a>
+      <a href="certificate.html" data-nav="cert" data-i18n="nav_cert">Certificaat</a>
       <button type="button" class="lang-btn" data-lang="nl">NL</button>
       <button type="button" class="lang-btn" data-lang="en">EN</button>
     </nav>
@@ -30,16 +32,19 @@
       <h1 id="course-title">Cursus</h1>
       <p class="tagline" id="course-intro"></p>
       <div>
-        <strong data-i18n="progress">Voortgang</strong>
+        <strong data-i18n="progress"></strong>
         <span id="progress-label" class="pill">0/0</span>
-        <div class="progress-bar" aria-hidden="true"><span id="progress-fill"></span></div>
+        <div class="progress-bar"><span id="progress-fill"></span></div>
       </div>
       <div class="hero-actions" style="margin-top:.8rem">
-        <a class="btn secondary" id="exam-link" href="exam.html">Proefexamen</a>
-        <a class="btn ghost" href="index.html#courses" data-i18n="nav_course">Cursussen</a>
+        <a class="btn secondary" id="exam-link" href="exam.html" data-i18n="cta_exam"></a>
+        <a class="btn" id="cert-link" href="certificate.html" data-i18n="nav_cert"></a>
+        <a class="btn ghost" href="index.html#courses" data-i18n="nav_course"></a>
       </div>
     </section>
     <ul class="lesson-list" id="lesson-list"></ul>
+    <h2 data-i18n="challenges" style="margin-top:1.5rem"></h2>
+    <ul class="lesson-list" id="challenge-list"></ul>
   </main>
 
   <footer class="site-footer">
@@ -55,19 +60,16 @@
   <script>
     let COURSE = null;
     async function boot() {
-      const id = CodeCribUtil.courseId();
-      COURSE = await CodeCribUtil.ensureCourse(id);
+      COURSE = await CodeCribUtil.ensureCourse(CodeCribUtil.courseId());
       render();
     }
     function render() {
-      const id = COURSE.id;
-      const L = CodeCribI18n.getLang();
+      const id = COURSE.id; const L = CodeCribI18n.getLang();
       document.getElementById("course-title").textContent = COURSE.title[L];
       document.getElementById("course-intro").textContent = COURSE.intro[L];
       document.getElementById("exam-link").href = "exam.html?course=" + id;
-      document.getElementById("exam-link").textContent = CodeCribI18n.t("cta_exam");
-      const ul = document.getElementById("lesson-list");
-      ul.innerHTML = "";
+      document.getElementById("cert-link").href = "certificate.html?course=" + id;
+      const ul = document.getElementById("lesson-list"); ul.innerHTML = "";
       COURSE.lessons.forEach((les) => {
         const li = document.createElement("li");
         const a = document.createElement("a");
@@ -75,10 +77,21 @@
         const left = document.createElement("span");
         left.textContent = CodeCribI18n.t("lesson") + " " + les.id + ": " + les.title[L];
         const right = document.createElement("span");
-        right.className = "meta";
-        if (CodeCribProgress.isDone(id, les.id)) { right.className = "done-dot"; right.textContent = CodeCribI18n.t("done"); }
-        else right.textContent = "->";
+        right.className = CodeCribProgress.isDone(id, les.id) ? "done-dot" : "meta";
+        right.textContent = CodeCribProgress.isDone(id, les.id) ? CodeCribI18n.t("done") : "->";
         a.appendChild(left); a.appendChild(right); li.appendChild(a); ul.appendChild(li);
+      });
+      const cl = document.getElementById("challenge-list"); cl.innerHTML = "";
+      (COURSE.challenges || []).forEach((ch) => {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.href = "challenge.html?course=" + id + "&id=" + ch.id;
+        const left = document.createElement("span");
+        left.textContent = CodeCribI18n.t("challenge") + ": " + ch.title[L];
+        const right = document.createElement("span");
+        right.className = CodeCribProgress.isChallengeDone(id, ch.id) ? "done-dot" : "meta";
+        right.textContent = CodeCribProgress.isChallengeDone(id, ch.id) ? CodeCribI18n.t("done") : "->";
+        a.appendChild(left); a.appendChild(right); li.appendChild(a); cl.appendChild(li);
       });
       const { done, total } = CodeCribProgress.lessonCount(id, COURSE.lessons.length);
       document.getElementById("progress-label").textContent = done + "/" + total;
@@ -88,5 +101,4 @@
     document.addEventListener("DOMContentLoaded", () => boot().catch(console.error));
     document.addEventListener("codecrib:lang", () => { if (COURSE) render(); });
   </script>
-</body>
-</html>
+</body></html>

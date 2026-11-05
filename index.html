@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#c2185b" />
-  <meta name="description" content="CodeCrib: free friendly coding lessons in many languages. NL and EN." />
+  <meta name="description" content="CodeCrib: free coding lessons with live editor, challenges and certificates." />
   <title>CodeCrib</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,6 +20,8 @@
       <a href="index.html" data-nav="home" data-i18n="nav_home">Home</a>
       <a href="index.html#courses" data-nav="course" data-i18n="nav_course">Cursussen</a>
       <a href="exam.html" data-nav="exam" data-i18n="nav_exam">Proefexamen</a>
+      <a href="playground.html" data-nav="play" data-i18n="nav_play">Playground</a>
+      <a href="certificate.html" data-nav="cert" data-i18n="nav_cert">Certificaat</a>
       <button type="button" class="lang-btn" data-lang="nl">NL</button>
       <button type="button" class="lang-btn" data-lang="en">EN</button>
     </nav>
@@ -27,11 +29,12 @@
 
   <main>
     <section class="hero">
-      <h1 data-i18n="hero_title">Leer coderen in een chill crib</h1>
+      <h1 data-i18n="hero_title"></h1>
       <p class="tagline" data-i18n="hero_tag"></p>
       <div class="hero-actions">
-        <a class="btn" href="#courses" data-i18n="cta_start">Bekijk cursussen</a>
-        <a class="btn secondary" href="exam.html?course=csharp" data-i18n="cta_exam">Proefexamen</a>
+        <a class="btn" href="#courses" data-i18n="cta_start"></a>
+        <a class="btn secondary" href="playground.html" data-i18n="nav_play"></a>
+        <a class="btn ghost" href="certificate.html" data-i18n="nav_cert"></a>
       </div>
     </section>
     <section class="grid cards">
@@ -40,7 +43,7 @@
       <article class="card"><h2 data-i18n="card3_t"></h2><p data-i18n="card3_p"></p></article>
     </section>
     <section id="courses" style="margin-top:2rem">
-      <h2 data-i18n="pick_title">Kies een taal</h2>
+      <h2 data-i18n="pick_title"></h2>
       <p class="tagline" data-i18n="pick_sub"></p>
       <div id="course-groups"></div>
     </section>
@@ -84,5 +87,4 @@
     document.addEventListener("DOMContentLoaded", renderPicker);
     document.addEventListener("codecrib:lang", renderPicker);
   </script>
-</body>
-</html>
+</body></html>

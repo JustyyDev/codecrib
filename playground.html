@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#c2185b" />
+  <title>CodeCrib playground</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=IBM+Plex+Mono:wght@400;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" /><span data-i18n="brand">CodeCrib</span></a>
+    <button type="button" class="menu-toggle" aria-expanded="false" data-i18n="menu">Menu</button>
+    <nav class="nav">
+      <a href="index.html" data-nav="home" data-i18n="nav_home">Home</a>
+      <a href="index.html#courses" data-nav="course" data-i18n="nav_course">Cursussen</a>
+      <a href="exam.html" data-nav="exam" data-i18n="nav_exam">Proefexamen</a>
+      <a href="playground.html" data-nav="play" data-i18n="nav_play">Playground</a>
+      <a href="certificate.html" data-nav="cert" data-i18n="nav_cert">Certificaat</a>
+      <button type="button" class="lang-btn" data-lang="nl">NL</button>
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 data-i18n="playground_title"></h1>
+      <p class="tagline" data-i18n="playground_intro"></p>
+    </section>
+    <div id="editor-host"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div data-i18n="footer">made by JustyTCCD</div>
+    <div class="tiny" data-i18n="footer_note"></div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/runtime/runners.js"></script>
+  <script src="js/runtime/editor.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    const starter = [
+      "const canvas = document.getElementById('c');",
+      "const ctx = canvas.getContext('2d');",
+      "ctx.fillStyle = '#1e1821';",
+      "ctx.fillRect(0, 0, canvas.width, canvas.height);",
+      "let t = 0;",
+      "function frame() {",
+      "  t += 0.05;",
+      "  ctx.fillStyle = 'rgba(30,24,33,0.2)';",
+      "  ctx.fillRect(0, 0, canvas.width, canvas.height);",
+      "  ctx.beginPath();",
+      "  ctx.arc(200 + Math.cos(t) * 80, 150 + Math.sin(t) * 50, 24, 0, Math.PI * 2);",
+      "  ctx.fillStyle = '#e83a7a';",
+      "  ctx.fill();",
+      "  ctx.fillStyle = '#ffd84a';",
+      "  ctx.font = '20px sans-serif';",
+      "  ctx.fillText('CodeCrib', 160, 40);",
+      "  requestAnimationFrame(frame);",
+      "}",
+      "frame();"
+    ].join("\n");
+
+    document.addEventListener("DOMContentLoaded", async () => {
+      const host = document.getElementById("editor-host");
+      const ed = await CodeCribEditor.mount(host, {
+        lang: "javascript",
+        langLabel: "canvas JS",
+        value: starter,
+        preview: true,
+        runLabel: CodeCribI18n.t("run_check")
+      });
+      async function paint() {
+        const user = ed.getValue();
+        const html = "<!DOCTYPE html><html><body style=\\"margin:0;background:#111\\">" +
+          "<canvas id=\\"c\\" width=\\"400\\" height=\\"300\\" style=\\"width:100%;height:auto;display:block\\"></canvas>" +
+          "<script>" + user + "</" + "script></body></html>";
+        ed.preview.srcdoc = html;
+        ed.consoleEl.textContent = "Preview updated.";
+        ed.consoleEl.className = "cc-console ok";
+      }
+      host.querySelector(".cc-editor-toolbar .btn").onclick = function (ev) { ev.preventDefault(); paint(); };
+      paint();
+    });
+  </script>
+</body></html>

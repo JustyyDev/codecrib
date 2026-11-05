@@ -72,7 +72,21 @@
             "en": "Query."
           }
         }
-      ]
+      ],
+      "exercise": {
+        "lang": "sql",
+        "instructions": {
+          "nl": "SELECT name FROM players;",
+          "en": "SELECT name FROM players;"
+        },
+        "starter": "SELECT name FROM players;\n",
+        "tests": [
+          {
+            "type": "contains",
+            "value": "Justy"
+          }
+        ]
+      }
     },
     {
       "id": 2,
@@ -514,6 +528,69 @@
           }
         }
       ]
+    },
+    {
+      "id": 9,
+      "title": {
+        "nl": "GROUP BY tip",
+        "en": "GROUP BY tip"
+      },
+      "body": {
+        "nl": "<p><code class=\"inline\">SELECT name, COUNT(*) FROM players GROUP BY name;</code></p>",
+        "en": "<p><code class=\"inline\">SELECT name, COUNT(*) FROM players GROUP BY name;</code></p>"
+      },
+      "quiz": [
+        {
+          "q": {
+            "nl": "GROUP BY?",
+            "en": "GROUP BY?"
+          },
+          "choices": {
+            "nl": [
+              "CSS grid",
+              "aggregatie groepen",
+              "Lua",
+              "C"
+            ],
+            "en": [
+              "CSS grid",
+              "aggregation groups",
+              "Lua",
+              "C"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Group.",
+            "en": "Group."
+          }
+        },
+        {
+          "q": {
+            "nl": "COUNT(*)?",
+            "en": "COUNT(*)?"
+          },
+          "choices": {
+            "nl": [
+              "som",
+              "aantal rijen",
+              "max",
+              "join"
+            ],
+            "en": [
+              "sum",
+              "row count",
+              "max",
+              "join"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Count.",
+            "en": "Count."
+          }
+        }
+      ]
     }
   ],
   "exam": [
@@ -906,6 +983,58 @@
         "nl": "Origineel.",
         "en": "Original."
       }
+    }
+  ],
+  "challenges": [
+    {
+      "id": "c1",
+      "title": {
+        "nl": "Select names",
+        "en": "Select names"
+      },
+      "prompt": {
+        "nl": "SELECT name FROM players ORDER BY name;",
+        "en": "SELECT name FROM players ORDER BY name;"
+      },
+      "lang": "sql",
+      "starter": "-- sample table players(id,name,score) is preloaded\n",
+      "tests": [
+        {
+          "type": "contains",
+          "value": "Justy"
+        },
+        {
+          "type": "contains",
+          "value": "Luke"
+        },
+        {
+          "type": "contains",
+          "value": "Nena"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "title": {
+        "nl": "High scores",
+        "en": "High scores"
+      },
+      "prompt": {
+        "nl": "Select name van players met score >= 10.",
+        "en": "Select name of players with score >= 10."
+      },
+      "lang": "sql",
+      "starter": "SELECT name FROM players WHERE score >= 10;\n",
+      "tests": [
+        {
+          "type": "contains",
+          "value": "Justy"
+        },
+        {
+          "type": "contains",
+          "value": "Nena"
+        }
+      ]
     }
   ]
 };

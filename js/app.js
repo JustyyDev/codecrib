@@ -24,8 +24,10 @@
       const nav = a.dataset.nav;
       let active = false;
       if (nav === "home") active = path === "index.html" || path === "";
-      if (nav === "course") active = path === "course.html" || path === "lesson.html";
+      if (nav === "course") active = path === "course.html" || path === "lesson.html" || path === "challenge.html";
       if (nav === "exam") active = path === "exam.html";
+      if (nav === "play") active = path === "playground.html";
+      if (nav === "cert") active = path === "certificate.html" || path === "verify.html";
       a.classList.toggle("active", active);
     });
   }
