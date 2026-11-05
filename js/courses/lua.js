@@ -71,6 +71,231 @@
             "nl": "print.",
             "en": "print."
           }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "nums[1] bij {10,20}?",
+            "en": "nums[1] for {10,20}?"
+          },
+          "choices": {
+            "nl": [
+              "20",
+              "10",
+              "nil",
+              "error"
+            ],
+            "en": [
+              "20",
+              "10",
+              "nil",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "1-based.",
+            "en": "1-based."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Niet-gelijk operator?",
+            "en": "Not-equal operator?"
+          },
+          "fill": [
+            "~="
+          ],
+          "why": {
+            "nl": "~=.",
+            "en": "~=."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "nil falsy?",
+            "en": "nil falsy?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "alleen 0",
+              "error"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "0 only",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Yes.",
+            "en": "Yes."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "0 truthy in Lua?",
+            "en": "0 truthy in Lua?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "error",
+              "nil"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "error",
+              "nil"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Only false/nil falsy.",
+            "en": "Only false/nil falsy."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: function zonder end",
+            "en": "Spot: function without end"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "mist end",
+              "print fout",
+              "local fout"
+            ],
+            "en": [
+              "ok",
+              "missing end",
+              "print wrong",
+              "local wrong"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Need end.",
+            "en": "Need end."
+          },
+          "code": "function f() print(1)"
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Comment prefix?",
+            "en": "Comment prefix?"
+          },
+          "fill": [
+            "--"
+          ],
+          "why": {
+            "nl": "--.",
+            "en": "--."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "elseif spelling?",
+            "en": "elseif spelling?"
+          },
+          "choices": {
+            "nl": [
+              "elif",
+              "elseif",
+              "else if",
+              "elsif"
+            ],
+            "en": [
+              "elif",
+              "elseif",
+              "else if",
+              "elsif"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "elseif.",
+            "en": "elseif."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "# 'abc'?",
+            "en": "# 'abc'?"
+          },
+          "choices": {
+            "nl": [
+              "hash",
+              "3",
+              "error",
+              "0"
+            ],
+            "en": [
+              "hash",
+              "3",
+              "error",
+              "0"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Length 3.",
+            "en": "Length 3."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "pairs vs ipairs?",
+            "en": "pairs vs ipairs?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "ipairs array-achtig",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "same",
+              "ipairs array-like",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Difference.",
+            "en": "Difference."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword functie?",
+            "en": "Function keyword?"
+          },
+          "fill": [
+            "function"
+          ],
+          "why": {
+            "nl": "function.",
+            "en": "function."
+          }
         }
       ],
       "exercise": {
@@ -148,6 +373,231 @@
             "nl": "Scope.",
             "en": "Scope."
           }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "nums[1] bij {10,20}?",
+            "en": "nums[1] for {10,20}?"
+          },
+          "choices": {
+            "nl": [
+              "20",
+              "10",
+              "nil",
+              "error"
+            ],
+            "en": [
+              "20",
+              "10",
+              "nil",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "1-based.",
+            "en": "1-based."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Niet-gelijk operator?",
+            "en": "Not-equal operator?"
+          },
+          "fill": [
+            "~="
+          ],
+          "why": {
+            "nl": "~=.",
+            "en": "~=."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "nil falsy?",
+            "en": "nil falsy?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "alleen 0",
+              "error"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "0 only",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Yes.",
+            "en": "Yes."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "0 truthy in Lua?",
+            "en": "0 truthy in Lua?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "error",
+              "nil"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "error",
+              "nil"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Only false/nil falsy.",
+            "en": "Only false/nil falsy."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: function zonder end",
+            "en": "Spot: function without end"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "mist end",
+              "print fout",
+              "local fout"
+            ],
+            "en": [
+              "ok",
+              "missing end",
+              "print wrong",
+              "local wrong"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Need end.",
+            "en": "Need end."
+          },
+          "code": "function f() print(1)"
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Comment prefix?",
+            "en": "Comment prefix?"
+          },
+          "fill": [
+            "--"
+          ],
+          "why": {
+            "nl": "--.",
+            "en": "--."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "elseif spelling?",
+            "en": "elseif spelling?"
+          },
+          "choices": {
+            "nl": [
+              "elif",
+              "elseif",
+              "else if",
+              "elsif"
+            ],
+            "en": [
+              "elif",
+              "elseif",
+              "else if",
+              "elsif"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "elseif.",
+            "en": "elseif."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "# 'abc'?",
+            "en": "# 'abc'?"
+          },
+          "choices": {
+            "nl": [
+              "hash",
+              "3",
+              "error",
+              "0"
+            ],
+            "en": [
+              "hash",
+              "3",
+              "error",
+              "0"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Length 3.",
+            "en": "Length 3."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "pairs vs ipairs?",
+            "en": "pairs vs ipairs?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "ipairs array-achtig",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "same",
+              "ipairs array-like",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Difference.",
+            "en": "Difference."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword functie?",
+            "en": "Function keyword?"
+          },
+          "fill": [
+            "function"
+          ],
+          "why": {
+            "nl": "function.",
+            "en": "function."
+          }
         }
       ]
     },
@@ -210,6 +660,231 @@
           "why": {
             "nl": "elseif.",
             "en": "elseif."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "nums[1] bij {10,20}?",
+            "en": "nums[1] for {10,20}?"
+          },
+          "choices": {
+            "nl": [
+              "20",
+              "10",
+              "nil",
+              "error"
+            ],
+            "en": [
+              "20",
+              "10",
+              "nil",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "1-based.",
+            "en": "1-based."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Niet-gelijk operator?",
+            "en": "Not-equal operator?"
+          },
+          "fill": [
+            "~="
+          ],
+          "why": {
+            "nl": "~=.",
+            "en": "~=."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "nil falsy?",
+            "en": "nil falsy?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "alleen 0",
+              "error"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "0 only",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Yes.",
+            "en": "Yes."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "0 truthy in Lua?",
+            "en": "0 truthy in Lua?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "error",
+              "nil"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "error",
+              "nil"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Only false/nil falsy.",
+            "en": "Only false/nil falsy."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: function zonder end",
+            "en": "Spot: function without end"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "mist end",
+              "print fout",
+              "local fout"
+            ],
+            "en": [
+              "ok",
+              "missing end",
+              "print wrong",
+              "local wrong"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Need end.",
+            "en": "Need end."
+          },
+          "code": "function f() print(1)"
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Comment prefix?",
+            "en": "Comment prefix?"
+          },
+          "fill": [
+            "--"
+          ],
+          "why": {
+            "nl": "--.",
+            "en": "--."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "elseif spelling?",
+            "en": "elseif spelling?"
+          },
+          "choices": {
+            "nl": [
+              "elif",
+              "elseif",
+              "else if",
+              "elsif"
+            ],
+            "en": [
+              "elif",
+              "elseif",
+              "else if",
+              "elsif"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "elseif.",
+            "en": "elseif."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "# 'abc'?",
+            "en": "# 'abc'?"
+          },
+          "choices": {
+            "nl": [
+              "hash",
+              "3",
+              "error",
+              "0"
+            ],
+            "en": [
+              "hash",
+              "3",
+              "error",
+              "0"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Length 3.",
+            "en": "Length 3."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "pairs vs ipairs?",
+            "en": "pairs vs ipairs?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "ipairs array-achtig",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "same",
+              "ipairs array-like",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Difference.",
+            "en": "Difference."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword functie?",
+            "en": "Function keyword?"
+          },
+          "fill": [
+            "function"
+          ],
+          "why": {
+            "nl": "function.",
+            "en": "function."
           }
         }
       ]
@@ -274,6 +949,231 @@
             "nl": "end.",
             "en": "end."
           }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "nums[1] bij {10,20}?",
+            "en": "nums[1] for {10,20}?"
+          },
+          "choices": {
+            "nl": [
+              "20",
+              "10",
+              "nil",
+              "error"
+            ],
+            "en": [
+              "20",
+              "10",
+              "nil",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "1-based.",
+            "en": "1-based."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Niet-gelijk operator?",
+            "en": "Not-equal operator?"
+          },
+          "fill": [
+            "~="
+          ],
+          "why": {
+            "nl": "~=.",
+            "en": "~=."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "nil falsy?",
+            "en": "nil falsy?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "alleen 0",
+              "error"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "0 only",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Yes.",
+            "en": "Yes."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "0 truthy in Lua?",
+            "en": "0 truthy in Lua?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "error",
+              "nil"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "error",
+              "nil"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Only false/nil falsy.",
+            "en": "Only false/nil falsy."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: function zonder end",
+            "en": "Spot: function without end"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "mist end",
+              "print fout",
+              "local fout"
+            ],
+            "en": [
+              "ok",
+              "missing end",
+              "print wrong",
+              "local wrong"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Need end.",
+            "en": "Need end."
+          },
+          "code": "function f() print(1)"
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Comment prefix?",
+            "en": "Comment prefix?"
+          },
+          "fill": [
+            "--"
+          ],
+          "why": {
+            "nl": "--.",
+            "en": "--."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "elseif spelling?",
+            "en": "elseif spelling?"
+          },
+          "choices": {
+            "nl": [
+              "elif",
+              "elseif",
+              "else if",
+              "elsif"
+            ],
+            "en": [
+              "elif",
+              "elseif",
+              "else if",
+              "elsif"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "elseif.",
+            "en": "elseif."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "# 'abc'?",
+            "en": "# 'abc'?"
+          },
+          "choices": {
+            "nl": [
+              "hash",
+              "3",
+              "error",
+              "0"
+            ],
+            "en": [
+              "hash",
+              "3",
+              "error",
+              "0"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Length 3.",
+            "en": "Length 3."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "pairs vs ipairs?",
+            "en": "pairs vs ipairs?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "ipairs array-achtig",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "same",
+              "ipairs array-like",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Difference.",
+            "en": "Difference."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword functie?",
+            "en": "Function keyword?"
+          },
+          "fill": [
+            "function"
+          ],
+          "why": {
+            "nl": "function.",
+            "en": "function."
+          }
         }
       ]
     },
@@ -337,6 +1237,231 @@
             "nl": "100.",
             "en": "100."
           }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "nums[1] bij {10,20}?",
+            "en": "nums[1] for {10,20}?"
+          },
+          "choices": {
+            "nl": [
+              "20",
+              "10",
+              "nil",
+              "error"
+            ],
+            "en": [
+              "20",
+              "10",
+              "nil",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "1-based.",
+            "en": "1-based."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Niet-gelijk operator?",
+            "en": "Not-equal operator?"
+          },
+          "fill": [
+            "~="
+          ],
+          "why": {
+            "nl": "~=.",
+            "en": "~=."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "nil falsy?",
+            "en": "nil falsy?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "alleen 0",
+              "error"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "0 only",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Yes.",
+            "en": "Yes."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "0 truthy in Lua?",
+            "en": "0 truthy in Lua?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "error",
+              "nil"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "error",
+              "nil"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Only false/nil falsy.",
+            "en": "Only false/nil falsy."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: function zonder end",
+            "en": "Spot: function without end"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "mist end",
+              "print fout",
+              "local fout"
+            ],
+            "en": [
+              "ok",
+              "missing end",
+              "print wrong",
+              "local wrong"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Need end.",
+            "en": "Need end."
+          },
+          "code": "function f() print(1)"
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Comment prefix?",
+            "en": "Comment prefix?"
+          },
+          "fill": [
+            "--"
+          ],
+          "why": {
+            "nl": "--.",
+            "en": "--."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "elseif spelling?",
+            "en": "elseif spelling?"
+          },
+          "choices": {
+            "nl": [
+              "elif",
+              "elseif",
+              "else if",
+              "elsif"
+            ],
+            "en": [
+              "elif",
+              "elseif",
+              "else if",
+              "elsif"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "elseif.",
+            "en": "elseif."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "# 'abc'?",
+            "en": "# 'abc'?"
+          },
+          "choices": {
+            "nl": [
+              "hash",
+              "3",
+              "error",
+              "0"
+            ],
+            "en": [
+              "hash",
+              "3",
+              "error",
+              "0"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Length 3.",
+            "en": "Length 3."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "pairs vs ipairs?",
+            "en": "pairs vs ipairs?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "ipairs array-achtig",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "same",
+              "ipairs array-like",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Difference.",
+            "en": "Difference."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword functie?",
+            "en": "Function keyword?"
+          },
+          "fill": [
+            "function"
+          ],
+          "why": {
+            "nl": "function.",
+            "en": "function."
+          }
         }
       ]
     },
@@ -396,6 +1521,231 @@
             ]
           },
           "answer": 1,
+          "why": {
+            "nl": "function.",
+            "en": "function."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "nums[1] bij {10,20}?",
+            "en": "nums[1] for {10,20}?"
+          },
+          "choices": {
+            "nl": [
+              "20",
+              "10",
+              "nil",
+              "error"
+            ],
+            "en": [
+              "20",
+              "10",
+              "nil",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "1-based.",
+            "en": "1-based."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Niet-gelijk operator?",
+            "en": "Not-equal operator?"
+          },
+          "fill": [
+            "~="
+          ],
+          "why": {
+            "nl": "~=.",
+            "en": "~=."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "nil falsy?",
+            "en": "nil falsy?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "alleen 0",
+              "error"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "0 only",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Yes.",
+            "en": "Yes."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "0 truthy in Lua?",
+            "en": "0 truthy in Lua?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "error",
+              "nil"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "error",
+              "nil"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Only false/nil falsy.",
+            "en": "Only false/nil falsy."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: function zonder end",
+            "en": "Spot: function without end"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "mist end",
+              "print fout",
+              "local fout"
+            ],
+            "en": [
+              "ok",
+              "missing end",
+              "print wrong",
+              "local wrong"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Need end.",
+            "en": "Need end."
+          },
+          "code": "function f() print(1)"
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Comment prefix?",
+            "en": "Comment prefix?"
+          },
+          "fill": [
+            "--"
+          ],
+          "why": {
+            "nl": "--.",
+            "en": "--."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "elseif spelling?",
+            "en": "elseif spelling?"
+          },
+          "choices": {
+            "nl": [
+              "elif",
+              "elseif",
+              "else if",
+              "elsif"
+            ],
+            "en": [
+              "elif",
+              "elseif",
+              "else if",
+              "elsif"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "elseif.",
+            "en": "elseif."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "# 'abc'?",
+            "en": "# 'abc'?"
+          },
+          "choices": {
+            "nl": [
+              "hash",
+              "3",
+              "error",
+              "0"
+            ],
+            "en": [
+              "hash",
+              "3",
+              "error",
+              "0"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Length 3.",
+            "en": "Length 3."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "pairs vs ipairs?",
+            "en": "pairs vs ipairs?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "ipairs array-achtig",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "same",
+              "ipairs array-like",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Difference.",
+            "en": "Difference."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword functie?",
+            "en": "Function keyword?"
+          },
+          "fill": [
+            "function"
+          ],
           "why": {
             "nl": "function.",
             "en": "function."
@@ -463,6 +1813,231 @@
             "nl": "Raises.",
             "en": "Raises."
           }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "nums[1] bij {10,20}?",
+            "en": "nums[1] for {10,20}?"
+          },
+          "choices": {
+            "nl": [
+              "20",
+              "10",
+              "nil",
+              "error"
+            ],
+            "en": [
+              "20",
+              "10",
+              "nil",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "1-based.",
+            "en": "1-based."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Niet-gelijk operator?",
+            "en": "Not-equal operator?"
+          },
+          "fill": [
+            "~="
+          ],
+          "why": {
+            "nl": "~=.",
+            "en": "~=."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "nil falsy?",
+            "en": "nil falsy?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "alleen 0",
+              "error"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "0 only",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Yes.",
+            "en": "Yes."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "0 truthy in Lua?",
+            "en": "0 truthy in Lua?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "error",
+              "nil"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "error",
+              "nil"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Only false/nil falsy.",
+            "en": "Only false/nil falsy."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: function zonder end",
+            "en": "Spot: function without end"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "mist end",
+              "print fout",
+              "local fout"
+            ],
+            "en": [
+              "ok",
+              "missing end",
+              "print wrong",
+              "local wrong"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Need end.",
+            "en": "Need end."
+          },
+          "code": "function f() print(1)"
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Comment prefix?",
+            "en": "Comment prefix?"
+          },
+          "fill": [
+            "--"
+          ],
+          "why": {
+            "nl": "--.",
+            "en": "--."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "elseif spelling?",
+            "en": "elseif spelling?"
+          },
+          "choices": {
+            "nl": [
+              "elif",
+              "elseif",
+              "else if",
+              "elsif"
+            ],
+            "en": [
+              "elif",
+              "elseif",
+              "else if",
+              "elsif"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "elseif.",
+            "en": "elseif."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "# 'abc'?",
+            "en": "# 'abc'?"
+          },
+          "choices": {
+            "nl": [
+              "hash",
+              "3",
+              "error",
+              "0"
+            ],
+            "en": [
+              "hash",
+              "3",
+              "error",
+              "0"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Length 3.",
+            "en": "Length 3."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "pairs vs ipairs?",
+            "en": "pairs vs ipairs?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "ipairs array-achtig",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "same",
+              "ipairs array-like",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Difference.",
+            "en": "Difference."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword functie?",
+            "en": "Function keyword?"
+          },
+          "fill": [
+            "function"
+          ],
+          "why": {
+            "nl": "function.",
+            "en": "function."
+          }
         }
       ]
     },
@@ -526,6 +2101,231 @@
             "nl": "Child.",
             "en": "Child."
           }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "nums[1] bij {10,20}?",
+            "en": "nums[1] for {10,20}?"
+          },
+          "choices": {
+            "nl": [
+              "20",
+              "10",
+              "nil",
+              "error"
+            ],
+            "en": [
+              "20",
+              "10",
+              "nil",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "1-based.",
+            "en": "1-based."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Niet-gelijk operator?",
+            "en": "Not-equal operator?"
+          },
+          "fill": [
+            "~="
+          ],
+          "why": {
+            "nl": "~=.",
+            "en": "~=."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "nil falsy?",
+            "en": "nil falsy?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "alleen 0",
+              "error"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "0 only",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Yes.",
+            "en": "Yes."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "0 truthy in Lua?",
+            "en": "0 truthy in Lua?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "error",
+              "nil"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "error",
+              "nil"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Only false/nil falsy.",
+            "en": "Only false/nil falsy."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: function zonder end",
+            "en": "Spot: function without end"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "mist end",
+              "print fout",
+              "local fout"
+            ],
+            "en": [
+              "ok",
+              "missing end",
+              "print wrong",
+              "local wrong"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Need end.",
+            "en": "Need end."
+          },
+          "code": "function f() print(1)"
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Comment prefix?",
+            "en": "Comment prefix?"
+          },
+          "fill": [
+            "--"
+          ],
+          "why": {
+            "nl": "--.",
+            "en": "--."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "elseif spelling?",
+            "en": "elseif spelling?"
+          },
+          "choices": {
+            "nl": [
+              "elif",
+              "elseif",
+              "else if",
+              "elsif"
+            ],
+            "en": [
+              "elif",
+              "elseif",
+              "else if",
+              "elsif"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "elseif.",
+            "en": "elseif."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "# 'abc'?",
+            "en": "# 'abc'?"
+          },
+          "choices": {
+            "nl": [
+              "hash",
+              "3",
+              "error",
+              "0"
+            ],
+            "en": [
+              "hash",
+              "3",
+              "error",
+              "0"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Length 3.",
+            "en": "Length 3."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "pairs vs ipairs?",
+            "en": "pairs vs ipairs?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "ipairs array-achtig",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "same",
+              "ipairs array-like",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Difference.",
+            "en": "Difference."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword functie?",
+            "en": "Function keyword?"
+          },
+          "fill": [
+            "function"
+          ],
+          "why": {
+            "nl": "function.",
+            "en": "function."
+          }
         }
       ]
     },
@@ -588,6 +2388,231 @@
           "why": {
             "nl": "Scope.",
             "en": "Scope."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "nums[1] bij {10,20}?",
+            "en": "nums[1] for {10,20}?"
+          },
+          "choices": {
+            "nl": [
+              "20",
+              "10",
+              "nil",
+              "error"
+            ],
+            "en": [
+              "20",
+              "10",
+              "nil",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "1-based.",
+            "en": "1-based."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Niet-gelijk operator?",
+            "en": "Not-equal operator?"
+          },
+          "fill": [
+            "~="
+          ],
+          "why": {
+            "nl": "~=.",
+            "en": "~=."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "nil falsy?",
+            "en": "nil falsy?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "alleen 0",
+              "error"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "0 only",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Yes.",
+            "en": "Yes."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "0 truthy in Lua?",
+            "en": "0 truthy in Lua?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "error",
+              "nil"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "error",
+              "nil"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Only false/nil falsy.",
+            "en": "Only false/nil falsy."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: function zonder end",
+            "en": "Spot: function without end"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "mist end",
+              "print fout",
+              "local fout"
+            ],
+            "en": [
+              "ok",
+              "missing end",
+              "print wrong",
+              "local wrong"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Need end.",
+            "en": "Need end."
+          },
+          "code": "function f() print(1)"
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Comment prefix?",
+            "en": "Comment prefix?"
+          },
+          "fill": [
+            "--"
+          ],
+          "why": {
+            "nl": "--.",
+            "en": "--."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "elseif spelling?",
+            "en": "elseif spelling?"
+          },
+          "choices": {
+            "nl": [
+              "elif",
+              "elseif",
+              "else if",
+              "elsif"
+            ],
+            "en": [
+              "elif",
+              "elseif",
+              "else if",
+              "elsif"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "elseif.",
+            "en": "elseif."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "# 'abc'?",
+            "en": "# 'abc'?"
+          },
+          "choices": {
+            "nl": [
+              "hash",
+              "3",
+              "error",
+              "0"
+            ],
+            "en": [
+              "hash",
+              "3",
+              "error",
+              "0"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Length 3.",
+            "en": "Length 3."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "pairs vs ipairs?",
+            "en": "pairs vs ipairs?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "ipairs array-achtig",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "same",
+              "ipairs array-like",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Difference.",
+            "en": "Difference."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword functie?",
+            "en": "Function keyword?"
+          },
+          "fill": [
+            "function"
+          ],
+          "why": {
+            "nl": "function.",
+            "en": "function."
           }
         }
       ]
@@ -1113,6 +3138,734 @@
         "nl": "Origineel.",
         "en": "Original."
       }
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 1] nums[1] bij {10,20}?",
+        "en": "[Pool 1] nums[1] for {10,20}?"
+      },
+      "choices": {
+        "nl": [
+          "20",
+          "10",
+          "nil",
+          "error"
+        ],
+        "en": [
+          "20",
+          "10",
+          "nil",
+          "error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "1-based.",
+        "en": "1-based."
+      },
+      "id": 21
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 2] Niet-gelijk operator?",
+        "en": "[Pool 2] Not-equal operator?"
+      },
+      "fill": [
+        "~="
+      ],
+      "why": {
+        "nl": "~=.",
+        "en": "~=."
+      },
+      "id": 22
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 3] nil falsy?",
+        "en": "[Pool 3] nil falsy?"
+      },
+      "choices": {
+        "nl": [
+          "nee",
+          "ja",
+          "alleen 0",
+          "error"
+        ],
+        "en": [
+          "no",
+          "yes",
+          "0 only",
+          "error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Yes.",
+        "en": "Yes."
+      },
+      "id": 23
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 4] 0 truthy in Lua?",
+        "en": "[Pool 4] 0 truthy in Lua?"
+      },
+      "choices": {
+        "nl": [
+          "nee",
+          "ja",
+          "error",
+          "nil"
+        ],
+        "en": [
+          "no",
+          "yes",
+          "error",
+          "nil"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Only false/nil falsy.",
+        "en": "Only false/nil falsy."
+      },
+      "id": 24
+    },
+    {
+      "type": "bug",
+      "q": {
+        "nl": "[Pool 5] Spot: function zonder end",
+        "en": "[Pool 5] Spot: function without end"
+      },
+      "choices": {
+        "nl": [
+          "ok",
+          "mist end",
+          "print fout",
+          "local fout"
+        ],
+        "en": [
+          "ok",
+          "missing end",
+          "print wrong",
+          "local wrong"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Need end.",
+        "en": "Need end."
+      },
+      "code": "function f() print(1)",
+      "id": 25
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 6] Comment prefix?",
+        "en": "[Pool 6] Comment prefix?"
+      },
+      "fill": [
+        "--"
+      ],
+      "why": {
+        "nl": "--.",
+        "en": "--."
+      },
+      "id": 26
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 7] elseif spelling?",
+        "en": "[Pool 7] elseif spelling?"
+      },
+      "choices": {
+        "nl": [
+          "elif",
+          "elseif",
+          "else if",
+          "elsif"
+        ],
+        "en": [
+          "elif",
+          "elseif",
+          "else if",
+          "elsif"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "elseif.",
+        "en": "elseif."
+      },
+      "id": 27
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 8] # 'abc'?",
+        "en": "[Pool 8] # 'abc'?"
+      },
+      "choices": {
+        "nl": [
+          "hash",
+          "3",
+          "error",
+          "0"
+        ],
+        "en": [
+          "hash",
+          "3",
+          "error",
+          "0"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Length 3.",
+        "en": "Length 3."
+      },
+      "id": 28
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 9] pairs vs ipairs?",
+        "en": "[Pool 9] pairs vs ipairs?"
+      },
+      "choices": {
+        "nl": [
+          "zelfde",
+          "ipairs array-achtig",
+          "SQL",
+          "CSS"
+        ],
+        "en": [
+          "same",
+          "ipairs array-like",
+          "SQL",
+          "CSS"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Difference.",
+        "en": "Difference."
+      },
+      "id": 29
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 10] Keyword functie?",
+        "en": "[Pool 10] Function keyword?"
+      },
+      "fill": [
+        "function"
+      ],
+      "why": {
+        "nl": "function.",
+        "en": "function."
+      },
+      "id": 30
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 11] true and false?",
+        "en": "[Pool 11] true and false?"
+      },
+      "choices": {
+        "nl": [
+          "true",
+          "false",
+          "nil",
+          "error"
+        ],
+        "en": [
+          "true",
+          "false",
+          "nil",
+          "error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "false.",
+        "en": "false."
+      },
+      "id": 31
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 12] local waarom?",
+        "en": "[Pool 12] why local?"
+      },
+      "choices": {
+        "nl": [
+          "mooier",
+          "betere scope",
+          "verwijdert nil",
+          "Roblox only"
+        ],
+        "en": [
+          "prettier",
+          "better scope",
+          "removes nil",
+          "Roblox only"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Scope.",
+        "en": "Scope."
+      },
+      "id": 32
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 13] table.insert?",
+        "en": "[Pool 13] table.insert?"
+      },
+      "choices": {
+        "nl": [
+          "SQL",
+          "voeg element toe",
+          "CSS",
+          "compile"
+        ],
+        "en": [
+          "SQL",
+          "insert element",
+          "CSS",
+          "compile"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Insert.",
+        "en": "Insert."
+      },
+      "id": 33
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 14] pcall vangt?",
+        "en": "[Pool 14] pcall catches?"
+      },
+      "choices": {
+        "nl": [
+          "CSS",
+          "errors in call",
+          "SQL",
+          "nil forever"
+        ],
+        "en": [
+          "CSS",
+          "errors in call",
+          "SQL",
+          "nil forever"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Protected.",
+        "en": "Protected."
+      },
+      "id": 34
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 15] nums[1] bij {10,20}?",
+        "en": "[Pool 15] nums[1] for {10,20}?"
+      },
+      "choices": {
+        "nl": [
+          "20",
+          "10",
+          "nil",
+          "error"
+        ],
+        "en": [
+          "20",
+          "10",
+          "nil",
+          "error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "1-based.",
+        "en": "1-based."
+      },
+      "id": 35
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 16] Niet-gelijk operator?",
+        "en": "[Pool 16] Not-equal operator?"
+      },
+      "fill": [
+        "~="
+      ],
+      "why": {
+        "nl": "~=.",
+        "en": "~=."
+      },
+      "id": 36
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 17] nil falsy?",
+        "en": "[Pool 17] nil falsy?"
+      },
+      "choices": {
+        "nl": [
+          "nee",
+          "ja",
+          "alleen 0",
+          "error"
+        ],
+        "en": [
+          "no",
+          "yes",
+          "0 only",
+          "error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Yes.",
+        "en": "Yes."
+      },
+      "id": 37
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 18] 0 truthy in Lua?",
+        "en": "[Pool 18] 0 truthy in Lua?"
+      },
+      "choices": {
+        "nl": [
+          "nee",
+          "ja",
+          "error",
+          "nil"
+        ],
+        "en": [
+          "no",
+          "yes",
+          "error",
+          "nil"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Only false/nil falsy.",
+        "en": "Only false/nil falsy."
+      },
+      "id": 38
+    },
+    {
+      "type": "bug",
+      "q": {
+        "nl": "[Pool 19] Spot: function zonder end",
+        "en": "[Pool 19] Spot: function without end"
+      },
+      "choices": {
+        "nl": [
+          "ok",
+          "mist end",
+          "print fout",
+          "local fout"
+        ],
+        "en": [
+          "ok",
+          "missing end",
+          "print wrong",
+          "local wrong"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Need end.",
+        "en": "Need end."
+      },
+      "code": "function f() print(1)",
+      "id": 39
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 20] Comment prefix?",
+        "en": "[Pool 20] Comment prefix?"
+      },
+      "fill": [
+        "--"
+      ],
+      "why": {
+        "nl": "--.",
+        "en": "--."
+      },
+      "id": 40
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 21] elseif spelling?",
+        "en": "[Pool 21] elseif spelling?"
+      },
+      "choices": {
+        "nl": [
+          "elif",
+          "elseif",
+          "else if",
+          "elsif"
+        ],
+        "en": [
+          "elif",
+          "elseif",
+          "else if",
+          "elsif"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "elseif.",
+        "en": "elseif."
+      },
+      "id": 41
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 22] # 'abc'?",
+        "en": "[Pool 22] # 'abc'?"
+      },
+      "choices": {
+        "nl": [
+          "hash",
+          "3",
+          "error",
+          "0"
+        ],
+        "en": [
+          "hash",
+          "3",
+          "error",
+          "0"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Length 3.",
+        "en": "Length 3."
+      },
+      "id": 42
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 23] pairs vs ipairs?",
+        "en": "[Pool 23] pairs vs ipairs?"
+      },
+      "choices": {
+        "nl": [
+          "zelfde",
+          "ipairs array-achtig",
+          "SQL",
+          "CSS"
+        ],
+        "en": [
+          "same",
+          "ipairs array-like",
+          "SQL",
+          "CSS"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Difference.",
+        "en": "Difference."
+      },
+      "id": 43
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 24] Keyword functie?",
+        "en": "[Pool 24] Function keyword?"
+      },
+      "fill": [
+        "function"
+      ],
+      "why": {
+        "nl": "function.",
+        "en": "function."
+      },
+      "id": 44
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 25] true and false?",
+        "en": "[Pool 25] true and false?"
+      },
+      "choices": {
+        "nl": [
+          "true",
+          "false",
+          "nil",
+          "error"
+        ],
+        "en": [
+          "true",
+          "false",
+          "nil",
+          "error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "false.",
+        "en": "false."
+      },
+      "id": 45
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 26] local waarom?",
+        "en": "[Pool 26] why local?"
+      },
+      "choices": {
+        "nl": [
+          "mooier",
+          "betere scope",
+          "verwijdert nil",
+          "Roblox only"
+        ],
+        "en": [
+          "prettier",
+          "better scope",
+          "removes nil",
+          "Roblox only"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Scope.",
+        "en": "Scope."
+      },
+      "id": 46
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 27] table.insert?",
+        "en": "[Pool 27] table.insert?"
+      },
+      "choices": {
+        "nl": [
+          "SQL",
+          "voeg element toe",
+          "CSS",
+          "compile"
+        ],
+        "en": [
+          "SQL",
+          "insert element",
+          "CSS",
+          "compile"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Insert.",
+        "en": "Insert."
+      },
+      "id": 47
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 28] pcall vangt?",
+        "en": "[Pool 28] pcall catches?"
+      },
+      "choices": {
+        "nl": [
+          "CSS",
+          "errors in call",
+          "SQL",
+          "nil forever"
+        ],
+        "en": [
+          "CSS",
+          "errors in call",
+          "SQL",
+          "nil forever"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Protected.",
+        "en": "Protected."
+      },
+      "id": 48
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 29] nums[1] bij {10,20}?",
+        "en": "[Pool 29] nums[1] for {10,20}?"
+      },
+      "choices": {
+        "nl": [
+          "20",
+          "10",
+          "nil",
+          "error"
+        ],
+        "en": [
+          "20",
+          "10",
+          "nil",
+          "error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "1-based.",
+        "en": "1-based."
+      },
+      "id": 49
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 30] Niet-gelijk operator?",
+        "en": "[Pool 30] Not-equal operator?"
+      },
+      "fill": [
+        "~="
+      ],
+      "why": {
+        "nl": "~=.",
+        "en": "~=."
+      },
+      "id": 50
     }
   ],
   "challenges": [
@@ -1154,6 +3907,7 @@
         }
       ]
     }
-  ]
+  ],
+  "examDraw": 25
 };
 })(window);

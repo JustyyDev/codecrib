@@ -71,6 +71,244 @@
             "nl": "In de browser.",
             "en": "In the browser."
           }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "console.log(2+3)?",
+            "en": "console.log(2+3)?"
+          },
+          "choices": {
+            "nl": [
+              "23",
+              "5",
+              "undefined",
+              "NaN"
+            ],
+            "en": [
+              "23",
+              "5",
+              "undefined",
+              "NaN"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "5.",
+            "en": "5."
+          },
+          "code": "console.log(2+3)"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "=== vs ==?",
+            "en": "=== vs ==?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "=== is streng",
+              "== verboden",
+              "alleen strings"
+            ],
+            "en": [
+              "same",
+              "=== is strict",
+              "== forbidden",
+              "strings only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Strict.",
+            "en": "Strict."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword constante?",
+            "en": "Constant keyword?"
+          },
+          "fill": [
+            "const"
+          ],
+          "why": {
+            "nl": "const.",
+            "en": "const."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "typeof null?",
+            "en": "typeof null?"
+          },
+          "choices": {
+            "nl": [
+              "null",
+              "object",
+              "undefined",
+              "number"
+            ],
+            "en": [
+              "null",
+              "object",
+              "undefined",
+              "number"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Quirk.",
+            "en": "Quirk."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot bug: const x; x=1",
+            "en": "Spot bug: const x; x=1"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "const regels breken dit",
+              "1 fout",
+              "semicolon"
+            ],
+            "en": [
+              "ok",
+              "const rules break this",
+              "1 wrong",
+              "semicolon"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "const rules.",
+            "en": "const rules."
+          },
+          "code": "const x;\nx = 1;"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "Array.isArray([])?",
+            "en": "Array.isArray([])?"
+          },
+          "choices": {
+            "nl": [
+              "false",
+              "true",
+              "null",
+              "error"
+            ],
+            "en": [
+              "false",
+              "true",
+              "null",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "true.",
+            "en": "true."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Strict equality operator?",
+            "en": "Strict equality operator?"
+          },
+          "fill": [
+            "==="
+          ],
+          "why": {
+            "nl": "===.",
+            "en": "===."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "let scope?",
+            "en": "let scope?"
+          },
+          "choices": {
+            "nl": [
+              "function only always",
+              "block scope",
+              "geen scope",
+              "global only"
+            ],
+            "en": [
+              "function only always",
+              "block scope",
+              "no scope",
+              "global only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Block.",
+            "en": "Block."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "'5'+1?",
+            "en": "'5'+1?"
+          },
+          "choices": {
+            "nl": [
+              "6",
+              "51",
+              "error",
+              "NaN"
+            ],
+            "en": [
+              "6",
+              "51",
+              "error",
+              "NaN"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Concat.",
+            "en": "Concat."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "NaN===NaN?",
+            "en": "NaN===NaN?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "false",
+              "1",
+              "error"
+            ],
+            "en": [
+              "true",
+              "false",
+              "1",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "false.",
+            "en": "false."
+          }
         }
       ],
       "exercise": {
@@ -148,6 +386,244 @@
             "nl": "Mag niet herbinden.",
             "en": "Cannot rebind."
           }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "console.log(2+3)?",
+            "en": "console.log(2+3)?"
+          },
+          "choices": {
+            "nl": [
+              "23",
+              "5",
+              "undefined",
+              "NaN"
+            ],
+            "en": [
+              "23",
+              "5",
+              "undefined",
+              "NaN"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "5.",
+            "en": "5."
+          },
+          "code": "console.log(2+3)"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "=== vs ==?",
+            "en": "=== vs ==?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "=== is streng",
+              "== verboden",
+              "alleen strings"
+            ],
+            "en": [
+              "same",
+              "=== is strict",
+              "== forbidden",
+              "strings only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Strict.",
+            "en": "Strict."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword constante?",
+            "en": "Constant keyword?"
+          },
+          "fill": [
+            "const"
+          ],
+          "why": {
+            "nl": "const.",
+            "en": "const."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "typeof null?",
+            "en": "typeof null?"
+          },
+          "choices": {
+            "nl": [
+              "null",
+              "object",
+              "undefined",
+              "number"
+            ],
+            "en": [
+              "null",
+              "object",
+              "undefined",
+              "number"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Quirk.",
+            "en": "Quirk."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot bug: const x; x=1",
+            "en": "Spot bug: const x; x=1"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "const regels breken dit",
+              "1 fout",
+              "semicolon"
+            ],
+            "en": [
+              "ok",
+              "const rules break this",
+              "1 wrong",
+              "semicolon"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "const rules.",
+            "en": "const rules."
+          },
+          "code": "const x;\nx = 1;"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "Array.isArray([])?",
+            "en": "Array.isArray([])?"
+          },
+          "choices": {
+            "nl": [
+              "false",
+              "true",
+              "null",
+              "error"
+            ],
+            "en": [
+              "false",
+              "true",
+              "null",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "true.",
+            "en": "true."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Strict equality operator?",
+            "en": "Strict equality operator?"
+          },
+          "fill": [
+            "==="
+          ],
+          "why": {
+            "nl": "===.",
+            "en": "===."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "let scope?",
+            "en": "let scope?"
+          },
+          "choices": {
+            "nl": [
+              "function only always",
+              "block scope",
+              "geen scope",
+              "global only"
+            ],
+            "en": [
+              "function only always",
+              "block scope",
+              "no scope",
+              "global only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Block.",
+            "en": "Block."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "'5'+1?",
+            "en": "'5'+1?"
+          },
+          "choices": {
+            "nl": [
+              "6",
+              "51",
+              "error",
+              "NaN"
+            ],
+            "en": [
+              "6",
+              "51",
+              "error",
+              "NaN"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Concat.",
+            "en": "Concat."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "NaN===NaN?",
+            "en": "NaN===NaN?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "false",
+              "1",
+              "error"
+            ],
+            "en": [
+              "true",
+              "false",
+              "1",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "false.",
+            "en": "false."
+          }
         }
       ]
     },
@@ -210,6 +686,244 @@
           "why": {
             "nl": "Ja.",
             "en": "Yes."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "console.log(2+3)?",
+            "en": "console.log(2+3)?"
+          },
+          "choices": {
+            "nl": [
+              "23",
+              "5",
+              "undefined",
+              "NaN"
+            ],
+            "en": [
+              "23",
+              "5",
+              "undefined",
+              "NaN"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "5.",
+            "en": "5."
+          },
+          "code": "console.log(2+3)"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "=== vs ==?",
+            "en": "=== vs ==?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "=== is streng",
+              "== verboden",
+              "alleen strings"
+            ],
+            "en": [
+              "same",
+              "=== is strict",
+              "== forbidden",
+              "strings only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Strict.",
+            "en": "Strict."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword constante?",
+            "en": "Constant keyword?"
+          },
+          "fill": [
+            "const"
+          ],
+          "why": {
+            "nl": "const.",
+            "en": "const."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "typeof null?",
+            "en": "typeof null?"
+          },
+          "choices": {
+            "nl": [
+              "null",
+              "object",
+              "undefined",
+              "number"
+            ],
+            "en": [
+              "null",
+              "object",
+              "undefined",
+              "number"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Quirk.",
+            "en": "Quirk."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot bug: const x; x=1",
+            "en": "Spot bug: const x; x=1"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "const regels breken dit",
+              "1 fout",
+              "semicolon"
+            ],
+            "en": [
+              "ok",
+              "const rules break this",
+              "1 wrong",
+              "semicolon"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "const rules.",
+            "en": "const rules."
+          },
+          "code": "const x;\nx = 1;"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "Array.isArray([])?",
+            "en": "Array.isArray([])?"
+          },
+          "choices": {
+            "nl": [
+              "false",
+              "true",
+              "null",
+              "error"
+            ],
+            "en": [
+              "false",
+              "true",
+              "null",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "true.",
+            "en": "true."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Strict equality operator?",
+            "en": "Strict equality operator?"
+          },
+          "fill": [
+            "==="
+          ],
+          "why": {
+            "nl": "===.",
+            "en": "===."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "let scope?",
+            "en": "let scope?"
+          },
+          "choices": {
+            "nl": [
+              "function only always",
+              "block scope",
+              "geen scope",
+              "global only"
+            ],
+            "en": [
+              "function only always",
+              "block scope",
+              "no scope",
+              "global only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Block.",
+            "en": "Block."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "'5'+1?",
+            "en": "'5'+1?"
+          },
+          "choices": {
+            "nl": [
+              "6",
+              "51",
+              "error",
+              "NaN"
+            ],
+            "en": [
+              "6",
+              "51",
+              "error",
+              "NaN"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Concat.",
+            "en": "Concat."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "NaN===NaN?",
+            "en": "NaN===NaN?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "false",
+              "1",
+              "error"
+            ],
+            "en": [
+              "true",
+              "false",
+              "1",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "false.",
+            "en": "false."
           }
         }
       ]
@@ -274,6 +988,244 @@
             "nl": "Iterable values.",
             "en": "Iterable values."
           }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "console.log(2+3)?",
+            "en": "console.log(2+3)?"
+          },
+          "choices": {
+            "nl": [
+              "23",
+              "5",
+              "undefined",
+              "NaN"
+            ],
+            "en": [
+              "23",
+              "5",
+              "undefined",
+              "NaN"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "5.",
+            "en": "5."
+          },
+          "code": "console.log(2+3)"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "=== vs ==?",
+            "en": "=== vs ==?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "=== is streng",
+              "== verboden",
+              "alleen strings"
+            ],
+            "en": [
+              "same",
+              "=== is strict",
+              "== forbidden",
+              "strings only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Strict.",
+            "en": "Strict."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword constante?",
+            "en": "Constant keyword?"
+          },
+          "fill": [
+            "const"
+          ],
+          "why": {
+            "nl": "const.",
+            "en": "const."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "typeof null?",
+            "en": "typeof null?"
+          },
+          "choices": {
+            "nl": [
+              "null",
+              "object",
+              "undefined",
+              "number"
+            ],
+            "en": [
+              "null",
+              "object",
+              "undefined",
+              "number"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Quirk.",
+            "en": "Quirk."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot bug: const x; x=1",
+            "en": "Spot bug: const x; x=1"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "const regels breken dit",
+              "1 fout",
+              "semicolon"
+            ],
+            "en": [
+              "ok",
+              "const rules break this",
+              "1 wrong",
+              "semicolon"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "const rules.",
+            "en": "const rules."
+          },
+          "code": "const x;\nx = 1;"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "Array.isArray([])?",
+            "en": "Array.isArray([])?"
+          },
+          "choices": {
+            "nl": [
+              "false",
+              "true",
+              "null",
+              "error"
+            ],
+            "en": [
+              "false",
+              "true",
+              "null",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "true.",
+            "en": "true."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Strict equality operator?",
+            "en": "Strict equality operator?"
+          },
+          "fill": [
+            "==="
+          ],
+          "why": {
+            "nl": "===.",
+            "en": "===."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "let scope?",
+            "en": "let scope?"
+          },
+          "choices": {
+            "nl": [
+              "function only always",
+              "block scope",
+              "geen scope",
+              "global only"
+            ],
+            "en": [
+              "function only always",
+              "block scope",
+              "no scope",
+              "global only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Block.",
+            "en": "Block."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "'5'+1?",
+            "en": "'5'+1?"
+          },
+          "choices": {
+            "nl": [
+              "6",
+              "51",
+              "error",
+              "NaN"
+            ],
+            "en": [
+              "6",
+              "51",
+              "error",
+              "NaN"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Concat.",
+            "en": "Concat."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "NaN===NaN?",
+            "en": "NaN===NaN?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "false",
+              "1",
+              "error"
+            ],
+            "en": [
+              "true",
+              "false",
+              "1",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "false.",
+            "en": "false."
+          }
         }
       ]
     },
@@ -336,6 +1288,244 @@
           "why": {
             "nl": "100.",
             "en": "100."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "console.log(2+3)?",
+            "en": "console.log(2+3)?"
+          },
+          "choices": {
+            "nl": [
+              "23",
+              "5",
+              "undefined",
+              "NaN"
+            ],
+            "en": [
+              "23",
+              "5",
+              "undefined",
+              "NaN"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "5.",
+            "en": "5."
+          },
+          "code": "console.log(2+3)"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "=== vs ==?",
+            "en": "=== vs ==?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "=== is streng",
+              "== verboden",
+              "alleen strings"
+            ],
+            "en": [
+              "same",
+              "=== is strict",
+              "== forbidden",
+              "strings only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Strict.",
+            "en": "Strict."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword constante?",
+            "en": "Constant keyword?"
+          },
+          "fill": [
+            "const"
+          ],
+          "why": {
+            "nl": "const.",
+            "en": "const."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "typeof null?",
+            "en": "typeof null?"
+          },
+          "choices": {
+            "nl": [
+              "null",
+              "object",
+              "undefined",
+              "number"
+            ],
+            "en": [
+              "null",
+              "object",
+              "undefined",
+              "number"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Quirk.",
+            "en": "Quirk."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot bug: const x; x=1",
+            "en": "Spot bug: const x; x=1"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "const regels breken dit",
+              "1 fout",
+              "semicolon"
+            ],
+            "en": [
+              "ok",
+              "const rules break this",
+              "1 wrong",
+              "semicolon"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "const rules.",
+            "en": "const rules."
+          },
+          "code": "const x;\nx = 1;"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "Array.isArray([])?",
+            "en": "Array.isArray([])?"
+          },
+          "choices": {
+            "nl": [
+              "false",
+              "true",
+              "null",
+              "error"
+            ],
+            "en": [
+              "false",
+              "true",
+              "null",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "true.",
+            "en": "true."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Strict equality operator?",
+            "en": "Strict equality operator?"
+          },
+          "fill": [
+            "==="
+          ],
+          "why": {
+            "nl": "===.",
+            "en": "===."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "let scope?",
+            "en": "let scope?"
+          },
+          "choices": {
+            "nl": [
+              "function only always",
+              "block scope",
+              "geen scope",
+              "global only"
+            ],
+            "en": [
+              "function only always",
+              "block scope",
+              "no scope",
+              "global only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Block.",
+            "en": "Block."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "'5'+1?",
+            "en": "'5'+1?"
+          },
+          "choices": {
+            "nl": [
+              "6",
+              "51",
+              "error",
+              "NaN"
+            ],
+            "en": [
+              "6",
+              "51",
+              "error",
+              "NaN"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Concat.",
+            "en": "Concat."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "NaN===NaN?",
+            "en": "NaN===NaN?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "false",
+              "1",
+              "error"
+            ],
+            "en": [
+              "true",
+              "false",
+              "1",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "false.",
+            "en": "false."
           }
         }
       ]
@@ -400,6 +1590,244 @@
             "nl": "5.",
             "en": "5."
           }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "console.log(2+3)?",
+            "en": "console.log(2+3)?"
+          },
+          "choices": {
+            "nl": [
+              "23",
+              "5",
+              "undefined",
+              "NaN"
+            ],
+            "en": [
+              "23",
+              "5",
+              "undefined",
+              "NaN"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "5.",
+            "en": "5."
+          },
+          "code": "console.log(2+3)"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "=== vs ==?",
+            "en": "=== vs ==?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "=== is streng",
+              "== verboden",
+              "alleen strings"
+            ],
+            "en": [
+              "same",
+              "=== is strict",
+              "== forbidden",
+              "strings only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Strict.",
+            "en": "Strict."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword constante?",
+            "en": "Constant keyword?"
+          },
+          "fill": [
+            "const"
+          ],
+          "why": {
+            "nl": "const.",
+            "en": "const."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "typeof null?",
+            "en": "typeof null?"
+          },
+          "choices": {
+            "nl": [
+              "null",
+              "object",
+              "undefined",
+              "number"
+            ],
+            "en": [
+              "null",
+              "object",
+              "undefined",
+              "number"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Quirk.",
+            "en": "Quirk."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot bug: const x; x=1",
+            "en": "Spot bug: const x; x=1"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "const regels breken dit",
+              "1 fout",
+              "semicolon"
+            ],
+            "en": [
+              "ok",
+              "const rules break this",
+              "1 wrong",
+              "semicolon"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "const rules.",
+            "en": "const rules."
+          },
+          "code": "const x;\nx = 1;"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "Array.isArray([])?",
+            "en": "Array.isArray([])?"
+          },
+          "choices": {
+            "nl": [
+              "false",
+              "true",
+              "null",
+              "error"
+            ],
+            "en": [
+              "false",
+              "true",
+              "null",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "true.",
+            "en": "true."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Strict equality operator?",
+            "en": "Strict equality operator?"
+          },
+          "fill": [
+            "==="
+          ],
+          "why": {
+            "nl": "===.",
+            "en": "===."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "let scope?",
+            "en": "let scope?"
+          },
+          "choices": {
+            "nl": [
+              "function only always",
+              "block scope",
+              "geen scope",
+              "global only"
+            ],
+            "en": [
+              "function only always",
+              "block scope",
+              "no scope",
+              "global only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Block.",
+            "en": "Block."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "'5'+1?",
+            "en": "'5'+1?"
+          },
+          "choices": {
+            "nl": [
+              "6",
+              "51",
+              "error",
+              "NaN"
+            ],
+            "en": [
+              "6",
+              "51",
+              "error",
+              "NaN"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Concat.",
+            "en": "Concat."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "NaN===NaN?",
+            "en": "NaN===NaN?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "false",
+              "1",
+              "error"
+            ],
+            "en": [
+              "true",
+              "false",
+              "1",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "false.",
+            "en": "false."
+          }
         }
       ]
     },
@@ -462,6 +1890,244 @@
           "why": {
             "nl": "Throws.",
             "en": "Throws."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "console.log(2+3)?",
+            "en": "console.log(2+3)?"
+          },
+          "choices": {
+            "nl": [
+              "23",
+              "5",
+              "undefined",
+              "NaN"
+            ],
+            "en": [
+              "23",
+              "5",
+              "undefined",
+              "NaN"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "5.",
+            "en": "5."
+          },
+          "code": "console.log(2+3)"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "=== vs ==?",
+            "en": "=== vs ==?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "=== is streng",
+              "== verboden",
+              "alleen strings"
+            ],
+            "en": [
+              "same",
+              "=== is strict",
+              "== forbidden",
+              "strings only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Strict.",
+            "en": "Strict."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword constante?",
+            "en": "Constant keyword?"
+          },
+          "fill": [
+            "const"
+          ],
+          "why": {
+            "nl": "const.",
+            "en": "const."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "typeof null?",
+            "en": "typeof null?"
+          },
+          "choices": {
+            "nl": [
+              "null",
+              "object",
+              "undefined",
+              "number"
+            ],
+            "en": [
+              "null",
+              "object",
+              "undefined",
+              "number"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Quirk.",
+            "en": "Quirk."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot bug: const x; x=1",
+            "en": "Spot bug: const x; x=1"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "const regels breken dit",
+              "1 fout",
+              "semicolon"
+            ],
+            "en": [
+              "ok",
+              "const rules break this",
+              "1 wrong",
+              "semicolon"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "const rules.",
+            "en": "const rules."
+          },
+          "code": "const x;\nx = 1;"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "Array.isArray([])?",
+            "en": "Array.isArray([])?"
+          },
+          "choices": {
+            "nl": [
+              "false",
+              "true",
+              "null",
+              "error"
+            ],
+            "en": [
+              "false",
+              "true",
+              "null",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "true.",
+            "en": "true."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Strict equality operator?",
+            "en": "Strict equality operator?"
+          },
+          "fill": [
+            "==="
+          ],
+          "why": {
+            "nl": "===.",
+            "en": "===."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "let scope?",
+            "en": "let scope?"
+          },
+          "choices": {
+            "nl": [
+              "function only always",
+              "block scope",
+              "geen scope",
+              "global only"
+            ],
+            "en": [
+              "function only always",
+              "block scope",
+              "no scope",
+              "global only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Block.",
+            "en": "Block."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "'5'+1?",
+            "en": "'5'+1?"
+          },
+          "choices": {
+            "nl": [
+              "6",
+              "51",
+              "error",
+              "NaN"
+            ],
+            "en": [
+              "6",
+              "51",
+              "error",
+              "NaN"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Concat.",
+            "en": "Concat."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "NaN===NaN?",
+            "en": "NaN===NaN?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "false",
+              "1",
+              "error"
+            ],
+            "en": [
+              "true",
+              "false",
+              "1",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "false.",
+            "en": "false."
           }
         }
       ]
@@ -526,6 +2192,244 @@
             "nl": "Tekst.",
             "en": "Text."
           }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "console.log(2+3)?",
+            "en": "console.log(2+3)?"
+          },
+          "choices": {
+            "nl": [
+              "23",
+              "5",
+              "undefined",
+              "NaN"
+            ],
+            "en": [
+              "23",
+              "5",
+              "undefined",
+              "NaN"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "5.",
+            "en": "5."
+          },
+          "code": "console.log(2+3)"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "=== vs ==?",
+            "en": "=== vs ==?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "=== is streng",
+              "== verboden",
+              "alleen strings"
+            ],
+            "en": [
+              "same",
+              "=== is strict",
+              "== forbidden",
+              "strings only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Strict.",
+            "en": "Strict."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword constante?",
+            "en": "Constant keyword?"
+          },
+          "fill": [
+            "const"
+          ],
+          "why": {
+            "nl": "const.",
+            "en": "const."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "typeof null?",
+            "en": "typeof null?"
+          },
+          "choices": {
+            "nl": [
+              "null",
+              "object",
+              "undefined",
+              "number"
+            ],
+            "en": [
+              "null",
+              "object",
+              "undefined",
+              "number"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Quirk.",
+            "en": "Quirk."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot bug: const x; x=1",
+            "en": "Spot bug: const x; x=1"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "const regels breken dit",
+              "1 fout",
+              "semicolon"
+            ],
+            "en": [
+              "ok",
+              "const rules break this",
+              "1 wrong",
+              "semicolon"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "const rules.",
+            "en": "const rules."
+          },
+          "code": "const x;\nx = 1;"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "Array.isArray([])?",
+            "en": "Array.isArray([])?"
+          },
+          "choices": {
+            "nl": [
+              "false",
+              "true",
+              "null",
+              "error"
+            ],
+            "en": [
+              "false",
+              "true",
+              "null",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "true.",
+            "en": "true."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Strict equality operator?",
+            "en": "Strict equality operator?"
+          },
+          "fill": [
+            "==="
+          ],
+          "why": {
+            "nl": "===.",
+            "en": "===."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "let scope?",
+            "en": "let scope?"
+          },
+          "choices": {
+            "nl": [
+              "function only always",
+              "block scope",
+              "geen scope",
+              "global only"
+            ],
+            "en": [
+              "function only always",
+              "block scope",
+              "no scope",
+              "global only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Block.",
+            "en": "Block."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "'5'+1?",
+            "en": "'5'+1?"
+          },
+          "choices": {
+            "nl": [
+              "6",
+              "51",
+              "error",
+              "NaN"
+            ],
+            "en": [
+              "6",
+              "51",
+              "error",
+              "NaN"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Concat.",
+            "en": "Concat."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "NaN===NaN?",
+            "en": "NaN===NaN?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "false",
+              "1",
+              "error"
+            ],
+            "en": [
+              "true",
+              "false",
+              "1",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "false.",
+            "en": "false."
+          }
         }
       ]
     },
@@ -589,6 +2493,244 @@
             "nl": "+1.",
             "en": "+1."
           }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "console.log(2+3)?",
+            "en": "console.log(2+3)?"
+          },
+          "choices": {
+            "nl": [
+              "23",
+              "5",
+              "undefined",
+              "NaN"
+            ],
+            "en": [
+              "23",
+              "5",
+              "undefined",
+              "NaN"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "5.",
+            "en": "5."
+          },
+          "code": "console.log(2+3)"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "=== vs ==?",
+            "en": "=== vs ==?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "=== is streng",
+              "== verboden",
+              "alleen strings"
+            ],
+            "en": [
+              "same",
+              "=== is strict",
+              "== forbidden",
+              "strings only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Strict.",
+            "en": "Strict."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword constante?",
+            "en": "Constant keyword?"
+          },
+          "fill": [
+            "const"
+          ],
+          "why": {
+            "nl": "const.",
+            "en": "const."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "typeof null?",
+            "en": "typeof null?"
+          },
+          "choices": {
+            "nl": [
+              "null",
+              "object",
+              "undefined",
+              "number"
+            ],
+            "en": [
+              "null",
+              "object",
+              "undefined",
+              "number"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Quirk.",
+            "en": "Quirk."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot bug: const x; x=1",
+            "en": "Spot bug: const x; x=1"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "const regels breken dit",
+              "1 fout",
+              "semicolon"
+            ],
+            "en": [
+              "ok",
+              "const rules break this",
+              "1 wrong",
+              "semicolon"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "const rules.",
+            "en": "const rules."
+          },
+          "code": "const x;\nx = 1;"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "Array.isArray([])?",
+            "en": "Array.isArray([])?"
+          },
+          "choices": {
+            "nl": [
+              "false",
+              "true",
+              "null",
+              "error"
+            ],
+            "en": [
+              "false",
+              "true",
+              "null",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "true.",
+            "en": "true."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Strict equality operator?",
+            "en": "Strict equality operator?"
+          },
+          "fill": [
+            "==="
+          ],
+          "why": {
+            "nl": "===.",
+            "en": "===."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "let scope?",
+            "en": "let scope?"
+          },
+          "choices": {
+            "nl": [
+              "function only always",
+              "block scope",
+              "geen scope",
+              "global only"
+            ],
+            "en": [
+              "function only always",
+              "block scope",
+              "no scope",
+              "global only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Block.",
+            "en": "Block."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "'5'+1?",
+            "en": "'5'+1?"
+          },
+          "choices": {
+            "nl": [
+              "6",
+              "51",
+              "error",
+              "NaN"
+            ],
+            "en": [
+              "6",
+              "51",
+              "error",
+              "NaN"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Concat.",
+            "en": "Concat."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "NaN===NaN?",
+            "en": "NaN===NaN?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "false",
+              "1",
+              "error"
+            ],
+            "en": [
+              "true",
+              "false",
+              "1",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "false.",
+            "en": "false."
+          }
         }
       ]
     },
@@ -651,6 +2793,244 @@
           "why": {
             "nl": "Draw rect.",
             "en": "Draw rect."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "console.log(2+3)?",
+            "en": "console.log(2+3)?"
+          },
+          "choices": {
+            "nl": [
+              "23",
+              "5",
+              "undefined",
+              "NaN"
+            ],
+            "en": [
+              "23",
+              "5",
+              "undefined",
+              "NaN"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "5.",
+            "en": "5."
+          },
+          "code": "console.log(2+3)"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "=== vs ==?",
+            "en": "=== vs ==?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "=== is streng",
+              "== verboden",
+              "alleen strings"
+            ],
+            "en": [
+              "same",
+              "=== is strict",
+              "== forbidden",
+              "strings only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Strict.",
+            "en": "Strict."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword constante?",
+            "en": "Constant keyword?"
+          },
+          "fill": [
+            "const"
+          ],
+          "why": {
+            "nl": "const.",
+            "en": "const."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "typeof null?",
+            "en": "typeof null?"
+          },
+          "choices": {
+            "nl": [
+              "null",
+              "object",
+              "undefined",
+              "number"
+            ],
+            "en": [
+              "null",
+              "object",
+              "undefined",
+              "number"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Quirk.",
+            "en": "Quirk."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot bug: const x; x=1",
+            "en": "Spot bug: const x; x=1"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "const regels breken dit",
+              "1 fout",
+              "semicolon"
+            ],
+            "en": [
+              "ok",
+              "const rules break this",
+              "1 wrong",
+              "semicolon"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "const rules.",
+            "en": "const rules."
+          },
+          "code": "const x;\nx = 1;"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "Array.isArray([])?",
+            "en": "Array.isArray([])?"
+          },
+          "choices": {
+            "nl": [
+              "false",
+              "true",
+              "null",
+              "error"
+            ],
+            "en": [
+              "false",
+              "true",
+              "null",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "true.",
+            "en": "true."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Strict equality operator?",
+            "en": "Strict equality operator?"
+          },
+          "fill": [
+            "==="
+          ],
+          "why": {
+            "nl": "===.",
+            "en": "===."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "let scope?",
+            "en": "let scope?"
+          },
+          "choices": {
+            "nl": [
+              "function only always",
+              "block scope",
+              "geen scope",
+              "global only"
+            ],
+            "en": [
+              "function only always",
+              "block scope",
+              "no scope",
+              "global only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Block.",
+            "en": "Block."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "'5'+1?",
+            "en": "'5'+1?"
+          },
+          "choices": {
+            "nl": [
+              "6",
+              "51",
+              "error",
+              "NaN"
+            ],
+            "en": [
+              "6",
+              "51",
+              "error",
+              "NaN"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Concat.",
+            "en": "Concat."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "NaN===NaN?",
+            "en": "NaN===NaN?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "false",
+              "1",
+              "error"
+            ],
+            "en": [
+              "true",
+              "false",
+              "1",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "false.",
+            "en": "false."
           }
         }
       ],
@@ -1190,6 +3570,749 @@
         "nl": "Origineel.",
         "en": "Original."
       }
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 1] console.log(2+3)?",
+        "en": "[Pool 1] console.log(2+3)?"
+      },
+      "choices": {
+        "nl": [
+          "23",
+          "5",
+          "undefined",
+          "NaN"
+        ],
+        "en": [
+          "23",
+          "5",
+          "undefined",
+          "NaN"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "5.",
+        "en": "5."
+      },
+      "code": "console.log(2+3)",
+      "id": 21
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 2] === vs ==?",
+        "en": "[Pool 2] === vs ==?"
+      },
+      "choices": {
+        "nl": [
+          "zelfde",
+          "=== is streng",
+          "== verboden",
+          "alleen strings"
+        ],
+        "en": [
+          "same",
+          "=== is strict",
+          "== forbidden",
+          "strings only"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Strict.",
+        "en": "Strict."
+      },
+      "id": 22
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 3] Keyword constante?",
+        "en": "[Pool 3] Constant keyword?"
+      },
+      "fill": [
+        "const"
+      ],
+      "why": {
+        "nl": "const.",
+        "en": "const."
+      },
+      "id": 23
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 4] typeof null?",
+        "en": "[Pool 4] typeof null?"
+      },
+      "choices": {
+        "nl": [
+          "null",
+          "object",
+          "undefined",
+          "number"
+        ],
+        "en": [
+          "null",
+          "object",
+          "undefined",
+          "number"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Quirk.",
+        "en": "Quirk."
+      },
+      "id": 24
+    },
+    {
+      "type": "bug",
+      "q": {
+        "nl": "[Pool 5] Spot bug: const x; x=1",
+        "en": "[Pool 5] Spot bug: const x; x=1"
+      },
+      "choices": {
+        "nl": [
+          "ok",
+          "const regels breken dit",
+          "1 fout",
+          "semicolon"
+        ],
+        "en": [
+          "ok",
+          "const rules break this",
+          "1 wrong",
+          "semicolon"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "const rules.",
+        "en": "const rules."
+      },
+      "code": "const x;\nx = 1;",
+      "id": 25
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 6] Array.isArray([])?",
+        "en": "[Pool 6] Array.isArray([])?"
+      },
+      "choices": {
+        "nl": [
+          "false",
+          "true",
+          "null",
+          "error"
+        ],
+        "en": [
+          "false",
+          "true",
+          "null",
+          "error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "true.",
+        "en": "true."
+      },
+      "id": 26
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 7] Strict equality operator?",
+        "en": "[Pool 7] Strict equality operator?"
+      },
+      "fill": [
+        "==="
+      ],
+      "why": {
+        "nl": "===.",
+        "en": "===."
+      },
+      "id": 27
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 8] let scope?",
+        "en": "[Pool 8] let scope?"
+      },
+      "choices": {
+        "nl": [
+          "function only always",
+          "block scope",
+          "geen scope",
+          "global only"
+        ],
+        "en": [
+          "function only always",
+          "block scope",
+          "no scope",
+          "global only"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Block.",
+        "en": "Block."
+      },
+      "id": 28
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 9] '5'+1?",
+        "en": "[Pool 9] '5'+1?"
+      },
+      "choices": {
+        "nl": [
+          "6",
+          "51",
+          "error",
+          "NaN"
+        ],
+        "en": [
+          "6",
+          "51",
+          "error",
+          "NaN"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Concat.",
+        "en": "Concat."
+      },
+      "id": 29
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 10] NaN===NaN?",
+        "en": "[Pool 10] NaN===NaN?"
+      },
+      "choices": {
+        "nl": [
+          "true",
+          "false",
+          "1",
+          "error"
+        ],
+        "en": [
+          "true",
+          "false",
+          "1",
+          "error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "false.",
+        "en": "false."
+      },
+      "id": 30
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 11] arrow fn symbol?",
+        "en": "[Pool 11] arrow fn symbol?"
+      },
+      "choices": {
+        "nl": [
+          "->",
+          "=>",
+          "fn",
+          "def"
+        ],
+        "en": [
+          "->",
+          "=>",
+          "fn",
+          "def"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "=>.",
+        "en": "=>."
+      },
+      "id": 31
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 12] DOM query eerste match?",
+        "en": "[Pool 12] DOM query first match?"
+      },
+      "fill": [
+        "querySelector"
+      ],
+      "why": {
+        "nl": "querySelector.",
+        "en": "querySelector."
+      },
+      "id": 32
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 13] const arr.push ok?",
+        "en": "[Pool 13] const arr.push ok?"
+      },
+      "choices": {
+        "nl": [
+          "verboden altijd",
+          "inhoud mag muteren",
+          "wordt let",
+          "error always"
+        ],
+        "en": [
+          "always forbidden",
+          "contents may mutate",
+          "becomes let",
+          "always error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Binding fixed.",
+        "en": "Binding fixed."
+      },
+      "id": 33
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 14] template literal?",
+        "en": "[Pool 14] template literal?"
+      },
+      "choices": {
+        "nl": [
+          "'Hi ${n}'",
+          "`Hi ${n}`",
+          "f'Hi'",
+          "$\"Hi\""
+        ],
+        "en": [
+          "'Hi ${n}'",
+          "`Hi ${n}`",
+          "f'Hi'",
+          "$\"Hi\""
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Backticks.",
+        "en": "Backticks."
+      },
+      "id": 34
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 15] console.log(2+3)?",
+        "en": "[Pool 15] console.log(2+3)?"
+      },
+      "choices": {
+        "nl": [
+          "23",
+          "5",
+          "undefined",
+          "NaN"
+        ],
+        "en": [
+          "23",
+          "5",
+          "undefined",
+          "NaN"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "5.",
+        "en": "5."
+      },
+      "code": "console.log(2+3)",
+      "id": 35
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 16] === vs ==?",
+        "en": "[Pool 16] === vs ==?"
+      },
+      "choices": {
+        "nl": [
+          "zelfde",
+          "=== is streng",
+          "== verboden",
+          "alleen strings"
+        ],
+        "en": [
+          "same",
+          "=== is strict",
+          "== forbidden",
+          "strings only"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Strict.",
+        "en": "Strict."
+      },
+      "id": 36
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 17] Keyword constante?",
+        "en": "[Pool 17] Constant keyword?"
+      },
+      "fill": [
+        "const"
+      ],
+      "why": {
+        "nl": "const.",
+        "en": "const."
+      },
+      "id": 37
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 18] typeof null?",
+        "en": "[Pool 18] typeof null?"
+      },
+      "choices": {
+        "nl": [
+          "null",
+          "object",
+          "undefined",
+          "number"
+        ],
+        "en": [
+          "null",
+          "object",
+          "undefined",
+          "number"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Quirk.",
+        "en": "Quirk."
+      },
+      "id": 38
+    },
+    {
+      "type": "bug",
+      "q": {
+        "nl": "[Pool 19] Spot bug: const x; x=1",
+        "en": "[Pool 19] Spot bug: const x; x=1"
+      },
+      "choices": {
+        "nl": [
+          "ok",
+          "const regels breken dit",
+          "1 fout",
+          "semicolon"
+        ],
+        "en": [
+          "ok",
+          "const rules break this",
+          "1 wrong",
+          "semicolon"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "const rules.",
+        "en": "const rules."
+      },
+      "code": "const x;\nx = 1;",
+      "id": 39
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 20] Array.isArray([])?",
+        "en": "[Pool 20] Array.isArray([])?"
+      },
+      "choices": {
+        "nl": [
+          "false",
+          "true",
+          "null",
+          "error"
+        ],
+        "en": [
+          "false",
+          "true",
+          "null",
+          "error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "true.",
+        "en": "true."
+      },
+      "id": 40
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 21] Strict equality operator?",
+        "en": "[Pool 21] Strict equality operator?"
+      },
+      "fill": [
+        "==="
+      ],
+      "why": {
+        "nl": "===.",
+        "en": "===."
+      },
+      "id": 41
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 22] let scope?",
+        "en": "[Pool 22] let scope?"
+      },
+      "choices": {
+        "nl": [
+          "function only always",
+          "block scope",
+          "geen scope",
+          "global only"
+        ],
+        "en": [
+          "function only always",
+          "block scope",
+          "no scope",
+          "global only"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Block.",
+        "en": "Block."
+      },
+      "id": 42
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 23] '5'+1?",
+        "en": "[Pool 23] '5'+1?"
+      },
+      "choices": {
+        "nl": [
+          "6",
+          "51",
+          "error",
+          "NaN"
+        ],
+        "en": [
+          "6",
+          "51",
+          "error",
+          "NaN"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Concat.",
+        "en": "Concat."
+      },
+      "id": 43
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 24] NaN===NaN?",
+        "en": "[Pool 24] NaN===NaN?"
+      },
+      "choices": {
+        "nl": [
+          "true",
+          "false",
+          "1",
+          "error"
+        ],
+        "en": [
+          "true",
+          "false",
+          "1",
+          "error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "false.",
+        "en": "false."
+      },
+      "id": 44
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 25] arrow fn symbol?",
+        "en": "[Pool 25] arrow fn symbol?"
+      },
+      "choices": {
+        "nl": [
+          "->",
+          "=>",
+          "fn",
+          "def"
+        ],
+        "en": [
+          "->",
+          "=>",
+          "fn",
+          "def"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "=>.",
+        "en": "=>."
+      },
+      "id": 45
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 26] DOM query eerste match?",
+        "en": "[Pool 26] DOM query first match?"
+      },
+      "fill": [
+        "querySelector"
+      ],
+      "why": {
+        "nl": "querySelector.",
+        "en": "querySelector."
+      },
+      "id": 46
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 27] const arr.push ok?",
+        "en": "[Pool 27] const arr.push ok?"
+      },
+      "choices": {
+        "nl": [
+          "verboden altijd",
+          "inhoud mag muteren",
+          "wordt let",
+          "error always"
+        ],
+        "en": [
+          "always forbidden",
+          "contents may mutate",
+          "becomes let",
+          "always error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Binding fixed.",
+        "en": "Binding fixed."
+      },
+      "id": 47
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 28] template literal?",
+        "en": "[Pool 28] template literal?"
+      },
+      "choices": {
+        "nl": [
+          "'Hi ${n}'",
+          "`Hi ${n}`",
+          "f'Hi'",
+          "$\"Hi\""
+        ],
+        "en": [
+          "'Hi ${n}'",
+          "`Hi ${n}`",
+          "f'Hi'",
+          "$\"Hi\""
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Backticks.",
+        "en": "Backticks."
+      },
+      "id": 48
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 29] console.log(2+3)?",
+        "en": "[Pool 29] console.log(2+3)?"
+      },
+      "choices": {
+        "nl": [
+          "23",
+          "5",
+          "undefined",
+          "NaN"
+        ],
+        "en": [
+          "23",
+          "5",
+          "undefined",
+          "NaN"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "5.",
+        "en": "5."
+      },
+      "code": "console.log(2+3)",
+      "id": 49
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 30] === vs ==?",
+        "en": "[Pool 30] === vs ==?"
+      },
+      "choices": {
+        "nl": [
+          "zelfde",
+          "=== is streng",
+          "== verboden",
+          "alleen strings"
+        ],
+        "en": [
+          "same",
+          "=== is strict",
+          "== forbidden",
+          "strings only"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Strict.",
+        "en": "Strict."
+      },
+      "id": 50
     }
   ],
   "challenges": [
@@ -1232,6 +4355,7 @@
       ],
       "starterHint": true
     }
-  ]
+  ],
+  "examDraw": 25
 };
 })(window);

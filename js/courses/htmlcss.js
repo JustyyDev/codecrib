@@ -71,6 +71,243 @@
             "nl": "Content.",
             "en": "Content."
           }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Link tag?",
+            "en": "Link tag?"
+          },
+          "fill": [
+            "a"
+          ],
+          "why": {
+            "nl": "a.",
+            "en": "a."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "CSS color?",
+            "en": "CSS color?"
+          },
+          "choices": {
+            "nl": [
+              "SQL",
+              "tekstkleur",
+              "GPU",
+              "cert"
+            ],
+            "en": [
+              "SQL",
+              "text color",
+              "GPU",
+              "cert"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Color.",
+            "en": "Color."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "display:flex?",
+            "en": "display:flex?"
+          },
+          "choices": {
+            "nl": [
+              "grid only",
+              "flexbox",
+              "SQL",
+              "C"
+            ],
+            "en": [
+              "grid only",
+              "flexbox",
+              "SQL",
+              "C"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Flex.",
+            "en": "Flex."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: <im src=x>",
+            "en": "Spot: <im src=x>"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "im->img",
+              "src always wrong",
+              "slash"
+            ],
+            "en": [
+              "ok",
+              "im->img",
+              "src always wrong",
+              "slash"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "img.",
+            "en": "img."
+          },
+          "code": "<im src='x'>"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "padding?",
+            "en": "padding?"
+          },
+          "choices": {
+            "nl": [
+              "buiten",
+              "binnenruimte",
+              "font",
+              "alt"
+            ],
+            "en": [
+              "outside",
+              "inner space",
+              "font",
+              "alt"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Padding.",
+            "en": "Padding."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "alt op img?",
+            "en": "alt on img?"
+          },
+          "choices": {
+            "nl": [
+              "altijd leeg",
+              "toegankelijke tekst",
+              "CSS",
+              "verboden"
+            ],
+            "en": [
+              "always empty",
+              "accessible text",
+              "CSS",
+              "forbidden"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Alt.",
+            "en": "Alt."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "#id?",
+            "en": "#id?"
+          },
+          "choices": {
+            "nl": [
+              "class",
+              "id",
+              "tag",
+              "pseudo"
+            ],
+            "en": [
+              "class",
+              "id",
+              "tag",
+              "pseudo"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "id.",
+            "en": "id."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Emphasis tag?",
+            "en": "Emphasis tag?"
+          },
+          "fill": [
+            "em"
+          ],
+          "why": {
+            "nl": "em.",
+            "en": "em."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "@media?",
+            "en": "@media?"
+          },
+          "choices": {
+            "nl": [
+              "SQL",
+              "responsive",
+              "Lua",
+              "C"
+            ],
+            "en": [
+              "SQL",
+              "responsive",
+              "Lua",
+              "C"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Media.",
+            "en": "Media."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "border-radius?",
+            "en": "border-radius?"
+          },
+          "choices": {
+            "nl": [
+              "SQL",
+              "afgeronde hoeken",
+              "Lua",
+              "GPU"
+            ],
+            "en": [
+              "SQL",
+              "rounded corners",
+              "Lua",
+              "GPU"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Radius.",
+            "en": "Radius."
+          }
         }
       ],
       "exercise": {
@@ -152,6 +389,243 @@
           "why": {
             "nl": "Paragraph.",
             "en": "Paragraph."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "h1 is?",
+            "en": "h1 is?"
+          },
+          "choices": {
+            "nl": [
+              "CSS",
+              "kop",
+              "SQL",
+              "Lua"
+            ],
+            "en": [
+              "CSS",
+              "heading",
+              "SQL",
+              "Lua"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Heading.",
+            "en": "Heading."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Link tag?",
+            "en": "Link tag?"
+          },
+          "fill": [
+            "a"
+          ],
+          "why": {
+            "nl": "a.",
+            "en": "a."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "CSS color?",
+            "en": "CSS color?"
+          },
+          "choices": {
+            "nl": [
+              "SQL",
+              "tekstkleur",
+              "GPU",
+              "cert"
+            ],
+            "en": [
+              "SQL",
+              "text color",
+              "GPU",
+              "cert"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Color.",
+            "en": "Color."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "display:flex?",
+            "en": "display:flex?"
+          },
+          "choices": {
+            "nl": [
+              "grid only",
+              "flexbox",
+              "SQL",
+              "C"
+            ],
+            "en": [
+              "grid only",
+              "flexbox",
+              "SQL",
+              "C"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Flex.",
+            "en": "Flex."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: <im src=x>",
+            "en": "Spot: <im src=x>"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "im->img",
+              "src always wrong",
+              "slash"
+            ],
+            "en": [
+              "ok",
+              "im->img",
+              "src always wrong",
+              "slash"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "img.",
+            "en": "img."
+          },
+          "code": "<im src='x'>"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "padding?",
+            "en": "padding?"
+          },
+          "choices": {
+            "nl": [
+              "buiten",
+              "binnenruimte",
+              "font",
+              "alt"
+            ],
+            "en": [
+              "outside",
+              "inner space",
+              "font",
+              "alt"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Padding.",
+            "en": "Padding."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "alt op img?",
+            "en": "alt on img?"
+          },
+          "choices": {
+            "nl": [
+              "altijd leeg",
+              "toegankelijke tekst",
+              "CSS",
+              "verboden"
+            ],
+            "en": [
+              "always empty",
+              "accessible text",
+              "CSS",
+              "forbidden"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Alt.",
+            "en": "Alt."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "#id?",
+            "en": "#id?"
+          },
+          "choices": {
+            "nl": [
+              "class",
+              "id",
+              "tag",
+              "pseudo"
+            ],
+            "en": [
+              "class",
+              "id",
+              "tag",
+              "pseudo"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "id.",
+            "en": "id."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Emphasis tag?",
+            "en": "Emphasis tag?"
+          },
+          "fill": [
+            "em"
+          ],
+          "why": {
+            "nl": "em.",
+            "en": "em."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "@media?",
+            "en": "@media?"
+          },
+          "choices": {
+            "nl": [
+              "SQL",
+              "responsive",
+              "Lua",
+              "C"
+            ],
+            "en": [
+              "SQL",
+              "responsive",
+              "Lua",
+              "C"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Media.",
+            "en": "Media."
           }
         }
       ],
@@ -235,6 +709,243 @@
             "nl": "Alt text.",
             "en": "Alt text."
           }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "h1 is?",
+            "en": "h1 is?"
+          },
+          "choices": {
+            "nl": [
+              "CSS",
+              "kop",
+              "SQL",
+              "Lua"
+            ],
+            "en": [
+              "CSS",
+              "heading",
+              "SQL",
+              "Lua"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Heading.",
+            "en": "Heading."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Link tag?",
+            "en": "Link tag?"
+          },
+          "fill": [
+            "a"
+          ],
+          "why": {
+            "nl": "a.",
+            "en": "a."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "CSS color?",
+            "en": "CSS color?"
+          },
+          "choices": {
+            "nl": [
+              "SQL",
+              "tekstkleur",
+              "GPU",
+              "cert"
+            ],
+            "en": [
+              "SQL",
+              "text color",
+              "GPU",
+              "cert"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Color.",
+            "en": "Color."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "display:flex?",
+            "en": "display:flex?"
+          },
+          "choices": {
+            "nl": [
+              "grid only",
+              "flexbox",
+              "SQL",
+              "C"
+            ],
+            "en": [
+              "grid only",
+              "flexbox",
+              "SQL",
+              "C"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Flex.",
+            "en": "Flex."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: <im src=x>",
+            "en": "Spot: <im src=x>"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "im->img",
+              "src always wrong",
+              "slash"
+            ],
+            "en": [
+              "ok",
+              "im->img",
+              "src always wrong",
+              "slash"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "img.",
+            "en": "img."
+          },
+          "code": "<im src='x'>"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "padding?",
+            "en": "padding?"
+          },
+          "choices": {
+            "nl": [
+              "buiten",
+              "binnenruimte",
+              "font",
+              "alt"
+            ],
+            "en": [
+              "outside",
+              "inner space",
+              "font",
+              "alt"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Padding.",
+            "en": "Padding."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "#id?",
+            "en": "#id?"
+          },
+          "choices": {
+            "nl": [
+              "class",
+              "id",
+              "tag",
+              "pseudo"
+            ],
+            "en": [
+              "class",
+              "id",
+              "tag",
+              "pseudo"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "id.",
+            "en": "id."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Emphasis tag?",
+            "en": "Emphasis tag?"
+          },
+          "fill": [
+            "em"
+          ],
+          "why": {
+            "nl": "em.",
+            "en": "em."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "@media?",
+            "en": "@media?"
+          },
+          "choices": {
+            "nl": [
+              "SQL",
+              "responsive",
+              "Lua",
+              "C"
+            ],
+            "en": [
+              "SQL",
+              "responsive",
+              "Lua",
+              "C"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Media.",
+            "en": "Media."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "border-radius?",
+            "en": "border-radius?"
+          },
+          "choices": {
+            "nl": [
+              "SQL",
+              "afgeronde hoeken",
+              "Lua",
+              "GPU"
+            ],
+            "en": [
+              "SQL",
+              "rounded corners",
+              "Lua",
+              "GPU"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Radius.",
+            "en": "Radius."
+          }
         }
       ]
     },
@@ -297,6 +1008,243 @@
           "why": {
             "nl": "Embedded CSS.",
             "en": "Embedded CSS."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "h1 is?",
+            "en": "h1 is?"
+          },
+          "choices": {
+            "nl": [
+              "CSS",
+              "kop",
+              "SQL",
+              "Lua"
+            ],
+            "en": [
+              "CSS",
+              "heading",
+              "SQL",
+              "Lua"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Heading.",
+            "en": "Heading."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Link tag?",
+            "en": "Link tag?"
+          },
+          "fill": [
+            "a"
+          ],
+          "why": {
+            "nl": "a.",
+            "en": "a."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "CSS color?",
+            "en": "CSS color?"
+          },
+          "choices": {
+            "nl": [
+              "SQL",
+              "tekstkleur",
+              "GPU",
+              "cert"
+            ],
+            "en": [
+              "SQL",
+              "text color",
+              "GPU",
+              "cert"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Color.",
+            "en": "Color."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "display:flex?",
+            "en": "display:flex?"
+          },
+          "choices": {
+            "nl": [
+              "grid only",
+              "flexbox",
+              "SQL",
+              "C"
+            ],
+            "en": [
+              "grid only",
+              "flexbox",
+              "SQL",
+              "C"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Flex.",
+            "en": "Flex."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: <im src=x>",
+            "en": "Spot: <im src=x>"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "im->img",
+              "src always wrong",
+              "slash"
+            ],
+            "en": [
+              "ok",
+              "im->img",
+              "src always wrong",
+              "slash"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "img.",
+            "en": "img."
+          },
+          "code": "<im src='x'>"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "padding?",
+            "en": "padding?"
+          },
+          "choices": {
+            "nl": [
+              "buiten",
+              "binnenruimte",
+              "font",
+              "alt"
+            ],
+            "en": [
+              "outside",
+              "inner space",
+              "font",
+              "alt"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Padding.",
+            "en": "Padding."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "alt op img?",
+            "en": "alt on img?"
+          },
+          "choices": {
+            "nl": [
+              "altijd leeg",
+              "toegankelijke tekst",
+              "CSS",
+              "verboden"
+            ],
+            "en": [
+              "always empty",
+              "accessible text",
+              "CSS",
+              "forbidden"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Alt.",
+            "en": "Alt."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "#id?",
+            "en": "#id?"
+          },
+          "choices": {
+            "nl": [
+              "class",
+              "id",
+              "tag",
+              "pseudo"
+            ],
+            "en": [
+              "class",
+              "id",
+              "tag",
+              "pseudo"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "id.",
+            "en": "id."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Emphasis tag?",
+            "en": "Emphasis tag?"
+          },
+          "fill": [
+            "em"
+          ],
+          "why": {
+            "nl": "em.",
+            "en": "em."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "@media?",
+            "en": "@media?"
+          },
+          "choices": {
+            "nl": [
+              "SQL",
+              "responsive",
+              "Lua",
+              "C"
+            ],
+            "en": [
+              "SQL",
+              "responsive",
+              "Lua",
+              "C"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Media.",
+            "en": "Media."
           }
         }
       ],
@@ -380,6 +1328,243 @@
             "nl": "Margin.",
             "en": "Margin."
           }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "h1 is?",
+            "en": "h1 is?"
+          },
+          "choices": {
+            "nl": [
+              "CSS",
+              "kop",
+              "SQL",
+              "Lua"
+            ],
+            "en": [
+              "CSS",
+              "heading",
+              "SQL",
+              "Lua"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Heading.",
+            "en": "Heading."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Link tag?",
+            "en": "Link tag?"
+          },
+          "fill": [
+            "a"
+          ],
+          "why": {
+            "nl": "a.",
+            "en": "a."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "CSS color?",
+            "en": "CSS color?"
+          },
+          "choices": {
+            "nl": [
+              "SQL",
+              "tekstkleur",
+              "GPU",
+              "cert"
+            ],
+            "en": [
+              "SQL",
+              "text color",
+              "GPU",
+              "cert"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Color.",
+            "en": "Color."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "display:flex?",
+            "en": "display:flex?"
+          },
+          "choices": {
+            "nl": [
+              "grid only",
+              "flexbox",
+              "SQL",
+              "C"
+            ],
+            "en": [
+              "grid only",
+              "flexbox",
+              "SQL",
+              "C"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Flex.",
+            "en": "Flex."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: <im src=x>",
+            "en": "Spot: <im src=x>"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "im->img",
+              "src always wrong",
+              "slash"
+            ],
+            "en": [
+              "ok",
+              "im->img",
+              "src always wrong",
+              "slash"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "img.",
+            "en": "img."
+          },
+          "code": "<im src='x'>"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "padding?",
+            "en": "padding?"
+          },
+          "choices": {
+            "nl": [
+              "buiten",
+              "binnenruimte",
+              "font",
+              "alt"
+            ],
+            "en": [
+              "outside",
+              "inner space",
+              "font",
+              "alt"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Padding.",
+            "en": "Padding."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "alt op img?",
+            "en": "alt on img?"
+          },
+          "choices": {
+            "nl": [
+              "altijd leeg",
+              "toegankelijke tekst",
+              "CSS",
+              "verboden"
+            ],
+            "en": [
+              "always empty",
+              "accessible text",
+              "CSS",
+              "forbidden"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Alt.",
+            "en": "Alt."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "#id?",
+            "en": "#id?"
+          },
+          "choices": {
+            "nl": [
+              "class",
+              "id",
+              "tag",
+              "pseudo"
+            ],
+            "en": [
+              "class",
+              "id",
+              "tag",
+              "pseudo"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "id.",
+            "en": "id."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Emphasis tag?",
+            "en": "Emphasis tag?"
+          },
+          "fill": [
+            "em"
+          ],
+          "why": {
+            "nl": "em.",
+            "en": "em."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "@media?",
+            "en": "@media?"
+          },
+          "choices": {
+            "nl": [
+              "SQL",
+              "responsive",
+              "Lua",
+              "C"
+            ],
+            "en": [
+              "SQL",
+              "responsive",
+              "Lua",
+              "C"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Media.",
+            "en": "Media."
+          }
         }
       ]
     },
@@ -442,6 +1627,243 @@
           "why": {
             "nl": "Justify.",
             "en": "Justify."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "h1 is?",
+            "en": "h1 is?"
+          },
+          "choices": {
+            "nl": [
+              "CSS",
+              "kop",
+              "SQL",
+              "Lua"
+            ],
+            "en": [
+              "CSS",
+              "heading",
+              "SQL",
+              "Lua"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Heading.",
+            "en": "Heading."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Link tag?",
+            "en": "Link tag?"
+          },
+          "fill": [
+            "a"
+          ],
+          "why": {
+            "nl": "a.",
+            "en": "a."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "CSS color?",
+            "en": "CSS color?"
+          },
+          "choices": {
+            "nl": [
+              "SQL",
+              "tekstkleur",
+              "GPU",
+              "cert"
+            ],
+            "en": [
+              "SQL",
+              "text color",
+              "GPU",
+              "cert"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Color.",
+            "en": "Color."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: <im src=x>",
+            "en": "Spot: <im src=x>"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "im->img",
+              "src always wrong",
+              "slash"
+            ],
+            "en": [
+              "ok",
+              "im->img",
+              "src always wrong",
+              "slash"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "img.",
+            "en": "img."
+          },
+          "code": "<im src='x'>"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "padding?",
+            "en": "padding?"
+          },
+          "choices": {
+            "nl": [
+              "buiten",
+              "binnenruimte",
+              "font",
+              "alt"
+            ],
+            "en": [
+              "outside",
+              "inner space",
+              "font",
+              "alt"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Padding.",
+            "en": "Padding."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "alt op img?",
+            "en": "alt on img?"
+          },
+          "choices": {
+            "nl": [
+              "altijd leeg",
+              "toegankelijke tekst",
+              "CSS",
+              "verboden"
+            ],
+            "en": [
+              "always empty",
+              "accessible text",
+              "CSS",
+              "forbidden"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Alt.",
+            "en": "Alt."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "#id?",
+            "en": "#id?"
+          },
+          "choices": {
+            "nl": [
+              "class",
+              "id",
+              "tag",
+              "pseudo"
+            ],
+            "en": [
+              "class",
+              "id",
+              "tag",
+              "pseudo"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "id.",
+            "en": "id."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Emphasis tag?",
+            "en": "Emphasis tag?"
+          },
+          "fill": [
+            "em"
+          ],
+          "why": {
+            "nl": "em.",
+            "en": "em."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "@media?",
+            "en": "@media?"
+          },
+          "choices": {
+            "nl": [
+              "SQL",
+              "responsive",
+              "Lua",
+              "C"
+            ],
+            "en": [
+              "SQL",
+              "responsive",
+              "Lua",
+              "C"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Media.",
+            "en": "Media."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "border-radius?",
+            "en": "border-radius?"
+          },
+          "choices": {
+            "nl": [
+              "SQL",
+              "afgeronde hoeken",
+              "Lua",
+              "GPU"
+            ],
+            "en": [
+              "SQL",
+              "rounded corners",
+              "Lua",
+              "GPU"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Radius.",
+            "en": "Radius."
           }
         }
       ],
@@ -525,6 +1947,243 @@
             "nl": "Viewport.",
             "en": "Viewport."
           }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "h1 is?",
+            "en": "h1 is?"
+          },
+          "choices": {
+            "nl": [
+              "CSS",
+              "kop",
+              "SQL",
+              "Lua"
+            ],
+            "en": [
+              "CSS",
+              "heading",
+              "SQL",
+              "Lua"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Heading.",
+            "en": "Heading."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Link tag?",
+            "en": "Link tag?"
+          },
+          "fill": [
+            "a"
+          ],
+          "why": {
+            "nl": "a.",
+            "en": "a."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "CSS color?",
+            "en": "CSS color?"
+          },
+          "choices": {
+            "nl": [
+              "SQL",
+              "tekstkleur",
+              "GPU",
+              "cert"
+            ],
+            "en": [
+              "SQL",
+              "text color",
+              "GPU",
+              "cert"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Color.",
+            "en": "Color."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "display:flex?",
+            "en": "display:flex?"
+          },
+          "choices": {
+            "nl": [
+              "grid only",
+              "flexbox",
+              "SQL",
+              "C"
+            ],
+            "en": [
+              "grid only",
+              "flexbox",
+              "SQL",
+              "C"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Flex.",
+            "en": "Flex."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: <im src=x>",
+            "en": "Spot: <im src=x>"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "im->img",
+              "src always wrong",
+              "slash"
+            ],
+            "en": [
+              "ok",
+              "im->img",
+              "src always wrong",
+              "slash"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "img.",
+            "en": "img."
+          },
+          "code": "<im src='x'>"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "padding?",
+            "en": "padding?"
+          },
+          "choices": {
+            "nl": [
+              "buiten",
+              "binnenruimte",
+              "font",
+              "alt"
+            ],
+            "en": [
+              "outside",
+              "inner space",
+              "font",
+              "alt"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Padding.",
+            "en": "Padding."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "alt op img?",
+            "en": "alt on img?"
+          },
+          "choices": {
+            "nl": [
+              "altijd leeg",
+              "toegankelijke tekst",
+              "CSS",
+              "verboden"
+            ],
+            "en": [
+              "always empty",
+              "accessible text",
+              "CSS",
+              "forbidden"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Alt.",
+            "en": "Alt."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "#id?",
+            "en": "#id?"
+          },
+          "choices": {
+            "nl": [
+              "class",
+              "id",
+              "tag",
+              "pseudo"
+            ],
+            "en": [
+              "class",
+              "id",
+              "tag",
+              "pseudo"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "id.",
+            "en": "id."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Emphasis tag?",
+            "en": "Emphasis tag?"
+          },
+          "fill": [
+            "em"
+          ],
+          "why": {
+            "nl": "em.",
+            "en": "em."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "border-radius?",
+            "en": "border-radius?"
+          },
+          "choices": {
+            "nl": [
+              "SQL",
+              "afgeronde hoeken",
+              "Lua",
+              "GPU"
+            ],
+            "en": [
+              "SQL",
+              "rounded corners",
+              "Lua",
+              "GPU"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Radius.",
+            "en": "Radius."
+          }
         }
       ]
     },
@@ -587,6 +2246,243 @@
           "why": {
             "nl": "Button.",
             "en": "Button."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "h1 is?",
+            "en": "h1 is?"
+          },
+          "choices": {
+            "nl": [
+              "CSS",
+              "kop",
+              "SQL",
+              "Lua"
+            ],
+            "en": [
+              "CSS",
+              "heading",
+              "SQL",
+              "Lua"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Heading.",
+            "en": "Heading."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Link tag?",
+            "en": "Link tag?"
+          },
+          "fill": [
+            "a"
+          ],
+          "why": {
+            "nl": "a.",
+            "en": "a."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "CSS color?",
+            "en": "CSS color?"
+          },
+          "choices": {
+            "nl": [
+              "SQL",
+              "tekstkleur",
+              "GPU",
+              "cert"
+            ],
+            "en": [
+              "SQL",
+              "text color",
+              "GPU",
+              "cert"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Color.",
+            "en": "Color."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "display:flex?",
+            "en": "display:flex?"
+          },
+          "choices": {
+            "nl": [
+              "grid only",
+              "flexbox",
+              "SQL",
+              "C"
+            ],
+            "en": [
+              "grid only",
+              "flexbox",
+              "SQL",
+              "C"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Flex.",
+            "en": "Flex."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: <im src=x>",
+            "en": "Spot: <im src=x>"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "im->img",
+              "src always wrong",
+              "slash"
+            ],
+            "en": [
+              "ok",
+              "im->img",
+              "src always wrong",
+              "slash"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "img.",
+            "en": "img."
+          },
+          "code": "<im src='x'>"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "padding?",
+            "en": "padding?"
+          },
+          "choices": {
+            "nl": [
+              "buiten",
+              "binnenruimte",
+              "font",
+              "alt"
+            ],
+            "en": [
+              "outside",
+              "inner space",
+              "font",
+              "alt"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Padding.",
+            "en": "Padding."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "alt op img?",
+            "en": "alt on img?"
+          },
+          "choices": {
+            "nl": [
+              "altijd leeg",
+              "toegankelijke tekst",
+              "CSS",
+              "verboden"
+            ],
+            "en": [
+              "always empty",
+              "accessible text",
+              "CSS",
+              "forbidden"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Alt.",
+            "en": "Alt."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "#id?",
+            "en": "#id?"
+          },
+          "choices": {
+            "nl": [
+              "class",
+              "id",
+              "tag",
+              "pseudo"
+            ],
+            "en": [
+              "class",
+              "id",
+              "tag",
+              "pseudo"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "id.",
+            "en": "id."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Emphasis tag?",
+            "en": "Emphasis tag?"
+          },
+          "fill": [
+            "em"
+          ],
+          "why": {
+            "nl": "em.",
+            "en": "em."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "@media?",
+            "en": "@media?"
+          },
+          "choices": {
+            "nl": [
+              "SQL",
+              "responsive",
+              "Lua",
+              "C"
+            ],
+            "en": [
+              "SQL",
+              "responsive",
+              "Lua",
+              "C"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Media.",
+            "en": "Media."
           }
         }
       ],
@@ -1001,6 +2897,882 @@
         "nl": "Original.",
         "en": "Original."
       }
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 1] h1 is?",
+        "en": "[Pool 1] h1 is?"
+      },
+      "choices": {
+        "nl": [
+          "CSS",
+          "kop",
+          "SQL",
+          "Lua"
+        ],
+        "en": [
+          "CSS",
+          "heading",
+          "SQL",
+          "Lua"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Heading.",
+        "en": "Heading."
+      },
+      "id": 16
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 2] Link tag?",
+        "en": "[Pool 2] Link tag?"
+      },
+      "fill": [
+        "a"
+      ],
+      "why": {
+        "nl": "a.",
+        "en": "a."
+      },
+      "id": 17
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 3] CSS color?",
+        "en": "[Pool 3] CSS color?"
+      },
+      "choices": {
+        "nl": [
+          "SQL",
+          "tekstkleur",
+          "GPU",
+          "cert"
+        ],
+        "en": [
+          "SQL",
+          "text color",
+          "GPU",
+          "cert"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Color.",
+        "en": "Color."
+      },
+      "id": 18
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 4] display:flex?",
+        "en": "[Pool 4] display:flex?"
+      },
+      "choices": {
+        "nl": [
+          "grid only",
+          "flexbox",
+          "SQL",
+          "C"
+        ],
+        "en": [
+          "grid only",
+          "flexbox",
+          "SQL",
+          "C"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Flex.",
+        "en": "Flex."
+      },
+      "id": 19
+    },
+    {
+      "type": "bug",
+      "q": {
+        "nl": "[Pool 5] Spot: <im src=x>",
+        "en": "[Pool 5] Spot: <im src=x>"
+      },
+      "choices": {
+        "nl": [
+          "ok",
+          "im->img",
+          "src always wrong",
+          "slash"
+        ],
+        "en": [
+          "ok",
+          "im->img",
+          "src always wrong",
+          "slash"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "img.",
+        "en": "img."
+      },
+      "code": "<im src='x'>",
+      "id": 20
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 6] padding?",
+        "en": "[Pool 6] padding?"
+      },
+      "choices": {
+        "nl": [
+          "buiten",
+          "binnenruimte",
+          "font",
+          "alt"
+        ],
+        "en": [
+          "outside",
+          "inner space",
+          "font",
+          "alt"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Padding.",
+        "en": "Padding."
+      },
+      "id": 21
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 7] alt op img?",
+        "en": "[Pool 7] alt on img?"
+      },
+      "choices": {
+        "nl": [
+          "altijd leeg",
+          "toegankelijke tekst",
+          "CSS",
+          "verboden"
+        ],
+        "en": [
+          "always empty",
+          "accessible text",
+          "CSS",
+          "forbidden"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Alt.",
+        "en": "Alt."
+      },
+      "id": 22
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 8] #id?",
+        "en": "[Pool 8] #id?"
+      },
+      "choices": {
+        "nl": [
+          "class",
+          "id",
+          "tag",
+          "pseudo"
+        ],
+        "en": [
+          "class",
+          "id",
+          "tag",
+          "pseudo"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "id.",
+        "en": "id."
+      },
+      "id": 23
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 9] Emphasis tag?",
+        "en": "[Pool 9] Emphasis tag?"
+      },
+      "fill": [
+        "em"
+      ],
+      "why": {
+        "nl": "em.",
+        "en": "em."
+      },
+      "id": 24
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 10] @media?",
+        "en": "[Pool 10] @media?"
+      },
+      "choices": {
+        "nl": [
+          "SQL",
+          "responsive",
+          "Lua",
+          "C"
+        ],
+        "en": [
+          "SQL",
+          "responsive",
+          "Lua",
+          "C"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Media.",
+        "en": "Media."
+      },
+      "id": 25
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 11] border-radius?",
+        "en": "[Pool 11] border-radius?"
+      },
+      "choices": {
+        "nl": [
+          "SQL",
+          "afgeronde hoeken",
+          "Lua",
+          "GPU"
+        ],
+        "en": [
+          "SQL",
+          "rounded corners",
+          "Lua",
+          "GPU"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Radius.",
+        "en": "Radius."
+      },
+      "id": 26
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 12] margin?",
+        "en": "[Pool 12] margin?"
+      },
+      "choices": {
+        "nl": [
+          "font",
+          "buitenafstand",
+          "alt",
+          "nil"
+        ],
+        "en": [
+          "font",
+          "outer gap",
+          "alt",
+          "nil"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Margin.",
+        "en": "Margin."
+      },
+      "id": 27
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 13] button element?",
+        "en": "[Pool 13] button element?"
+      },
+      "choices": {
+        "nl": [
+          "alleen JS",
+          "klikbaar element",
+          "C",
+          "nil"
+        ],
+        "en": [
+          "JS only",
+          "clickable element",
+          "C",
+          "nil"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Button.",
+        "en": "Button."
+      },
+      "id": 28
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 14] h1 is?",
+        "en": "[Pool 14] h1 is?"
+      },
+      "choices": {
+        "nl": [
+          "CSS",
+          "kop",
+          "SQL",
+          "Lua"
+        ],
+        "en": [
+          "CSS",
+          "heading",
+          "SQL",
+          "Lua"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Heading.",
+        "en": "Heading."
+      },
+      "id": 29
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 15] Link tag?",
+        "en": "[Pool 15] Link tag?"
+      },
+      "fill": [
+        "a"
+      ],
+      "why": {
+        "nl": "a.",
+        "en": "a."
+      },
+      "id": 30
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 16] CSS color?",
+        "en": "[Pool 16] CSS color?"
+      },
+      "choices": {
+        "nl": [
+          "SQL",
+          "tekstkleur",
+          "GPU",
+          "cert"
+        ],
+        "en": [
+          "SQL",
+          "text color",
+          "GPU",
+          "cert"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Color.",
+        "en": "Color."
+      },
+      "id": 31
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 17] display:flex?",
+        "en": "[Pool 17] display:flex?"
+      },
+      "choices": {
+        "nl": [
+          "grid only",
+          "flexbox",
+          "SQL",
+          "C"
+        ],
+        "en": [
+          "grid only",
+          "flexbox",
+          "SQL",
+          "C"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Flex.",
+        "en": "Flex."
+      },
+      "id": 32
+    },
+    {
+      "type": "bug",
+      "q": {
+        "nl": "[Pool 18] Spot: <im src=x>",
+        "en": "[Pool 18] Spot: <im src=x>"
+      },
+      "choices": {
+        "nl": [
+          "ok",
+          "im->img",
+          "src always wrong",
+          "slash"
+        ],
+        "en": [
+          "ok",
+          "im->img",
+          "src always wrong",
+          "slash"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "img.",
+        "en": "img."
+      },
+      "code": "<im src='x'>",
+      "id": 33
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 19] padding?",
+        "en": "[Pool 19] padding?"
+      },
+      "choices": {
+        "nl": [
+          "buiten",
+          "binnenruimte",
+          "font",
+          "alt"
+        ],
+        "en": [
+          "outside",
+          "inner space",
+          "font",
+          "alt"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Padding.",
+        "en": "Padding."
+      },
+      "id": 34
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 20] alt op img?",
+        "en": "[Pool 20] alt on img?"
+      },
+      "choices": {
+        "nl": [
+          "altijd leeg",
+          "toegankelijke tekst",
+          "CSS",
+          "verboden"
+        ],
+        "en": [
+          "always empty",
+          "accessible text",
+          "CSS",
+          "forbidden"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Alt.",
+        "en": "Alt."
+      },
+      "id": 35
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 21] #id?",
+        "en": "[Pool 21] #id?"
+      },
+      "choices": {
+        "nl": [
+          "class",
+          "id",
+          "tag",
+          "pseudo"
+        ],
+        "en": [
+          "class",
+          "id",
+          "tag",
+          "pseudo"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "id.",
+        "en": "id."
+      },
+      "id": 36
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 22] Emphasis tag?",
+        "en": "[Pool 22] Emphasis tag?"
+      },
+      "fill": [
+        "em"
+      ],
+      "why": {
+        "nl": "em.",
+        "en": "em."
+      },
+      "id": 37
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 23] @media?",
+        "en": "[Pool 23] @media?"
+      },
+      "choices": {
+        "nl": [
+          "SQL",
+          "responsive",
+          "Lua",
+          "C"
+        ],
+        "en": [
+          "SQL",
+          "responsive",
+          "Lua",
+          "C"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Media.",
+        "en": "Media."
+      },
+      "id": 38
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 24] border-radius?",
+        "en": "[Pool 24] border-radius?"
+      },
+      "choices": {
+        "nl": [
+          "SQL",
+          "afgeronde hoeken",
+          "Lua",
+          "GPU"
+        ],
+        "en": [
+          "SQL",
+          "rounded corners",
+          "Lua",
+          "GPU"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Radius.",
+        "en": "Radius."
+      },
+      "id": 39
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 25] margin?",
+        "en": "[Pool 25] margin?"
+      },
+      "choices": {
+        "nl": [
+          "font",
+          "buitenafstand",
+          "alt",
+          "nil"
+        ],
+        "en": [
+          "font",
+          "outer gap",
+          "alt",
+          "nil"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Margin.",
+        "en": "Margin."
+      },
+      "id": 40
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 26] button element?",
+        "en": "[Pool 26] button element?"
+      },
+      "choices": {
+        "nl": [
+          "alleen JS",
+          "klikbaar element",
+          "C",
+          "nil"
+        ],
+        "en": [
+          "JS only",
+          "clickable element",
+          "C",
+          "nil"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Button.",
+        "en": "Button."
+      },
+      "id": 41
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 27] h1 is?",
+        "en": "[Pool 27] h1 is?"
+      },
+      "choices": {
+        "nl": [
+          "CSS",
+          "kop",
+          "SQL",
+          "Lua"
+        ],
+        "en": [
+          "CSS",
+          "heading",
+          "SQL",
+          "Lua"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Heading.",
+        "en": "Heading."
+      },
+      "id": 42
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 28] Link tag?",
+        "en": "[Pool 28] Link tag?"
+      },
+      "fill": [
+        "a"
+      ],
+      "why": {
+        "nl": "a.",
+        "en": "a."
+      },
+      "id": 43
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 29] CSS color?",
+        "en": "[Pool 29] CSS color?"
+      },
+      "choices": {
+        "nl": [
+          "SQL",
+          "tekstkleur",
+          "GPU",
+          "cert"
+        ],
+        "en": [
+          "SQL",
+          "text color",
+          "GPU",
+          "cert"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Color.",
+        "en": "Color."
+      },
+      "id": 44
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 30] display:flex?",
+        "en": "[Pool 30] display:flex?"
+      },
+      "choices": {
+        "nl": [
+          "grid only",
+          "flexbox",
+          "SQL",
+          "C"
+        ],
+        "en": [
+          "grid only",
+          "flexbox",
+          "SQL",
+          "C"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Flex.",
+        "en": "Flex."
+      },
+      "id": 45
+    },
+    {
+      "type": "bug",
+      "q": {
+        "nl": "[Pool 31] Spot: <im src=x>",
+        "en": "[Pool 31] Spot: <im src=x>"
+      },
+      "choices": {
+        "nl": [
+          "ok",
+          "im->img",
+          "src always wrong",
+          "slash"
+        ],
+        "en": [
+          "ok",
+          "im->img",
+          "src always wrong",
+          "slash"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "img.",
+        "en": "img."
+      },
+      "code": "<im src='x'>",
+      "id": 46
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 32] padding?",
+        "en": "[Pool 32] padding?"
+      },
+      "choices": {
+        "nl": [
+          "buiten",
+          "binnenruimte",
+          "font",
+          "alt"
+        ],
+        "en": [
+          "outside",
+          "inner space",
+          "font",
+          "alt"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Padding.",
+        "en": "Padding."
+      },
+      "id": 47
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 33] alt op img?",
+        "en": "[Pool 33] alt on img?"
+      },
+      "choices": {
+        "nl": [
+          "altijd leeg",
+          "toegankelijke tekst",
+          "CSS",
+          "verboden"
+        ],
+        "en": [
+          "always empty",
+          "accessible text",
+          "CSS",
+          "forbidden"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Alt.",
+        "en": "Alt."
+      },
+      "id": 48
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 34] #id?",
+        "en": "[Pool 34] #id?"
+      },
+      "choices": {
+        "nl": [
+          "class",
+          "id",
+          "tag",
+          "pseudo"
+        ],
+        "en": [
+          "class",
+          "id",
+          "tag",
+          "pseudo"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "id.",
+        "en": "id."
+      },
+      "id": 49
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 35] Emphasis tag?",
+        "en": "[Pool 35] Emphasis tag?"
+      },
+      "fill": [
+        "em"
+      ],
+      "why": {
+        "nl": "em.",
+        "en": "em."
+      },
+      "id": 50
     }
   ],
   "challenges": [
@@ -1064,6 +3836,7 @@
         }
       ]
     }
-  ]
+  ],
+  "examDraw": 25
 };
 })(window);

@@ -71,6 +71,231 @@
             "nl": "Query.",
             "en": "Query."
           }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Filter clausule?",
+            "en": "Filter clause?"
+          },
+          "fill": [
+            "WHERE"
+          ],
+          "why": {
+            "nl": "WHERE.",
+            "en": "WHERE."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "ORDER BY DESC?",
+            "en": "ORDER BY DESC?"
+          },
+          "choices": {
+            "nl": [
+              "oplopend",
+              "aflopend",
+              "delete",
+              "join"
+            ],
+            "en": [
+              "asc",
+              "desc",
+              "delete",
+              "join"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Descending.",
+            "en": "Descending."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "COUNT(*)?",
+            "en": "COUNT(*)?"
+          },
+          "choices": {
+            "nl": [
+              "som",
+              "aantal rijen",
+              "avg",
+              "max"
+            ],
+            "en": [
+              "sum",
+              "row count",
+              "avg",
+              "max"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Count.",
+            "en": "Count."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: SELECT * FORM t",
+            "en": "Spot: SELECT * FORM t"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "FORM->FROM",
+              "* fout",
+              "t fout"
+            ],
+            "en": [
+              "ok",
+              "FORM->FROM",
+              "* wrong",
+              "t wrong"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "FROM.",
+            "en": "FROM."
+          },
+          "code": "SELECT * FORM t;"
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Nieuwe rijen?",
+            "en": "New rows?"
+          },
+          "fill": [
+            "INSERT"
+          ],
+          "why": {
+            "nl": "INSERT.",
+            "en": "INSERT."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "JOIN?",
+            "en": "JOIN?"
+          },
+          "choices": {
+            "nl": [
+              "CSS",
+              "rijen koppelen",
+              "drop",
+              "limit"
+            ],
+            "en": [
+              "CSS",
+              "link rows",
+              "drop",
+              "limit"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Join.",
+            "en": "Join."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "PRIMARY KEY?",
+            "en": "PRIMARY KEY?"
+          },
+          "choices": {
+            "nl": [
+              "kleur",
+              "unieke id",
+              "Lua",
+              "comment"
+            ],
+            "en": [
+              "color",
+              "unique id",
+              "Lua",
+              "comment"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "PK.",
+            "en": "PK."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "NULL = NULL?",
+            "en": "NULL = NULL?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "use IS NULL",
+              "crash",
+              "1"
+            ],
+            "en": [
+              "true",
+              "use IS NULL",
+              "crash",
+              "1"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "IS NULL.",
+            "en": "IS NULL."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Gemiddelde aggregate?",
+            "en": "Average aggregate?"
+          },
+          "fill": [
+            "AVG"
+          ],
+          "why": {
+            "nl": "AVG.",
+            "en": "AVG."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "LIMIT 5?",
+            "en": "LIMIT 5?"
+          },
+          "choices": {
+            "nl": [
+              "5 tabellen",
+              "max 5 rijen",
+              "5 joins",
+              "error"
+            ],
+            "en": [
+              "5 tables",
+              "max 5 rows",
+              "5 joins",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Limit.",
+            "en": "Limit."
+          }
         }
       ],
       "exercise": {
@@ -148,6 +373,231 @@
             "nl": "Required.",
             "en": "Required."
           }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Data ophalen?",
+            "en": "Fetch data?"
+          },
+          "choices": {
+            "nl": [
+              "GET",
+              "SELECT",
+              "print",
+              "trace"
+            ],
+            "en": [
+              "GET",
+              "SELECT",
+              "print",
+              "trace"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "SELECT.",
+            "en": "SELECT."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Filter clausule?",
+            "en": "Filter clause?"
+          },
+          "fill": [
+            "WHERE"
+          ],
+          "why": {
+            "nl": "WHERE.",
+            "en": "WHERE."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "ORDER BY DESC?",
+            "en": "ORDER BY DESC?"
+          },
+          "choices": {
+            "nl": [
+              "oplopend",
+              "aflopend",
+              "delete",
+              "join"
+            ],
+            "en": [
+              "asc",
+              "desc",
+              "delete",
+              "join"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Descending.",
+            "en": "Descending."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "COUNT(*)?",
+            "en": "COUNT(*)?"
+          },
+          "choices": {
+            "nl": [
+              "som",
+              "aantal rijen",
+              "avg",
+              "max"
+            ],
+            "en": [
+              "sum",
+              "row count",
+              "avg",
+              "max"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Count.",
+            "en": "Count."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: SELECT * FORM t",
+            "en": "Spot: SELECT * FORM t"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "FORM->FROM",
+              "* fout",
+              "t fout"
+            ],
+            "en": [
+              "ok",
+              "FORM->FROM",
+              "* wrong",
+              "t wrong"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "FROM.",
+            "en": "FROM."
+          },
+          "code": "SELECT * FORM t;"
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Nieuwe rijen?",
+            "en": "New rows?"
+          },
+          "fill": [
+            "INSERT"
+          ],
+          "why": {
+            "nl": "INSERT.",
+            "en": "INSERT."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "JOIN?",
+            "en": "JOIN?"
+          },
+          "choices": {
+            "nl": [
+              "CSS",
+              "rijen koppelen",
+              "drop",
+              "limit"
+            ],
+            "en": [
+              "CSS",
+              "link rows",
+              "drop",
+              "limit"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Join.",
+            "en": "Join."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "NULL = NULL?",
+            "en": "NULL = NULL?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "use IS NULL",
+              "crash",
+              "1"
+            ],
+            "en": [
+              "true",
+              "use IS NULL",
+              "crash",
+              "1"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "IS NULL.",
+            "en": "IS NULL."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Gemiddelde aggregate?",
+            "en": "Average aggregate?"
+          },
+          "fill": [
+            "AVG"
+          ],
+          "why": {
+            "nl": "AVG.",
+            "en": "AVG."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "LIMIT 5?",
+            "en": "LIMIT 5?"
+          },
+          "choices": {
+            "nl": [
+              "5 tabellen",
+              "max 5 rijen",
+              "5 joins",
+              "error"
+            ],
+            "en": [
+              "5 tables",
+              "max 5 rows",
+              "5 joins",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Limit.",
+            "en": "Limit."
+          }
         }
       ]
     },
@@ -211,6 +661,231 @@
             "nl": "!= style.",
             "en": "!= style."
           }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Data ophalen?",
+            "en": "Fetch data?"
+          },
+          "choices": {
+            "nl": [
+              "GET",
+              "SELECT",
+              "print",
+              "trace"
+            ],
+            "en": [
+              "GET",
+              "SELECT",
+              "print",
+              "trace"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "SELECT.",
+            "en": "SELECT."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Filter clausule?",
+            "en": "Filter clause?"
+          },
+          "fill": [
+            "WHERE"
+          ],
+          "why": {
+            "nl": "WHERE.",
+            "en": "WHERE."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "ORDER BY DESC?",
+            "en": "ORDER BY DESC?"
+          },
+          "choices": {
+            "nl": [
+              "oplopend",
+              "aflopend",
+              "delete",
+              "join"
+            ],
+            "en": [
+              "asc",
+              "desc",
+              "delete",
+              "join"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Descending.",
+            "en": "Descending."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "COUNT(*)?",
+            "en": "COUNT(*)?"
+          },
+          "choices": {
+            "nl": [
+              "som",
+              "aantal rijen",
+              "avg",
+              "max"
+            ],
+            "en": [
+              "sum",
+              "row count",
+              "avg",
+              "max"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Count.",
+            "en": "Count."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: SELECT * FORM t",
+            "en": "Spot: SELECT * FORM t"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "FORM->FROM",
+              "* fout",
+              "t fout"
+            ],
+            "en": [
+              "ok",
+              "FORM->FROM",
+              "* wrong",
+              "t wrong"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "FROM.",
+            "en": "FROM."
+          },
+          "code": "SELECT * FORM t;"
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Nieuwe rijen?",
+            "en": "New rows?"
+          },
+          "fill": [
+            "INSERT"
+          ],
+          "why": {
+            "nl": "INSERT.",
+            "en": "INSERT."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "JOIN?",
+            "en": "JOIN?"
+          },
+          "choices": {
+            "nl": [
+              "CSS",
+              "rijen koppelen",
+              "drop",
+              "limit"
+            ],
+            "en": [
+              "CSS",
+              "link rows",
+              "drop",
+              "limit"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Join.",
+            "en": "Join."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "PRIMARY KEY?",
+            "en": "PRIMARY KEY?"
+          },
+          "choices": {
+            "nl": [
+              "kleur",
+              "unieke id",
+              "Lua",
+              "comment"
+            ],
+            "en": [
+              "color",
+              "unique id",
+              "Lua",
+              "comment"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "PK.",
+            "en": "PK."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "NULL = NULL?",
+            "en": "NULL = NULL?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "use IS NULL",
+              "crash",
+              "1"
+            ],
+            "en": [
+              "true",
+              "use IS NULL",
+              "crash",
+              "1"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "IS NULL.",
+            "en": "IS NULL."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Gemiddelde aggregate?",
+            "en": "Average aggregate?"
+          },
+          "fill": [
+            "AVG"
+          ],
+          "why": {
+            "nl": "AVG.",
+            "en": "AVG."
+          }
         }
       ]
     },
@@ -266,6 +941,231 @@
               "3 tables",
               "max 3 rows",
               "3 joins",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Limit.",
+            "en": "Limit."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Data ophalen?",
+            "en": "Fetch data?"
+          },
+          "choices": {
+            "nl": [
+              "GET",
+              "SELECT",
+              "print",
+              "trace"
+            ],
+            "en": [
+              "GET",
+              "SELECT",
+              "print",
+              "trace"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "SELECT.",
+            "en": "SELECT."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Filter clausule?",
+            "en": "Filter clause?"
+          },
+          "fill": [
+            "WHERE"
+          ],
+          "why": {
+            "nl": "WHERE.",
+            "en": "WHERE."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "COUNT(*)?",
+            "en": "COUNT(*)?"
+          },
+          "choices": {
+            "nl": [
+              "som",
+              "aantal rijen",
+              "avg",
+              "max"
+            ],
+            "en": [
+              "sum",
+              "row count",
+              "avg",
+              "max"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Count.",
+            "en": "Count."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: SELECT * FORM t",
+            "en": "Spot: SELECT * FORM t"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "FORM->FROM",
+              "* fout",
+              "t fout"
+            ],
+            "en": [
+              "ok",
+              "FORM->FROM",
+              "* wrong",
+              "t wrong"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "FROM.",
+            "en": "FROM."
+          },
+          "code": "SELECT * FORM t;"
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Nieuwe rijen?",
+            "en": "New rows?"
+          },
+          "fill": [
+            "INSERT"
+          ],
+          "why": {
+            "nl": "INSERT.",
+            "en": "INSERT."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "JOIN?",
+            "en": "JOIN?"
+          },
+          "choices": {
+            "nl": [
+              "CSS",
+              "rijen koppelen",
+              "drop",
+              "limit"
+            ],
+            "en": [
+              "CSS",
+              "link rows",
+              "drop",
+              "limit"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Join.",
+            "en": "Join."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "PRIMARY KEY?",
+            "en": "PRIMARY KEY?"
+          },
+          "choices": {
+            "nl": [
+              "kleur",
+              "unieke id",
+              "Lua",
+              "comment"
+            ],
+            "en": [
+              "color",
+              "unique id",
+              "Lua",
+              "comment"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "PK.",
+            "en": "PK."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "NULL = NULL?",
+            "en": "NULL = NULL?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "use IS NULL",
+              "crash",
+              "1"
+            ],
+            "en": [
+              "true",
+              "use IS NULL",
+              "crash",
+              "1"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "IS NULL.",
+            "en": "IS NULL."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Gemiddelde aggregate?",
+            "en": "Average aggregate?"
+          },
+          "fill": [
+            "AVG"
+          ],
+          "why": {
+            "nl": "AVG.",
+            "en": "AVG."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "LIMIT 5?",
+            "en": "LIMIT 5?"
+          },
+          "choices": {
+            "nl": [
+              "5 tabellen",
+              "max 5 rijen",
+              "5 joins",
+              "error"
+            ],
+            "en": [
+              "5 tables",
+              "max 5 rows",
+              "5 joins",
               "error"
             ]
           },
@@ -337,6 +1237,231 @@
             "nl": "Condition.",
             "en": "Condition."
           }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Data ophalen?",
+            "en": "Fetch data?"
+          },
+          "choices": {
+            "nl": [
+              "GET",
+              "SELECT",
+              "print",
+              "trace"
+            ],
+            "en": [
+              "GET",
+              "SELECT",
+              "print",
+              "trace"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "SELECT.",
+            "en": "SELECT."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Filter clausule?",
+            "en": "Filter clause?"
+          },
+          "fill": [
+            "WHERE"
+          ],
+          "why": {
+            "nl": "WHERE.",
+            "en": "WHERE."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "ORDER BY DESC?",
+            "en": "ORDER BY DESC?"
+          },
+          "choices": {
+            "nl": [
+              "oplopend",
+              "aflopend",
+              "delete",
+              "join"
+            ],
+            "en": [
+              "asc",
+              "desc",
+              "delete",
+              "join"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Descending.",
+            "en": "Descending."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "COUNT(*)?",
+            "en": "COUNT(*)?"
+          },
+          "choices": {
+            "nl": [
+              "som",
+              "aantal rijen",
+              "avg",
+              "max"
+            ],
+            "en": [
+              "sum",
+              "row count",
+              "avg",
+              "max"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Count.",
+            "en": "Count."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: SELECT * FORM t",
+            "en": "Spot: SELECT * FORM t"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "FORM->FROM",
+              "* fout",
+              "t fout"
+            ],
+            "en": [
+              "ok",
+              "FORM->FROM",
+              "* wrong",
+              "t wrong"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "FROM.",
+            "en": "FROM."
+          },
+          "code": "SELECT * FORM t;"
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Nieuwe rijen?",
+            "en": "New rows?"
+          },
+          "fill": [
+            "INSERT"
+          ],
+          "why": {
+            "nl": "INSERT.",
+            "en": "INSERT."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "JOIN?",
+            "en": "JOIN?"
+          },
+          "choices": {
+            "nl": [
+              "CSS",
+              "rijen koppelen",
+              "drop",
+              "limit"
+            ],
+            "en": [
+              "CSS",
+              "link rows",
+              "drop",
+              "limit"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Join.",
+            "en": "Join."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "PRIMARY KEY?",
+            "en": "PRIMARY KEY?"
+          },
+          "choices": {
+            "nl": [
+              "kleur",
+              "unieke id",
+              "Lua",
+              "comment"
+            ],
+            "en": [
+              "color",
+              "unique id",
+              "Lua",
+              "comment"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "PK.",
+            "en": "PK."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "NULL = NULL?",
+            "en": "NULL = NULL?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "use IS NULL",
+              "crash",
+              "1"
+            ],
+            "en": [
+              "true",
+              "use IS NULL",
+              "crash",
+              "1"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "IS NULL.",
+            "en": "IS NULL."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Gemiddelde aggregate?",
+            "en": "Average aggregate?"
+          },
+          "fill": [
+            "AVG"
+          ],
+          "why": {
+            "nl": "AVG.",
+            "en": "AVG."
+          }
         }
       ]
     },
@@ -399,6 +1524,231 @@
           "why": {
             "nl": "Average.",
             "en": "Average."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Data ophalen?",
+            "en": "Fetch data?"
+          },
+          "choices": {
+            "nl": [
+              "GET",
+              "SELECT",
+              "print",
+              "trace"
+            ],
+            "en": [
+              "GET",
+              "SELECT",
+              "print",
+              "trace"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "SELECT.",
+            "en": "SELECT."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Filter clausule?",
+            "en": "Filter clause?"
+          },
+          "fill": [
+            "WHERE"
+          ],
+          "why": {
+            "nl": "WHERE.",
+            "en": "WHERE."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "ORDER BY DESC?",
+            "en": "ORDER BY DESC?"
+          },
+          "choices": {
+            "nl": [
+              "oplopend",
+              "aflopend",
+              "delete",
+              "join"
+            ],
+            "en": [
+              "asc",
+              "desc",
+              "delete",
+              "join"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Descending.",
+            "en": "Descending."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: SELECT * FORM t",
+            "en": "Spot: SELECT * FORM t"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "FORM->FROM",
+              "* fout",
+              "t fout"
+            ],
+            "en": [
+              "ok",
+              "FORM->FROM",
+              "* wrong",
+              "t wrong"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "FROM.",
+            "en": "FROM."
+          },
+          "code": "SELECT * FORM t;"
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Nieuwe rijen?",
+            "en": "New rows?"
+          },
+          "fill": [
+            "INSERT"
+          ],
+          "why": {
+            "nl": "INSERT.",
+            "en": "INSERT."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "JOIN?",
+            "en": "JOIN?"
+          },
+          "choices": {
+            "nl": [
+              "CSS",
+              "rijen koppelen",
+              "drop",
+              "limit"
+            ],
+            "en": [
+              "CSS",
+              "link rows",
+              "drop",
+              "limit"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Join.",
+            "en": "Join."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "PRIMARY KEY?",
+            "en": "PRIMARY KEY?"
+          },
+          "choices": {
+            "nl": [
+              "kleur",
+              "unieke id",
+              "Lua",
+              "comment"
+            ],
+            "en": [
+              "color",
+              "unique id",
+              "Lua",
+              "comment"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "PK.",
+            "en": "PK."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "NULL = NULL?",
+            "en": "NULL = NULL?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "use IS NULL",
+              "crash",
+              "1"
+            ],
+            "en": [
+              "true",
+              "use IS NULL",
+              "crash",
+              "1"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "IS NULL.",
+            "en": "IS NULL."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Gemiddelde aggregate?",
+            "en": "Average aggregate?"
+          },
+          "fill": [
+            "AVG"
+          ],
+          "why": {
+            "nl": "AVG.",
+            "en": "AVG."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "LIMIT 5?",
+            "en": "LIMIT 5?"
+          },
+          "choices": {
+            "nl": [
+              "5 tabellen",
+              "max 5 rijen",
+              "5 joins",
+              "error"
+            ],
+            "en": [
+              "5 tables",
+              "max 5 rows",
+              "5 joins",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Limit.",
+            "en": "Limit."
           }
         }
       ]
@@ -463,6 +1813,231 @@
             "nl": "Conflict.",
             "en": "Conflict."
           }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Data ophalen?",
+            "en": "Fetch data?"
+          },
+          "choices": {
+            "nl": [
+              "GET",
+              "SELECT",
+              "print",
+              "trace"
+            ],
+            "en": [
+              "GET",
+              "SELECT",
+              "print",
+              "trace"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "SELECT.",
+            "en": "SELECT."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Filter clausule?",
+            "en": "Filter clause?"
+          },
+          "fill": [
+            "WHERE"
+          ],
+          "why": {
+            "nl": "WHERE.",
+            "en": "WHERE."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "ORDER BY DESC?",
+            "en": "ORDER BY DESC?"
+          },
+          "choices": {
+            "nl": [
+              "oplopend",
+              "aflopend",
+              "delete",
+              "join"
+            ],
+            "en": [
+              "asc",
+              "desc",
+              "delete",
+              "join"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Descending.",
+            "en": "Descending."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "COUNT(*)?",
+            "en": "COUNT(*)?"
+          },
+          "choices": {
+            "nl": [
+              "som",
+              "aantal rijen",
+              "avg",
+              "max"
+            ],
+            "en": [
+              "sum",
+              "row count",
+              "avg",
+              "max"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Count.",
+            "en": "Count."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: SELECT * FORM t",
+            "en": "Spot: SELECT * FORM t"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "FORM->FROM",
+              "* fout",
+              "t fout"
+            ],
+            "en": [
+              "ok",
+              "FORM->FROM",
+              "* wrong",
+              "t wrong"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "FROM.",
+            "en": "FROM."
+          },
+          "code": "SELECT * FORM t;"
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Nieuwe rijen?",
+            "en": "New rows?"
+          },
+          "fill": [
+            "INSERT"
+          ],
+          "why": {
+            "nl": "INSERT.",
+            "en": "INSERT."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "JOIN?",
+            "en": "JOIN?"
+          },
+          "choices": {
+            "nl": [
+              "CSS",
+              "rijen koppelen",
+              "drop",
+              "limit"
+            ],
+            "en": [
+              "CSS",
+              "link rows",
+              "drop",
+              "limit"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Join.",
+            "en": "Join."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "PRIMARY KEY?",
+            "en": "PRIMARY KEY?"
+          },
+          "choices": {
+            "nl": [
+              "kleur",
+              "unieke id",
+              "Lua",
+              "comment"
+            ],
+            "en": [
+              "color",
+              "unique id",
+              "Lua",
+              "comment"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "PK.",
+            "en": "PK."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "NULL = NULL?",
+            "en": "NULL = NULL?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "use IS NULL",
+              "crash",
+              "1"
+            ],
+            "en": [
+              "true",
+              "use IS NULL",
+              "crash",
+              "1"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "IS NULL.",
+            "en": "IS NULL."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Gemiddelde aggregate?",
+            "en": "Average aggregate?"
+          },
+          "fill": [
+            "AVG"
+          ],
+          "why": {
+            "nl": "AVG.",
+            "en": "AVG."
+          }
         }
       ]
     },
@@ -526,6 +2101,231 @@
             "nl": "Dangerous.",
             "en": "Dangerous."
           }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Data ophalen?",
+            "en": "Fetch data?"
+          },
+          "choices": {
+            "nl": [
+              "GET",
+              "SELECT",
+              "print",
+              "trace"
+            ],
+            "en": [
+              "GET",
+              "SELECT",
+              "print",
+              "trace"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "SELECT.",
+            "en": "SELECT."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Filter clausule?",
+            "en": "Filter clause?"
+          },
+          "fill": [
+            "WHERE"
+          ],
+          "why": {
+            "nl": "WHERE.",
+            "en": "WHERE."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "ORDER BY DESC?",
+            "en": "ORDER BY DESC?"
+          },
+          "choices": {
+            "nl": [
+              "oplopend",
+              "aflopend",
+              "delete",
+              "join"
+            ],
+            "en": [
+              "asc",
+              "desc",
+              "delete",
+              "join"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Descending.",
+            "en": "Descending."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "COUNT(*)?",
+            "en": "COUNT(*)?"
+          },
+          "choices": {
+            "nl": [
+              "som",
+              "aantal rijen",
+              "avg",
+              "max"
+            ],
+            "en": [
+              "sum",
+              "row count",
+              "avg",
+              "max"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Count.",
+            "en": "Count."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: SELECT * FORM t",
+            "en": "Spot: SELECT * FORM t"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "FORM->FROM",
+              "* fout",
+              "t fout"
+            ],
+            "en": [
+              "ok",
+              "FORM->FROM",
+              "* wrong",
+              "t wrong"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "FROM.",
+            "en": "FROM."
+          },
+          "code": "SELECT * FORM t;"
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Nieuwe rijen?",
+            "en": "New rows?"
+          },
+          "fill": [
+            "INSERT"
+          ],
+          "why": {
+            "nl": "INSERT.",
+            "en": "INSERT."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "JOIN?",
+            "en": "JOIN?"
+          },
+          "choices": {
+            "nl": [
+              "CSS",
+              "rijen koppelen",
+              "drop",
+              "limit"
+            ],
+            "en": [
+              "CSS",
+              "link rows",
+              "drop",
+              "limit"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Join.",
+            "en": "Join."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "PRIMARY KEY?",
+            "en": "PRIMARY KEY?"
+          },
+          "choices": {
+            "nl": [
+              "kleur",
+              "unieke id",
+              "Lua",
+              "comment"
+            ],
+            "en": [
+              "color",
+              "unique id",
+              "Lua",
+              "comment"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "PK.",
+            "en": "PK."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "NULL = NULL?",
+            "en": "NULL = NULL?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "use IS NULL",
+              "crash",
+              "1"
+            ],
+            "en": [
+              "true",
+              "use IS NULL",
+              "crash",
+              "1"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "IS NULL.",
+            "en": "IS NULL."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Gemiddelde aggregate?",
+            "en": "Average aggregate?"
+          },
+          "fill": [
+            "AVG"
+          ],
+          "why": {
+            "nl": "AVG.",
+            "en": "AVG."
+          }
         }
       ]
     },
@@ -588,6 +2388,231 @@
           "why": {
             "nl": "Count.",
             "en": "Count."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Data ophalen?",
+            "en": "Fetch data?"
+          },
+          "choices": {
+            "nl": [
+              "GET",
+              "SELECT",
+              "print",
+              "trace"
+            ],
+            "en": [
+              "GET",
+              "SELECT",
+              "print",
+              "trace"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "SELECT.",
+            "en": "SELECT."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Filter clausule?",
+            "en": "Filter clause?"
+          },
+          "fill": [
+            "WHERE"
+          ],
+          "why": {
+            "nl": "WHERE.",
+            "en": "WHERE."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "ORDER BY DESC?",
+            "en": "ORDER BY DESC?"
+          },
+          "choices": {
+            "nl": [
+              "oplopend",
+              "aflopend",
+              "delete",
+              "join"
+            ],
+            "en": [
+              "asc",
+              "desc",
+              "delete",
+              "join"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Descending.",
+            "en": "Descending."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: SELECT * FORM t",
+            "en": "Spot: SELECT * FORM t"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "FORM->FROM",
+              "* fout",
+              "t fout"
+            ],
+            "en": [
+              "ok",
+              "FORM->FROM",
+              "* wrong",
+              "t wrong"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "FROM.",
+            "en": "FROM."
+          },
+          "code": "SELECT * FORM t;"
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Nieuwe rijen?",
+            "en": "New rows?"
+          },
+          "fill": [
+            "INSERT"
+          ],
+          "why": {
+            "nl": "INSERT.",
+            "en": "INSERT."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "JOIN?",
+            "en": "JOIN?"
+          },
+          "choices": {
+            "nl": [
+              "CSS",
+              "rijen koppelen",
+              "drop",
+              "limit"
+            ],
+            "en": [
+              "CSS",
+              "link rows",
+              "drop",
+              "limit"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Join.",
+            "en": "Join."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "PRIMARY KEY?",
+            "en": "PRIMARY KEY?"
+          },
+          "choices": {
+            "nl": [
+              "kleur",
+              "unieke id",
+              "Lua",
+              "comment"
+            ],
+            "en": [
+              "color",
+              "unique id",
+              "Lua",
+              "comment"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "PK.",
+            "en": "PK."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "NULL = NULL?",
+            "en": "NULL = NULL?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "use IS NULL",
+              "crash",
+              "1"
+            ],
+            "en": [
+              "true",
+              "use IS NULL",
+              "crash",
+              "1"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "IS NULL.",
+            "en": "IS NULL."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Gemiddelde aggregate?",
+            "en": "Average aggregate?"
+          },
+          "fill": [
+            "AVG"
+          ],
+          "why": {
+            "nl": "AVG.",
+            "en": "AVG."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "LIMIT 5?",
+            "en": "LIMIT 5?"
+          },
+          "choices": {
+            "nl": [
+              "5 tabellen",
+              "max 5 rijen",
+              "5 joins",
+              "error"
+            ],
+            "en": [
+              "5 tables",
+              "max 5 rows",
+              "5 joins",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Limit.",
+            "en": "Limit."
           }
         }
       ]
@@ -983,6 +3008,834 @@
         "nl": "Origineel.",
         "en": "Original."
       }
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 1] Data ophalen?",
+        "en": "[Pool 1] Fetch data?"
+      },
+      "choices": {
+        "nl": [
+          "GET",
+          "SELECT",
+          "print",
+          "trace"
+        ],
+        "en": [
+          "GET",
+          "SELECT",
+          "print",
+          "trace"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "SELECT.",
+        "en": "SELECT."
+      },
+      "id": 16
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 2] Filter clausule?",
+        "en": "[Pool 2] Filter clause?"
+      },
+      "fill": [
+        "WHERE"
+      ],
+      "why": {
+        "nl": "WHERE.",
+        "en": "WHERE."
+      },
+      "id": 17
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 3] ORDER BY DESC?",
+        "en": "[Pool 3] ORDER BY DESC?"
+      },
+      "choices": {
+        "nl": [
+          "oplopend",
+          "aflopend",
+          "delete",
+          "join"
+        ],
+        "en": [
+          "asc",
+          "desc",
+          "delete",
+          "join"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Descending.",
+        "en": "Descending."
+      },
+      "id": 18
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 4] COUNT(*)?",
+        "en": "[Pool 4] COUNT(*)?"
+      },
+      "choices": {
+        "nl": [
+          "som",
+          "aantal rijen",
+          "avg",
+          "max"
+        ],
+        "en": [
+          "sum",
+          "row count",
+          "avg",
+          "max"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Count.",
+        "en": "Count."
+      },
+      "id": 19
+    },
+    {
+      "type": "bug",
+      "q": {
+        "nl": "[Pool 5] Spot: SELECT * FORM t",
+        "en": "[Pool 5] Spot: SELECT * FORM t"
+      },
+      "choices": {
+        "nl": [
+          "ok",
+          "FORM->FROM",
+          "* fout",
+          "t fout"
+        ],
+        "en": [
+          "ok",
+          "FORM->FROM",
+          "* wrong",
+          "t wrong"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "FROM.",
+        "en": "FROM."
+      },
+      "code": "SELECT * FORM t;",
+      "id": 20
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 6] Nieuwe rijen?",
+        "en": "[Pool 6] New rows?"
+      },
+      "fill": [
+        "INSERT"
+      ],
+      "why": {
+        "nl": "INSERT.",
+        "en": "INSERT."
+      },
+      "id": 21
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 7] JOIN?",
+        "en": "[Pool 7] JOIN?"
+      },
+      "choices": {
+        "nl": [
+          "CSS",
+          "rijen koppelen",
+          "drop",
+          "limit"
+        ],
+        "en": [
+          "CSS",
+          "link rows",
+          "drop",
+          "limit"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Join.",
+        "en": "Join."
+      },
+      "id": 22
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 8] PRIMARY KEY?",
+        "en": "[Pool 8] PRIMARY KEY?"
+      },
+      "choices": {
+        "nl": [
+          "kleur",
+          "unieke id",
+          "Lua",
+          "comment"
+        ],
+        "en": [
+          "color",
+          "unique id",
+          "Lua",
+          "comment"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "PK.",
+        "en": "PK."
+      },
+      "id": 23
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 9] NULL = NULL?",
+        "en": "[Pool 9] NULL = NULL?"
+      },
+      "choices": {
+        "nl": [
+          "true",
+          "use IS NULL",
+          "crash",
+          "1"
+        ],
+        "en": [
+          "true",
+          "use IS NULL",
+          "crash",
+          "1"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "IS NULL.",
+        "en": "IS NULL."
+      },
+      "id": 24
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 10] Gemiddelde aggregate?",
+        "en": "[Pool 10] Average aggregate?"
+      },
+      "fill": [
+        "AVG"
+      ],
+      "why": {
+        "nl": "AVG.",
+        "en": "AVG."
+      },
+      "id": 25
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 11] LIMIT 5?",
+        "en": "[Pool 11] LIMIT 5?"
+      },
+      "choices": {
+        "nl": [
+          "5 tabellen",
+          "max 5 rijen",
+          "5 joins",
+          "error"
+        ],
+        "en": [
+          "5 tables",
+          "max 5 rows",
+          "5 joins",
+          "error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Limit.",
+        "en": "Limit."
+      },
+      "id": 26
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 12] DELETE zonder WHERE?",
+        "en": "[Pool 12] DELETE without WHERE?"
+      },
+      "choices": {
+        "nl": [
+          "1 rij",
+          "kan alles",
+          "noop",
+          "always error"
+        ],
+        "en": [
+          "1 row",
+          "can delete all",
+          "noop",
+          "always error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Dangerous.",
+        "en": "Dangerous."
+      },
+      "id": 27
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 13] GROUP BY?",
+        "en": "[Pool 13] GROUP BY?"
+      },
+      "choices": {
+        "nl": [
+          "CSS",
+          "aggregatie groepen",
+          "Lua",
+          "C"
+        ],
+        "en": [
+          "CSS",
+          "aggregation groups",
+          "Lua",
+          "C"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Group.",
+        "en": "Group."
+      },
+      "id": 28
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 14] Update keyword?",
+        "en": "[Pool 14] Update keyword?"
+      },
+      "fill": [
+        "UPDATE"
+      ],
+      "why": {
+        "nl": "UPDATE.",
+        "en": "UPDATE."
+      },
+      "id": 29
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 15] Data ophalen?",
+        "en": "[Pool 15] Fetch data?"
+      },
+      "choices": {
+        "nl": [
+          "GET",
+          "SELECT",
+          "print",
+          "trace"
+        ],
+        "en": [
+          "GET",
+          "SELECT",
+          "print",
+          "trace"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "SELECT.",
+        "en": "SELECT."
+      },
+      "id": 30
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 16] Filter clausule?",
+        "en": "[Pool 16] Filter clause?"
+      },
+      "fill": [
+        "WHERE"
+      ],
+      "why": {
+        "nl": "WHERE.",
+        "en": "WHERE."
+      },
+      "id": 31
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 17] ORDER BY DESC?",
+        "en": "[Pool 17] ORDER BY DESC?"
+      },
+      "choices": {
+        "nl": [
+          "oplopend",
+          "aflopend",
+          "delete",
+          "join"
+        ],
+        "en": [
+          "asc",
+          "desc",
+          "delete",
+          "join"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Descending.",
+        "en": "Descending."
+      },
+      "id": 32
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 18] COUNT(*)?",
+        "en": "[Pool 18] COUNT(*)?"
+      },
+      "choices": {
+        "nl": [
+          "som",
+          "aantal rijen",
+          "avg",
+          "max"
+        ],
+        "en": [
+          "sum",
+          "row count",
+          "avg",
+          "max"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Count.",
+        "en": "Count."
+      },
+      "id": 33
+    },
+    {
+      "type": "bug",
+      "q": {
+        "nl": "[Pool 19] Spot: SELECT * FORM t",
+        "en": "[Pool 19] Spot: SELECT * FORM t"
+      },
+      "choices": {
+        "nl": [
+          "ok",
+          "FORM->FROM",
+          "* fout",
+          "t fout"
+        ],
+        "en": [
+          "ok",
+          "FORM->FROM",
+          "* wrong",
+          "t wrong"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "FROM.",
+        "en": "FROM."
+      },
+      "code": "SELECT * FORM t;",
+      "id": 34
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 20] Nieuwe rijen?",
+        "en": "[Pool 20] New rows?"
+      },
+      "fill": [
+        "INSERT"
+      ],
+      "why": {
+        "nl": "INSERT.",
+        "en": "INSERT."
+      },
+      "id": 35
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 21] JOIN?",
+        "en": "[Pool 21] JOIN?"
+      },
+      "choices": {
+        "nl": [
+          "CSS",
+          "rijen koppelen",
+          "drop",
+          "limit"
+        ],
+        "en": [
+          "CSS",
+          "link rows",
+          "drop",
+          "limit"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Join.",
+        "en": "Join."
+      },
+      "id": 36
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 22] PRIMARY KEY?",
+        "en": "[Pool 22] PRIMARY KEY?"
+      },
+      "choices": {
+        "nl": [
+          "kleur",
+          "unieke id",
+          "Lua",
+          "comment"
+        ],
+        "en": [
+          "color",
+          "unique id",
+          "Lua",
+          "comment"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "PK.",
+        "en": "PK."
+      },
+      "id": 37
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 23] NULL = NULL?",
+        "en": "[Pool 23] NULL = NULL?"
+      },
+      "choices": {
+        "nl": [
+          "true",
+          "use IS NULL",
+          "crash",
+          "1"
+        ],
+        "en": [
+          "true",
+          "use IS NULL",
+          "crash",
+          "1"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "IS NULL.",
+        "en": "IS NULL."
+      },
+      "id": 38
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 24] Gemiddelde aggregate?",
+        "en": "[Pool 24] Average aggregate?"
+      },
+      "fill": [
+        "AVG"
+      ],
+      "why": {
+        "nl": "AVG.",
+        "en": "AVG."
+      },
+      "id": 39
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 25] LIMIT 5?",
+        "en": "[Pool 25] LIMIT 5?"
+      },
+      "choices": {
+        "nl": [
+          "5 tabellen",
+          "max 5 rijen",
+          "5 joins",
+          "error"
+        ],
+        "en": [
+          "5 tables",
+          "max 5 rows",
+          "5 joins",
+          "error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Limit.",
+        "en": "Limit."
+      },
+      "id": 40
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 26] DELETE zonder WHERE?",
+        "en": "[Pool 26] DELETE without WHERE?"
+      },
+      "choices": {
+        "nl": [
+          "1 rij",
+          "kan alles",
+          "noop",
+          "always error"
+        ],
+        "en": [
+          "1 row",
+          "can delete all",
+          "noop",
+          "always error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Dangerous.",
+        "en": "Dangerous."
+      },
+      "id": 41
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 27] GROUP BY?",
+        "en": "[Pool 27] GROUP BY?"
+      },
+      "choices": {
+        "nl": [
+          "CSS",
+          "aggregatie groepen",
+          "Lua",
+          "C"
+        ],
+        "en": [
+          "CSS",
+          "aggregation groups",
+          "Lua",
+          "C"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Group.",
+        "en": "Group."
+      },
+      "id": 42
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 28] Update keyword?",
+        "en": "[Pool 28] Update keyword?"
+      },
+      "fill": [
+        "UPDATE"
+      ],
+      "why": {
+        "nl": "UPDATE.",
+        "en": "UPDATE."
+      },
+      "id": 43
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 29] Data ophalen?",
+        "en": "[Pool 29] Fetch data?"
+      },
+      "choices": {
+        "nl": [
+          "GET",
+          "SELECT",
+          "print",
+          "trace"
+        ],
+        "en": [
+          "GET",
+          "SELECT",
+          "print",
+          "trace"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "SELECT.",
+        "en": "SELECT."
+      },
+      "id": 44
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 30] Filter clausule?",
+        "en": "[Pool 30] Filter clause?"
+      },
+      "fill": [
+        "WHERE"
+      ],
+      "why": {
+        "nl": "WHERE.",
+        "en": "WHERE."
+      },
+      "id": 45
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 31] ORDER BY DESC?",
+        "en": "[Pool 31] ORDER BY DESC?"
+      },
+      "choices": {
+        "nl": [
+          "oplopend",
+          "aflopend",
+          "delete",
+          "join"
+        ],
+        "en": [
+          "asc",
+          "desc",
+          "delete",
+          "join"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Descending.",
+        "en": "Descending."
+      },
+      "id": 46
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 32] COUNT(*)?",
+        "en": "[Pool 32] COUNT(*)?"
+      },
+      "choices": {
+        "nl": [
+          "som",
+          "aantal rijen",
+          "avg",
+          "max"
+        ],
+        "en": [
+          "sum",
+          "row count",
+          "avg",
+          "max"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Count.",
+        "en": "Count."
+      },
+      "id": 47
+    },
+    {
+      "type": "bug",
+      "q": {
+        "nl": "[Pool 33] Spot: SELECT * FORM t",
+        "en": "[Pool 33] Spot: SELECT * FORM t"
+      },
+      "choices": {
+        "nl": [
+          "ok",
+          "FORM->FROM",
+          "* fout",
+          "t fout"
+        ],
+        "en": [
+          "ok",
+          "FORM->FROM",
+          "* wrong",
+          "t wrong"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "FROM.",
+        "en": "FROM."
+      },
+      "code": "SELECT * FORM t;",
+      "id": 48
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 34] Nieuwe rijen?",
+        "en": "[Pool 34] New rows?"
+      },
+      "fill": [
+        "INSERT"
+      ],
+      "why": {
+        "nl": "INSERT.",
+        "en": "INSERT."
+      },
+      "id": 49
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 35] JOIN?",
+        "en": "[Pool 35] JOIN?"
+      },
+      "choices": {
+        "nl": [
+          "CSS",
+          "rijen koppelen",
+          "drop",
+          "limit"
+        ],
+        "en": [
+          "CSS",
+          "link rows",
+          "drop",
+          "limit"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Join.",
+        "en": "Join."
+      },
+      "id": 50
     }
   ],
   "challenges": [
@@ -1036,6 +3889,7 @@
         }
       ]
     }
-  ]
+  ],
+  "examDraw": 25
 };
 })(window);

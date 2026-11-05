@@ -71,6 +71,232 @@
             "nl": ": type.",
             "en": " : type."
           }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Type annotatie vorm voor x string?",
+            "en": "Type annotation shape for x string?"
+          },
+          "fill": [
+            "x: string",
+            "x: string"
+          ],
+          "why": {
+            "nl": "x: string.",
+            "en": "x: string."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "interface?",
+            "en": "interface?"
+          },
+          "choices": {
+            "nl": [
+              "runtime class",
+              "object shape type",
+              "SQL",
+              "Lua"
+            ],
+            "en": [
+              "runtime class",
+              "object shape type",
+              "SQL",
+              "Lua"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Shape.",
+            "en": "Shape."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "string | null?",
+            "en": "string | null?"
+          },
+          "choices": {
+            "nl": [
+              "alleen string",
+              "union",
+              "SQL",
+              "error"
+            ],
+            "en": [
+              "string only",
+              "union",
+              "SQL",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Union.",
+            "en": "Union."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "any is?",
+            "en": "any is?"
+          },
+          "choices": {
+            "nl": [
+              "strengste",
+              "escape hatch",
+              "SQL",
+              "nil"
+            ],
+            "en": [
+              "strictest",
+              "escape hatch",
+              "SQL",
+              "nil"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Escape.",
+            "en": "Escape."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Compiler CLI naam?",
+            "en": "Compiler CLI name?"
+          },
+          "fill": [
+            "tsc"
+          ],
+          "why": {
+            "nl": "tsc.",
+            "en": "tsc."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "strict mode helpt?",
+            "en": "strict mode helps?"
+          },
+          "choices": {
+            "nl": [
+              "losser",
+              "strengere checks",
+              "pip",
+              "Godot"
+            ],
+            "en": [
+              "looser",
+              "stricter checks",
+              "pip",
+              "Godot"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Stricter.",
+            "en": "Stricter."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "optional prop syntax?",
+            "en": "optional prop syntax?"
+          },
+          "choices": {
+            "nl": [
+              "name!:",
+              "name?:",
+              "name||",
+              "name~"
+            ],
+            "en": [
+              "name!:",
+              "name?:",
+              "name||",
+              "name~"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "?.",
+            "en": "?."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot bug: let n: number = '1'",
+            "en": "Spot bug: let n: number = '1'"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "type mismatch",
+              "semicolon",
+              "const"
+            ],
+            "en": [
+              "ok",
+              "type mismatch",
+              "semicolon",
+              "const"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Wrong type.",
+            "en": "Wrong type."
+          },
+          "code": "let n: number = '1';"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "unknown vs any?",
+            "en": "unknown vs any?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "unknown veiliger",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "same",
+              "unknown safer",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Safer.",
+            "en": "Safer."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Geen return type?",
+            "en": "No return type?"
+          },
+          "fill": [
+            "void"
+          ],
+          "why": {
+            "nl": "void.",
+            "en": "void."
+          }
         }
       ],
       "exercise": {
@@ -148,6 +374,232 @@
             "nl": "Escape.",
             "en": "Escape."
           }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "TS compileert naar?",
+            "en": "TS compiles to?"
+          },
+          "choices": {
+            "nl": [
+              "Java",
+              "JavaScript",
+              "SQL",
+              "LLVM only"
+            ],
+            "en": [
+              "Java",
+              "JavaScript",
+              "SQL",
+              "LLVM only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "JS.",
+            "en": "JS."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Type annotatie vorm voor x string?",
+            "en": "Type annotation shape for x string?"
+          },
+          "fill": [
+            "x: string",
+            "x: string"
+          ],
+          "why": {
+            "nl": "x: string.",
+            "en": "x: string."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "interface?",
+            "en": "interface?"
+          },
+          "choices": {
+            "nl": [
+              "runtime class",
+              "object shape type",
+              "SQL",
+              "Lua"
+            ],
+            "en": [
+              "runtime class",
+              "object shape type",
+              "SQL",
+              "Lua"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Shape.",
+            "en": "Shape."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "string | null?",
+            "en": "string | null?"
+          },
+          "choices": {
+            "nl": [
+              "alleen string",
+              "union",
+              "SQL",
+              "error"
+            ],
+            "en": [
+              "string only",
+              "union",
+              "SQL",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Union.",
+            "en": "Union."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Compiler CLI naam?",
+            "en": "Compiler CLI name?"
+          },
+          "fill": [
+            "tsc"
+          ],
+          "why": {
+            "nl": "tsc.",
+            "en": "tsc."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "strict mode helpt?",
+            "en": "strict mode helps?"
+          },
+          "choices": {
+            "nl": [
+              "losser",
+              "strengere checks",
+              "pip",
+              "Godot"
+            ],
+            "en": [
+              "looser",
+              "stricter checks",
+              "pip",
+              "Godot"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Stricter.",
+            "en": "Stricter."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "optional prop syntax?",
+            "en": "optional prop syntax?"
+          },
+          "choices": {
+            "nl": [
+              "name!:",
+              "name?:",
+              "name||",
+              "name~"
+            ],
+            "en": [
+              "name!:",
+              "name?:",
+              "name||",
+              "name~"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "?.",
+            "en": "?."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot bug: let n: number = '1'",
+            "en": "Spot bug: let n: number = '1'"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "type mismatch",
+              "semicolon",
+              "const"
+            ],
+            "en": [
+              "ok",
+              "type mismatch",
+              "semicolon",
+              "const"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Wrong type.",
+            "en": "Wrong type."
+          },
+          "code": "let n: number = '1';"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "unknown vs any?",
+            "en": "unknown vs any?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "unknown veiliger",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "same",
+              "unknown safer",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Safer.",
+            "en": "Safer."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Geen return type?",
+            "en": "No return type?"
+          },
+          "fill": [
+            "void"
+          ],
+          "why": {
+            "nl": "void.",
+            "en": "void."
+          }
         }
       ]
     },
@@ -210,6 +662,244 @@
           "why": {
             "nl": "Union.",
             "en": "Union."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "TS compileert naar?",
+            "en": "TS compiles to?"
+          },
+          "choices": {
+            "nl": [
+              "Java",
+              "JavaScript",
+              "SQL",
+              "LLVM only"
+            ],
+            "en": [
+              "Java",
+              "JavaScript",
+              "SQL",
+              "LLVM only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "JS.",
+            "en": "JS."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Type annotatie vorm voor x string?",
+            "en": "Type annotation shape for x string?"
+          },
+          "fill": [
+            "x: string",
+            "x: string"
+          ],
+          "why": {
+            "nl": "x: string.",
+            "en": "x: string."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "interface?",
+            "en": "interface?"
+          },
+          "choices": {
+            "nl": [
+              "runtime class",
+              "object shape type",
+              "SQL",
+              "Lua"
+            ],
+            "en": [
+              "runtime class",
+              "object shape type",
+              "SQL",
+              "Lua"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Shape.",
+            "en": "Shape."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "string | null?",
+            "en": "string | null?"
+          },
+          "choices": {
+            "nl": [
+              "alleen string",
+              "union",
+              "SQL",
+              "error"
+            ],
+            "en": [
+              "string only",
+              "union",
+              "SQL",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Union.",
+            "en": "Union."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "any is?",
+            "en": "any is?"
+          },
+          "choices": {
+            "nl": [
+              "strengste",
+              "escape hatch",
+              "SQL",
+              "nil"
+            ],
+            "en": [
+              "strictest",
+              "escape hatch",
+              "SQL",
+              "nil"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Escape.",
+            "en": "Escape."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Compiler CLI naam?",
+            "en": "Compiler CLI name?"
+          },
+          "fill": [
+            "tsc"
+          ],
+          "why": {
+            "nl": "tsc.",
+            "en": "tsc."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "strict mode helpt?",
+            "en": "strict mode helps?"
+          },
+          "choices": {
+            "nl": [
+              "losser",
+              "strengere checks",
+              "pip",
+              "Godot"
+            ],
+            "en": [
+              "looser",
+              "stricter checks",
+              "pip",
+              "Godot"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Stricter.",
+            "en": "Stricter."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "optional prop syntax?",
+            "en": "optional prop syntax?"
+          },
+          "choices": {
+            "nl": [
+              "name!:",
+              "name?:",
+              "name||",
+              "name~"
+            ],
+            "en": [
+              "name!:",
+              "name?:",
+              "name||",
+              "name~"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "?.",
+            "en": "?."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot bug: let n: number = '1'",
+            "en": "Spot bug: let n: number = '1'"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "type mismatch",
+              "semicolon",
+              "const"
+            ],
+            "en": [
+              "ok",
+              "type mismatch",
+              "semicolon",
+              "const"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Wrong type.",
+            "en": "Wrong type."
+          },
+          "code": "let n: number = '1';"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "unknown vs any?",
+            "en": "unknown vs any?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "unknown veiliger",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "same",
+              "unknown safer",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Safer.",
+            "en": "Safer."
           }
         }
       ]
@@ -274,6 +964,244 @@
             "nl": "Values.",
             "en": "Values."
           }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "TS compileert naar?",
+            "en": "TS compiles to?"
+          },
+          "choices": {
+            "nl": [
+              "Java",
+              "JavaScript",
+              "SQL",
+              "LLVM only"
+            ],
+            "en": [
+              "Java",
+              "JavaScript",
+              "SQL",
+              "LLVM only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "JS.",
+            "en": "JS."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Type annotatie vorm voor x string?",
+            "en": "Type annotation shape for x string?"
+          },
+          "fill": [
+            "x: string",
+            "x: string"
+          ],
+          "why": {
+            "nl": "x: string.",
+            "en": "x: string."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "interface?",
+            "en": "interface?"
+          },
+          "choices": {
+            "nl": [
+              "runtime class",
+              "object shape type",
+              "SQL",
+              "Lua"
+            ],
+            "en": [
+              "runtime class",
+              "object shape type",
+              "SQL",
+              "Lua"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Shape.",
+            "en": "Shape."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "string | null?",
+            "en": "string | null?"
+          },
+          "choices": {
+            "nl": [
+              "alleen string",
+              "union",
+              "SQL",
+              "error"
+            ],
+            "en": [
+              "string only",
+              "union",
+              "SQL",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Union.",
+            "en": "Union."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "any is?",
+            "en": "any is?"
+          },
+          "choices": {
+            "nl": [
+              "strengste",
+              "escape hatch",
+              "SQL",
+              "nil"
+            ],
+            "en": [
+              "strictest",
+              "escape hatch",
+              "SQL",
+              "nil"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Escape.",
+            "en": "Escape."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Compiler CLI naam?",
+            "en": "Compiler CLI name?"
+          },
+          "fill": [
+            "tsc"
+          ],
+          "why": {
+            "nl": "tsc.",
+            "en": "tsc."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "strict mode helpt?",
+            "en": "strict mode helps?"
+          },
+          "choices": {
+            "nl": [
+              "losser",
+              "strengere checks",
+              "pip",
+              "Godot"
+            ],
+            "en": [
+              "looser",
+              "stricter checks",
+              "pip",
+              "Godot"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Stricter.",
+            "en": "Stricter."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "optional prop syntax?",
+            "en": "optional prop syntax?"
+          },
+          "choices": {
+            "nl": [
+              "name!:",
+              "name?:",
+              "name||",
+              "name~"
+            ],
+            "en": [
+              "name!:",
+              "name?:",
+              "name||",
+              "name~"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "?.",
+            "en": "?."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot bug: let n: number = '1'",
+            "en": "Spot bug: let n: number = '1'"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "type mismatch",
+              "semicolon",
+              "const"
+            ],
+            "en": [
+              "ok",
+              "type mismatch",
+              "semicolon",
+              "const"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Wrong type.",
+            "en": "Wrong type."
+          },
+          "code": "let n: number = '1';"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "unknown vs any?",
+            "en": "unknown vs any?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "unknown veiliger",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "same",
+              "unknown safer",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Safer.",
+            "en": "Safer."
+          }
         }
       ]
     },
@@ -336,6 +1264,244 @@
           "why": {
             "nl": "number.",
             "en": "number."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "TS compileert naar?",
+            "en": "TS compiles to?"
+          },
+          "choices": {
+            "nl": [
+              "Java",
+              "JavaScript",
+              "SQL",
+              "LLVM only"
+            ],
+            "en": [
+              "Java",
+              "JavaScript",
+              "SQL",
+              "LLVM only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "JS.",
+            "en": "JS."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Type annotatie vorm voor x string?",
+            "en": "Type annotation shape for x string?"
+          },
+          "fill": [
+            "x: string",
+            "x: string"
+          ],
+          "why": {
+            "nl": "x: string.",
+            "en": "x: string."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "interface?",
+            "en": "interface?"
+          },
+          "choices": {
+            "nl": [
+              "runtime class",
+              "object shape type",
+              "SQL",
+              "Lua"
+            ],
+            "en": [
+              "runtime class",
+              "object shape type",
+              "SQL",
+              "Lua"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Shape.",
+            "en": "Shape."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "string | null?",
+            "en": "string | null?"
+          },
+          "choices": {
+            "nl": [
+              "alleen string",
+              "union",
+              "SQL",
+              "error"
+            ],
+            "en": [
+              "string only",
+              "union",
+              "SQL",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Union.",
+            "en": "Union."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "any is?",
+            "en": "any is?"
+          },
+          "choices": {
+            "nl": [
+              "strengste",
+              "escape hatch",
+              "SQL",
+              "nil"
+            ],
+            "en": [
+              "strictest",
+              "escape hatch",
+              "SQL",
+              "nil"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Escape.",
+            "en": "Escape."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Compiler CLI naam?",
+            "en": "Compiler CLI name?"
+          },
+          "fill": [
+            "tsc"
+          ],
+          "why": {
+            "nl": "tsc.",
+            "en": "tsc."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "strict mode helpt?",
+            "en": "strict mode helps?"
+          },
+          "choices": {
+            "nl": [
+              "losser",
+              "strengere checks",
+              "pip",
+              "Godot"
+            ],
+            "en": [
+              "looser",
+              "stricter checks",
+              "pip",
+              "Godot"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Stricter.",
+            "en": "Stricter."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "optional prop syntax?",
+            "en": "optional prop syntax?"
+          },
+          "choices": {
+            "nl": [
+              "name!:",
+              "name?:",
+              "name||",
+              "name~"
+            ],
+            "en": [
+              "name!:",
+              "name?:",
+              "name||",
+              "name~"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "?.",
+            "en": "?."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot bug: let n: number = '1'",
+            "en": "Spot bug: let n: number = '1'"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "type mismatch",
+              "semicolon",
+              "const"
+            ],
+            "en": [
+              "ok",
+              "type mismatch",
+              "semicolon",
+              "const"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Wrong type.",
+            "en": "Wrong type."
+          },
+          "code": "let n: number = '1';"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "unknown vs any?",
+            "en": "unknown vs any?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "unknown veiliger",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "same",
+              "unknown safer",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Safer.",
+            "en": "Safer."
           }
         }
       ]
@@ -400,6 +1566,232 @@
             "nl": "number.",
             "en": "number."
           }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "TS compileert naar?",
+            "en": "TS compiles to?"
+          },
+          "choices": {
+            "nl": [
+              "Java",
+              "JavaScript",
+              "SQL",
+              "LLVM only"
+            ],
+            "en": [
+              "Java",
+              "JavaScript",
+              "SQL",
+              "LLVM only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "JS.",
+            "en": "JS."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Type annotatie vorm voor x string?",
+            "en": "Type annotation shape for x string?"
+          },
+          "fill": [
+            "x: string",
+            "x: string"
+          ],
+          "why": {
+            "nl": "x: string.",
+            "en": "x: string."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "string | null?",
+            "en": "string | null?"
+          },
+          "choices": {
+            "nl": [
+              "alleen string",
+              "union",
+              "SQL",
+              "error"
+            ],
+            "en": [
+              "string only",
+              "union",
+              "SQL",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Union.",
+            "en": "Union."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "any is?",
+            "en": "any is?"
+          },
+          "choices": {
+            "nl": [
+              "strengste",
+              "escape hatch",
+              "SQL",
+              "nil"
+            ],
+            "en": [
+              "strictest",
+              "escape hatch",
+              "SQL",
+              "nil"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Escape.",
+            "en": "Escape."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Compiler CLI naam?",
+            "en": "Compiler CLI name?"
+          },
+          "fill": [
+            "tsc"
+          ],
+          "why": {
+            "nl": "tsc.",
+            "en": "tsc."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "strict mode helpt?",
+            "en": "strict mode helps?"
+          },
+          "choices": {
+            "nl": [
+              "losser",
+              "strengere checks",
+              "pip",
+              "Godot"
+            ],
+            "en": [
+              "looser",
+              "stricter checks",
+              "pip",
+              "Godot"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Stricter.",
+            "en": "Stricter."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "optional prop syntax?",
+            "en": "optional prop syntax?"
+          },
+          "choices": {
+            "nl": [
+              "name!:",
+              "name?:",
+              "name||",
+              "name~"
+            ],
+            "en": [
+              "name!:",
+              "name?:",
+              "name||",
+              "name~"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "?.",
+            "en": "?."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot bug: let n: number = '1'",
+            "en": "Spot bug: let n: number = '1'"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "type mismatch",
+              "semicolon",
+              "const"
+            ],
+            "en": [
+              "ok",
+              "type mismatch",
+              "semicolon",
+              "const"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Wrong type.",
+            "en": "Wrong type."
+          },
+          "code": "let n: number = '1';"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "unknown vs any?",
+            "en": "unknown vs any?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "unknown veiliger",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "same",
+              "unknown safer",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Safer.",
+            "en": "Safer."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Geen return type?",
+            "en": "No return type?"
+          },
+          "fill": [
+            "void"
+          ],
+          "why": {
+            "nl": "void.",
+            "en": "void."
+          }
         }
       ]
     },
@@ -463,6 +1855,232 @@
             "nl": "Union.",
             "en": "Union."
           }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "TS compileert naar?",
+            "en": "TS compiles to?"
+          },
+          "choices": {
+            "nl": [
+              "Java",
+              "JavaScript",
+              "SQL",
+              "LLVM only"
+            ],
+            "en": [
+              "Java",
+              "JavaScript",
+              "SQL",
+              "LLVM only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "JS.",
+            "en": "JS."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Type annotatie vorm voor x string?",
+            "en": "Type annotation shape for x string?"
+          },
+          "fill": [
+            "x: string",
+            "x: string"
+          ],
+          "why": {
+            "nl": "x: string.",
+            "en": "x: string."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "interface?",
+            "en": "interface?"
+          },
+          "choices": {
+            "nl": [
+              "runtime class",
+              "object shape type",
+              "SQL",
+              "Lua"
+            ],
+            "en": [
+              "runtime class",
+              "object shape type",
+              "SQL",
+              "Lua"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Shape.",
+            "en": "Shape."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "any is?",
+            "en": "any is?"
+          },
+          "choices": {
+            "nl": [
+              "strengste",
+              "escape hatch",
+              "SQL",
+              "nil"
+            ],
+            "en": [
+              "strictest",
+              "escape hatch",
+              "SQL",
+              "nil"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Escape.",
+            "en": "Escape."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Compiler CLI naam?",
+            "en": "Compiler CLI name?"
+          },
+          "fill": [
+            "tsc"
+          ],
+          "why": {
+            "nl": "tsc.",
+            "en": "tsc."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "strict mode helpt?",
+            "en": "strict mode helps?"
+          },
+          "choices": {
+            "nl": [
+              "losser",
+              "strengere checks",
+              "pip",
+              "Godot"
+            ],
+            "en": [
+              "looser",
+              "stricter checks",
+              "pip",
+              "Godot"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Stricter.",
+            "en": "Stricter."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "optional prop syntax?",
+            "en": "optional prop syntax?"
+          },
+          "choices": {
+            "nl": [
+              "name!:",
+              "name?:",
+              "name||",
+              "name~"
+            ],
+            "en": [
+              "name!:",
+              "name?:",
+              "name||",
+              "name~"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "?.",
+            "en": "?."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot bug: let n: number = '1'",
+            "en": "Spot bug: let n: number = '1'"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "type mismatch",
+              "semicolon",
+              "const"
+            ],
+            "en": [
+              "ok",
+              "type mismatch",
+              "semicolon",
+              "const"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Wrong type.",
+            "en": "Wrong type."
+          },
+          "code": "let n: number = '1';"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "unknown vs any?",
+            "en": "unknown vs any?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "unknown veiliger",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "same",
+              "unknown safer",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Safer.",
+            "en": "Safer."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Geen return type?",
+            "en": "No return type?"
+          },
+          "fill": [
+            "void"
+          ],
+          "why": {
+            "nl": "void.",
+            "en": "void."
+          }
         }
       ]
     },
@@ -525,6 +2143,244 @@
           "why": {
             "nl": "2.",
             "en": "2."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "TS compileert naar?",
+            "en": "TS compiles to?"
+          },
+          "choices": {
+            "nl": [
+              "Java",
+              "JavaScript",
+              "SQL",
+              "LLVM only"
+            ],
+            "en": [
+              "Java",
+              "JavaScript",
+              "SQL",
+              "LLVM only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "JS.",
+            "en": "JS."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Type annotatie vorm voor x string?",
+            "en": "Type annotation shape for x string?"
+          },
+          "fill": [
+            "x: string",
+            "x: string"
+          ],
+          "why": {
+            "nl": "x: string.",
+            "en": "x: string."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "interface?",
+            "en": "interface?"
+          },
+          "choices": {
+            "nl": [
+              "runtime class",
+              "object shape type",
+              "SQL",
+              "Lua"
+            ],
+            "en": [
+              "runtime class",
+              "object shape type",
+              "SQL",
+              "Lua"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Shape.",
+            "en": "Shape."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "string | null?",
+            "en": "string | null?"
+          },
+          "choices": {
+            "nl": [
+              "alleen string",
+              "union",
+              "SQL",
+              "error"
+            ],
+            "en": [
+              "string only",
+              "union",
+              "SQL",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Union.",
+            "en": "Union."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "any is?",
+            "en": "any is?"
+          },
+          "choices": {
+            "nl": [
+              "strengste",
+              "escape hatch",
+              "SQL",
+              "nil"
+            ],
+            "en": [
+              "strictest",
+              "escape hatch",
+              "SQL",
+              "nil"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Escape.",
+            "en": "Escape."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Compiler CLI naam?",
+            "en": "Compiler CLI name?"
+          },
+          "fill": [
+            "tsc"
+          ],
+          "why": {
+            "nl": "tsc.",
+            "en": "tsc."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "strict mode helpt?",
+            "en": "strict mode helps?"
+          },
+          "choices": {
+            "nl": [
+              "losser",
+              "strengere checks",
+              "pip",
+              "Godot"
+            ],
+            "en": [
+              "looser",
+              "stricter checks",
+              "pip",
+              "Godot"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Stricter.",
+            "en": "Stricter."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "optional prop syntax?",
+            "en": "optional prop syntax?"
+          },
+          "choices": {
+            "nl": [
+              "name!:",
+              "name?:",
+              "name||",
+              "name~"
+            ],
+            "en": [
+              "name!:",
+              "name?:",
+              "name||",
+              "name~"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "?.",
+            "en": "?."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot bug: let n: number = '1'",
+            "en": "Spot bug: let n: number = '1'"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "type mismatch",
+              "semicolon",
+              "const"
+            ],
+            "en": [
+              "ok",
+              "type mismatch",
+              "semicolon",
+              "const"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Wrong type.",
+            "en": "Wrong type."
+          },
+          "code": "let n: number = '1';"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "unknown vs any?",
+            "en": "unknown vs any?"
+          },
+          "choices": {
+            "nl": [
+              "zelfde",
+              "unknown veiliger",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "same",
+              "unknown safer",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Safer.",
+            "en": "Safer."
           }
         }
       ]
@@ -920,6 +2776,860 @@
         "nl": "Origineel.",
         "en": "Original."
       }
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 1] TS compileert naar?",
+        "en": "[Pool 1] TS compiles to?"
+      },
+      "choices": {
+        "nl": [
+          "Java",
+          "JavaScript",
+          "SQL",
+          "LLVM only"
+        ],
+        "en": [
+          "Java",
+          "JavaScript",
+          "SQL",
+          "LLVM only"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "JS.",
+        "en": "JS."
+      },
+      "id": 16
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 2] Type annotatie vorm voor x string?",
+        "en": "[Pool 2] Type annotation shape for x string?"
+      },
+      "fill": [
+        "x: string",
+        "x: string"
+      ],
+      "why": {
+        "nl": "x: string.",
+        "en": "x: string."
+      },
+      "id": 17
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 3] interface?",
+        "en": "[Pool 3] interface?"
+      },
+      "choices": {
+        "nl": [
+          "runtime class",
+          "object shape type",
+          "SQL",
+          "Lua"
+        ],
+        "en": [
+          "runtime class",
+          "object shape type",
+          "SQL",
+          "Lua"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Shape.",
+        "en": "Shape."
+      },
+      "id": 18
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 4] string | null?",
+        "en": "[Pool 4] string | null?"
+      },
+      "choices": {
+        "nl": [
+          "alleen string",
+          "union",
+          "SQL",
+          "error"
+        ],
+        "en": [
+          "string only",
+          "union",
+          "SQL",
+          "error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Union.",
+        "en": "Union."
+      },
+      "id": 19
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 5] any is?",
+        "en": "[Pool 5] any is?"
+      },
+      "choices": {
+        "nl": [
+          "strengste",
+          "escape hatch",
+          "SQL",
+          "nil"
+        ],
+        "en": [
+          "strictest",
+          "escape hatch",
+          "SQL",
+          "nil"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Escape.",
+        "en": "Escape."
+      },
+      "id": 20
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 6] Compiler CLI naam?",
+        "en": "[Pool 6] Compiler CLI name?"
+      },
+      "fill": [
+        "tsc"
+      ],
+      "why": {
+        "nl": "tsc.",
+        "en": "tsc."
+      },
+      "id": 21
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 7] strict mode helpt?",
+        "en": "[Pool 7] strict mode helps?"
+      },
+      "choices": {
+        "nl": [
+          "losser",
+          "strengere checks",
+          "pip",
+          "Godot"
+        ],
+        "en": [
+          "looser",
+          "stricter checks",
+          "pip",
+          "Godot"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Stricter.",
+        "en": "Stricter."
+      },
+      "id": 22
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 8] optional prop syntax?",
+        "en": "[Pool 8] optional prop syntax?"
+      },
+      "choices": {
+        "nl": [
+          "name!:",
+          "name?:",
+          "name||",
+          "name~"
+        ],
+        "en": [
+          "name!:",
+          "name?:",
+          "name||",
+          "name~"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "?.",
+        "en": "?."
+      },
+      "id": 23
+    },
+    {
+      "type": "bug",
+      "q": {
+        "nl": "[Pool 9] Spot bug: let n: number = '1'",
+        "en": "[Pool 9] Spot bug: let n: number = '1'"
+      },
+      "choices": {
+        "nl": [
+          "ok",
+          "type mismatch",
+          "semicolon",
+          "const"
+        ],
+        "en": [
+          "ok",
+          "type mismatch",
+          "semicolon",
+          "const"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Wrong type.",
+        "en": "Wrong type."
+      },
+      "code": "let n: number = '1';",
+      "id": 24
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 10] unknown vs any?",
+        "en": "[Pool 10] unknown vs any?"
+      },
+      "choices": {
+        "nl": [
+          "zelfde",
+          "unknown veiliger",
+          "SQL",
+          "CSS"
+        ],
+        "en": [
+          "same",
+          "unknown safer",
+          "SQL",
+          "CSS"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Safer.",
+        "en": "Safer."
+      },
+      "id": 25
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 11] Geen return type?",
+        "en": "[Pool 11] No return type?"
+      },
+      "fill": [
+        "void"
+      ],
+      "why": {
+        "nl": "void.",
+        "en": "void."
+      },
+      "id": 26
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 12] readonly?",
+        "en": "[Pool 12] readonly?"
+      },
+      "choices": {
+        "nl": [
+          "meer mutatie",
+          "niet schrijven",
+          "pip",
+          "git"
+        ],
+        "en": [
+          "more mutation",
+          "no write",
+          "pip",
+          "git"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Readonly.",
+        "en": "Readonly."
+      },
+      "id": 27
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 13] generics idee?",
+        "en": "[Pool 13] generics idea?"
+      },
+      "choices": {
+        "nl": [
+          "CSS",
+          "herbruikbare types",
+          "SQL",
+          "Lua"
+        ],
+        "en": [
+          "CSS",
+          "reusable types",
+          "SQL",
+          "Lua"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Generics.",
+        "en": "Generics."
+      },
+      "id": 28
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 14] as assertion?",
+        "en": "[Pool 14] as assertion?"
+      },
+      "choices": {
+        "nl": [
+          "runtime always safe",
+          "type assertion",
+          "SQL",
+          "CSS"
+        ],
+        "en": [
+          "always runtime safe",
+          "type assertion",
+          "SQL",
+          "CSS"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Assertion.",
+        "en": "Assertion."
+      },
+      "id": 29
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 15] TS compileert naar?",
+        "en": "[Pool 15] TS compiles to?"
+      },
+      "choices": {
+        "nl": [
+          "Java",
+          "JavaScript",
+          "SQL",
+          "LLVM only"
+        ],
+        "en": [
+          "Java",
+          "JavaScript",
+          "SQL",
+          "LLVM only"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "JS.",
+        "en": "JS."
+      },
+      "id": 30
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 16] Type annotatie vorm voor x string?",
+        "en": "[Pool 16] Type annotation shape for x string?"
+      },
+      "fill": [
+        "x: string",
+        "x: string"
+      ],
+      "why": {
+        "nl": "x: string.",
+        "en": "x: string."
+      },
+      "id": 31
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 17] interface?",
+        "en": "[Pool 17] interface?"
+      },
+      "choices": {
+        "nl": [
+          "runtime class",
+          "object shape type",
+          "SQL",
+          "Lua"
+        ],
+        "en": [
+          "runtime class",
+          "object shape type",
+          "SQL",
+          "Lua"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Shape.",
+        "en": "Shape."
+      },
+      "id": 32
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 18] string | null?",
+        "en": "[Pool 18] string | null?"
+      },
+      "choices": {
+        "nl": [
+          "alleen string",
+          "union",
+          "SQL",
+          "error"
+        ],
+        "en": [
+          "string only",
+          "union",
+          "SQL",
+          "error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Union.",
+        "en": "Union."
+      },
+      "id": 33
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 19] any is?",
+        "en": "[Pool 19] any is?"
+      },
+      "choices": {
+        "nl": [
+          "strengste",
+          "escape hatch",
+          "SQL",
+          "nil"
+        ],
+        "en": [
+          "strictest",
+          "escape hatch",
+          "SQL",
+          "nil"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Escape.",
+        "en": "Escape."
+      },
+      "id": 34
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 20] Compiler CLI naam?",
+        "en": "[Pool 20] Compiler CLI name?"
+      },
+      "fill": [
+        "tsc"
+      ],
+      "why": {
+        "nl": "tsc.",
+        "en": "tsc."
+      },
+      "id": 35
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 21] strict mode helpt?",
+        "en": "[Pool 21] strict mode helps?"
+      },
+      "choices": {
+        "nl": [
+          "losser",
+          "strengere checks",
+          "pip",
+          "Godot"
+        ],
+        "en": [
+          "looser",
+          "stricter checks",
+          "pip",
+          "Godot"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Stricter.",
+        "en": "Stricter."
+      },
+      "id": 36
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 22] optional prop syntax?",
+        "en": "[Pool 22] optional prop syntax?"
+      },
+      "choices": {
+        "nl": [
+          "name!:",
+          "name?:",
+          "name||",
+          "name~"
+        ],
+        "en": [
+          "name!:",
+          "name?:",
+          "name||",
+          "name~"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "?.",
+        "en": "?."
+      },
+      "id": 37
+    },
+    {
+      "type": "bug",
+      "q": {
+        "nl": "[Pool 23] Spot bug: let n: number = '1'",
+        "en": "[Pool 23] Spot bug: let n: number = '1'"
+      },
+      "choices": {
+        "nl": [
+          "ok",
+          "type mismatch",
+          "semicolon",
+          "const"
+        ],
+        "en": [
+          "ok",
+          "type mismatch",
+          "semicolon",
+          "const"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Wrong type.",
+        "en": "Wrong type."
+      },
+      "code": "let n: number = '1';",
+      "id": 38
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 24] unknown vs any?",
+        "en": "[Pool 24] unknown vs any?"
+      },
+      "choices": {
+        "nl": [
+          "zelfde",
+          "unknown veiliger",
+          "SQL",
+          "CSS"
+        ],
+        "en": [
+          "same",
+          "unknown safer",
+          "SQL",
+          "CSS"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Safer.",
+        "en": "Safer."
+      },
+      "id": 39
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 25] Geen return type?",
+        "en": "[Pool 25] No return type?"
+      },
+      "fill": [
+        "void"
+      ],
+      "why": {
+        "nl": "void.",
+        "en": "void."
+      },
+      "id": 40
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 26] readonly?",
+        "en": "[Pool 26] readonly?"
+      },
+      "choices": {
+        "nl": [
+          "meer mutatie",
+          "niet schrijven",
+          "pip",
+          "git"
+        ],
+        "en": [
+          "more mutation",
+          "no write",
+          "pip",
+          "git"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Readonly.",
+        "en": "Readonly."
+      },
+      "id": 41
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 27] generics idee?",
+        "en": "[Pool 27] generics idea?"
+      },
+      "choices": {
+        "nl": [
+          "CSS",
+          "herbruikbare types",
+          "SQL",
+          "Lua"
+        ],
+        "en": [
+          "CSS",
+          "reusable types",
+          "SQL",
+          "Lua"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Generics.",
+        "en": "Generics."
+      },
+      "id": 42
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 28] as assertion?",
+        "en": "[Pool 28] as assertion?"
+      },
+      "choices": {
+        "nl": [
+          "runtime always safe",
+          "type assertion",
+          "SQL",
+          "CSS"
+        ],
+        "en": [
+          "always runtime safe",
+          "type assertion",
+          "SQL",
+          "CSS"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Assertion.",
+        "en": "Assertion."
+      },
+      "id": 43
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 29] TS compileert naar?",
+        "en": "[Pool 29] TS compiles to?"
+      },
+      "choices": {
+        "nl": [
+          "Java",
+          "JavaScript",
+          "SQL",
+          "LLVM only"
+        ],
+        "en": [
+          "Java",
+          "JavaScript",
+          "SQL",
+          "LLVM only"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "JS.",
+        "en": "JS."
+      },
+      "id": 44
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 30] Type annotatie vorm voor x string?",
+        "en": "[Pool 30] Type annotation shape for x string?"
+      },
+      "fill": [
+        "x: string",
+        "x: string"
+      ],
+      "why": {
+        "nl": "x: string.",
+        "en": "x: string."
+      },
+      "id": 45
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 31] interface?",
+        "en": "[Pool 31] interface?"
+      },
+      "choices": {
+        "nl": [
+          "runtime class",
+          "object shape type",
+          "SQL",
+          "Lua"
+        ],
+        "en": [
+          "runtime class",
+          "object shape type",
+          "SQL",
+          "Lua"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Shape.",
+        "en": "Shape."
+      },
+      "id": 46
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 32] string | null?",
+        "en": "[Pool 32] string | null?"
+      },
+      "choices": {
+        "nl": [
+          "alleen string",
+          "union",
+          "SQL",
+          "error"
+        ],
+        "en": [
+          "string only",
+          "union",
+          "SQL",
+          "error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Union.",
+        "en": "Union."
+      },
+      "id": 47
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 33] any is?",
+        "en": "[Pool 33] any is?"
+      },
+      "choices": {
+        "nl": [
+          "strengste",
+          "escape hatch",
+          "SQL",
+          "nil"
+        ],
+        "en": [
+          "strictest",
+          "escape hatch",
+          "SQL",
+          "nil"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Escape.",
+        "en": "Escape."
+      },
+      "id": 48
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 34] Compiler CLI naam?",
+        "en": "[Pool 34] Compiler CLI name?"
+      },
+      "fill": [
+        "tsc"
+      ],
+      "why": {
+        "nl": "tsc.",
+        "en": "tsc."
+      },
+      "id": 49
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 35] strict mode helpt?",
+        "en": "[Pool 35] strict mode helps?"
+      },
+      "choices": {
+        "nl": [
+          "losser",
+          "strengere checks",
+          "pip",
+          "Godot"
+        ],
+        "en": [
+          "looser",
+          "stricter checks",
+          "pip",
+          "Godot"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Stricter.",
+        "en": "Stricter."
+      },
+      "id": 50
     }
   ],
   "challenges": [
@@ -961,6 +3671,7 @@
         }
       ]
     }
-  ]
+  ],
+  "examDraw": 25
 };
 })(window);

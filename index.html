@@ -22,6 +22,7 @@
       <a href="exam.html" data-nav="exam" data-i18n="nav_exam">Proefexamen</a>
       <a href="playground.html" data-nav="play" data-i18n="nav_play">Playground</a>
       <a href="certificate.html" data-nav="cert" data-i18n="nav_cert">Certificaat</a>
+      <a href="review.html" data-nav="review" data-i18n="nav_review">Herhalen</a>
       <button type="button" class="lang-btn" data-lang="nl">NL</button>
       <button type="button" class="lang-btn" data-lang="en">EN</button>
     </nav>
@@ -31,6 +32,7 @@
     <section class="hero">
       <h1 data-i18n="hero_title"></h1>
       <p class="tagline" data-i18n="hero_tag"></p>
+      <p><a class="pill" id="due-home" href="review.html"></a></p>
       <div class="hero-actions">
         <a class="btn" href="#courses" data-i18n="cta_start"></a>
         <a class="btn secondary" href="playground.html" data-i18n="nav_play"></a>
@@ -55,6 +57,7 @@
   </footer>
 
   <script src="js/i18n.js"></script>
+  <script src="js/srs.js"></script>
   <script src="js/courses-registry.js"></script>
   <script src="js/app.js"></script>
   <script>
@@ -84,7 +87,12 @@
         root.appendChild(block);
       });
     }
-    document.addEventListener("DOMContentLoaded", renderPicker);
-    document.addEventListener("codecrib:lang", renderPicker);
+    function paintDue(){
+      const n = CodeCribSrs.dueCount();
+      const el = document.getElementById("due-home");
+      if (el) el.textContent = CodeCribI18n.t("review_due") + ": " + n;
+    }
+    document.addEventListener("DOMContentLoaded", () => { renderPicker(); paintDue(); });
+    document.addEventListener("codecrib:lang", () => { renderPicker(); paintDue(); });
   </script>
 </body></html>

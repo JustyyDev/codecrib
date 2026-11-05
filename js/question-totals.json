@@ -1,0 +1,114 @@
+{
+  "c": {
+    "lessons": 9,
+    "quiz_total": 108,
+    "per_lesson_min": 12,
+    "exam_pool": 50,
+    "exam_draw": 25,
+    "challenges": 2
+  },
+  "cpp": {
+    "lessons": 9,
+    "quiz_total": 108,
+    "per_lesson_min": 12,
+    "exam_pool": 50,
+    "exam_draw": 25,
+    "challenges": 2
+  },
+  "csharp": {
+    "lessons": 10,
+    "quiz_total": 120,
+    "per_lesson_min": 12,
+    "exam_pool": 50,
+    "exam_draw": 25,
+    "challenges": 2
+  },
+  "gdscript": {
+    "lessons": 9,
+    "quiz_total": 108,
+    "per_lesson_min": 12,
+    "exam_pool": 50,
+    "exam_draw": 25,
+    "challenges": 2
+  },
+  "go": {
+    "lessons": 9,
+    "quiz_total": 108,
+    "per_lesson_min": 12,
+    "exam_pool": 50,
+    "exam_draw": 25,
+    "challenges": 2
+  },
+  "haxe": {
+    "lessons": 9,
+    "quiz_total": 108,
+    "per_lesson_min": 12,
+    "exam_pool": 50,
+    "exam_draw": 25,
+    "challenges": 2
+  },
+  "htmlcss": {
+    "lessons": 8,
+    "quiz_total": 96,
+    "per_lesson_min": 12,
+    "exam_pool": 50,
+    "exam_draw": 25,
+    "challenges": 2
+  },
+  "java": {
+    "lessons": 9,
+    "quiz_total": 108,
+    "per_lesson_min": 12,
+    "exam_pool": 50,
+    "exam_draw": 25,
+    "challenges": 2
+  },
+  "javascript": {
+    "lessons": 10,
+    "quiz_total": 120,
+    "per_lesson_min": 12,
+    "exam_pool": 50,
+    "exam_draw": 25,
+    "challenges": 2
+  },
+  "lua": {
+    "lessons": 9,
+    "quiz_total": 108,
+    "per_lesson_min": 12,
+    "exam_pool": 50,
+    "exam_draw": 25,
+    "challenges": 2
+  },
+  "python": {
+    "lessons": 9,
+    "quiz_total": 108,
+    "per_lesson_min": 12,
+    "exam_pool": 50,
+    "exam_draw": 25,
+    "challenges": 2
+  },
+  "rust": {
+    "lessons": 9,
+    "quiz_total": 108,
+    "per_lesson_min": 12,
+    "exam_pool": 50,
+    "exam_draw": 25,
+    "challenges": 2
+  },
+  "sql": {
+    "lessons": 9,
+    "quiz_total": 108,
+    "per_lesson_min": 12,
+    "exam_pool": 50,
+    "exam_draw": 25,
+    "challenges": 2
+  },
+  "typescript": {
+    "lessons": 8,
+    "quiz_total": 96,
+    "per_lesson_min": 12,
+    "exam_pool": 50,
+    "exam_draw": 25,
+    "challenges": 2
+  }
+}

@@ -71,6 +71,254 @@
             "nl": "Mods.",
             "en": "Mods."
           }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Typische output in haxe?",
+            "en": "Typical output in haxe?"
+          },
+          "choices": {
+            "nl": [
+              "echo",
+              "trace",
+              "SELECT",
+              "CSS"
+            ],
+            "en": [
+              "echo",
+              "trace",
+              "SELECT",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Print API.",
+            "en": "Print API."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Print-achtige API (haxe)?",
+            "en": "Print-like API (haxe)?"
+          },
+          "fill": [
+            "trace"
+          ],
+          "why": {
+            "nl": "Print.",
+            "en": "Print."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "if zonder else?",
+            "en": "if without else?"
+          },
+          "choices": {
+            "nl": [
+              "verboden",
+              "mag",
+              "alleen loops",
+              "SQL"
+            ],
+            "en": [
+              "forbidden",
+              "allowed",
+              "loops only",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Allowed.",
+            "en": "Allowed."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "== meestal?",
+            "en": "== usually?"
+          },
+          "choices": {
+            "nl": [
+              "assign",
+              "vergelijking",
+              "import",
+              "join"
+            ],
+            "en": [
+              "assign",
+              "comparison",
+              "import",
+              "join"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Compare.",
+            "en": "Compare."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: while(true) zonder break",
+            "en": "Spot: while(true) without break"
+          },
+          "choices": {
+            "nl": [
+              "efficiënt",
+              "kan hangen",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "efficient",
+              "can hang",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Hang risk.",
+            "en": "Hang risk."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Index start vaak?",
+            "en": "Index often starts?"
+          },
+          "choices": {
+            "nl": [
+              "1",
+              "0",
+              "-1",
+              "2"
+            ],
+            "en": [
+              "1",
+              "0",
+              "-1",
+              "2"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Usually 0.",
+            "en": "Usually 0."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Functies hergebruiken?",
+            "en": "Functions reuse?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "alleen CSS",
+              "alleen SQL"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "CSS only",
+              "SQL only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Yes.",
+            "en": "Yes."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Errors aanpakken?",
+            "en": "Handle errors?"
+          },
+          "choices": {
+            "nl": [
+              "negeren",
+              "try/catch of Result/err",
+              "CSS",
+              "GPU"
+            ],
+            "en": [
+              "ignore",
+              "try/catch or Result/err",
+              "CSS",
+              "GPU"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Handle.",
+            "en": "Handle."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Comments voor?",
+            "en": "Comments for?"
+          },
+          "choices": {
+            "nl": [
+              "speed",
+              "mensen",
+              "compile must",
+              "cert"
+            ],
+            "en": [
+              "speed",
+              "humans",
+              "compile must",
+              "cert"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Docs.",
+            "en": "Docs."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Variabele bewaart?",
+            "en": "Variable stores?"
+          },
+          "choices": {
+            "nl": [
+              "CSS",
+              "waarde",
+              "DNS",
+              "GPU only"
+            ],
+            "en": [
+              "CSS",
+              "a value",
+              "DNS",
+              "GPU only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Value.",
+            "en": "Value."
+          }
         }
       ],
       "exercise": {
@@ -152,6 +400,254 @@
             "nl": "true/false.",
             "en": "true/false."
           }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Typische output in haxe?",
+            "en": "Typical output in haxe?"
+          },
+          "choices": {
+            "nl": [
+              "echo",
+              "trace",
+              "SELECT",
+              "CSS"
+            ],
+            "en": [
+              "echo",
+              "trace",
+              "SELECT",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Print API.",
+            "en": "Print API."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Print-achtige API (haxe)?",
+            "en": "Print-like API (haxe)?"
+          },
+          "fill": [
+            "trace"
+          ],
+          "why": {
+            "nl": "Print.",
+            "en": "Print."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "if zonder else?",
+            "en": "if without else?"
+          },
+          "choices": {
+            "nl": [
+              "verboden",
+              "mag",
+              "alleen loops",
+              "SQL"
+            ],
+            "en": [
+              "forbidden",
+              "allowed",
+              "loops only",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Allowed.",
+            "en": "Allowed."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "== meestal?",
+            "en": "== usually?"
+          },
+          "choices": {
+            "nl": [
+              "assign",
+              "vergelijking",
+              "import",
+              "join"
+            ],
+            "en": [
+              "assign",
+              "comparison",
+              "import",
+              "join"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Compare.",
+            "en": "Compare."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: while(true) zonder break",
+            "en": "Spot: while(true) without break"
+          },
+          "choices": {
+            "nl": [
+              "efficiënt",
+              "kan hangen",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "efficient",
+              "can hang",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Hang risk.",
+            "en": "Hang risk."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Index start vaak?",
+            "en": "Index often starts?"
+          },
+          "choices": {
+            "nl": [
+              "1",
+              "0",
+              "-1",
+              "2"
+            ],
+            "en": [
+              "1",
+              "0",
+              "-1",
+              "2"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Usually 0.",
+            "en": "Usually 0."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Functies hergebruiken?",
+            "en": "Functions reuse?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "alleen CSS",
+              "alleen SQL"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "CSS only",
+              "SQL only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Yes.",
+            "en": "Yes."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Errors aanpakken?",
+            "en": "Handle errors?"
+          },
+          "choices": {
+            "nl": [
+              "negeren",
+              "try/catch of Result/err",
+              "CSS",
+              "GPU"
+            ],
+            "en": [
+              "ignore",
+              "try/catch or Result/err",
+              "CSS",
+              "GPU"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Handle.",
+            "en": "Handle."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Comments voor?",
+            "en": "Comments for?"
+          },
+          "choices": {
+            "nl": [
+              "speed",
+              "mensen",
+              "compile must",
+              "cert"
+            ],
+            "en": [
+              "speed",
+              "humans",
+              "compile must",
+              "cert"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Docs.",
+            "en": "Docs."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Variabele bewaart?",
+            "en": "Variable stores?"
+          },
+          "choices": {
+            "nl": [
+              "CSS",
+              "waarde",
+              "DNS",
+              "GPU only"
+            ],
+            "en": [
+              "CSS",
+              "a value",
+              "DNS",
+              "GPU only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Value.",
+            "en": "Value."
+          }
         }
       ]
     },
@@ -214,6 +710,254 @@
           "why": {
             "nl": "else if.",
             "en": "else if."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Typische output in haxe?",
+            "en": "Typical output in haxe?"
+          },
+          "choices": {
+            "nl": [
+              "echo",
+              "trace",
+              "SELECT",
+              "CSS"
+            ],
+            "en": [
+              "echo",
+              "trace",
+              "SELECT",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Print API.",
+            "en": "Print API."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Print-achtige API (haxe)?",
+            "en": "Print-like API (haxe)?"
+          },
+          "fill": [
+            "trace"
+          ],
+          "why": {
+            "nl": "Print.",
+            "en": "Print."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "if zonder else?",
+            "en": "if without else?"
+          },
+          "choices": {
+            "nl": [
+              "verboden",
+              "mag",
+              "alleen loops",
+              "SQL"
+            ],
+            "en": [
+              "forbidden",
+              "allowed",
+              "loops only",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Allowed.",
+            "en": "Allowed."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "== meestal?",
+            "en": "== usually?"
+          },
+          "choices": {
+            "nl": [
+              "assign",
+              "vergelijking",
+              "import",
+              "join"
+            ],
+            "en": [
+              "assign",
+              "comparison",
+              "import",
+              "join"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Compare.",
+            "en": "Compare."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: while(true) zonder break",
+            "en": "Spot: while(true) without break"
+          },
+          "choices": {
+            "nl": [
+              "efficiënt",
+              "kan hangen",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "efficient",
+              "can hang",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Hang risk.",
+            "en": "Hang risk."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Index start vaak?",
+            "en": "Index often starts?"
+          },
+          "choices": {
+            "nl": [
+              "1",
+              "0",
+              "-1",
+              "2"
+            ],
+            "en": [
+              "1",
+              "0",
+              "-1",
+              "2"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Usually 0.",
+            "en": "Usually 0."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Functies hergebruiken?",
+            "en": "Functions reuse?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "alleen CSS",
+              "alleen SQL"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "CSS only",
+              "SQL only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Yes.",
+            "en": "Yes."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Errors aanpakken?",
+            "en": "Handle errors?"
+          },
+          "choices": {
+            "nl": [
+              "negeren",
+              "try/catch of Result/err",
+              "CSS",
+              "GPU"
+            ],
+            "en": [
+              "ignore",
+              "try/catch or Result/err",
+              "CSS",
+              "GPU"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Handle.",
+            "en": "Handle."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Comments voor?",
+            "en": "Comments for?"
+          },
+          "choices": {
+            "nl": [
+              "speed",
+              "mensen",
+              "compile must",
+              "cert"
+            ],
+            "en": [
+              "speed",
+              "humans",
+              "compile must",
+              "cert"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Docs.",
+            "en": "Docs."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Variabele bewaart?",
+            "en": "Variable stores?"
+          },
+          "choices": {
+            "nl": [
+              "CSS",
+              "waarde",
+              "DNS",
+              "GPU only"
+            ],
+            "en": [
+              "CSS",
+              "a value",
+              "DNS",
+              "GPU only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Value.",
+            "en": "Value."
           }
         }
       ]
@@ -278,6 +1022,254 @@
             "nl": "Ja.",
             "en": "Yes."
           }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Typische output in haxe?",
+            "en": "Typical output in haxe?"
+          },
+          "choices": {
+            "nl": [
+              "echo",
+              "trace",
+              "SELECT",
+              "CSS"
+            ],
+            "en": [
+              "echo",
+              "trace",
+              "SELECT",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Print API.",
+            "en": "Print API."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Print-achtige API (haxe)?",
+            "en": "Print-like API (haxe)?"
+          },
+          "fill": [
+            "trace"
+          ],
+          "why": {
+            "nl": "Print.",
+            "en": "Print."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "if zonder else?",
+            "en": "if without else?"
+          },
+          "choices": {
+            "nl": [
+              "verboden",
+              "mag",
+              "alleen loops",
+              "SQL"
+            ],
+            "en": [
+              "forbidden",
+              "allowed",
+              "loops only",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Allowed.",
+            "en": "Allowed."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "== meestal?",
+            "en": "== usually?"
+          },
+          "choices": {
+            "nl": [
+              "assign",
+              "vergelijking",
+              "import",
+              "join"
+            ],
+            "en": [
+              "assign",
+              "comparison",
+              "import",
+              "join"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Compare.",
+            "en": "Compare."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: while(true) zonder break",
+            "en": "Spot: while(true) without break"
+          },
+          "choices": {
+            "nl": [
+              "efficiënt",
+              "kan hangen",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "efficient",
+              "can hang",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Hang risk.",
+            "en": "Hang risk."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Index start vaak?",
+            "en": "Index often starts?"
+          },
+          "choices": {
+            "nl": [
+              "1",
+              "0",
+              "-1",
+              "2"
+            ],
+            "en": [
+              "1",
+              "0",
+              "-1",
+              "2"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Usually 0.",
+            "en": "Usually 0."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Functies hergebruiken?",
+            "en": "Functions reuse?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "alleen CSS",
+              "alleen SQL"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "CSS only",
+              "SQL only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Yes.",
+            "en": "Yes."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Errors aanpakken?",
+            "en": "Handle errors?"
+          },
+          "choices": {
+            "nl": [
+              "negeren",
+              "try/catch of Result/err",
+              "CSS",
+              "GPU"
+            ],
+            "en": [
+              "ignore",
+              "try/catch or Result/err",
+              "CSS",
+              "GPU"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Handle.",
+            "en": "Handle."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Comments voor?",
+            "en": "Comments for?"
+          },
+          "choices": {
+            "nl": [
+              "speed",
+              "mensen",
+              "compile must",
+              "cert"
+            ],
+            "en": [
+              "speed",
+              "humans",
+              "compile must",
+              "cert"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Docs.",
+            "en": "Docs."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Variabele bewaart?",
+            "en": "Variable stores?"
+          },
+          "choices": {
+            "nl": [
+              "CSS",
+              "waarde",
+              "DNS",
+              "GPU only"
+            ],
+            "en": [
+              "CSS",
+              "a value",
+              "DNS",
+              "GPU only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Value.",
+            "en": "Value."
+          }
         }
       ]
     },
@@ -340,6 +1332,254 @@
           "why": {
             "nl": "set.",
             "en": "set."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Typische output in haxe?",
+            "en": "Typical output in haxe?"
+          },
+          "choices": {
+            "nl": [
+              "echo",
+              "trace",
+              "SELECT",
+              "CSS"
+            ],
+            "en": [
+              "echo",
+              "trace",
+              "SELECT",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Print API.",
+            "en": "Print API."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Print-achtige API (haxe)?",
+            "en": "Print-like API (haxe)?"
+          },
+          "fill": [
+            "trace"
+          ],
+          "why": {
+            "nl": "Print.",
+            "en": "Print."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "if zonder else?",
+            "en": "if without else?"
+          },
+          "choices": {
+            "nl": [
+              "verboden",
+              "mag",
+              "alleen loops",
+              "SQL"
+            ],
+            "en": [
+              "forbidden",
+              "allowed",
+              "loops only",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Allowed.",
+            "en": "Allowed."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "== meestal?",
+            "en": "== usually?"
+          },
+          "choices": {
+            "nl": [
+              "assign",
+              "vergelijking",
+              "import",
+              "join"
+            ],
+            "en": [
+              "assign",
+              "comparison",
+              "import",
+              "join"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Compare.",
+            "en": "Compare."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: while(true) zonder break",
+            "en": "Spot: while(true) without break"
+          },
+          "choices": {
+            "nl": [
+              "efficiënt",
+              "kan hangen",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "efficient",
+              "can hang",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Hang risk.",
+            "en": "Hang risk."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Index start vaak?",
+            "en": "Index often starts?"
+          },
+          "choices": {
+            "nl": [
+              "1",
+              "0",
+              "-1",
+              "2"
+            ],
+            "en": [
+              "1",
+              "0",
+              "-1",
+              "2"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Usually 0.",
+            "en": "Usually 0."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Functies hergebruiken?",
+            "en": "Functions reuse?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "alleen CSS",
+              "alleen SQL"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "CSS only",
+              "SQL only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Yes.",
+            "en": "Yes."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Errors aanpakken?",
+            "en": "Handle errors?"
+          },
+          "choices": {
+            "nl": [
+              "negeren",
+              "try/catch of Result/err",
+              "CSS",
+              "GPU"
+            ],
+            "en": [
+              "ignore",
+              "try/catch or Result/err",
+              "CSS",
+              "GPU"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Handle.",
+            "en": "Handle."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Comments voor?",
+            "en": "Comments for?"
+          },
+          "choices": {
+            "nl": [
+              "speed",
+              "mensen",
+              "compile must",
+              "cert"
+            ],
+            "en": [
+              "speed",
+              "humans",
+              "compile must",
+              "cert"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Docs.",
+            "en": "Docs."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Variabele bewaart?",
+            "en": "Variable stores?"
+          },
+          "choices": {
+            "nl": [
+              "CSS",
+              "waarde",
+              "DNS",
+              "GPU only"
+            ],
+            "en": [
+              "CSS",
+              "a value",
+              "DNS",
+              "GPU only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Value.",
+            "en": "Value."
           }
         }
       ]
@@ -404,6 +1644,254 @@
             "nl": "5.",
             "en": "5."
           }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Typische output in haxe?",
+            "en": "Typical output in haxe?"
+          },
+          "choices": {
+            "nl": [
+              "echo",
+              "trace",
+              "SELECT",
+              "CSS"
+            ],
+            "en": [
+              "echo",
+              "trace",
+              "SELECT",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Print API.",
+            "en": "Print API."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Print-achtige API (haxe)?",
+            "en": "Print-like API (haxe)?"
+          },
+          "fill": [
+            "trace"
+          ],
+          "why": {
+            "nl": "Print.",
+            "en": "Print."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "if zonder else?",
+            "en": "if without else?"
+          },
+          "choices": {
+            "nl": [
+              "verboden",
+              "mag",
+              "alleen loops",
+              "SQL"
+            ],
+            "en": [
+              "forbidden",
+              "allowed",
+              "loops only",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Allowed.",
+            "en": "Allowed."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "== meestal?",
+            "en": "== usually?"
+          },
+          "choices": {
+            "nl": [
+              "assign",
+              "vergelijking",
+              "import",
+              "join"
+            ],
+            "en": [
+              "assign",
+              "comparison",
+              "import",
+              "join"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Compare.",
+            "en": "Compare."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: while(true) zonder break",
+            "en": "Spot: while(true) without break"
+          },
+          "choices": {
+            "nl": [
+              "efficiënt",
+              "kan hangen",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "efficient",
+              "can hang",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Hang risk.",
+            "en": "Hang risk."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Index start vaak?",
+            "en": "Index often starts?"
+          },
+          "choices": {
+            "nl": [
+              "1",
+              "0",
+              "-1",
+              "2"
+            ],
+            "en": [
+              "1",
+              "0",
+              "-1",
+              "2"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Usually 0.",
+            "en": "Usually 0."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Functies hergebruiken?",
+            "en": "Functions reuse?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "alleen CSS",
+              "alleen SQL"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "CSS only",
+              "SQL only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Yes.",
+            "en": "Yes."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Errors aanpakken?",
+            "en": "Handle errors?"
+          },
+          "choices": {
+            "nl": [
+              "negeren",
+              "try/catch of Result/err",
+              "CSS",
+              "GPU"
+            ],
+            "en": [
+              "ignore",
+              "try/catch or Result/err",
+              "CSS",
+              "GPU"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Handle.",
+            "en": "Handle."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Comments voor?",
+            "en": "Comments for?"
+          },
+          "choices": {
+            "nl": [
+              "speed",
+              "mensen",
+              "compile must",
+              "cert"
+            ],
+            "en": [
+              "speed",
+              "humans",
+              "compile must",
+              "cert"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Docs.",
+            "en": "Docs."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Variabele bewaart?",
+            "en": "Variable stores?"
+          },
+          "choices": {
+            "nl": [
+              "CSS",
+              "waarde",
+              "DNS",
+              "GPU only"
+            ],
+            "en": [
+              "CSS",
+              "a value",
+              "DNS",
+              "GPU only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Value.",
+            "en": "Value."
+          }
         }
       ]
     },
@@ -466,6 +1954,254 @@
           "why": {
             "nl": "Riskant.",
             "en": "Risky."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Typische output in haxe?",
+            "en": "Typical output in haxe?"
+          },
+          "choices": {
+            "nl": [
+              "echo",
+              "trace",
+              "SELECT",
+              "CSS"
+            ],
+            "en": [
+              "echo",
+              "trace",
+              "SELECT",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Print API.",
+            "en": "Print API."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Print-achtige API (haxe)?",
+            "en": "Print-like API (haxe)?"
+          },
+          "fill": [
+            "trace"
+          ],
+          "why": {
+            "nl": "Print.",
+            "en": "Print."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "if zonder else?",
+            "en": "if without else?"
+          },
+          "choices": {
+            "nl": [
+              "verboden",
+              "mag",
+              "alleen loops",
+              "SQL"
+            ],
+            "en": [
+              "forbidden",
+              "allowed",
+              "loops only",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Allowed.",
+            "en": "Allowed."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "== meestal?",
+            "en": "== usually?"
+          },
+          "choices": {
+            "nl": [
+              "assign",
+              "vergelijking",
+              "import",
+              "join"
+            ],
+            "en": [
+              "assign",
+              "comparison",
+              "import",
+              "join"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Compare.",
+            "en": "Compare."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: while(true) zonder break",
+            "en": "Spot: while(true) without break"
+          },
+          "choices": {
+            "nl": [
+              "efficiënt",
+              "kan hangen",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "efficient",
+              "can hang",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Hang risk.",
+            "en": "Hang risk."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Index start vaak?",
+            "en": "Index often starts?"
+          },
+          "choices": {
+            "nl": [
+              "1",
+              "0",
+              "-1",
+              "2"
+            ],
+            "en": [
+              "1",
+              "0",
+              "-1",
+              "2"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Usually 0.",
+            "en": "Usually 0."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Functies hergebruiken?",
+            "en": "Functions reuse?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "alleen CSS",
+              "alleen SQL"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "CSS only",
+              "SQL only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Yes.",
+            "en": "Yes."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Errors aanpakken?",
+            "en": "Handle errors?"
+          },
+          "choices": {
+            "nl": [
+              "negeren",
+              "try/catch of Result/err",
+              "CSS",
+              "GPU"
+            ],
+            "en": [
+              "ignore",
+              "try/catch or Result/err",
+              "CSS",
+              "GPU"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Handle.",
+            "en": "Handle."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Comments voor?",
+            "en": "Comments for?"
+          },
+          "choices": {
+            "nl": [
+              "speed",
+              "mensen",
+              "compile must",
+              "cert"
+            ],
+            "en": [
+              "speed",
+              "humans",
+              "compile must",
+              "cert"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Docs.",
+            "en": "Docs."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Variabele bewaart?",
+            "en": "Variable stores?"
+          },
+          "choices": {
+            "nl": [
+              "CSS",
+              "waarde",
+              "DNS",
+              "GPU only"
+            ],
+            "en": [
+              "CSS",
+              "a value",
+              "DNS",
+              "GPU only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Value.",
+            "en": "Value."
           }
         }
       ]
@@ -530,6 +2266,254 @@
             "nl": "No value.",
             "en": "No value."
           }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Typische output in haxe?",
+            "en": "Typical output in haxe?"
+          },
+          "choices": {
+            "nl": [
+              "echo",
+              "trace",
+              "SELECT",
+              "CSS"
+            ],
+            "en": [
+              "echo",
+              "trace",
+              "SELECT",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Print API.",
+            "en": "Print API."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Print-achtige API (haxe)?",
+            "en": "Print-like API (haxe)?"
+          },
+          "fill": [
+            "trace"
+          ],
+          "why": {
+            "nl": "Print.",
+            "en": "Print."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "if zonder else?",
+            "en": "if without else?"
+          },
+          "choices": {
+            "nl": [
+              "verboden",
+              "mag",
+              "alleen loops",
+              "SQL"
+            ],
+            "en": [
+              "forbidden",
+              "allowed",
+              "loops only",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Allowed.",
+            "en": "Allowed."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "== meestal?",
+            "en": "== usually?"
+          },
+          "choices": {
+            "nl": [
+              "assign",
+              "vergelijking",
+              "import",
+              "join"
+            ],
+            "en": [
+              "assign",
+              "comparison",
+              "import",
+              "join"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Compare.",
+            "en": "Compare."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: while(true) zonder break",
+            "en": "Spot: while(true) without break"
+          },
+          "choices": {
+            "nl": [
+              "efficiënt",
+              "kan hangen",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "efficient",
+              "can hang",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Hang risk.",
+            "en": "Hang risk."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Index start vaak?",
+            "en": "Index often starts?"
+          },
+          "choices": {
+            "nl": [
+              "1",
+              "0",
+              "-1",
+              "2"
+            ],
+            "en": [
+              "1",
+              "0",
+              "-1",
+              "2"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Usually 0.",
+            "en": "Usually 0."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Functies hergebruiken?",
+            "en": "Functions reuse?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "alleen CSS",
+              "alleen SQL"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "CSS only",
+              "SQL only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Yes.",
+            "en": "Yes."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Errors aanpakken?",
+            "en": "Handle errors?"
+          },
+          "choices": {
+            "nl": [
+              "negeren",
+              "try/catch of Result/err",
+              "CSS",
+              "GPU"
+            ],
+            "en": [
+              "ignore",
+              "try/catch or Result/err",
+              "CSS",
+              "GPU"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Handle.",
+            "en": "Handle."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Comments voor?",
+            "en": "Comments for?"
+          },
+          "choices": {
+            "nl": [
+              "speed",
+              "mensen",
+              "compile must",
+              "cert"
+            ],
+            "en": [
+              "speed",
+              "humans",
+              "compile must",
+              "cert"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Docs.",
+            "en": "Docs."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Variabele bewaart?",
+            "en": "Variable stores?"
+          },
+          "choices": {
+            "nl": [
+              "CSS",
+              "waarde",
+              "DNS",
+              "GPU only"
+            ],
+            "en": [
+              "CSS",
+              "a value",
+              "DNS",
+              "GPU only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Value.",
+            "en": "Value."
+          }
         }
       ]
     },
@@ -592,6 +2576,254 @@
           "why": {
             "nl": "Floor at 0.",
             "en": "Floor at 0."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Typische output in haxe?",
+            "en": "Typical output in haxe?"
+          },
+          "choices": {
+            "nl": [
+              "echo",
+              "trace",
+              "SELECT",
+              "CSS"
+            ],
+            "en": [
+              "echo",
+              "trace",
+              "SELECT",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Print API.",
+            "en": "Print API."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Print-achtige API (haxe)?",
+            "en": "Print-like API (haxe)?"
+          },
+          "fill": [
+            "trace"
+          ],
+          "why": {
+            "nl": "Print.",
+            "en": "Print."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "if zonder else?",
+            "en": "if without else?"
+          },
+          "choices": {
+            "nl": [
+              "verboden",
+              "mag",
+              "alleen loops",
+              "SQL"
+            ],
+            "en": [
+              "forbidden",
+              "allowed",
+              "loops only",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Allowed.",
+            "en": "Allowed."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "== meestal?",
+            "en": "== usually?"
+          },
+          "choices": {
+            "nl": [
+              "assign",
+              "vergelijking",
+              "import",
+              "join"
+            ],
+            "en": [
+              "assign",
+              "comparison",
+              "import",
+              "join"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Compare.",
+            "en": "Compare."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot: while(true) zonder break",
+            "en": "Spot: while(true) without break"
+          },
+          "choices": {
+            "nl": [
+              "efficiënt",
+              "kan hangen",
+              "SQL",
+              "CSS"
+            ],
+            "en": [
+              "efficient",
+              "can hang",
+              "SQL",
+              "CSS"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Hang risk.",
+            "en": "Hang risk."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Index start vaak?",
+            "en": "Index often starts?"
+          },
+          "choices": {
+            "nl": [
+              "1",
+              "0",
+              "-1",
+              "2"
+            ],
+            "en": [
+              "1",
+              "0",
+              "-1",
+              "2"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Usually 0.",
+            "en": "Usually 0."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Functies hergebruiken?",
+            "en": "Functions reuse?"
+          },
+          "choices": {
+            "nl": [
+              "nee",
+              "ja",
+              "alleen CSS",
+              "alleen SQL"
+            ],
+            "en": [
+              "no",
+              "yes",
+              "CSS only",
+              "SQL only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Yes.",
+            "en": "Yes."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Errors aanpakken?",
+            "en": "Handle errors?"
+          },
+          "choices": {
+            "nl": [
+              "negeren",
+              "try/catch of Result/err",
+              "CSS",
+              "GPU"
+            ],
+            "en": [
+              "ignore",
+              "try/catch or Result/err",
+              "CSS",
+              "GPU"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Handle.",
+            "en": "Handle."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Comments voor?",
+            "en": "Comments for?"
+          },
+          "choices": {
+            "nl": [
+              "speed",
+              "mensen",
+              "compile must",
+              "cert"
+            ],
+            "en": [
+              "speed",
+              "humans",
+              "compile must",
+              "cert"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Docs.",
+            "en": "Docs."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Variabele bewaart?",
+            "en": "Variable stores?"
+          },
+          "choices": {
+            "nl": [
+              "CSS",
+              "waarde",
+              "DNS",
+              "GPU only"
+            ],
+            "en": [
+              "CSS",
+              "a value",
+              "DNS",
+              "GPU only"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Value.",
+            "en": "Value."
           }
         }
       ]
@@ -1117,6 +3349,780 @@
         "nl": "Origineel.",
         "en": "Original."
       }
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 1] Typische output in haxe?",
+        "en": "[Pool 1] Typical output in haxe?"
+      },
+      "choices": {
+        "nl": [
+          "echo",
+          "trace",
+          "SELECT",
+          "CSS"
+        ],
+        "en": [
+          "echo",
+          "trace",
+          "SELECT",
+          "CSS"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Print API.",
+        "en": "Print API."
+      },
+      "id": 21
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 2] Print-achtige API (haxe)?",
+        "en": "[Pool 2] Print-like API (haxe)?"
+      },
+      "fill": [
+        "trace"
+      ],
+      "why": {
+        "nl": "Print.",
+        "en": "Print."
+      },
+      "id": 22
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 3] if zonder else?",
+        "en": "[Pool 3] if without else?"
+      },
+      "choices": {
+        "nl": [
+          "verboden",
+          "mag",
+          "alleen loops",
+          "SQL"
+        ],
+        "en": [
+          "forbidden",
+          "allowed",
+          "loops only",
+          "SQL"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Allowed.",
+        "en": "Allowed."
+      },
+      "id": 23
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 4] == meestal?",
+        "en": "[Pool 4] == usually?"
+      },
+      "choices": {
+        "nl": [
+          "assign",
+          "vergelijking",
+          "import",
+          "join"
+        ],
+        "en": [
+          "assign",
+          "comparison",
+          "import",
+          "join"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Compare.",
+        "en": "Compare."
+      },
+      "id": 24
+    },
+    {
+      "type": "bug",
+      "q": {
+        "nl": "[Pool 5] Spot: while(true) zonder break",
+        "en": "[Pool 5] Spot: while(true) without break"
+      },
+      "choices": {
+        "nl": [
+          "efficiënt",
+          "kan hangen",
+          "SQL",
+          "CSS"
+        ],
+        "en": [
+          "efficient",
+          "can hang",
+          "SQL",
+          "CSS"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Hang risk.",
+        "en": "Hang risk."
+      },
+      "id": 25
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 6] Index start vaak?",
+        "en": "[Pool 6] Index often starts?"
+      },
+      "choices": {
+        "nl": [
+          "1",
+          "0",
+          "-1",
+          "2"
+        ],
+        "en": [
+          "1",
+          "0",
+          "-1",
+          "2"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Usually 0.",
+        "en": "Usually 0."
+      },
+      "id": 26
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 7] Functies hergebruiken?",
+        "en": "[Pool 7] Functions reuse?"
+      },
+      "choices": {
+        "nl": [
+          "nee",
+          "ja",
+          "alleen CSS",
+          "alleen SQL"
+        ],
+        "en": [
+          "no",
+          "yes",
+          "CSS only",
+          "SQL only"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Yes.",
+        "en": "Yes."
+      },
+      "id": 27
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 8] Errors aanpakken?",
+        "en": "[Pool 8] Handle errors?"
+      },
+      "choices": {
+        "nl": [
+          "negeren",
+          "try/catch of Result/err",
+          "CSS",
+          "GPU"
+        ],
+        "en": [
+          "ignore",
+          "try/catch or Result/err",
+          "CSS",
+          "GPU"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Handle.",
+        "en": "Handle."
+      },
+      "id": 28
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 9] Comments voor?",
+        "en": "[Pool 9] Comments for?"
+      },
+      "choices": {
+        "nl": [
+          "speed",
+          "mensen",
+          "compile must",
+          "cert"
+        ],
+        "en": [
+          "speed",
+          "humans",
+          "compile must",
+          "cert"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Docs.",
+        "en": "Docs."
+      },
+      "id": 29
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 10] Variabele bewaart?",
+        "en": "[Pool 10] Variable stores?"
+      },
+      "choices": {
+        "nl": [
+          "CSS",
+          "waarde",
+          "DNS",
+          "GPU only"
+        ],
+        "en": [
+          "CSS",
+          "a value",
+          "DNS",
+          "GPU only"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Value.",
+        "en": "Value."
+      },
+      "id": 30
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 11] haxe: oefenen helpt?",
+        "en": "[Pool 11] {cid}: practice helps?"
+      },
+      "choices": {
+        "nl": [
+          "nee",
+          "ja",
+          "nooit",
+          "alleen boeken"
+        ],
+        "en": [
+          "no",
+          "yes",
+          "never",
+          "books only"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Yes.",
+        "en": "Yes."
+      },
+      "id": 31
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 12] Recap: lees code hardop?",
+        "en": "[Pool 12] Recap: read code aloud?"
+      },
+      "choices": {
+        "nl": [
+          "nutteloos",
+          "kan helpen",
+          "verboden",
+          "SQL only"
+        ],
+        "en": [
+          "useless",
+          "can help",
+          "forbidden",
+          "SQL only"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Helps.",
+        "en": "Helps."
+      },
+      "id": 32
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 13] Typische output in haxe?",
+        "en": "[Pool 13] Typical output in haxe?"
+      },
+      "choices": {
+        "nl": [
+          "echo",
+          "trace",
+          "SELECT",
+          "CSS"
+        ],
+        "en": [
+          "echo",
+          "trace",
+          "SELECT",
+          "CSS"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Print API.",
+        "en": "Print API."
+      },
+      "id": 33
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 14] Print-achtige API (haxe)?",
+        "en": "[Pool 14] Print-like API (haxe)?"
+      },
+      "fill": [
+        "trace"
+      ],
+      "why": {
+        "nl": "Print.",
+        "en": "Print."
+      },
+      "id": 34
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 15] if zonder else?",
+        "en": "[Pool 15] if without else?"
+      },
+      "choices": {
+        "nl": [
+          "verboden",
+          "mag",
+          "alleen loops",
+          "SQL"
+        ],
+        "en": [
+          "forbidden",
+          "allowed",
+          "loops only",
+          "SQL"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Allowed.",
+        "en": "Allowed."
+      },
+      "id": 35
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 16] == meestal?",
+        "en": "[Pool 16] == usually?"
+      },
+      "choices": {
+        "nl": [
+          "assign",
+          "vergelijking",
+          "import",
+          "join"
+        ],
+        "en": [
+          "assign",
+          "comparison",
+          "import",
+          "join"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Compare.",
+        "en": "Compare."
+      },
+      "id": 36
+    },
+    {
+      "type": "bug",
+      "q": {
+        "nl": "[Pool 17] Spot: while(true) zonder break",
+        "en": "[Pool 17] Spot: while(true) without break"
+      },
+      "choices": {
+        "nl": [
+          "efficiënt",
+          "kan hangen",
+          "SQL",
+          "CSS"
+        ],
+        "en": [
+          "efficient",
+          "can hang",
+          "SQL",
+          "CSS"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Hang risk.",
+        "en": "Hang risk."
+      },
+      "id": 37
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 18] Index start vaak?",
+        "en": "[Pool 18] Index often starts?"
+      },
+      "choices": {
+        "nl": [
+          "1",
+          "0",
+          "-1",
+          "2"
+        ],
+        "en": [
+          "1",
+          "0",
+          "-1",
+          "2"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Usually 0.",
+        "en": "Usually 0."
+      },
+      "id": 38
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 19] Functies hergebruiken?",
+        "en": "[Pool 19] Functions reuse?"
+      },
+      "choices": {
+        "nl": [
+          "nee",
+          "ja",
+          "alleen CSS",
+          "alleen SQL"
+        ],
+        "en": [
+          "no",
+          "yes",
+          "CSS only",
+          "SQL only"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Yes.",
+        "en": "Yes."
+      },
+      "id": 39
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 20] Errors aanpakken?",
+        "en": "[Pool 20] Handle errors?"
+      },
+      "choices": {
+        "nl": [
+          "negeren",
+          "try/catch of Result/err",
+          "CSS",
+          "GPU"
+        ],
+        "en": [
+          "ignore",
+          "try/catch or Result/err",
+          "CSS",
+          "GPU"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Handle.",
+        "en": "Handle."
+      },
+      "id": 40
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 21] Comments voor?",
+        "en": "[Pool 21] Comments for?"
+      },
+      "choices": {
+        "nl": [
+          "speed",
+          "mensen",
+          "compile must",
+          "cert"
+        ],
+        "en": [
+          "speed",
+          "humans",
+          "compile must",
+          "cert"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Docs.",
+        "en": "Docs."
+      },
+      "id": 41
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 22] Variabele bewaart?",
+        "en": "[Pool 22] Variable stores?"
+      },
+      "choices": {
+        "nl": [
+          "CSS",
+          "waarde",
+          "DNS",
+          "GPU only"
+        ],
+        "en": [
+          "CSS",
+          "a value",
+          "DNS",
+          "GPU only"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Value.",
+        "en": "Value."
+      },
+      "id": 42
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 23] haxe: oefenen helpt?",
+        "en": "[Pool 23] {cid}: practice helps?"
+      },
+      "choices": {
+        "nl": [
+          "nee",
+          "ja",
+          "nooit",
+          "alleen boeken"
+        ],
+        "en": [
+          "no",
+          "yes",
+          "never",
+          "books only"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Yes.",
+        "en": "Yes."
+      },
+      "id": 43
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 24] Recap: lees code hardop?",
+        "en": "[Pool 24] Recap: read code aloud?"
+      },
+      "choices": {
+        "nl": [
+          "nutteloos",
+          "kan helpen",
+          "verboden",
+          "SQL only"
+        ],
+        "en": [
+          "useless",
+          "can help",
+          "forbidden",
+          "SQL only"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Helps.",
+        "en": "Helps."
+      },
+      "id": 44
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 25] Typische output in haxe?",
+        "en": "[Pool 25] Typical output in haxe?"
+      },
+      "choices": {
+        "nl": [
+          "echo",
+          "trace",
+          "SELECT",
+          "CSS"
+        ],
+        "en": [
+          "echo",
+          "trace",
+          "SELECT",
+          "CSS"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Print API.",
+        "en": "Print API."
+      },
+      "id": 45
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 26] Print-achtige API (haxe)?",
+        "en": "[Pool 26] Print-like API (haxe)?"
+      },
+      "fill": [
+        "trace"
+      ],
+      "why": {
+        "nl": "Print.",
+        "en": "Print."
+      },
+      "id": 46
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 27] if zonder else?",
+        "en": "[Pool 27] if without else?"
+      },
+      "choices": {
+        "nl": [
+          "verboden",
+          "mag",
+          "alleen loops",
+          "SQL"
+        ],
+        "en": [
+          "forbidden",
+          "allowed",
+          "loops only",
+          "SQL"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Allowed.",
+        "en": "Allowed."
+      },
+      "id": 47
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 28] == meestal?",
+        "en": "[Pool 28] == usually?"
+      },
+      "choices": {
+        "nl": [
+          "assign",
+          "vergelijking",
+          "import",
+          "join"
+        ],
+        "en": [
+          "assign",
+          "comparison",
+          "import",
+          "join"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Compare.",
+        "en": "Compare."
+      },
+      "id": 48
+    },
+    {
+      "type": "bug",
+      "q": {
+        "nl": "[Pool 29] Spot: while(true) zonder break",
+        "en": "[Pool 29] Spot: while(true) without break"
+      },
+      "choices": {
+        "nl": [
+          "efficiënt",
+          "kan hangen",
+          "SQL",
+          "CSS"
+        ],
+        "en": [
+          "efficient",
+          "can hang",
+          "SQL",
+          "CSS"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Hang risk.",
+        "en": "Hang risk."
+      },
+      "id": 49
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 30] Index start vaak?",
+        "en": "[Pool 30] Index often starts?"
+      },
+      "choices": {
+        "nl": [
+          "1",
+          "0",
+          "-1",
+          "2"
+        ],
+        "en": [
+          "1",
+          "0",
+          "-1",
+          "2"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Usually 0.",
+        "en": "Usually 0."
+      },
+      "id": 50
     }
   ],
   "challenges": [
@@ -1166,6 +4172,7 @@
         }
       ]
     }
-  ]
+  ],
+  "examDraw": 25
 };
 })(window);

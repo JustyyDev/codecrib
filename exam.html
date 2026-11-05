@@ -21,6 +21,7 @@
       <a href="exam.html" data-nav="exam" data-i18n="nav_exam">Proefexamen</a>
       <a href="playground.html" data-nav="play" data-i18n="nav_play">Playground</a>
       <a href="certificate.html" data-nav="cert" data-i18n="nav_cert">Certificaat</a>
+      <a href="review.html" data-nav="review" data-i18n="nav_review">Herhalen</a>
       <button type="button" class="lang-btn" data-lang="nl">NL</button>
       <button type="button" class="lang-btn" data-lang="en">EN</button>
     </nav>
@@ -52,6 +53,7 @@
   <script src="js/progress.js"></script>
   <script src="js/courses-registry.js"></script>
   <script src="js/course-utils.js"></script>
+  <script src="js/srs.js"></script>
   <script src="js/quiz.js"></script>
   <script src="js/app.js"></script>
   <script>
@@ -63,7 +65,8 @@
       document.getElementById("course-link").href="course.html?course="+COURSE.id;
       document.getElementById("course-link").textContent=COURSE.title[L];
       document.getElementById("score-box").hidden=true;
-      ctrl=CodeCribQuiz.renderExam(document.getElementById("exam"), COURSE.exam, L, true);
+      const take = COURSE.examDraw || 20;
+      ctrl=CodeCribQuiz.renderExam(document.getElementById("exam"), COURSE.exam, L, true, take, { courseId: COURSE.id, source: "exam" });
       document.title="CodeCrib - "+COURSE.title[L]+" exam";
     }
     document.addEventListener("DOMContentLoaded",()=>{

@@ -71,6 +71,245 @@
             "nl": "Optioneel, niet nodig.",
             "en": "Optional, not required."
           }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "Wat print print(2*3)?",
+            "en": "What does print(2*3) print?"
+          },
+          "choices": {
+            "nl": [
+              "5",
+              "6",
+              "23",
+              "error"
+            ],
+            "en": [
+              "5",
+              "6",
+              "23",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "2*3=6.",
+            "en": "2*3=6."
+          },
+          "code": "print(2*3)"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Welke is True?",
+            "en": "Which is True?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "True",
+              "TRUE",
+              "yes"
+            ],
+            "en": [
+              "true",
+              "True",
+              "TRUE",
+              "yes"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "True met T.",
+            "en": "Capital T."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword voor functie?",
+            "en": "Keyword for a function?"
+          },
+          "fill": [
+            "def"
+          ],
+          "why": {
+            "nl": "def.",
+            "en": "def."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "7//2?",
+            "en": "7//2?"
+          },
+          "choices": {
+            "nl": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Floor division.",
+            "en": "Floor division."
+          },
+          "code": "print(7//2)"
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot the bug: prnt('hi')",
+            "en": "Spot the bug: prnt('hi')"
+          },
+          "choices": {
+            "nl": [
+              "geen bug",
+              "prnt typo, moet print",
+              "hi is fout",
+              "quotes"
+            ],
+            "en": [
+              "no bug",
+              "prnt typo, need print",
+              "hi wrong",
+              "quotes"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "NameError.",
+            "en": "NameError."
+          },
+          "code": "prnt('hi')"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "len([1,2,3])?",
+            "en": "len([1,2,3])?"
+          },
+          "choices": {
+            "nl": [
+              "2",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "2",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "3 items.",
+            "en": "3 items."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Boolean False spelling?",
+            "en": "Boolean False spelling?"
+          },
+          "fill": [
+            "False"
+          ],
+          "why": {
+            "nl": "False.",
+            "en": "False."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "elif betekent?",
+            "en": "elif means?"
+          },
+          "choices": {
+            "nl": [
+              "else if",
+              "end if",
+              "error if",
+              "early if"
+            ],
+            "en": [
+              "else if",
+              "end if",
+              "error if",
+              "early if"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "else if.",
+            "en": "else if."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Wat doet break?",
+            "en": "What does break do?"
+          },
+          "choices": {
+            "nl": [
+              "stopt loop",
+              "start loop",
+              "print",
+              "import"
+            ],
+            "en": [
+              "stops loop",
+              "starts loop",
+              "print",
+              "import"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "Break.",
+            "en": "Break."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "'ab'+'c'?",
+            "en": "'ab'+'c'?"
+          },
+          "choices": {
+            "nl": [
+              "abc",
+              "ab c",
+              "error",
+              "a"
+            ],
+            "en": [
+              "abc",
+              "ab c",
+              "error",
+              "a"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "Concat.",
+            "en": "Concat."
+          }
         }
       ],
       "exercise": {
@@ -148,6 +387,245 @@
             "nl": "True met T.",
             "en": "True with capital T."
           }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "Wat print print(2*3)?",
+            "en": "What does print(2*3) print?"
+          },
+          "choices": {
+            "nl": [
+              "5",
+              "6",
+              "23",
+              "error"
+            ],
+            "en": [
+              "5",
+              "6",
+              "23",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "2*3=6.",
+            "en": "2*3=6."
+          },
+          "code": "print(2*3)"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Welke is True?",
+            "en": "Which is True?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "True",
+              "TRUE",
+              "yes"
+            ],
+            "en": [
+              "true",
+              "True",
+              "TRUE",
+              "yes"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "True met T.",
+            "en": "Capital T."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword voor functie?",
+            "en": "Keyword for a function?"
+          },
+          "fill": [
+            "def"
+          ],
+          "why": {
+            "nl": "def.",
+            "en": "def."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "7//2?",
+            "en": "7//2?"
+          },
+          "choices": {
+            "nl": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Floor division.",
+            "en": "Floor division."
+          },
+          "code": "print(7//2)"
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot the bug: prnt('hi')",
+            "en": "Spot the bug: prnt('hi')"
+          },
+          "choices": {
+            "nl": [
+              "geen bug",
+              "prnt typo, moet print",
+              "hi is fout",
+              "quotes"
+            ],
+            "en": [
+              "no bug",
+              "prnt typo, need print",
+              "hi wrong",
+              "quotes"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "NameError.",
+            "en": "NameError."
+          },
+          "code": "prnt('hi')"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "len([1,2,3])?",
+            "en": "len([1,2,3])?"
+          },
+          "choices": {
+            "nl": [
+              "2",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "2",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "3 items.",
+            "en": "3 items."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Boolean False spelling?",
+            "en": "Boolean False spelling?"
+          },
+          "fill": [
+            "False"
+          ],
+          "why": {
+            "nl": "False.",
+            "en": "False."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "elif betekent?",
+            "en": "elif means?"
+          },
+          "choices": {
+            "nl": [
+              "else if",
+              "end if",
+              "error if",
+              "early if"
+            ],
+            "en": [
+              "else if",
+              "end if",
+              "error if",
+              "early if"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "else if.",
+            "en": "else if."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Wat doet break?",
+            "en": "What does break do?"
+          },
+          "choices": {
+            "nl": [
+              "stopt loop",
+              "start loop",
+              "print",
+              "import"
+            ],
+            "en": [
+              "stops loop",
+              "starts loop",
+              "print",
+              "import"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "Break.",
+            "en": "Break."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "'ab'+'c'?",
+            "en": "'ab'+'c'?"
+          },
+          "choices": {
+            "nl": [
+              "abc",
+              "ab c",
+              "error",
+              "a"
+            ],
+            "en": [
+              "abc",
+              "ab c",
+              "error",
+              "a"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "Concat.",
+            "en": "Concat."
+          }
         }
       ]
     },
@@ -210,6 +688,245 @@
           "why": {
             "nl": "elif.",
             "en": "elif."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "Wat print print(2*3)?",
+            "en": "What does print(2*3) print?"
+          },
+          "choices": {
+            "nl": [
+              "5",
+              "6",
+              "23",
+              "error"
+            ],
+            "en": [
+              "5",
+              "6",
+              "23",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "2*3=6.",
+            "en": "2*3=6."
+          },
+          "code": "print(2*3)"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Welke is True?",
+            "en": "Which is True?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "True",
+              "TRUE",
+              "yes"
+            ],
+            "en": [
+              "true",
+              "True",
+              "TRUE",
+              "yes"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "True met T.",
+            "en": "Capital T."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword voor functie?",
+            "en": "Keyword for a function?"
+          },
+          "fill": [
+            "def"
+          ],
+          "why": {
+            "nl": "def.",
+            "en": "def."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "7//2?",
+            "en": "7//2?"
+          },
+          "choices": {
+            "nl": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Floor division.",
+            "en": "Floor division."
+          },
+          "code": "print(7//2)"
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot the bug: prnt('hi')",
+            "en": "Spot the bug: prnt('hi')"
+          },
+          "choices": {
+            "nl": [
+              "geen bug",
+              "prnt typo, moet print",
+              "hi is fout",
+              "quotes"
+            ],
+            "en": [
+              "no bug",
+              "prnt typo, need print",
+              "hi wrong",
+              "quotes"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "NameError.",
+            "en": "NameError."
+          },
+          "code": "prnt('hi')"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "len([1,2,3])?",
+            "en": "len([1,2,3])?"
+          },
+          "choices": {
+            "nl": [
+              "2",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "2",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "3 items.",
+            "en": "3 items."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Boolean False spelling?",
+            "en": "Boolean False spelling?"
+          },
+          "fill": [
+            "False"
+          ],
+          "why": {
+            "nl": "False.",
+            "en": "False."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "elif betekent?",
+            "en": "elif means?"
+          },
+          "choices": {
+            "nl": [
+              "else if",
+              "end if",
+              "error if",
+              "early if"
+            ],
+            "en": [
+              "else if",
+              "end if",
+              "error if",
+              "early if"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "else if.",
+            "en": "else if."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Wat doet break?",
+            "en": "What does break do?"
+          },
+          "choices": {
+            "nl": [
+              "stopt loop",
+              "start loop",
+              "print",
+              "import"
+            ],
+            "en": [
+              "stops loop",
+              "starts loop",
+              "print",
+              "import"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "Break.",
+            "en": "Break."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "'ab'+'c'?",
+            "en": "'ab'+'c'?"
+          },
+          "choices": {
+            "nl": [
+              "abc",
+              "ab c",
+              "error",
+              "a"
+            ],
+            "en": [
+              "abc",
+              "ab c",
+              "error",
+              "a"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "Concat.",
+            "en": "Concat."
           }
         }
       ]
@@ -274,6 +991,245 @@
             "nl": "0 t/m 2.",
             "en": "0 through 2."
           }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "Wat print print(2*3)?",
+            "en": "What does print(2*3) print?"
+          },
+          "choices": {
+            "nl": [
+              "5",
+              "6",
+              "23",
+              "error"
+            ],
+            "en": [
+              "5",
+              "6",
+              "23",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "2*3=6.",
+            "en": "2*3=6."
+          },
+          "code": "print(2*3)"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Welke is True?",
+            "en": "Which is True?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "True",
+              "TRUE",
+              "yes"
+            ],
+            "en": [
+              "true",
+              "True",
+              "TRUE",
+              "yes"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "True met T.",
+            "en": "Capital T."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword voor functie?",
+            "en": "Keyword for a function?"
+          },
+          "fill": [
+            "def"
+          ],
+          "why": {
+            "nl": "def.",
+            "en": "def."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "7//2?",
+            "en": "7//2?"
+          },
+          "choices": {
+            "nl": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Floor division.",
+            "en": "Floor division."
+          },
+          "code": "print(7//2)"
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot the bug: prnt('hi')",
+            "en": "Spot the bug: prnt('hi')"
+          },
+          "choices": {
+            "nl": [
+              "geen bug",
+              "prnt typo, moet print",
+              "hi is fout",
+              "quotes"
+            ],
+            "en": [
+              "no bug",
+              "prnt typo, need print",
+              "hi wrong",
+              "quotes"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "NameError.",
+            "en": "NameError."
+          },
+          "code": "prnt('hi')"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "len([1,2,3])?",
+            "en": "len([1,2,3])?"
+          },
+          "choices": {
+            "nl": [
+              "2",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "2",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "3 items.",
+            "en": "3 items."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Boolean False spelling?",
+            "en": "Boolean False spelling?"
+          },
+          "fill": [
+            "False"
+          ],
+          "why": {
+            "nl": "False.",
+            "en": "False."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "elif betekent?",
+            "en": "elif means?"
+          },
+          "choices": {
+            "nl": [
+              "else if",
+              "end if",
+              "error if",
+              "early if"
+            ],
+            "en": [
+              "else if",
+              "end if",
+              "error if",
+              "early if"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "else if.",
+            "en": "else if."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Wat doet break?",
+            "en": "What does break do?"
+          },
+          "choices": {
+            "nl": [
+              "stopt loop",
+              "start loop",
+              "print",
+              "import"
+            ],
+            "en": [
+              "stops loop",
+              "starts loop",
+              "print",
+              "import"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "Break.",
+            "en": "Break."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "'ab'+'c'?",
+            "en": "'ab'+'c'?"
+          },
+          "choices": {
+            "nl": [
+              "abc",
+              "ab c",
+              "error",
+              "a"
+            ],
+            "en": [
+              "abc",
+              "ab c",
+              "error",
+              "a"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "Concat.",
+            "en": "Concat."
+          }
         }
       ]
     },
@@ -336,6 +1292,245 @@
           "why": {
             "nl": "Dict lookup.",
             "en": "Dict lookup."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "Wat print print(2*3)?",
+            "en": "What does print(2*3) print?"
+          },
+          "choices": {
+            "nl": [
+              "5",
+              "6",
+              "23",
+              "error"
+            ],
+            "en": [
+              "5",
+              "6",
+              "23",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "2*3=6.",
+            "en": "2*3=6."
+          },
+          "code": "print(2*3)"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Welke is True?",
+            "en": "Which is True?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "True",
+              "TRUE",
+              "yes"
+            ],
+            "en": [
+              "true",
+              "True",
+              "TRUE",
+              "yes"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "True met T.",
+            "en": "Capital T."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword voor functie?",
+            "en": "Keyword for a function?"
+          },
+          "fill": [
+            "def"
+          ],
+          "why": {
+            "nl": "def.",
+            "en": "def."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "7//2?",
+            "en": "7//2?"
+          },
+          "choices": {
+            "nl": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Floor division.",
+            "en": "Floor division."
+          },
+          "code": "print(7//2)"
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot the bug: prnt('hi')",
+            "en": "Spot the bug: prnt('hi')"
+          },
+          "choices": {
+            "nl": [
+              "geen bug",
+              "prnt typo, moet print",
+              "hi is fout",
+              "quotes"
+            ],
+            "en": [
+              "no bug",
+              "prnt typo, need print",
+              "hi wrong",
+              "quotes"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "NameError.",
+            "en": "NameError."
+          },
+          "code": "prnt('hi')"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "len([1,2,3])?",
+            "en": "len([1,2,3])?"
+          },
+          "choices": {
+            "nl": [
+              "2",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "2",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "3 items.",
+            "en": "3 items."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Boolean False spelling?",
+            "en": "Boolean False spelling?"
+          },
+          "fill": [
+            "False"
+          ],
+          "why": {
+            "nl": "False.",
+            "en": "False."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "elif betekent?",
+            "en": "elif means?"
+          },
+          "choices": {
+            "nl": [
+              "else if",
+              "end if",
+              "error if",
+              "early if"
+            ],
+            "en": [
+              "else if",
+              "end if",
+              "error if",
+              "early if"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "else if.",
+            "en": "else if."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Wat doet break?",
+            "en": "What does break do?"
+          },
+          "choices": {
+            "nl": [
+              "stopt loop",
+              "start loop",
+              "print",
+              "import"
+            ],
+            "en": [
+              "stops loop",
+              "starts loop",
+              "print",
+              "import"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "Break.",
+            "en": "Break."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "'ab'+'c'?",
+            "en": "'ab'+'c'?"
+          },
+          "choices": {
+            "nl": [
+              "abc",
+              "ab c",
+              "error",
+              "a"
+            ],
+            "en": [
+              "abc",
+              "ab c",
+              "error",
+              "a"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "Concat.",
+            "en": "Concat."
           }
         }
       ]
@@ -400,6 +1595,245 @@
             "nl": "2+3.",
             "en": "2+3."
           }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "Wat print print(2*3)?",
+            "en": "What does print(2*3) print?"
+          },
+          "choices": {
+            "nl": [
+              "5",
+              "6",
+              "23",
+              "error"
+            ],
+            "en": [
+              "5",
+              "6",
+              "23",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "2*3=6.",
+            "en": "2*3=6."
+          },
+          "code": "print(2*3)"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Welke is True?",
+            "en": "Which is True?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "True",
+              "TRUE",
+              "yes"
+            ],
+            "en": [
+              "true",
+              "True",
+              "TRUE",
+              "yes"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "True met T.",
+            "en": "Capital T."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword voor functie?",
+            "en": "Keyword for a function?"
+          },
+          "fill": [
+            "def"
+          ],
+          "why": {
+            "nl": "def.",
+            "en": "def."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "7//2?",
+            "en": "7//2?"
+          },
+          "choices": {
+            "nl": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Floor division.",
+            "en": "Floor division."
+          },
+          "code": "print(7//2)"
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot the bug: prnt('hi')",
+            "en": "Spot the bug: prnt('hi')"
+          },
+          "choices": {
+            "nl": [
+              "geen bug",
+              "prnt typo, moet print",
+              "hi is fout",
+              "quotes"
+            ],
+            "en": [
+              "no bug",
+              "prnt typo, need print",
+              "hi wrong",
+              "quotes"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "NameError.",
+            "en": "NameError."
+          },
+          "code": "prnt('hi')"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "len([1,2,3])?",
+            "en": "len([1,2,3])?"
+          },
+          "choices": {
+            "nl": [
+              "2",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "2",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "3 items.",
+            "en": "3 items."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Boolean False spelling?",
+            "en": "Boolean False spelling?"
+          },
+          "fill": [
+            "False"
+          ],
+          "why": {
+            "nl": "False.",
+            "en": "False."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "elif betekent?",
+            "en": "elif means?"
+          },
+          "choices": {
+            "nl": [
+              "else if",
+              "end if",
+              "error if",
+              "early if"
+            ],
+            "en": [
+              "else if",
+              "end if",
+              "error if",
+              "early if"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "else if.",
+            "en": "else if."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Wat doet break?",
+            "en": "What does break do?"
+          },
+          "choices": {
+            "nl": [
+              "stopt loop",
+              "start loop",
+              "print",
+              "import"
+            ],
+            "en": [
+              "stops loop",
+              "starts loop",
+              "print",
+              "import"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "Break.",
+            "en": "Break."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "'ab'+'c'?",
+            "en": "'ab'+'c'?"
+          },
+          "choices": {
+            "nl": [
+              "abc",
+              "ab c",
+              "error",
+              "a"
+            ],
+            "en": [
+              "abc",
+              "ab c",
+              "error",
+              "a"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "Concat.",
+            "en": "Concat."
+          }
         }
       ]
     },
@@ -462,6 +1896,245 @@
           "why": {
             "nl": "except.",
             "en": "except."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "Wat print print(2*3)?",
+            "en": "What does print(2*3) print?"
+          },
+          "choices": {
+            "nl": [
+              "5",
+              "6",
+              "23",
+              "error"
+            ],
+            "en": [
+              "5",
+              "6",
+              "23",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "2*3=6.",
+            "en": "2*3=6."
+          },
+          "code": "print(2*3)"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Welke is True?",
+            "en": "Which is True?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "True",
+              "TRUE",
+              "yes"
+            ],
+            "en": [
+              "true",
+              "True",
+              "TRUE",
+              "yes"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "True met T.",
+            "en": "Capital T."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword voor functie?",
+            "en": "Keyword for a function?"
+          },
+          "fill": [
+            "def"
+          ],
+          "why": {
+            "nl": "def.",
+            "en": "def."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "7//2?",
+            "en": "7//2?"
+          },
+          "choices": {
+            "nl": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Floor division.",
+            "en": "Floor division."
+          },
+          "code": "print(7//2)"
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot the bug: prnt('hi')",
+            "en": "Spot the bug: prnt('hi')"
+          },
+          "choices": {
+            "nl": [
+              "geen bug",
+              "prnt typo, moet print",
+              "hi is fout",
+              "quotes"
+            ],
+            "en": [
+              "no bug",
+              "prnt typo, need print",
+              "hi wrong",
+              "quotes"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "NameError.",
+            "en": "NameError."
+          },
+          "code": "prnt('hi')"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "len([1,2,3])?",
+            "en": "len([1,2,3])?"
+          },
+          "choices": {
+            "nl": [
+              "2",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "2",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "3 items.",
+            "en": "3 items."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Boolean False spelling?",
+            "en": "Boolean False spelling?"
+          },
+          "fill": [
+            "False"
+          ],
+          "why": {
+            "nl": "False.",
+            "en": "False."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "elif betekent?",
+            "en": "elif means?"
+          },
+          "choices": {
+            "nl": [
+              "else if",
+              "end if",
+              "error if",
+              "early if"
+            ],
+            "en": [
+              "else if",
+              "end if",
+              "error if",
+              "early if"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "else if.",
+            "en": "else if."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Wat doet break?",
+            "en": "What does break do?"
+          },
+          "choices": {
+            "nl": [
+              "stopt loop",
+              "start loop",
+              "print",
+              "import"
+            ],
+            "en": [
+              "stops loop",
+              "starts loop",
+              "print",
+              "import"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "Break.",
+            "en": "Break."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "'ab'+'c'?",
+            "en": "'ab'+'c'?"
+          },
+          "choices": {
+            "nl": [
+              "abc",
+              "ab c",
+              "error",
+              "a"
+            ],
+            "en": [
+              "abc",
+              "ab c",
+              "error",
+              "a"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "Concat.",
+            "en": "Concat."
           }
         }
       ]
@@ -526,6 +2199,245 @@
             "nl": "import.",
             "en": "import."
           }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "Wat print print(2*3)?",
+            "en": "What does print(2*3) print?"
+          },
+          "choices": {
+            "nl": [
+              "5",
+              "6",
+              "23",
+              "error"
+            ],
+            "en": [
+              "5",
+              "6",
+              "23",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "2*3=6.",
+            "en": "2*3=6."
+          },
+          "code": "print(2*3)"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Welke is True?",
+            "en": "Which is True?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "True",
+              "TRUE",
+              "yes"
+            ],
+            "en": [
+              "true",
+              "True",
+              "TRUE",
+              "yes"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "True met T.",
+            "en": "Capital T."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword voor functie?",
+            "en": "Keyword for a function?"
+          },
+          "fill": [
+            "def"
+          ],
+          "why": {
+            "nl": "def.",
+            "en": "def."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "7//2?",
+            "en": "7//2?"
+          },
+          "choices": {
+            "nl": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Floor division.",
+            "en": "Floor division."
+          },
+          "code": "print(7//2)"
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot the bug: prnt('hi')",
+            "en": "Spot the bug: prnt('hi')"
+          },
+          "choices": {
+            "nl": [
+              "geen bug",
+              "prnt typo, moet print",
+              "hi is fout",
+              "quotes"
+            ],
+            "en": [
+              "no bug",
+              "prnt typo, need print",
+              "hi wrong",
+              "quotes"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "NameError.",
+            "en": "NameError."
+          },
+          "code": "prnt('hi')"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "len([1,2,3])?",
+            "en": "len([1,2,3])?"
+          },
+          "choices": {
+            "nl": [
+              "2",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "2",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "3 items.",
+            "en": "3 items."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Boolean False spelling?",
+            "en": "Boolean False spelling?"
+          },
+          "fill": [
+            "False"
+          ],
+          "why": {
+            "nl": "False.",
+            "en": "False."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "elif betekent?",
+            "en": "elif means?"
+          },
+          "choices": {
+            "nl": [
+              "else if",
+              "end if",
+              "error if",
+              "early if"
+            ],
+            "en": [
+              "else if",
+              "end if",
+              "error if",
+              "early if"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "else if.",
+            "en": "else if."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Wat doet break?",
+            "en": "What does break do?"
+          },
+          "choices": {
+            "nl": [
+              "stopt loop",
+              "start loop",
+              "print",
+              "import"
+            ],
+            "en": [
+              "stops loop",
+              "starts loop",
+              "print",
+              "import"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "Break.",
+            "en": "Break."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "'ab'+'c'?",
+            "en": "'ab'+'c'?"
+          },
+          "choices": {
+            "nl": [
+              "abc",
+              "ab c",
+              "error",
+              "a"
+            ],
+            "en": [
+              "abc",
+              "ab c",
+              "error",
+              "a"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "Concat.",
+            "en": "Concat."
+          }
         }
       ]
     },
@@ -588,6 +2500,245 @@
           "why": {
             "nl": "Lege sequence error.",
             "en": "Empty sequence error."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "Wat print print(2*3)?",
+            "en": "What does print(2*3) print?"
+          },
+          "choices": {
+            "nl": [
+              "5",
+              "6",
+              "23",
+              "error"
+            ],
+            "en": [
+              "5",
+              "6",
+              "23",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "2*3=6.",
+            "en": "2*3=6."
+          },
+          "code": "print(2*3)"
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Welke is True?",
+            "en": "Which is True?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "True",
+              "TRUE",
+              "yes"
+            ],
+            "en": [
+              "true",
+              "True",
+              "TRUE",
+              "yes"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "True met T.",
+            "en": "Capital T."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Keyword voor functie?",
+            "en": "Keyword for a function?"
+          },
+          "fill": [
+            "def"
+          ],
+          "why": {
+            "nl": "def.",
+            "en": "def."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "7//2?",
+            "en": "7//2?"
+          },
+          "choices": {
+            "nl": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Floor division.",
+            "en": "Floor division."
+          },
+          "code": "print(7//2)"
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "Spot the bug: prnt('hi')",
+            "en": "Spot the bug: prnt('hi')"
+          },
+          "choices": {
+            "nl": [
+              "geen bug",
+              "prnt typo, moet print",
+              "hi is fout",
+              "quotes"
+            ],
+            "en": [
+              "no bug",
+              "prnt typo, need print",
+              "hi wrong",
+              "quotes"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "NameError.",
+            "en": "NameError."
+          },
+          "code": "prnt('hi')"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "len([1,2,3])?",
+            "en": "len([1,2,3])?"
+          },
+          "choices": {
+            "nl": [
+              "2",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "2",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "3 items.",
+            "en": "3 items."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Boolean False spelling?",
+            "en": "Boolean False spelling?"
+          },
+          "fill": [
+            "False"
+          ],
+          "why": {
+            "nl": "False.",
+            "en": "False."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "elif betekent?",
+            "en": "elif means?"
+          },
+          "choices": {
+            "nl": [
+              "else if",
+              "end if",
+              "error if",
+              "early if"
+            ],
+            "en": [
+              "else if",
+              "end if",
+              "error if",
+              "early if"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "else if.",
+            "en": "else if."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Wat doet break?",
+            "en": "What does break do?"
+          },
+          "choices": {
+            "nl": [
+              "stopt loop",
+              "start loop",
+              "print",
+              "import"
+            ],
+            "en": [
+              "stops loop",
+              "starts loop",
+              "print",
+              "import"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "Break.",
+            "en": "Break."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "'ab'+'c'?",
+            "en": "'ab'+'c'?"
+          },
+          "choices": {
+            "nl": [
+              "abc",
+              "ab c",
+              "error",
+              "a"
+            ],
+            "en": [
+              "abc",
+              "ab c",
+              "error",
+              "a"
+            ]
+          },
+          "answer": 0,
+          "why": {
+            "nl": "Concat.",
+            "en": "Concat."
           }
         }
       ]
@@ -1113,6 +3264,751 @@
         "nl": "Origineel.",
         "en": "Original."
       }
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 1] Wat print print(2*3)?",
+        "en": "[Pool 1] What does print(2*3) print?"
+      },
+      "choices": {
+        "nl": [
+          "5",
+          "6",
+          "23",
+          "error"
+        ],
+        "en": [
+          "5",
+          "6",
+          "23",
+          "error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "2*3=6.",
+        "en": "2*3=6."
+      },
+      "code": "print(2*3)",
+      "id": 21
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 2] Welke is True?",
+        "en": "[Pool 2] Which is True?"
+      },
+      "choices": {
+        "nl": [
+          "true",
+          "True",
+          "TRUE",
+          "yes"
+        ],
+        "en": [
+          "true",
+          "True",
+          "TRUE",
+          "yes"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "True met T.",
+        "en": "Capital T."
+      },
+      "id": 22
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 3] Keyword voor functie?",
+        "en": "[Pool 3] Keyword for a function?"
+      },
+      "fill": [
+        "def"
+      ],
+      "why": {
+        "nl": "def.",
+        "en": "def."
+      },
+      "id": 23
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 4] 7//2?",
+        "en": "[Pool 4] 7//2?"
+      },
+      "choices": {
+        "nl": [
+          "3.5",
+          "3",
+          "4",
+          "error"
+        ],
+        "en": [
+          "3.5",
+          "3",
+          "4",
+          "error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Floor division.",
+        "en": "Floor division."
+      },
+      "code": "print(7//2)",
+      "id": 24
+    },
+    {
+      "type": "bug",
+      "q": {
+        "nl": "[Pool 5] Spot the bug: prnt('hi')",
+        "en": "[Pool 5] Spot the bug: prnt('hi')"
+      },
+      "choices": {
+        "nl": [
+          "geen bug",
+          "prnt typo, moet print",
+          "hi is fout",
+          "quotes"
+        ],
+        "en": [
+          "no bug",
+          "prnt typo, need print",
+          "hi wrong",
+          "quotes"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "NameError.",
+        "en": "NameError."
+      },
+      "code": "prnt('hi')",
+      "id": 25
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 6] len([1,2,3])?",
+        "en": "[Pool 6] len([1,2,3])?"
+      },
+      "choices": {
+        "nl": [
+          "2",
+          "3",
+          "4",
+          "error"
+        ],
+        "en": [
+          "2",
+          "3",
+          "4",
+          "error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "3 items.",
+        "en": "3 items."
+      },
+      "id": 26
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 7] Boolean False spelling?",
+        "en": "[Pool 7] Boolean False spelling?"
+      },
+      "fill": [
+        "False"
+      ],
+      "why": {
+        "nl": "False.",
+        "en": "False."
+      },
+      "id": 27
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 8] elif betekent?",
+        "en": "[Pool 8] elif means?"
+      },
+      "choices": {
+        "nl": [
+          "else if",
+          "end if",
+          "error if",
+          "early if"
+        ],
+        "en": [
+          "else if",
+          "end if",
+          "error if",
+          "early if"
+        ]
+      },
+      "answer": 0,
+      "why": {
+        "nl": "else if.",
+        "en": "else if."
+      },
+      "id": 28
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 9] Wat doet break?",
+        "en": "[Pool 9] What does break do?"
+      },
+      "choices": {
+        "nl": [
+          "stopt loop",
+          "start loop",
+          "print",
+          "import"
+        ],
+        "en": [
+          "stops loop",
+          "starts loop",
+          "print",
+          "import"
+        ]
+      },
+      "answer": 0,
+      "why": {
+        "nl": "Break.",
+        "en": "Break."
+      },
+      "id": 29
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 10] 'ab'+'c'?",
+        "en": "[Pool 10] 'ab'+'c'?"
+      },
+      "choices": {
+        "nl": [
+          "abc",
+          "ab c",
+          "error",
+          "a"
+        ],
+        "en": [
+          "abc",
+          "ab c",
+          "error",
+          "a"
+        ]
+      },
+      "answer": 0,
+      "why": {
+        "nl": "Concat.",
+        "en": "Concat."
+      },
+      "id": 30
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 11] dict key missing?",
+        "en": "[Pool 11] dict key missing?"
+      },
+      "choices": {
+        "nl": [
+          "None",
+          "KeyError",
+          "0",
+          "''"
+        ],
+        "en": [
+          "None",
+          "KeyError",
+          "0",
+          "''"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "KeyError.",
+        "en": "KeyError."
+      },
+      "id": 31
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 12] Module laden keyword?",
+        "en": "[Pool 12] Module load keyword?"
+      },
+      "fill": [
+        "import"
+      ],
+      "why": {
+        "nl": "import.",
+        "en": "import."
+      },
+      "id": 32
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 13] range(3) waarden?",
+        "en": "[Pool 13] range(3) values?"
+      },
+      "choices": {
+        "nl": [
+          "1,2,3",
+          "0,1,2",
+          "0,1,2,3",
+          "3"
+        ],
+        "en": [
+          "1,2,3",
+          "0,1,2",
+          "0,1,2,3",
+          "3"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "0..2.",
+        "en": "0..2."
+      },
+      "id": 33
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 14] bool('')?",
+        "en": "[Pool 14] bool('')?"
+      },
+      "choices": {
+        "nl": [
+          "True",
+          "False",
+          "error",
+          "None"
+        ],
+        "en": [
+          "True",
+          "False",
+          "error",
+          "None"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Empty falsy.",
+        "en": "Empty falsy."
+      },
+      "id": 34
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 15] Wat print print(2*3)?",
+        "en": "[Pool 15] What does print(2*3) print?"
+      },
+      "choices": {
+        "nl": [
+          "5",
+          "6",
+          "23",
+          "error"
+        ],
+        "en": [
+          "5",
+          "6",
+          "23",
+          "error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "2*3=6.",
+        "en": "2*3=6."
+      },
+      "code": "print(2*3)",
+      "id": 35
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 16] Welke is True?",
+        "en": "[Pool 16] Which is True?"
+      },
+      "choices": {
+        "nl": [
+          "true",
+          "True",
+          "TRUE",
+          "yes"
+        ],
+        "en": [
+          "true",
+          "True",
+          "TRUE",
+          "yes"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "True met T.",
+        "en": "Capital T."
+      },
+      "id": 36
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 17] Keyword voor functie?",
+        "en": "[Pool 17] Keyword for a function?"
+      },
+      "fill": [
+        "def"
+      ],
+      "why": {
+        "nl": "def.",
+        "en": "def."
+      },
+      "id": 37
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 18] 7//2?",
+        "en": "[Pool 18] 7//2?"
+      },
+      "choices": {
+        "nl": [
+          "3.5",
+          "3",
+          "4",
+          "error"
+        ],
+        "en": [
+          "3.5",
+          "3",
+          "4",
+          "error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Floor division.",
+        "en": "Floor division."
+      },
+      "code": "print(7//2)",
+      "id": 38
+    },
+    {
+      "type": "bug",
+      "q": {
+        "nl": "[Pool 19] Spot the bug: prnt('hi')",
+        "en": "[Pool 19] Spot the bug: prnt('hi')"
+      },
+      "choices": {
+        "nl": [
+          "geen bug",
+          "prnt typo, moet print",
+          "hi is fout",
+          "quotes"
+        ],
+        "en": [
+          "no bug",
+          "prnt typo, need print",
+          "hi wrong",
+          "quotes"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "NameError.",
+        "en": "NameError."
+      },
+      "code": "prnt('hi')",
+      "id": 39
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 20] len([1,2,3])?",
+        "en": "[Pool 20] len([1,2,3])?"
+      },
+      "choices": {
+        "nl": [
+          "2",
+          "3",
+          "4",
+          "error"
+        ],
+        "en": [
+          "2",
+          "3",
+          "4",
+          "error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "3 items.",
+        "en": "3 items."
+      },
+      "id": 40
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 21] Boolean False spelling?",
+        "en": "[Pool 21] Boolean False spelling?"
+      },
+      "fill": [
+        "False"
+      ],
+      "why": {
+        "nl": "False.",
+        "en": "False."
+      },
+      "id": 41
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 22] elif betekent?",
+        "en": "[Pool 22] elif means?"
+      },
+      "choices": {
+        "nl": [
+          "else if",
+          "end if",
+          "error if",
+          "early if"
+        ],
+        "en": [
+          "else if",
+          "end if",
+          "error if",
+          "early if"
+        ]
+      },
+      "answer": 0,
+      "why": {
+        "nl": "else if.",
+        "en": "else if."
+      },
+      "id": 42
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 23] Wat doet break?",
+        "en": "[Pool 23] What does break do?"
+      },
+      "choices": {
+        "nl": [
+          "stopt loop",
+          "start loop",
+          "print",
+          "import"
+        ],
+        "en": [
+          "stops loop",
+          "starts loop",
+          "print",
+          "import"
+        ]
+      },
+      "answer": 0,
+      "why": {
+        "nl": "Break.",
+        "en": "Break."
+      },
+      "id": 43
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 24] 'ab'+'c'?",
+        "en": "[Pool 24] 'ab'+'c'?"
+      },
+      "choices": {
+        "nl": [
+          "abc",
+          "ab c",
+          "error",
+          "a"
+        ],
+        "en": [
+          "abc",
+          "ab c",
+          "error",
+          "a"
+        ]
+      },
+      "answer": 0,
+      "why": {
+        "nl": "Concat.",
+        "en": "Concat."
+      },
+      "id": 44
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 25] dict key missing?",
+        "en": "[Pool 25] dict key missing?"
+      },
+      "choices": {
+        "nl": [
+          "None",
+          "KeyError",
+          "0",
+          "''"
+        ],
+        "en": [
+          "None",
+          "KeyError",
+          "0",
+          "''"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "KeyError.",
+        "en": "KeyError."
+      },
+      "id": 45
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 26] Module laden keyword?",
+        "en": "[Pool 26] Module load keyword?"
+      },
+      "fill": [
+        "import"
+      ],
+      "why": {
+        "nl": "import.",
+        "en": "import."
+      },
+      "id": 46
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 27] range(3) waarden?",
+        "en": "[Pool 27] range(3) values?"
+      },
+      "choices": {
+        "nl": [
+          "1,2,3",
+          "0,1,2",
+          "0,1,2,3",
+          "3"
+        ],
+        "en": [
+          "1,2,3",
+          "0,1,2",
+          "0,1,2,3",
+          "3"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "0..2.",
+        "en": "0..2."
+      },
+      "id": 47
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 28] bool('')?",
+        "en": "[Pool 28] bool('')?"
+      },
+      "choices": {
+        "nl": [
+          "True",
+          "False",
+          "error",
+          "None"
+        ],
+        "en": [
+          "True",
+          "False",
+          "error",
+          "None"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Empty falsy.",
+        "en": "Empty falsy."
+      },
+      "id": 48
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 29] Wat print print(2*3)?",
+        "en": "[Pool 29] What does print(2*3) print?"
+      },
+      "choices": {
+        "nl": [
+          "5",
+          "6",
+          "23",
+          "error"
+        ],
+        "en": [
+          "5",
+          "6",
+          "23",
+          "error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "2*3=6.",
+        "en": "2*3=6."
+      },
+      "code": "print(2*3)",
+      "id": 49
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 30] Welke is True?",
+        "en": "[Pool 30] Which is True?"
+      },
+      "choices": {
+        "nl": [
+          "true",
+          "True",
+          "TRUE",
+          "yes"
+        ],
+        "en": [
+          "true",
+          "True",
+          "TRUE",
+          "yes"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "True met T.",
+        "en": "Capital T."
+      },
+      "id": 50
     }
   ],
   "challenges": [
@@ -1154,6 +4050,7 @@
         }
       ]
     }
-  ]
+  ],
+  "examDraw": 25
 };
 })(window);

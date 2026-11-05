@@ -22,6 +22,7 @@
       <a href="exam.html" data-nav="exam" data-i18n="nav_exam">Proefexamen</a>
       <a href="playground.html" data-nav="play" data-i18n="nav_play">Playground</a>
       <a href="certificate.html" data-nav="cert" data-i18n="nav_cert">Certificaat</a>
+      <a href="review.html" data-nav="review" data-i18n="nav_review">Herhalen</a>
       <button type="button" class="lang-btn" data-lang="nl">NL</button>
       <button type="button" class="lang-btn" data-lang="en">EN</button>
     </nav>
@@ -35,6 +36,9 @@
     <div id="editor-host" hidden></div>
     <h2 data-i18n="quiz_title"></h2>
     <div class="quiz" id="quiz"></div>
+    <h2 data-i18n="recap_title" id="recap-title" hidden></h2>
+    <p class="tagline" id="recap-intro" hidden data-i18n="recap_intro"></p>
+    <div class="quiz" id="recap"></div>
     <div class="lesson-nav">
       <a class="btn ghost" id="prev-link" href="#">←</a>
       <button type="button" class="btn secondary" id="mark-done" data-i18n="mark_done"></button>
@@ -51,6 +55,7 @@
   <script src="js/progress.js"></script>
   <script src="js/courses-registry.js"></script>
   <script src="js/course-utils.js"></script>
+  <script src="js/srs.js"></script>
   <script src="js/quiz.js"></script>
   <script src="js/runtime/runners.js"></script>
   <script src="js/runtime/editor.js"></script>
@@ -68,7 +73,29 @@
       document.getElementById("back-link").href="course.html?course="+cid;
       document.title="CodeCrib - "+LES.title[L];
       document.getElementById("lesson-body").innerHTML="<h1>"+CodeCribI18n.t("lesson")+" "+LES.id+": "+LES.title[L]+"</h1>"+LES.body[L];
-      CodeCribQuiz.renderQuiz(document.getElementById("quiz"), LES.quiz, L);
+      CodeCribQuiz.renderQuiz(document.getElementById("quiz"), LES.quiz, L, { courseId: cid, lessonId: LES.id, source: "lesson" });
+      // Mixed recap from earlier lessons
+      const recapTitle = document.getElementById("recap-title");
+      const recapIntro = document.getElementById("recap-intro");
+      const recapHost = document.getElementById("recap");
+      recapHost.innerHTML = "";
+      const earlier = COURSE.lessons.filter((x) => x.id < LES.id);
+      if (earlier.length) {
+        recapTitle.hidden = false; recapIntro.hidden = false;
+        let pool = [];
+        earlier.forEach((les) => {
+          (les.quiz || []).forEach((q, qi) => pool.push(Object.assign({}, q, { _bankIndex: les.id * 1000 + qi, _fromLesson: les.id })));
+        });
+        pool = CodeCribQuiz.shuffle(pool).slice(0, Math.min(8, pool.length));
+        pool.forEach((q) => {
+          CodeCribQuiz.renderOne(recapHost, q, recapHost.children.length, {
+            lang: L,
+            srs: { courseId: cid, lessonId: q._fromLesson, qIndex: q._bankIndex, source: "recap" }
+          });
+        });
+      } else {
+        recapTitle.hidden = true; recapIntro.hidden = true;
+      }
       const host=document.getElementById("editor-host");
       const exTitle=document.getElementById("ex-title");
       const exInst=document.getElementById("ex-instructions");

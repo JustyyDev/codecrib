@@ -71,6 +71,244 @@
             "nl": "C# gebruikt Console.WriteLine en eindigt statements meestal met een puntkomma.",
             "en": "C# uses Console.WriteLine and usually ends statements with a semicolon."
           }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "7/2 int?",
+            "en": "7/2 int?"
+          },
+          "choices": {
+            "nl": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Truncates.",
+            "en": "Truncates."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Nieuwe regel schrijven?",
+            "en": "Write new line?"
+          },
+          "fill": [
+            "WriteLine",
+            "Console.WriteLine"
+          ],
+          "why": {
+            "nl": "WriteLine.",
+            "en": "WriteLine."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "var zonder waarde?",
+            "en": "var without value?"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "compile error",
+              "null",
+              "0"
+            ],
+            "en": [
+              "ok",
+              "compile error",
+              "null",
+              "0"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Needs init.",
+            "en": "Needs init."
+          },
+          "code": "var x;"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "i++ + ++i i=3?",
+            "en": "i++ + ++i i=3?"
+          },
+          "choices": {
+            "nl": [
+              "7",
+              "8",
+              "6",
+              "9"
+            ],
+            "en": [
+              "7",
+              "8",
+              "6",
+              "9"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "8.",
+            "en": "8."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Contains case?",
+            "en": "Contains case?"
+          },
+          "choices": {
+            "nl": [
+              "ignore",
+              "case-sensitive default",
+              "error",
+              "SQL"
+            ],
+            "en": [
+              "ignore",
+              "case-sensitive default",
+              "error",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Case sensitive.",
+            "en": "Case sensitive."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Geen return type?",
+            "en": "No return type?"
+          },
+          "fill": [
+            "void"
+          ],
+          "why": {
+            "nl": "void.",
+            "en": "void."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "switch zonder break?",
+            "en": "switch without break?"
+          },
+          "choices": {
+            "nl": [
+              "stopt",
+              "fall-through",
+              "error always",
+              "SQL"
+            ],
+            "en": [
+              "stops",
+              "fall-through",
+              "always error",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Fall-through.",
+            "en": "Fall-through."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "10%3?",
+            "en": "10%3?"
+          },
+          "choices": {
+            "nl": [
+              "3",
+              "1",
+              "0",
+              "3.33"
+            ],
+            "en": [
+              "3",
+              "1",
+              "0",
+              "3.33"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "1.",
+            "en": "1."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "catch?",
+            "en": "catch?"
+          },
+          "choices": {
+            "nl": [
+              "except",
+              "catch",
+              "rescue",
+              "handle"
+            ],
+            "en": [
+              "except",
+              "catch",
+              "rescue",
+              "handle"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "catch.",
+            "en": "catch."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "bool uit 1?",
+            "en": "bool from 1?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "compile error",
+              "false",
+              "1"
+            ],
+            "en": [
+              "true",
+              "compile error",
+              "false",
+              "1"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "No implicit.",
+            "en": "No implicit."
+          }
         }
       ],
       "exercise": {
@@ -152,6 +390,244 @@
             "nl": "Zelfs als je 42 typt, blijft het een string tot je het omzet.",
             "en": "Even if you type 42, it stays a string until you convert it."
           }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "7/2 int?",
+            "en": "7/2 int?"
+          },
+          "choices": {
+            "nl": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Truncates.",
+            "en": "Truncates."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Nieuwe regel schrijven?",
+            "en": "Write new line?"
+          },
+          "fill": [
+            "WriteLine",
+            "Console.WriteLine"
+          ],
+          "why": {
+            "nl": "WriteLine.",
+            "en": "WriteLine."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "var zonder waarde?",
+            "en": "var without value?"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "compile error",
+              "null",
+              "0"
+            ],
+            "en": [
+              "ok",
+              "compile error",
+              "null",
+              "0"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Needs init.",
+            "en": "Needs init."
+          },
+          "code": "var x;"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "i++ + ++i i=3?",
+            "en": "i++ + ++i i=3?"
+          },
+          "choices": {
+            "nl": [
+              "7",
+              "8",
+              "6",
+              "9"
+            ],
+            "en": [
+              "7",
+              "8",
+              "6",
+              "9"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "8.",
+            "en": "8."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Contains case?",
+            "en": "Contains case?"
+          },
+          "choices": {
+            "nl": [
+              "ignore",
+              "case-sensitive default",
+              "error",
+              "SQL"
+            ],
+            "en": [
+              "ignore",
+              "case-sensitive default",
+              "error",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Case sensitive.",
+            "en": "Case sensitive."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Geen return type?",
+            "en": "No return type?"
+          },
+          "fill": [
+            "void"
+          ],
+          "why": {
+            "nl": "void.",
+            "en": "void."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "switch zonder break?",
+            "en": "switch without break?"
+          },
+          "choices": {
+            "nl": [
+              "stopt",
+              "fall-through",
+              "error always",
+              "SQL"
+            ],
+            "en": [
+              "stops",
+              "fall-through",
+              "always error",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Fall-through.",
+            "en": "Fall-through."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "10%3?",
+            "en": "10%3?"
+          },
+          "choices": {
+            "nl": [
+              "3",
+              "1",
+              "0",
+              "3.33"
+            ],
+            "en": [
+              "3",
+              "1",
+              "0",
+              "3.33"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "1.",
+            "en": "1."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "catch?",
+            "en": "catch?"
+          },
+          "choices": {
+            "nl": [
+              "except",
+              "catch",
+              "rescue",
+              "handle"
+            ],
+            "en": [
+              "except",
+              "catch",
+              "rescue",
+              "handle"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "catch.",
+            "en": "catch."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "bool uit 1?",
+            "en": "bool from 1?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "compile error",
+              "false",
+              "1"
+            ],
+            "en": [
+              "true",
+              "compile error",
+              "false",
+              "1"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "No implicit.",
+            "en": "No implicit."
+          }
         }
       ]
     },
@@ -214,6 +690,244 @@
           "why": {
             "nl": "var heeft een initializer nodig.",
             "en": "var needs an initializer."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "7/2 int?",
+            "en": "7/2 int?"
+          },
+          "choices": {
+            "nl": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Truncates.",
+            "en": "Truncates."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Nieuwe regel schrijven?",
+            "en": "Write new line?"
+          },
+          "fill": [
+            "WriteLine",
+            "Console.WriteLine"
+          ],
+          "why": {
+            "nl": "WriteLine.",
+            "en": "WriteLine."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "var zonder waarde?",
+            "en": "var without value?"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "compile error",
+              "null",
+              "0"
+            ],
+            "en": [
+              "ok",
+              "compile error",
+              "null",
+              "0"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Needs init.",
+            "en": "Needs init."
+          },
+          "code": "var x;"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "i++ + ++i i=3?",
+            "en": "i++ + ++i i=3?"
+          },
+          "choices": {
+            "nl": [
+              "7",
+              "8",
+              "6",
+              "9"
+            ],
+            "en": [
+              "7",
+              "8",
+              "6",
+              "9"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "8.",
+            "en": "8."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Contains case?",
+            "en": "Contains case?"
+          },
+          "choices": {
+            "nl": [
+              "ignore",
+              "case-sensitive default",
+              "error",
+              "SQL"
+            ],
+            "en": [
+              "ignore",
+              "case-sensitive default",
+              "error",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Case sensitive.",
+            "en": "Case sensitive."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Geen return type?",
+            "en": "No return type?"
+          },
+          "fill": [
+            "void"
+          ],
+          "why": {
+            "nl": "void.",
+            "en": "void."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "switch zonder break?",
+            "en": "switch without break?"
+          },
+          "choices": {
+            "nl": [
+              "stopt",
+              "fall-through",
+              "error always",
+              "SQL"
+            ],
+            "en": [
+              "stops",
+              "fall-through",
+              "always error",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Fall-through.",
+            "en": "Fall-through."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "10%3?",
+            "en": "10%3?"
+          },
+          "choices": {
+            "nl": [
+              "3",
+              "1",
+              "0",
+              "3.33"
+            ],
+            "en": [
+              "3",
+              "1",
+              "0",
+              "3.33"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "1.",
+            "en": "1."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "catch?",
+            "en": "catch?"
+          },
+          "choices": {
+            "nl": [
+              "except",
+              "catch",
+              "rescue",
+              "handle"
+            ],
+            "en": [
+              "except",
+              "catch",
+              "rescue",
+              "handle"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "catch.",
+            "en": "catch."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "bool uit 1?",
+            "en": "bool from 1?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "compile error",
+              "false",
+              "1"
+            ],
+            "en": [
+              "true",
+              "compile error",
+              "false",
+              "1"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "No implicit.",
+            "en": "No implicit."
           }
         }
       ]
@@ -278,6 +992,244 @@
             "nl": "Drie tekens: a, b, c.",
             "en": "Three characters: a, b, c."
           }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "7/2 int?",
+            "en": "7/2 int?"
+          },
+          "choices": {
+            "nl": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Truncates.",
+            "en": "Truncates."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Nieuwe regel schrijven?",
+            "en": "Write new line?"
+          },
+          "fill": [
+            "WriteLine",
+            "Console.WriteLine"
+          ],
+          "why": {
+            "nl": "WriteLine.",
+            "en": "WriteLine."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "var zonder waarde?",
+            "en": "var without value?"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "compile error",
+              "null",
+              "0"
+            ],
+            "en": [
+              "ok",
+              "compile error",
+              "null",
+              "0"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Needs init.",
+            "en": "Needs init."
+          },
+          "code": "var x;"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "i++ + ++i i=3?",
+            "en": "i++ + ++i i=3?"
+          },
+          "choices": {
+            "nl": [
+              "7",
+              "8",
+              "6",
+              "9"
+            ],
+            "en": [
+              "7",
+              "8",
+              "6",
+              "9"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "8.",
+            "en": "8."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Contains case?",
+            "en": "Contains case?"
+          },
+          "choices": {
+            "nl": [
+              "ignore",
+              "case-sensitive default",
+              "error",
+              "SQL"
+            ],
+            "en": [
+              "ignore",
+              "case-sensitive default",
+              "error",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Case sensitive.",
+            "en": "Case sensitive."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Geen return type?",
+            "en": "No return type?"
+          },
+          "fill": [
+            "void"
+          ],
+          "why": {
+            "nl": "void.",
+            "en": "void."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "switch zonder break?",
+            "en": "switch without break?"
+          },
+          "choices": {
+            "nl": [
+              "stopt",
+              "fall-through",
+              "error always",
+              "SQL"
+            ],
+            "en": [
+              "stops",
+              "fall-through",
+              "always error",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Fall-through.",
+            "en": "Fall-through."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "10%3?",
+            "en": "10%3?"
+          },
+          "choices": {
+            "nl": [
+              "3",
+              "1",
+              "0",
+              "3.33"
+            ],
+            "en": [
+              "3",
+              "1",
+              "0",
+              "3.33"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "1.",
+            "en": "1."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "catch?",
+            "en": "catch?"
+          },
+          "choices": {
+            "nl": [
+              "except",
+              "catch",
+              "rescue",
+              "handle"
+            ],
+            "en": [
+              "except",
+              "catch",
+              "rescue",
+              "handle"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "catch.",
+            "en": "catch."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "bool uit 1?",
+            "en": "bool from 1?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "compile error",
+              "false",
+              "1"
+            ],
+            "en": [
+              "true",
+              "compile error",
+              "false",
+              "1"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "No implicit.",
+            "en": "No implicit."
+          }
         }
       ]
     },
@@ -340,6 +1292,244 @@
           "why": {
             "nl": "10 = 3*3 + 1, rest is 1.",
             "en": "10 = 3*3 + 1, remainder 1."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "7/2 int?",
+            "en": "7/2 int?"
+          },
+          "choices": {
+            "nl": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Truncates.",
+            "en": "Truncates."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Nieuwe regel schrijven?",
+            "en": "Write new line?"
+          },
+          "fill": [
+            "WriteLine",
+            "Console.WriteLine"
+          ],
+          "why": {
+            "nl": "WriteLine.",
+            "en": "WriteLine."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "var zonder waarde?",
+            "en": "var without value?"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "compile error",
+              "null",
+              "0"
+            ],
+            "en": [
+              "ok",
+              "compile error",
+              "null",
+              "0"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Needs init.",
+            "en": "Needs init."
+          },
+          "code": "var x;"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "i++ + ++i i=3?",
+            "en": "i++ + ++i i=3?"
+          },
+          "choices": {
+            "nl": [
+              "7",
+              "8",
+              "6",
+              "9"
+            ],
+            "en": [
+              "7",
+              "8",
+              "6",
+              "9"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "8.",
+            "en": "8."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Contains case?",
+            "en": "Contains case?"
+          },
+          "choices": {
+            "nl": [
+              "ignore",
+              "case-sensitive default",
+              "error",
+              "SQL"
+            ],
+            "en": [
+              "ignore",
+              "case-sensitive default",
+              "error",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Case sensitive.",
+            "en": "Case sensitive."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Geen return type?",
+            "en": "No return type?"
+          },
+          "fill": [
+            "void"
+          ],
+          "why": {
+            "nl": "void.",
+            "en": "void."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "switch zonder break?",
+            "en": "switch without break?"
+          },
+          "choices": {
+            "nl": [
+              "stopt",
+              "fall-through",
+              "error always",
+              "SQL"
+            ],
+            "en": [
+              "stops",
+              "fall-through",
+              "always error",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Fall-through.",
+            "en": "Fall-through."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "10%3?",
+            "en": "10%3?"
+          },
+          "choices": {
+            "nl": [
+              "3",
+              "1",
+              "0",
+              "3.33"
+            ],
+            "en": [
+              "3",
+              "1",
+              "0",
+              "3.33"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "1.",
+            "en": "1."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "catch?",
+            "en": "catch?"
+          },
+          "choices": {
+            "nl": [
+              "except",
+              "catch",
+              "rescue",
+              "handle"
+            ],
+            "en": [
+              "except",
+              "catch",
+              "rescue",
+              "handle"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "catch.",
+            "en": "catch."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "bool uit 1?",
+            "en": "bool from 1?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "compile error",
+              "false",
+              "1"
+            ],
+            "en": [
+              "true",
+              "compile error",
+              "false",
+              "1"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "No implicit.",
+            "en": "No implicit."
           }
         }
       ]
@@ -404,6 +1594,244 @@
             "nl": "default is het vangnet.",
             "en": "default is the catch-all path."
           }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "7/2 int?",
+            "en": "7/2 int?"
+          },
+          "choices": {
+            "nl": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Truncates.",
+            "en": "Truncates."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Nieuwe regel schrijven?",
+            "en": "Write new line?"
+          },
+          "fill": [
+            "WriteLine",
+            "Console.WriteLine"
+          ],
+          "why": {
+            "nl": "WriteLine.",
+            "en": "WriteLine."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "var zonder waarde?",
+            "en": "var without value?"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "compile error",
+              "null",
+              "0"
+            ],
+            "en": [
+              "ok",
+              "compile error",
+              "null",
+              "0"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Needs init.",
+            "en": "Needs init."
+          },
+          "code": "var x;"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "i++ + ++i i=3?",
+            "en": "i++ + ++i i=3?"
+          },
+          "choices": {
+            "nl": [
+              "7",
+              "8",
+              "6",
+              "9"
+            ],
+            "en": [
+              "7",
+              "8",
+              "6",
+              "9"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "8.",
+            "en": "8."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Contains case?",
+            "en": "Contains case?"
+          },
+          "choices": {
+            "nl": [
+              "ignore",
+              "case-sensitive default",
+              "error",
+              "SQL"
+            ],
+            "en": [
+              "ignore",
+              "case-sensitive default",
+              "error",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Case sensitive.",
+            "en": "Case sensitive."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Geen return type?",
+            "en": "No return type?"
+          },
+          "fill": [
+            "void"
+          ],
+          "why": {
+            "nl": "void.",
+            "en": "void."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "switch zonder break?",
+            "en": "switch without break?"
+          },
+          "choices": {
+            "nl": [
+              "stopt",
+              "fall-through",
+              "error always",
+              "SQL"
+            ],
+            "en": [
+              "stops",
+              "fall-through",
+              "always error",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Fall-through.",
+            "en": "Fall-through."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "10%3?",
+            "en": "10%3?"
+          },
+          "choices": {
+            "nl": [
+              "3",
+              "1",
+              "0",
+              "3.33"
+            ],
+            "en": [
+              "3",
+              "1",
+              "0",
+              "3.33"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "1.",
+            "en": "1."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "catch?",
+            "en": "catch?"
+          },
+          "choices": {
+            "nl": [
+              "except",
+              "catch",
+              "rescue",
+              "handle"
+            ],
+            "en": [
+              "except",
+              "catch",
+              "rescue",
+              "handle"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "catch.",
+            "en": "catch."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "bool uit 1?",
+            "en": "bool from 1?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "compile error",
+              "false",
+              "1"
+            ],
+            "en": [
+              "true",
+              "compile error",
+              "false",
+              "1"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "No implicit.",
+            "en": "No implicit."
+          }
         }
       ]
     },
@@ -466,6 +1894,244 @@
           "why": {
             "nl": "i++ levert 3 (i wordt 4), ++i maakt 5 en levert 5. 3+5=8.",
             "en": "i++ yields 3 (i becomes 4), ++i makes 5 and yields 5. 3+5=8."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "7/2 int?",
+            "en": "7/2 int?"
+          },
+          "choices": {
+            "nl": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Truncates.",
+            "en": "Truncates."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Nieuwe regel schrijven?",
+            "en": "Write new line?"
+          },
+          "fill": [
+            "WriteLine",
+            "Console.WriteLine"
+          ],
+          "why": {
+            "nl": "WriteLine.",
+            "en": "WriteLine."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "var zonder waarde?",
+            "en": "var without value?"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "compile error",
+              "null",
+              "0"
+            ],
+            "en": [
+              "ok",
+              "compile error",
+              "null",
+              "0"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Needs init.",
+            "en": "Needs init."
+          },
+          "code": "var x;"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "i++ + ++i i=3?",
+            "en": "i++ + ++i i=3?"
+          },
+          "choices": {
+            "nl": [
+              "7",
+              "8",
+              "6",
+              "9"
+            ],
+            "en": [
+              "7",
+              "8",
+              "6",
+              "9"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "8.",
+            "en": "8."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Contains case?",
+            "en": "Contains case?"
+          },
+          "choices": {
+            "nl": [
+              "ignore",
+              "case-sensitive default",
+              "error",
+              "SQL"
+            ],
+            "en": [
+              "ignore",
+              "case-sensitive default",
+              "error",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Case sensitive.",
+            "en": "Case sensitive."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Geen return type?",
+            "en": "No return type?"
+          },
+          "fill": [
+            "void"
+          ],
+          "why": {
+            "nl": "void.",
+            "en": "void."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "switch zonder break?",
+            "en": "switch without break?"
+          },
+          "choices": {
+            "nl": [
+              "stopt",
+              "fall-through",
+              "error always",
+              "SQL"
+            ],
+            "en": [
+              "stops",
+              "fall-through",
+              "always error",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Fall-through.",
+            "en": "Fall-through."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "10%3?",
+            "en": "10%3?"
+          },
+          "choices": {
+            "nl": [
+              "3",
+              "1",
+              "0",
+              "3.33"
+            ],
+            "en": [
+              "3",
+              "1",
+              "0",
+              "3.33"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "1.",
+            "en": "1."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "catch?",
+            "en": "catch?"
+          },
+          "choices": {
+            "nl": [
+              "except",
+              "catch",
+              "rescue",
+              "handle"
+            ],
+            "en": [
+              "except",
+              "catch",
+              "rescue",
+              "handle"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "catch.",
+            "en": "catch."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "bool uit 1?",
+            "en": "bool from 1?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "compile error",
+              "false",
+              "1"
+            ],
+            "en": [
+              "true",
+              "compile error",
+              "false",
+              "1"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "No implicit.",
+            "en": "No implicit."
           }
         }
       ]
@@ -530,6 +2196,244 @@
             "nl": "Drie elementen.",
             "en": "Three elements."
           }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "7/2 int?",
+            "en": "7/2 int?"
+          },
+          "choices": {
+            "nl": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Truncates.",
+            "en": "Truncates."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Nieuwe regel schrijven?",
+            "en": "Write new line?"
+          },
+          "fill": [
+            "WriteLine",
+            "Console.WriteLine"
+          ],
+          "why": {
+            "nl": "WriteLine.",
+            "en": "WriteLine."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "var zonder waarde?",
+            "en": "var without value?"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "compile error",
+              "null",
+              "0"
+            ],
+            "en": [
+              "ok",
+              "compile error",
+              "null",
+              "0"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Needs init.",
+            "en": "Needs init."
+          },
+          "code": "var x;"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "i++ + ++i i=3?",
+            "en": "i++ + ++i i=3?"
+          },
+          "choices": {
+            "nl": [
+              "7",
+              "8",
+              "6",
+              "9"
+            ],
+            "en": [
+              "7",
+              "8",
+              "6",
+              "9"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "8.",
+            "en": "8."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Contains case?",
+            "en": "Contains case?"
+          },
+          "choices": {
+            "nl": [
+              "ignore",
+              "case-sensitive default",
+              "error",
+              "SQL"
+            ],
+            "en": [
+              "ignore",
+              "case-sensitive default",
+              "error",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Case sensitive.",
+            "en": "Case sensitive."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Geen return type?",
+            "en": "No return type?"
+          },
+          "fill": [
+            "void"
+          ],
+          "why": {
+            "nl": "void.",
+            "en": "void."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "switch zonder break?",
+            "en": "switch without break?"
+          },
+          "choices": {
+            "nl": [
+              "stopt",
+              "fall-through",
+              "error always",
+              "SQL"
+            ],
+            "en": [
+              "stops",
+              "fall-through",
+              "always error",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Fall-through.",
+            "en": "Fall-through."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "10%3?",
+            "en": "10%3?"
+          },
+          "choices": {
+            "nl": [
+              "3",
+              "1",
+              "0",
+              "3.33"
+            ],
+            "en": [
+              "3",
+              "1",
+              "0",
+              "3.33"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "1.",
+            "en": "1."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "catch?",
+            "en": "catch?"
+          },
+          "choices": {
+            "nl": [
+              "except",
+              "catch",
+              "rescue",
+              "handle"
+            ],
+            "en": [
+              "except",
+              "catch",
+              "rescue",
+              "handle"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "catch.",
+            "en": "catch."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "bool uit 1?",
+            "en": "bool from 1?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "compile error",
+              "false",
+              "1"
+            ],
+            "en": [
+              "true",
+              "compile error",
+              "false",
+              "1"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "No implicit.",
+            "en": "No implicit."
+          }
         }
       ]
     },
@@ -593,6 +2497,244 @@
             "nl": "2+3=5.",
             "en": "2+3=5."
           }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "7/2 int?",
+            "en": "7/2 int?"
+          },
+          "choices": {
+            "nl": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Truncates.",
+            "en": "Truncates."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Nieuwe regel schrijven?",
+            "en": "Write new line?"
+          },
+          "fill": [
+            "WriteLine",
+            "Console.WriteLine"
+          ],
+          "why": {
+            "nl": "WriteLine.",
+            "en": "WriteLine."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "var zonder waarde?",
+            "en": "var without value?"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "compile error",
+              "null",
+              "0"
+            ],
+            "en": [
+              "ok",
+              "compile error",
+              "null",
+              "0"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Needs init.",
+            "en": "Needs init."
+          },
+          "code": "var x;"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "i++ + ++i i=3?",
+            "en": "i++ + ++i i=3?"
+          },
+          "choices": {
+            "nl": [
+              "7",
+              "8",
+              "6",
+              "9"
+            ],
+            "en": [
+              "7",
+              "8",
+              "6",
+              "9"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "8.",
+            "en": "8."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Contains case?",
+            "en": "Contains case?"
+          },
+          "choices": {
+            "nl": [
+              "ignore",
+              "case-sensitive default",
+              "error",
+              "SQL"
+            ],
+            "en": [
+              "ignore",
+              "case-sensitive default",
+              "error",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Case sensitive.",
+            "en": "Case sensitive."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Geen return type?",
+            "en": "No return type?"
+          },
+          "fill": [
+            "void"
+          ],
+          "why": {
+            "nl": "void.",
+            "en": "void."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "switch zonder break?",
+            "en": "switch without break?"
+          },
+          "choices": {
+            "nl": [
+              "stopt",
+              "fall-through",
+              "error always",
+              "SQL"
+            ],
+            "en": [
+              "stops",
+              "fall-through",
+              "always error",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Fall-through.",
+            "en": "Fall-through."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "10%3?",
+            "en": "10%3?"
+          },
+          "choices": {
+            "nl": [
+              "3",
+              "1",
+              "0",
+              "3.33"
+            ],
+            "en": [
+              "3",
+              "1",
+              "0",
+              "3.33"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "1.",
+            "en": "1."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "catch?",
+            "en": "catch?"
+          },
+          "choices": {
+            "nl": [
+              "except",
+              "catch",
+              "rescue",
+              "handle"
+            ],
+            "en": [
+              "except",
+              "catch",
+              "rescue",
+              "handle"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "catch.",
+            "en": "catch."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "bool uit 1?",
+            "en": "bool from 1?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "compile error",
+              "false",
+              "1"
+            ],
+            "en": [
+              "true",
+              "compile error",
+              "false",
+              "1"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "No implicit.",
+            "en": "No implicit."
+          }
         }
       ]
     },
@@ -655,6 +2797,244 @@
           "why": {
             "nl": "De tekst past niet in het getal-formaat.",
             "en": "The text does not match a number format."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "7/2 int?",
+            "en": "7/2 int?"
+          },
+          "choices": {
+            "nl": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ],
+            "en": [
+              "3.5",
+              "3",
+              "4",
+              "error"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Truncates.",
+            "en": "Truncates."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Nieuwe regel schrijven?",
+            "en": "Write new line?"
+          },
+          "fill": [
+            "WriteLine",
+            "Console.WriteLine"
+          ],
+          "why": {
+            "nl": "WriteLine.",
+            "en": "WriteLine."
+          }
+        },
+        {
+          "type": "bug",
+          "q": {
+            "nl": "var zonder waarde?",
+            "en": "var without value?"
+          },
+          "choices": {
+            "nl": [
+              "ok",
+              "compile error",
+              "null",
+              "0"
+            ],
+            "en": [
+              "ok",
+              "compile error",
+              "null",
+              "0"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Needs init.",
+            "en": "Needs init."
+          },
+          "code": "var x;"
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "i++ + ++i i=3?",
+            "en": "i++ + ++i i=3?"
+          },
+          "choices": {
+            "nl": [
+              "7",
+              "8",
+              "6",
+              "9"
+            ],
+            "en": [
+              "7",
+              "8",
+              "6",
+              "9"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "8.",
+            "en": "8."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "Contains case?",
+            "en": "Contains case?"
+          },
+          "choices": {
+            "nl": [
+              "ignore",
+              "case-sensitive default",
+              "error",
+              "SQL"
+            ],
+            "en": [
+              "ignore",
+              "case-sensitive default",
+              "error",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Case sensitive.",
+            "en": "Case sensitive."
+          }
+        },
+        {
+          "type": "fill",
+          "q": {
+            "nl": "Geen return type?",
+            "en": "No return type?"
+          },
+          "fill": [
+            "void"
+          ],
+          "why": {
+            "nl": "void.",
+            "en": "void."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "switch zonder break?",
+            "en": "switch without break?"
+          },
+          "choices": {
+            "nl": [
+              "stopt",
+              "fall-through",
+              "error always",
+              "SQL"
+            ],
+            "en": [
+              "stops",
+              "fall-through",
+              "always error",
+              "SQL"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "Fall-through.",
+            "en": "Fall-through."
+          }
+        },
+        {
+          "type": "print",
+          "q": {
+            "nl": "10%3?",
+            "en": "10%3?"
+          },
+          "choices": {
+            "nl": [
+              "3",
+              "1",
+              "0",
+              "3.33"
+            ],
+            "en": [
+              "3",
+              "1",
+              "0",
+              "3.33"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "1.",
+            "en": "1."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "catch?",
+            "en": "catch?"
+          },
+          "choices": {
+            "nl": [
+              "except",
+              "catch",
+              "rescue",
+              "handle"
+            ],
+            "en": [
+              "except",
+              "catch",
+              "rescue",
+              "handle"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "catch.",
+            "en": "catch."
+          }
+        },
+        {
+          "type": "mc",
+          "q": {
+            "nl": "bool uit 1?",
+            "en": "bool from 1?"
+          },
+          "choices": {
+            "nl": [
+              "true",
+              "compile error",
+              "false",
+              "1"
+            ],
+            "en": [
+              "true",
+              "compile error",
+              "false",
+              "1"
+            ]
+          },
+          "answer": 1,
+          "why": {
+            "nl": "No implicit.",
+            "en": "No implicit."
           }
         }
       ]
@@ -1440,6 +3820,502 @@
         "nl": "Altijd origineel.",
         "en": "Always original."
       }
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 1] 7/2 int?",
+        "en": "[Pool 1] 7/2 int?"
+      },
+      "choices": {
+        "nl": [
+          "3.5",
+          "3",
+          "4",
+          "error"
+        ],
+        "en": [
+          "3.5",
+          "3",
+          "4",
+          "error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Truncates.",
+        "en": "Truncates."
+      },
+      "id": 31
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 2] Nieuwe regel schrijven?",
+        "en": "[Pool 2] Write new line?"
+      },
+      "fill": [
+        "WriteLine",
+        "Console.WriteLine"
+      ],
+      "why": {
+        "nl": "WriteLine.",
+        "en": "WriteLine."
+      },
+      "id": 32
+    },
+    {
+      "type": "bug",
+      "q": {
+        "nl": "[Pool 3] var zonder waarde?",
+        "en": "[Pool 3] var without value?"
+      },
+      "choices": {
+        "nl": [
+          "ok",
+          "compile error",
+          "null",
+          "0"
+        ],
+        "en": [
+          "ok",
+          "compile error",
+          "null",
+          "0"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Needs init.",
+        "en": "Needs init."
+      },
+      "code": "var x;",
+      "id": 33
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 4] i++ + ++i i=3?",
+        "en": "[Pool 4] i++ + ++i i=3?"
+      },
+      "choices": {
+        "nl": [
+          "7",
+          "8",
+          "6",
+          "9"
+        ],
+        "en": [
+          "7",
+          "8",
+          "6",
+          "9"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "8.",
+        "en": "8."
+      },
+      "id": 34
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 5] Contains case?",
+        "en": "[Pool 5] Contains case?"
+      },
+      "choices": {
+        "nl": [
+          "ignore",
+          "case-sensitive default",
+          "error",
+          "SQL"
+        ],
+        "en": [
+          "ignore",
+          "case-sensitive default",
+          "error",
+          "SQL"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Case sensitive.",
+        "en": "Case sensitive."
+      },
+      "id": 35
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 6] Geen return type?",
+        "en": "[Pool 6] No return type?"
+      },
+      "fill": [
+        "void"
+      ],
+      "why": {
+        "nl": "void.",
+        "en": "void."
+      },
+      "id": 36
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 7] switch zonder break?",
+        "en": "[Pool 7] switch without break?"
+      },
+      "choices": {
+        "nl": [
+          "stopt",
+          "fall-through",
+          "error always",
+          "SQL"
+        ],
+        "en": [
+          "stops",
+          "fall-through",
+          "always error",
+          "SQL"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Fall-through.",
+        "en": "Fall-through."
+      },
+      "id": 37
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 8] 10%3?",
+        "en": "[Pool 8] 10%3?"
+      },
+      "choices": {
+        "nl": [
+          "3",
+          "1",
+          "0",
+          "3.33"
+        ],
+        "en": [
+          "3",
+          "1",
+          "0",
+          "3.33"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "1.",
+        "en": "1."
+      },
+      "id": 38
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 9] catch?",
+        "en": "[Pool 9] catch?"
+      },
+      "choices": {
+        "nl": [
+          "except",
+          "catch",
+          "rescue",
+          "handle"
+        ],
+        "en": [
+          "except",
+          "catch",
+          "rescue",
+          "handle"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "catch.",
+        "en": "catch."
+      },
+      "id": 39
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 10] bool uit 1?",
+        "en": "[Pool 10] bool from 1?"
+      },
+      "choices": {
+        "nl": [
+          "true",
+          "compile error",
+          "false",
+          "1"
+        ],
+        "en": [
+          "true",
+          "compile error",
+          "false",
+          "1"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "No implicit.",
+        "en": "No implicit."
+      },
+      "id": 40
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 11] array[0]?",
+        "en": "[Pool 11] array[0]?"
+      },
+      "choices": {
+        "nl": [
+          "tweede",
+          "eerste",
+          "error",
+          "length"
+        ],
+        "en": [
+          "second",
+          "first",
+          "error",
+          "length"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "First.",
+        "en": "First."
+      },
+      "id": 41
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 12] finally runt?",
+        "en": "[Pool 12] finally runs?"
+      },
+      "choices": {
+        "nl": [
+          "alleen errors",
+          "bijna altijd",
+          "nooit",
+          "SQL"
+        ],
+        "en": [
+          "errors only",
+          "almost always",
+          "never",
+          "SQL"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Almost always.",
+        "en": "Almost always."
+      },
+      "id": 42
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 13] decimal literal?",
+        "en": "[Pool 13] decimal literal?"
+      },
+      "choices": {
+        "nl": [
+          "2.5",
+          "2.5m",
+          "2.5d",
+          "2.5f"
+        ],
+        "en": [
+          "2.5",
+          "2.5m",
+          "2.5d",
+          "2.5f"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "m suffix.",
+        "en": "m suffix."
+      },
+      "id": 43
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 14] 7/2 int?",
+        "en": "[Pool 14] 7/2 int?"
+      },
+      "choices": {
+        "nl": [
+          "3.5",
+          "3",
+          "4",
+          "error"
+        ],
+        "en": [
+          "3.5",
+          "3",
+          "4",
+          "error"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Truncates.",
+        "en": "Truncates."
+      },
+      "id": 44
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 15] Nieuwe regel schrijven?",
+        "en": "[Pool 15] Write new line?"
+      },
+      "fill": [
+        "WriteLine",
+        "Console.WriteLine"
+      ],
+      "why": {
+        "nl": "WriteLine.",
+        "en": "WriteLine."
+      },
+      "id": 45
+    },
+    {
+      "type": "bug",
+      "q": {
+        "nl": "[Pool 16] var zonder waarde?",
+        "en": "[Pool 16] var without value?"
+      },
+      "choices": {
+        "nl": [
+          "ok",
+          "compile error",
+          "null",
+          "0"
+        ],
+        "en": [
+          "ok",
+          "compile error",
+          "null",
+          "0"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Needs init.",
+        "en": "Needs init."
+      },
+      "code": "var x;",
+      "id": 46
+    },
+    {
+      "type": "print",
+      "q": {
+        "nl": "[Pool 17] i++ + ++i i=3?",
+        "en": "[Pool 17] i++ + ++i i=3?"
+      },
+      "choices": {
+        "nl": [
+          "7",
+          "8",
+          "6",
+          "9"
+        ],
+        "en": [
+          "7",
+          "8",
+          "6",
+          "9"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "8.",
+        "en": "8."
+      },
+      "id": 47
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 18] Contains case?",
+        "en": "[Pool 18] Contains case?"
+      },
+      "choices": {
+        "nl": [
+          "ignore",
+          "case-sensitive default",
+          "error",
+          "SQL"
+        ],
+        "en": [
+          "ignore",
+          "case-sensitive default",
+          "error",
+          "SQL"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Case sensitive.",
+        "en": "Case sensitive."
+      },
+      "id": 48
+    },
+    {
+      "type": "fill",
+      "q": {
+        "nl": "[Pool 19] Geen return type?",
+        "en": "[Pool 19] No return type?"
+      },
+      "fill": [
+        "void"
+      ],
+      "why": {
+        "nl": "void.",
+        "en": "void."
+      },
+      "id": 49
+    },
+    {
+      "type": "mc",
+      "q": {
+        "nl": "[Pool 20] switch zonder break?",
+        "en": "[Pool 20] switch without break?"
+      },
+      "choices": {
+        "nl": [
+          "stopt",
+          "fall-through",
+          "error always",
+          "SQL"
+        ],
+        "en": [
+          "stops",
+          "fall-through",
+          "always error",
+          "SQL"
+        ]
+      },
+      "answer": 1,
+      "why": {
+        "nl": "Fall-through.",
+        "en": "Fall-through."
+      },
+      "id": 50
     }
   ],
   "challenges": [
@@ -1489,6 +4365,7 @@
         }
       ]
     }
-  ]
+  ],
+  "examDraw": 25
 };
 })(window);

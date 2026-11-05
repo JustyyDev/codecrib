@@ -66,6 +66,15 @@
       verify_bad: "Ongeldig of gewijzigd ID.",
       playground_title: "Canvas playground",
       playground_intro: "Teken met canvas + JS. Run updatet de preview.",
+
+      nav_review: "Herhalen",
+      review_title: "Herhalen (spaced repetition)",
+      review_intro: "Leitner-kaarten: fouten komen snel terug, goed later (1, 3, 7, 14, 30 dagen). Alleen jij lokaal in deze browser.",
+      review_due: "Nu te herhalen",
+      review_empty: "Niets due. Maak eerst lessen of kom later terug.",
+      review_box: "Box",
+      recap_title: "Recap eerdere lessen",
+      recap_intro: "Mix van eerdere vragen in deze cursus. Herhaling = onthouden.",
       lang: "NL"
     },
     en: {
@@ -133,6 +142,15 @@
       verify_bad: "Invalid or altered ID.",
       playground_title: "Canvas playground",
       playground_intro: "Draw with canvas + JS. Run updates the preview.",
+
+      nav_review: "Review",
+      review_title: "Review (spaced repetition)",
+      review_intro: "Leitner cards: wrong answers return soon, right ones later (1, 3, 7, 14, 30 days). Local to your browser only.",
+      review_due: "Due now",
+      review_empty: "Nothing due. Do lessons first or come back later.",
+      review_box: "Box",
+      recap_title: "Earlier lessons recap",
+      recap_intro: "Mixed questions from earlier lessons in this course. Repetition builds memory.",
       lang: "EN"
     }
   };

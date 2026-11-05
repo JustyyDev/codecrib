@@ -28,6 +28,7 @@
       if (nav === "exam") active = path === "exam.html";
       if (nav === "play") active = path === "playground.html";
       if (nav === "cert") active = path === "certificate.html" || path === "verify.html";
+      if (nav === "review") active = path === "review.html";
       a.classList.toggle("active", active);
     });
   }
