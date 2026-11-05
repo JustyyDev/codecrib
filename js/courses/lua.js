@@ -54,19 +54,19 @@
           },
           "choices": {
             "nl": [
-              "console.log",
               "print",
+              "console.log",
               "echo",
               "Write"
             ],
             "en": [
-              "console.log",
               "print",
+              "console.log",
               "echo",
               "Write"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "print.",
             "en": "print."
@@ -81,18 +81,18 @@
           "choices": {
             "nl": [
               "20",
-              "10",
+              "error",
               "nil",
-              "error"
+              "10"
             ],
             "en": [
               "20",
-              "10",
+              "error",
               "nil",
-              "error"
+              "10"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "1-based.",
             "en": "1-based."
@@ -147,18 +147,18 @@
           "choices": {
             "nl": [
               "nee",
-              "ja",
+              "nil",
               "error",
-              "nil"
+              "ja"
             ],
             "en": [
               "no",
-              "yes",
+              "nil",
               "error",
-              "nil"
+              "yes"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Only false/nil falsy.",
             "en": "Only false/nil falsy."
@@ -173,18 +173,18 @@
           "choices": {
             "nl": [
               "ok",
-              "mist end",
               "print fout",
+              "mist end",
               "local fout"
             ],
             "en": [
               "ok",
-              "missing end",
               "print wrong",
+              "missing end",
               "local wrong"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Need end.",
             "en": "Need end."
@@ -214,18 +214,18 @@
           "choices": {
             "nl": [
               "elif",
-              "elseif",
               "else if",
+              "elseif",
               "elsif"
             ],
             "en": [
               "elif",
-              "elseif",
               "else if",
+              "elseif",
               "elsif"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "elseif.",
             "en": "elseif."
@@ -240,18 +240,18 @@
           "choices": {
             "nl": [
               "hash",
-              "3",
+              "0",
               "error",
-              "0"
+              "3"
             ],
             "en": [
               "hash",
-              "3",
+              "0",
               "error",
-              "0"
+              "3"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Length 3.",
             "en": "Length 3."
@@ -266,18 +266,18 @@
           "choices": {
             "nl": [
               "zelfde",
-              "ipairs array-achtig",
               "SQL",
+              "ipairs array-achtig",
               "CSS"
             ],
             "en": [
               "same",
-              "ipairs array-like",
               "SQL",
+              "ipairs array-like",
               "CSS"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Difference.",
             "en": "Difference."
@@ -332,18 +332,18 @@
           "choices": {
             "nl": [
               "0",
-              "lege string",
               "geen waarde",
+              "lege string",
               "true"
             ],
             "en": [
               "0",
-              "empty string",
               "no value",
+              "empty string",
               "true"
             ]
           },
-          "answer": 2,
+          "answer": 1,
           "why": {
             "nl": "Geen waarde.",
             "en": "No value."
@@ -357,18 +357,18 @@
           "choices": {
             "nl": [
               "sneller altijd",
-              "betere scope",
+              "Roblox only",
               "verwijdert nil",
-              "Roblox only"
+              "betere scope"
             ],
             "en": [
               "always faster",
-              "better scope",
+              "Roblox only",
               "removes nil",
-              "Roblox only"
+              "better scope"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Scope.",
             "en": "Scope."
@@ -382,19 +382,19 @@
           },
           "choices": {
             "nl": [
-              "20",
               "10",
+              "20",
               "nil",
               "error"
             ],
             "en": [
-              "20",
               "10",
+              "20",
               "nil",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "1-based.",
             "en": "1-based."
@@ -423,18 +423,18 @@
           "choices": {
             "nl": [
               "nee",
-              "ja",
               "alleen 0",
+              "ja",
               "error"
             ],
             "en": [
               "no",
-              "yes",
               "0 only",
+              "yes",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Yes.",
             "en": "Yes."
@@ -449,18 +449,18 @@
           "choices": {
             "nl": [
               "nee",
-              "ja",
               "error",
+              "ja",
               "nil"
             ],
             "en": [
               "no",
-              "yes",
               "error",
+              "yes",
               "nil"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Only false/nil falsy.",
             "en": "Only false/nil falsy."
@@ -475,18 +475,18 @@
           "choices": {
             "nl": [
               "ok",
-              "mist end",
               "print fout",
+              "mist end",
               "local fout"
             ],
             "en": [
               "ok",
-              "missing end",
               "print wrong",
+              "missing end",
               "local wrong"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Need end.",
             "en": "Need end."
@@ -515,19 +515,19 @@
           },
           "choices": {
             "nl": [
-              "elif",
               "elseif",
+              "elif",
               "else if",
               "elsif"
             ],
             "en": [
-              "elif",
               "elseif",
+              "elif",
               "else if",
               "elsif"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "elseif.",
             "en": "elseif."
@@ -542,18 +542,18 @@
           "choices": {
             "nl": [
               "hash",
-              "3",
+              "0",
               "error",
-              "0"
+              "3"
             ],
             "en": [
               "hash",
-              "3",
+              "0",
               "error",
-              "0"
+              "3"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Length 3.",
             "en": "Length 3."
@@ -711,18 +711,18 @@
           "choices": {
             "nl": [
               "nee",
-              "ja",
+              "error",
               "alleen 0",
-              "error"
+              "ja"
             ],
             "en": [
               "no",
-              "yes",
+              "error",
               "0 only",
-              "error"
+              "yes"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Yes.",
             "en": "Yes."
@@ -763,18 +763,18 @@
           "choices": {
             "nl": [
               "ok",
-              "mist end",
+              "local fout",
               "print fout",
-              "local fout"
+              "mist end"
             ],
             "en": [
               "ok",
-              "missing end",
+              "local wrong",
               "print wrong",
-              "local wrong"
+              "missing end"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Need end.",
             "en": "Need end."
@@ -804,18 +804,18 @@
           "choices": {
             "nl": [
               "elif",
-              "elseif",
+              "elsif",
               "else if",
-              "elsif"
+              "elseif"
             ],
             "en": [
               "elif",
-              "elseif",
+              "elsif",
               "else if",
-              "elsif"
+              "elseif"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "elseif.",
             "en": "elseif."
@@ -829,19 +829,19 @@
           },
           "choices": {
             "nl": [
-              "hash",
               "3",
+              "hash",
               "error",
               "0"
             ],
             "en": [
-              "hash",
               "3",
+              "hash",
               "error",
               "0"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Length 3.",
             "en": "Length 3."
@@ -856,18 +856,18 @@
           "choices": {
             "nl": [
               "zelfde",
-              "ipairs array-achtig",
+              "CSS",
               "SQL",
-              "CSS"
+              "ipairs array-achtig"
             ],
             "en": [
               "same",
-              "ipairs array-like",
+              "CSS",
               "SQL",
-              "CSS"
+              "ipairs array-like"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Difference.",
             "en": "Difference."
@@ -907,19 +907,19 @@
           },
           "choices": {
             "nl": [
-              "3",
               "4",
+              "3",
               "10",
               "9"
             ],
             "en": [
-              "3",
               "4",
+              "3",
               "10",
               "9"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "0,3,6,9.",
             "en": "0,3,6,9."
@@ -932,19 +932,19 @@
           },
           "choices": {
             "nl": [
-              "}",
               "end",
+              "}",
               "fi",
               "done"
             ],
             "en": [
-              "}",
               "end",
+              "}",
               "fi",
               "done"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "end.",
             "en": "end."
@@ -959,18 +959,18 @@
           "choices": {
             "nl": [
               "20",
-              "10",
               "nil",
+              "10",
               "error"
             ],
             "en": [
               "20",
-              "10",
               "nil",
+              "10",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "1-based.",
             "en": "1-based."
@@ -999,18 +999,18 @@
           "choices": {
             "nl": [
               "nee",
-              "ja",
               "alleen 0",
+              "ja",
               "error"
             ],
             "en": [
               "no",
-              "yes",
               "0 only",
+              "yes",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Yes.",
             "en": "Yes."
@@ -1025,18 +1025,18 @@
           "choices": {
             "nl": [
               "nee",
-              "ja",
+              "nil",
               "error",
-              "nil"
+              "ja"
             ],
             "en": [
               "no",
-              "yes",
+              "nil",
               "error",
-              "nil"
+              "yes"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Only false/nil falsy.",
             "en": "Only false/nil falsy."
@@ -1050,19 +1050,19 @@
           },
           "choices": {
             "nl": [
-              "ok",
               "mist end",
+              "ok",
               "print fout",
               "local fout"
             ],
             "en": [
-              "ok",
               "missing end",
+              "ok",
               "print wrong",
               "local wrong"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Need end.",
             "en": "Need end."
@@ -1092,18 +1092,18 @@
           "choices": {
             "nl": [
               "elif",
-              "elseif",
               "else if",
+              "elseif",
               "elsif"
             ],
             "en": [
               "elif",
-              "elseif",
               "else if",
+              "elseif",
               "elsif"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "elseif.",
             "en": "elseif."
@@ -1144,18 +1144,18 @@
           "choices": {
             "nl": [
               "zelfde",
-              "ipairs array-achtig",
               "SQL",
+              "ipairs array-achtig",
               "CSS"
             ],
             "en": [
               "same",
-              "ipairs array-like",
               "SQL",
+              "ipairs array-like",
               "CSS"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Difference.",
             "en": "Difference."
@@ -1195,19 +1195,19 @@
           },
           "choices": {
             "nl": [
-              "20",
               "10",
+              "20",
               "30",
               "nil"
             ],
             "en": [
-              "20",
               "10",
+              "20",
               "30",
               "nil"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "1-based first.",
             "en": "1-based first."
@@ -1246,19 +1246,19 @@
           },
           "choices": {
             "nl": [
-              "20",
               "10",
+              "20",
               "nil",
               "error"
             ],
             "en": [
-              "20",
               "10",
+              "20",
               "nil",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "1-based.",
             "en": "1-based."
@@ -1287,18 +1287,18 @@
           "choices": {
             "nl": [
               "nee",
-              "ja",
               "alleen 0",
+              "ja",
               "error"
             ],
             "en": [
               "no",
-              "yes",
               "0 only",
+              "yes",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Yes.",
             "en": "Yes."
@@ -1313,18 +1313,18 @@
           "choices": {
             "nl": [
               "nee",
-              "ja",
+              "nil",
               "error",
-              "nil"
+              "ja"
             ],
             "en": [
               "no",
-              "yes",
+              "nil",
               "error",
-              "nil"
+              "yes"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Only false/nil falsy.",
             "en": "Only false/nil falsy."
@@ -1406,18 +1406,18 @@
           "choices": {
             "nl": [
               "hash",
-              "3",
               "error",
+              "3",
               "0"
             ],
             "en": [
               "hash",
-              "3",
               "error",
+              "3",
               "0"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Length 3.",
             "en": "Length 3."
@@ -1432,18 +1432,18 @@
           "choices": {
             "nl": [
               "zelfde",
-              "ipairs array-achtig",
+              "CSS",
               "SQL",
-              "CSS"
+              "ipairs array-achtig"
             ],
             "en": [
               "same",
-              "ipairs array-like",
+              "CSS",
               "SQL",
-              "CSS"
+              "ipairs array-like"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Difference.",
             "en": "Difference."
@@ -1484,18 +1484,18 @@
           "choices": {
             "nl": [
               "23",
-              "5",
               "nil",
+              "5",
               "error"
             ],
             "en": [
               "23",
-              "5",
               "nil",
+              "5",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "5.",
             "en": "5."
@@ -1509,18 +1509,18 @@
           "choices": {
             "nl": [
               "def",
-              "function",
               "fn",
+              "function",
               "method"
             ],
             "en": [
               "def",
-              "function",
               "fn",
+              "function",
               "method"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "function.",
             "en": "function."
@@ -1535,18 +1535,18 @@
           "choices": {
             "nl": [
               "20",
-              "10",
+              "error",
               "nil",
-              "error"
+              "10"
             ],
             "en": [
               "20",
-              "10",
+              "error",
               "nil",
-              "error"
+              "10"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "1-based.",
             "en": "1-based."
@@ -1574,19 +1574,19 @@
           },
           "choices": {
             "nl": [
-              "nee",
               "ja",
+              "nee",
               "alleen 0",
               "error"
             ],
             "en": [
-              "no",
               "yes",
+              "no",
               "0 only",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Yes.",
             "en": "Yes."
@@ -1601,18 +1601,18 @@
           "choices": {
             "nl": [
               "nee",
-              "ja",
+              "nil",
               "error",
-              "nil"
+              "ja"
             ],
             "en": [
               "no",
-              "yes",
+              "nil",
               "error",
-              "nil"
+              "yes"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Only false/nil falsy.",
             "en": "Only false/nil falsy."
@@ -1668,18 +1668,18 @@
           "choices": {
             "nl": [
               "elif",
-              "elseif",
+              "elsif",
               "else if",
-              "elsif"
+              "elseif"
             ],
             "en": [
               "elif",
-              "elseif",
+              "elsif",
               "else if",
-              "elsif"
+              "elseif"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "elseif.",
             "en": "elseif."
@@ -1694,18 +1694,18 @@
           "choices": {
             "nl": [
               "hash",
-              "3",
+              "0",
               "error",
-              "0"
+              "3"
             ],
             "en": [
               "hash",
-              "3",
+              "0",
               "error",
-              "0"
+              "3"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Length 3.",
             "en": "Length 3."
@@ -1719,19 +1719,19 @@
           },
           "choices": {
             "nl": [
-              "zelfde",
               "ipairs array-achtig",
+              "zelfde",
               "SQL",
               "CSS"
             ],
             "en": [
-              "same",
               "ipairs array-like",
+              "same",
               "SQL",
               "CSS"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Difference.",
             "en": "Difference."
@@ -1863,18 +1863,18 @@
           "choices": {
             "nl": [
               "nee",
-              "ja",
+              "error",
               "alleen 0",
-              "error"
+              "ja"
             ],
             "en": [
               "no",
-              "yes",
+              "error",
               "0 only",
-              "error"
+              "yes"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Yes.",
             "en": "Yes."
@@ -1915,18 +1915,18 @@
           "choices": {
             "nl": [
               "ok",
-              "mist end",
+              "local fout",
               "print fout",
-              "local fout"
+              "mist end"
             ],
             "en": [
               "ok",
-              "missing end",
+              "local wrong",
               "print wrong",
-              "local wrong"
+              "missing end"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Need end.",
             "en": "Need end."
@@ -1956,18 +1956,18 @@
           "choices": {
             "nl": [
               "elif",
-              "elseif",
+              "elsif",
               "else if",
-              "elsif"
+              "elseif"
             ],
             "en": [
               "elif",
-              "elseif",
+              "elsif",
               "else if",
-              "elsif"
+              "elseif"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "elseif.",
             "en": "elseif."
@@ -1982,18 +1982,18 @@
           "choices": {
             "nl": [
               "hash",
-              "3",
+              "0",
               "error",
-              "0"
+              "3"
             ],
             "en": [
               "hash",
-              "3",
+              "0",
               "error",
-              "0"
+              "3"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Length 3.",
             "en": "Length 3."
@@ -2007,19 +2007,19 @@
           },
           "choices": {
             "nl": [
-              "zelfde",
               "ipairs array-achtig",
+              "zelfde",
               "SQL",
               "CSS"
             ],
             "en": [
-              "same",
               "ipairs array-like",
+              "same",
               "SQL",
               "CSS"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Difference.",
             "en": "Difference."
@@ -2085,18 +2085,18 @@
           "choices": {
             "nl": [
               "HTTP only",
-              "child instance",
+              "pip",
               "GPU",
-              "pip"
+              "child instance"
             ],
             "en": [
               "HTTP only",
-              "child instance",
+              "pip",
               "GPU",
-              "pip"
+              "child instance"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Child.",
             "en": "Child."
@@ -2110,19 +2110,19 @@
           },
           "choices": {
             "nl": [
-              "20",
               "10",
+              "20",
               "nil",
               "error"
             ],
             "en": [
-              "20",
               "10",
+              "20",
               "nil",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "1-based.",
             "en": "1-based."
@@ -2177,18 +2177,18 @@
           "choices": {
             "nl": [
               "nee",
-              "ja",
               "error",
+              "ja",
               "nil"
             ],
             "en": [
               "no",
-              "yes",
               "error",
+              "yes",
               "nil"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Only false/nil falsy.",
             "en": "Only false/nil falsy."
@@ -2203,18 +2203,18 @@
           "choices": {
             "nl": [
               "ok",
-              "mist end",
               "print fout",
+              "mist end",
               "local fout"
             ],
             "en": [
               "ok",
-              "missing end",
               "print wrong",
+              "missing end",
               "local wrong"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Need end.",
             "en": "Need end."
@@ -2243,19 +2243,19 @@
           },
           "choices": {
             "nl": [
-              "elif",
               "elseif",
+              "elif",
               "else if",
               "elsif"
             ],
             "en": [
-              "elif",
               "elseif",
+              "elif",
               "else if",
               "elsif"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "elseif.",
             "en": "elseif."
@@ -2270,18 +2270,18 @@
           "choices": {
             "nl": [
               "hash",
-              "3",
               "error",
+              "3",
               "0"
             ],
             "en": [
               "hash",
-              "3",
               "error",
+              "3",
               "0"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Length 3.",
             "en": "Length 3."
@@ -2349,17 +2349,17 @@
             "nl": [
               "5",
               "2",
-              "7",
-              "0"
+              "0",
+              "7"
             ],
             "en": [
               "5",
               "2",
-              "7",
-              "0"
+              "0",
+              "7"
             ]
           },
-          "answer": 2,
+          "answer": 3,
           "why": {
             "nl": "5+2.",
             "en": "5+2."
@@ -2373,18 +2373,18 @@
           "choices": {
             "nl": [
               "moet van Roblox",
-              "scope + duidelijkheid",
               "verwijdert tables",
+              "scope + duidelijkheid",
               "SQL"
             ],
             "en": [
               "Roblox requires",
-              "scope + clarity",
               "deletes tables",
+              "scope + clarity",
               "SQL"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Scope.",
             "en": "Scope."
@@ -2399,18 +2399,18 @@
           "choices": {
             "nl": [
               "20",
-              "10",
               "nil",
+              "10",
               "error"
             ],
             "en": [
               "20",
-              "10",
               "nil",
+              "10",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "1-based.",
             "en": "1-based."
@@ -2439,18 +2439,18 @@
           "choices": {
             "nl": [
               "nee",
-              "ja",
+              "error",
               "alleen 0",
-              "error"
+              "ja"
             ],
             "en": [
               "no",
-              "yes",
+              "error",
               "0 only",
-              "error"
+              "yes"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Yes.",
             "en": "Yes."
@@ -2465,18 +2465,18 @@
           "choices": {
             "nl": [
               "nee",
-              "ja",
               "error",
+              "ja",
               "nil"
             ],
             "en": [
               "no",
-              "yes",
               "error",
+              "yes",
               "nil"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Only false/nil falsy.",
             "en": "Only false/nil falsy."
@@ -2531,19 +2531,19 @@
           },
           "choices": {
             "nl": [
-              "elif",
               "elseif",
+              "elif",
               "else if",
               "elsif"
             ],
             "en": [
-              "elif",
               "elseif",
+              "elif",
               "else if",
               "elsif"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "elseif.",
             "en": "elseif."
@@ -2557,19 +2557,19 @@
           },
           "choices": {
             "nl": [
-              "hash",
               "3",
+              "hash",
               "error",
               "0"
             ],
             "en": [
-              "hash",
               "3",
+              "hash",
               "error",
               "0"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Length 3.",
             "en": "Length 3."
@@ -2583,19 +2583,19 @@
           },
           "choices": {
             "nl": [
-              "zelfde",
               "ipairs array-achtig",
+              "zelfde",
               "SQL",
               "CSS"
             ],
             "en": [
-              "same",
               "ipairs array-like",
+              "same",
               "SQL",
               "CSS"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Difference.",
             "en": "Difference."
@@ -2654,18 +2654,18 @@
       "choices": {
         "nl": [
           "equals",
-          "not equal",
+          "length",
           "approx",
-          "length"
+          "not equal"
         ],
         "en": [
           "equals",
-          "not equal",
+          "length",
           "approx",
-          "length"
+          "not equal"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Not equal.",
         "en": "Not equal."
@@ -2706,18 +2706,18 @@
       "choices": {
         "nl": [
           "zelfde",
-          "ipairs array-deel, pairs alle keys",
+          "deprecated",
           "SQL",
-          "deprecated"
+          "ipairs array-deel, pairs alle keys"
         ],
         "en": [
           "same",
-          "ipairs array part, pairs all keys",
+          "deprecated",
           "SQL",
-          "deprecated"
+          "ipairs array part, pairs all keys"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Verschil.",
         "en": "Difference."
@@ -2732,18 +2732,18 @@
       "choices": {
         "nl": [
           "true",
-          "false",
+          "error",
           "nil",
-          "error"
+          "false"
         ],
         "en": [
           "true",
-          "false",
+          "error",
           "nil",
-          "error"
+          "false"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "and short-circuit.",
         "en": "and short-circuit."
@@ -2757,19 +2757,19 @@
       },
       "choices": {
         "nl": [
-          "nee zoals JS",
           "ja in Lua",
+          "nee zoals JS",
           "error",
           "nil"
         ],
         "en": [
-          "no like JS",
           "yes in Lua",
+          "no like JS",
           "error",
           "nil"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Alleen false/nil falsy.",
         "en": "Only false/nil falsy."
@@ -2783,19 +2783,19 @@
       },
       "choices": {
         "nl": [
-          "push-achtig",
           "SQL insert",
+          "push-achtig",
           "CSS",
           "compile"
         ],
         "en": [
-          "push-like",
           "SQL insert",
+          "push-like",
           "CSS",
           "compile"
         ]
       },
-      "answer": 0,
+      "answer": 1,
       "why": {
         "nl": "Insert.",
         "en": "Insert."
@@ -2810,18 +2810,18 @@
       "choices": {
         "nl": [
           "CSS",
-          "module laden",
           "pip uninstall",
+          "module laden",
           "DOM"
         ],
         "en": [
           "CSS",
-          "load module",
           "pip uninstall",
+          "load module",
           "DOM"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Modules.",
         "en": "Modules."
@@ -2835,19 +2835,19 @@
       },
       "choices": {
         "nl": [
-          "substring",
           "SQL",
+          "substring",
           "HTML",
           "nil only"
         ],
         "en": [
-          "substring",
           "SQL",
+          "substring",
           "HTML",
           "nil only"
         ]
       },
-      "answer": 0,
+      "answer": 1,
       "why": {
         "nl": "Sub.",
         "en": "Sub."
@@ -2862,18 +2862,18 @@
       "choices": {
         "nl": [
           "compile",
-          "geeft type string",
+          "Rust",
           "DOM",
-          "Rust"
+          "geeft type string"
         ],
         "en": [
           "compile",
-          "returns type string",
+          "Rust",
           "DOM",
-          "Rust"
+          "returns type string"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Type name.",
         "en": "Type name."
@@ -2887,19 +2887,19 @@
       },
       "choices": {
         "nl": [
-          "verplicht",
           "optioneel",
+          "verplicht",
           "verboden",
           "alleen Roblox"
         ],
         "en": [
-          "required",
           "optional",
+          "required",
           "forbidden",
           "Roblox only"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Optional.",
         "en": "Optional."
@@ -2913,19 +2913,19 @@
       },
       "choices": {
         "nl": [
-          "python cls",
           "instance table",
+          "python cls",
           "SQL",
           "CSS"
         ],
         "en": [
-          "python cls",
           "instance table",
+          "python cls",
           "SQL",
           "CSS"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Receiver.",
         "en": "Receiver."
@@ -2940,18 +2940,18 @@
       "choices": {
         "nl": [
           "OS thread always",
-          "coöperatieve thread-achtig",
           "SQL cursor",
+          "coöperatieve thread-achtig",
           "CSS"
         ],
         "en": [
           "OS thread always",
-          "cooperative thread-like",
           "SQL cursor",
+          "cooperative thread-like",
           "CSS"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Coroutines.",
         "en": "Coroutines."
@@ -2965,19 +2965,19 @@
       },
       "choices": {
         "nl": [
-          "Python pip",
           "Roblox service/data model smaak",
+          "Python pip",
           "C header",
           "Go module"
         ],
         "en": [
-          "Python pip",
           "Roblox service/data model flavor",
+          "Python pip",
           "C header",
           "Go module"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Roblox.",
         "en": "Roblox."
@@ -2992,18 +2992,18 @@
       "choices": {
         "nl": [
           "CSS animation",
-          "Luau/Roblox wait helper",
           "SQL WAIT",
+          "Luau/Roblox wait helper",
           "fatal"
         ],
         "en": [
           "CSS animation",
-          "Luau/Roblox wait helper",
           "SQL WAIT",
+          "Luau/Roblox wait helper",
           "fatal"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Wait.",
         "en": "Wait."
@@ -3044,18 +3044,18 @@
       "choices": {
         "nl": [
           "USB",
-          "event connection patroon",
+          "git",
           "pip",
-          "git"
+          "event connection patroon"
         ],
         "en": [
           "USB",
-          "event connection pattern",
+          "git",
           "pip",
-          "git"
+          "event connection pattern"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Events.",
         "en": "Events."
@@ -3070,18 +3070,18 @@
       "choices": {
         "nl": [
           "deep equal always",
-          "referentie (meestal)",
+          "sorteert",
           "error",
-          "sorteert"
+          "referentie (meestal)"
         ],
         "en": [
           "deep equal always",
-          "reference (usually)",
+          "sorts",
           "error",
-          "sorts"
+          "reference (usually)"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Identity.",
         "en": "Identity."
@@ -3096,18 +3096,18 @@
       "choices": {
         "nl": [
           "10 number",
-          "'10'",
+          "error",
           "nil",
-          "error"
+          "'10'"
         ],
         "en": [
           "10 number",
-          "'10'",
+          "error",
           "nil",
-          "error"
+          "'10'"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "String.",
         "en": "String."
@@ -3122,18 +3122,18 @@
       "choices": {
         "nl": [
           "officieel Roblox exam",
-          "origineel oefenen",
           "betaald",
+          "origineel oefenen",
           "leaked"
         ],
         "en": [
           "official Roblox exam",
-          "original practice",
           "paid",
+          "original practice",
           "leaked"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Origineel.",
         "en": "Original."
@@ -3147,19 +3147,19 @@
       },
       "choices": {
         "nl": [
-          "20",
           "10",
+          "20",
           "nil",
           "error"
         ],
         "en": [
-          "20",
           "10",
+          "20",
           "nil",
           "error"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "1-based.",
         "en": "1-based."
@@ -3190,18 +3190,18 @@
       "choices": {
         "nl": [
           "nee",
-          "ja",
+          "error",
           "alleen 0",
-          "error"
+          "ja"
         ],
         "en": [
           "no",
-          "yes",
+          "error",
           "0 only",
-          "error"
+          "yes"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Yes.",
         "en": "Yes."
@@ -3217,18 +3217,18 @@
       "choices": {
         "nl": [
           "nee",
-          "ja",
           "error",
+          "ja",
           "nil"
         ],
         "en": [
           "no",
-          "yes",
           "error",
+          "yes",
           "nil"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Only false/nil falsy.",
         "en": "Only false/nil falsy."
@@ -3287,18 +3287,18 @@
       "choices": {
         "nl": [
           "elif",
-          "elseif",
           "else if",
+          "elseif",
           "elsif"
         ],
         "en": [
           "elif",
-          "elseif",
           "else if",
+          "elseif",
           "elsif"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "elseif.",
         "en": "elseif."
@@ -3314,18 +3314,18 @@
       "choices": {
         "nl": [
           "hash",
-          "3",
+          "0",
           "error",
-          "0"
+          "3"
         ],
         "en": [
           "hash",
-          "3",
+          "0",
           "error",
-          "0"
+          "3"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Length 3.",
         "en": "Length 3."
@@ -3382,19 +3382,19 @@
       },
       "choices": {
         "nl": [
-          "true",
           "false",
+          "true",
           "nil",
           "error"
         ],
         "en": [
-          "true",
           "false",
+          "true",
           "nil",
           "error"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "false.",
         "en": "false."
@@ -3409,19 +3409,19 @@
       },
       "choices": {
         "nl": [
-          "mooier",
           "betere scope",
+          "mooier",
           "verwijdert nil",
           "Roblox only"
         ],
         "en": [
-          "prettier",
           "better scope",
+          "prettier",
           "removes nil",
           "Roblox only"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Scope.",
         "en": "Scope."
@@ -3437,18 +3437,18 @@
       "choices": {
         "nl": [
           "SQL",
-          "voeg element toe",
           "CSS",
+          "voeg element toe",
           "compile"
         ],
         "en": [
           "SQL",
-          "insert element",
           "CSS",
+          "insert element",
           "compile"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Insert.",
         "en": "Insert."
@@ -3532,19 +3532,19 @@
       },
       "choices": {
         "nl": [
-          "nee",
           "ja",
+          "nee",
           "alleen 0",
           "error"
         ],
         "en": [
-          "no",
           "yes",
+          "no",
           "0 only",
           "error"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Yes.",
         "en": "Yes."
@@ -3630,18 +3630,18 @@
       "choices": {
         "nl": [
           "elif",
-          "elseif",
           "else if",
+          "elseif",
           "elsif"
         ],
         "en": [
           "elif",
-          "elseif",
           "else if",
+          "elseif",
           "elsif"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "elseif.",
         "en": "elseif."
@@ -3656,19 +3656,19 @@
       },
       "choices": {
         "nl": [
-          "hash",
           "3",
+          "hash",
           "error",
           "0"
         ],
         "en": [
-          "hash",
           "3",
+          "hash",
           "error",
           "0"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Length 3.",
         "en": "Length 3."
@@ -3683,19 +3683,19 @@
       },
       "choices": {
         "nl": [
-          "zelfde",
           "ipairs array-achtig",
+          "zelfde",
           "SQL",
           "CSS"
         ],
         "en": [
-          "same",
           "ipairs array-like",
+          "same",
           "SQL",
           "CSS"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Difference.",
         "en": "Difference."
@@ -3726,18 +3726,18 @@
       "choices": {
         "nl": [
           "true",
-          "false",
           "nil",
+          "false",
           "error"
         ],
         "en": [
           "true",
-          "false",
           "nil",
+          "false",
           "error"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "false.",
         "en": "false."
@@ -3779,19 +3779,19 @@
       },
       "choices": {
         "nl": [
-          "SQL",
           "voeg element toe",
+          "SQL",
           "CSS",
           "compile"
         ],
         "en": [
-          "SQL",
           "insert element",
+          "SQL",
           "CSS",
           "compile"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Insert.",
         "en": "Insert."
@@ -3806,19 +3806,19 @@
       },
       "choices": {
         "nl": [
-          "CSS",
           "errors in call",
+          "CSS",
           "SQL",
           "nil forever"
         ],
         "en": [
-          "CSS",
           "errors in call",
+          "CSS",
           "SQL",
           "nil forever"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Protected.",
         "en": "Protected."

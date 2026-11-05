@@ -30,18 +30,18 @@
           "choices": {
             "nl": [
               "GET",
-              "SELECT",
               "print",
+              "SELECT",
               "trace"
             ],
             "en": [
               "GET",
-              "SELECT",
               "print",
+              "SELECT",
               "trace"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "SELECT.",
             "en": "SELECT."
@@ -55,18 +55,18 @@
           "choices": {
             "nl": [
               "alleen UI CSS",
-              "querytaal voor data",
               "game engine",
+              "querytaal voor data",
               "CPU asm"
             ],
             "en": [
               "UI CSS only",
-              "data query language",
               "game engine",
+              "data query language",
               "CPU asm"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Query.",
             "en": "Query."
@@ -94,19 +94,19 @@
           },
           "choices": {
             "nl": [
-              "oplopend",
               "aflopend",
+              "oplopend",
               "delete",
               "join"
             ],
             "en": [
-              "asc",
               "desc",
+              "asc",
               "delete",
               "join"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Descending.",
             "en": "Descending."
@@ -121,18 +121,18 @@
           "choices": {
             "nl": [
               "som",
-              "aantal rijen",
               "avg",
+              "aantal rijen",
               "max"
             ],
             "en": [
               "sum",
-              "row count",
               "avg",
+              "row count",
               "max"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Count.",
             "en": "Count."
@@ -146,19 +146,19 @@
           },
           "choices": {
             "nl": [
-              "ok",
               "FORM->FROM",
+              "ok",
               "* fout",
               "t fout"
             ],
             "en": [
-              "ok",
               "FORM->FROM",
+              "ok",
               "* wrong",
               "t wrong"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "FROM.",
             "en": "FROM."
@@ -214,18 +214,18 @@
           "choices": {
             "nl": [
               "kleur",
-              "unieke id",
               "Lua",
+              "unieke id",
               "comment"
             ],
             "en": [
               "color",
-              "unique id",
               "Lua",
+              "unique id",
               "comment"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "PK.",
             "en": "PK."
@@ -240,18 +240,18 @@
           "choices": {
             "nl": [
               "true",
-              "use IS NULL",
               "crash",
+              "use IS NULL",
               "1"
             ],
             "en": [
               "true",
-              "use IS NULL",
               "crash",
+              "use IS NULL",
               "1"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "IS NULL.",
             "en": "IS NULL."
@@ -279,19 +279,19 @@
           },
           "choices": {
             "nl": [
-              "5 tabellen",
               "max 5 rijen",
+              "5 tabellen",
               "5 joins",
               "error"
             ],
             "en": [
-              "5 tables",
               "max 5 rows",
+              "5 tables",
               "5 joins",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Limit.",
             "en": "Limit."
@@ -357,18 +357,18 @@
           "choices": {
             "nl": [
               "mag null",
-              "mag niet null",
               "SQL comment",
+              "mag niet null",
               "index"
             ],
             "en": [
               "allows null",
-              "disallows null",
               "SQL comment",
+              "disallows null",
               "index"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Required.",
             "en": "Required."
@@ -449,18 +449,18 @@
           "choices": {
             "nl": [
               "som",
-              "aantal rijen",
               "avg",
+              "aantal rijen",
               "max"
             ],
             "en": [
               "sum",
-              "row count",
               "avg",
+              "row count",
               "max"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Count.",
             "en": "Count."
@@ -474,19 +474,19 @@
           },
           "choices": {
             "nl": [
-              "ok",
               "FORM->FROM",
+              "ok",
               "* fout",
               "t fout"
             ],
             "en": [
-              "ok",
               "FORM->FROM",
+              "ok",
               "* wrong",
               "t wrong"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "FROM.",
             "en": "FROM."
@@ -516,18 +516,18 @@
           "choices": {
             "nl": [
               "CSS",
-              "rijen koppelen",
+              "limit",
               "drop",
-              "limit"
+              "rijen koppelen"
             ],
             "en": [
               "CSS",
-              "link rows",
+              "limit",
               "drop",
-              "limit"
+              "link rows"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Join.",
             "en": "Join."
@@ -542,18 +542,18 @@
           "choices": {
             "nl": [
               "true",
-              "use IS NULL",
+              "1",
               "crash",
-              "1"
+              "use IS NULL"
             ],
             "en": [
               "true",
-              "use IS NULL",
+              "1",
               "crash",
-              "1"
+              "use IS NULL"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "IS NULL.",
             "en": "IS NULL."
@@ -644,19 +644,19 @@
           },
           "choices": {
             "nl": [
-              "equals",
               "not equal",
+              "equals",
               "less greater concat",
               "join"
             ],
             "en": [
-              "equals",
               "not equal",
+              "equals",
               "less greater concat",
               "join"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "!= style.",
             "en": "!= style."
@@ -671,18 +671,18 @@
           "choices": {
             "nl": [
               "GET",
-              "SELECT",
+              "trace",
               "print",
-              "trace"
+              "SELECT"
             ],
             "en": [
               "GET",
-              "SELECT",
+              "trace",
               "print",
-              "trace"
+              "SELECT"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "SELECT.",
             "en": "SELECT."
@@ -711,18 +711,18 @@
           "choices": {
             "nl": [
               "oplopend",
-              "aflopend",
               "delete",
+              "aflopend",
               "join"
             ],
             "en": [
               "asc",
-              "desc",
               "delete",
+              "desc",
               "join"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Descending.",
             "en": "Descending."
@@ -763,18 +763,18 @@
           "choices": {
             "nl": [
               "ok",
-              "FORM->FROM",
               "* fout",
+              "FORM->FROM",
               "t fout"
             ],
             "en": [
               "ok",
-              "FORM->FROM",
               "* wrong",
+              "FORM->FROM",
               "t wrong"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "FROM.",
             "en": "FROM."
@@ -804,18 +804,18 @@
           "choices": {
             "nl": [
               "CSS",
-              "rijen koppelen",
+              "limit",
               "drop",
-              "limit"
+              "rijen koppelen"
             ],
             "en": [
               "CSS",
-              "link rows",
+              "limit",
               "drop",
-              "limit"
+              "link rows"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Join.",
             "en": "Join."
@@ -829,19 +829,19 @@
           },
           "choices": {
             "nl": [
-              "kleur",
               "unieke id",
+              "kleur",
               "Lua",
               "comment"
             ],
             "en": [
-              "color",
               "unique id",
+              "color",
               "Lua",
               "comment"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "PK.",
             "en": "PK."
@@ -856,18 +856,18 @@
           "choices": {
             "nl": [
               "true",
-              "use IS NULL",
               "crash",
+              "use IS NULL",
               "1"
             ],
             "en": [
               "true",
-              "use IS NULL",
               "crash",
+              "use IS NULL",
               "1"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "IS NULL.",
             "en": "IS NULL."
@@ -908,18 +908,18 @@
           "choices": {
             "nl": [
               "oplopend",
-              "aflopend",
               "delete",
+              "aflopend",
               "join"
             ],
             "en": [
               "ascending",
-              "descending",
               "delete",
+              "descending",
               "join"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Desc.",
             "en": "Desc."
@@ -932,19 +932,19 @@
           },
           "choices": {
             "nl": [
-              "3 tabellen",
               "max 3 rijen",
+              "3 tabellen",
               "3 joins",
               "error"
             ],
             "en": [
-              "3 tables",
               "max 3 rows",
+              "3 tables",
               "3 joins",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Limit.",
             "en": "Limit."
@@ -959,18 +959,18 @@
           "choices": {
             "nl": [
               "GET",
-              "SELECT",
+              "trace",
               "print",
-              "trace"
+              "SELECT"
             ],
             "en": [
               "GET",
-              "SELECT",
+              "trace",
               "print",
-              "trace"
+              "SELECT"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "SELECT.",
             "en": "SELECT."
@@ -998,19 +998,19 @@
           },
           "choices": {
             "nl": [
-              "som",
               "aantal rijen",
+              "som",
               "avg",
               "max"
             ],
             "en": [
-              "sum",
               "row count",
+              "sum",
               "avg",
               "max"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Count.",
             "en": "Count."
@@ -1025,18 +1025,18 @@
           "choices": {
             "nl": [
               "ok",
-              "FORM->FROM",
               "* fout",
+              "FORM->FROM",
               "t fout"
             ],
             "en": [
               "ok",
-              "FORM->FROM",
               "* wrong",
+              "FORM->FROM",
               "t wrong"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "FROM.",
             "en": "FROM."
@@ -1065,19 +1065,19 @@
           },
           "choices": {
             "nl": [
-              "CSS",
               "rijen koppelen",
+              "CSS",
               "drop",
               "limit"
             ],
             "en": [
-              "CSS",
               "link rows",
+              "CSS",
               "drop",
               "limit"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Join.",
             "en": "Join."
@@ -1118,18 +1118,18 @@
           "choices": {
             "nl": [
               "true",
-              "use IS NULL",
+              "1",
               "crash",
-              "1"
+              "use IS NULL"
             ],
             "en": [
               "true",
-              "use IS NULL",
+              "1",
               "crash",
-              "1"
+              "use IS NULL"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "IS NULL.",
             "en": "IS NULL."
@@ -1158,18 +1158,18 @@
           "choices": {
             "nl": [
               "5 tabellen",
-              "max 5 rijen",
+              "error",
               "5 joins",
-              "error"
+              "max 5 rijen"
             ],
             "en": [
               "5 tables",
-              "max 5 rows",
+              "error",
               "5 joins",
-              "error"
+              "max 5 rows"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Limit.",
             "en": "Limit."
@@ -1221,18 +1221,18 @@
           "choices": {
             "nl": [
               "sort",
-              "join conditie",
               "limit",
+              "join conditie",
               "drop"
             ],
             "en": [
               "sort",
-              "join condition",
               "limit",
+              "join condition",
               "drop"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Condition.",
             "en": "Condition."
@@ -1247,18 +1247,18 @@
           "choices": {
             "nl": [
               "GET",
-              "SELECT",
               "print",
+              "SELECT",
               "trace"
             ],
             "en": [
               "GET",
-              "SELECT",
               "print",
+              "SELECT",
               "trace"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "SELECT.",
             "en": "SELECT."
@@ -1286,19 +1286,19 @@
           },
           "choices": {
             "nl": [
-              "oplopend",
               "aflopend",
+              "oplopend",
               "delete",
               "join"
             ],
             "en": [
-              "asc",
               "desc",
+              "asc",
               "delete",
               "join"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Descending.",
             "en": "Descending."
@@ -1339,18 +1339,18 @@
           "choices": {
             "nl": [
               "ok",
-              "FORM->FROM",
+              "t fout",
               "* fout",
-              "t fout"
+              "FORM->FROM"
             ],
             "en": [
               "ok",
-              "FORM->FROM",
+              "t wrong",
               "* wrong",
-              "t wrong"
+              "FORM->FROM"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "FROM.",
             "en": "FROM."
@@ -1379,19 +1379,19 @@
           },
           "choices": {
             "nl": [
-              "CSS",
               "rijen koppelen",
+              "CSS",
               "drop",
               "limit"
             ],
             "en": [
-              "CSS",
               "link rows",
+              "CSS",
               "drop",
               "limit"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Join.",
             "en": "Join."
@@ -1432,18 +1432,18 @@
           "choices": {
             "nl": [
               "true",
-              "use IS NULL",
               "crash",
+              "use IS NULL",
               "1"
             ],
             "en": [
               "true",
-              "use IS NULL",
               "crash",
+              "use IS NULL",
               "1"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "IS NULL.",
             "en": "IS NULL."
@@ -1508,19 +1508,19 @@
           },
           "choices": {
             "nl": [
-              "array",
               "gemiddelde",
+              "array",
               "absolute",
               "append"
             ],
             "en": [
-              "array",
               "average",
+              "array",
               "absolute",
               "append"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Average.",
             "en": "Average."
@@ -1575,18 +1575,18 @@
           "choices": {
             "nl": [
               "oplopend",
-              "aflopend",
+              "join",
               "delete",
-              "join"
+              "aflopend"
             ],
             "en": [
               "asc",
-              "desc",
+              "join",
               "delete",
-              "join"
+              "desc"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Descending.",
             "en": "Descending."
@@ -1601,18 +1601,18 @@
           "choices": {
             "nl": [
               "ok",
-              "FORM->FROM",
+              "t fout",
               "* fout",
-              "t fout"
+              "FORM->FROM"
             ],
             "en": [
               "ok",
-              "FORM->FROM",
+              "t wrong",
               "* wrong",
-              "t wrong"
+              "FORM->FROM"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "FROM.",
             "en": "FROM."
@@ -1642,18 +1642,18 @@
           "choices": {
             "nl": [
               "CSS",
-              "rijen koppelen",
+              "limit",
               "drop",
-              "limit"
+              "rijen koppelen"
             ],
             "en": [
               "CSS",
-              "link rows",
+              "limit",
               "drop",
-              "limit"
+              "link rows"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Join.",
             "en": "Join."
@@ -1693,19 +1693,19 @@
           },
           "choices": {
             "nl": [
-              "true",
               "use IS NULL",
+              "true",
               "crash",
               "1"
             ],
             "en": [
-              "true",
               "use IS NULL",
+              "true",
               "crash",
               "1"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "IS NULL.",
             "en": "IS NULL."
@@ -1734,18 +1734,18 @@
           "choices": {
             "nl": [
               "5 tabellen",
-              "max 5 rijen",
+              "error",
               "5 joins",
-              "error"
+              "max 5 rijen"
             ],
             "en": [
               "5 tables",
-              "max 5 rows",
+              "error",
               "5 joins",
-              "error"
+              "max 5 rows"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Limit.",
             "en": "Limit."
@@ -1771,19 +1771,19 @@
           },
           "choices": {
             "nl": [
-              "ok silent",
               "error/constraint fail",
+              "ok silent",
               "CSS",
               "Lua"
             ],
             "en": [
-              "ok silent",
               "error/constraint fail",
+              "ok silent",
               "CSS",
               "Lua"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Fails.",
             "en": "Fails."
@@ -1797,18 +1797,18 @@
           "choices": {
             "nl": [
               "ok",
-              "conflict/error",
+              "CSS",
               "auto merge",
-              "CSS"
+              "conflict/error"
             ],
             "en": [
               "ok",
-              "conflict/error",
+              "CSS",
               "auto merge",
-              "CSS"
+              "conflict/error"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Conflict.",
             "en": "Conflict."
@@ -1822,19 +1822,19 @@
           },
           "choices": {
             "nl": [
-              "GET",
               "SELECT",
+              "GET",
               "print",
               "trace"
             ],
             "en": [
-              "GET",
               "SELECT",
+              "GET",
               "print",
               "trace"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "SELECT.",
             "en": "SELECT."
@@ -1956,18 +1956,18 @@
           "choices": {
             "nl": [
               "CSS",
-              "rijen koppelen",
+              "limit",
               "drop",
-              "limit"
+              "rijen koppelen"
             ],
             "en": [
               "CSS",
-              "link rows",
+              "limit",
               "drop",
-              "limit"
+              "link rows"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Join.",
             "en": "Join."
@@ -1981,19 +1981,19 @@
           },
           "choices": {
             "nl": [
-              "kleur",
               "unieke id",
+              "kleur",
               "Lua",
               "comment"
             ],
             "en": [
-              "color",
               "unique id",
+              "color",
               "Lua",
               "comment"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "PK.",
             "en": "PK."
@@ -2060,18 +2060,18 @@
           "choices": {
             "nl": [
               "10",
-              "15",
               "5",
+              "15",
               "NULL"
             ],
             "en": [
               "10",
-              "15",
               "5",
+              "15",
               "NULL"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "15.",
             "en": "15."
@@ -2084,19 +2084,19 @@
           },
           "choices": {
             "nl": [
-              "1 rij",
               "kan alle rijen raken",
+              "1 rij",
               "noop",
               "DROP"
             ],
             "en": [
-              "1 row",
               "can touch all rows",
+              "1 row",
               "noop",
               "DROP"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Dangerous.",
             "en": "Dangerous."
@@ -2110,19 +2110,19 @@
           },
           "choices": {
             "nl": [
-              "GET",
               "SELECT",
+              "GET",
               "print",
               "trace"
             ],
             "en": [
-              "GET",
               "SELECT",
+              "GET",
               "print",
               "trace"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "SELECT.",
             "en": "SELECT."
@@ -2150,19 +2150,19 @@
           },
           "choices": {
             "nl": [
-              "oplopend",
               "aflopend",
+              "oplopend",
               "delete",
               "join"
             ],
             "en": [
-              "asc",
               "desc",
+              "asc",
               "delete",
               "join"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Descending.",
             "en": "Descending."
@@ -2244,18 +2244,18 @@
           "choices": {
             "nl": [
               "CSS",
-              "rijen koppelen",
+              "limit",
               "drop",
-              "limit"
+              "rijen koppelen"
             ],
             "en": [
               "CSS",
-              "link rows",
+              "limit",
               "drop",
-              "limit"
+              "link rows"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Join.",
             "en": "Join."
@@ -2269,19 +2269,19 @@
           },
           "choices": {
             "nl": [
-              "kleur",
               "unieke id",
+              "kleur",
               "Lua",
               "comment"
             ],
             "en": [
-              "color",
               "unique id",
+              "color",
               "Lua",
               "comment"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "PK.",
             "en": "PK."
@@ -2296,18 +2296,18 @@
           "choices": {
             "nl": [
               "true",
-              "use IS NULL",
               "crash",
+              "use IS NULL",
               "1"
             ],
             "en": [
               "true",
-              "use IS NULL",
               "crash",
+              "use IS NULL",
               "1"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "IS NULL.",
             "en": "IS NULL."
@@ -2348,18 +2348,18 @@
           "choices": {
             "nl": [
               "CSS grid",
-              "aggregatie groepen",
               "Lua",
+              "aggregatie groepen",
               "C"
             ],
             "en": [
               "CSS grid",
-              "aggregation groups",
               "Lua",
+              "aggregation groups",
               "C"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Group.",
             "en": "Group."
@@ -2372,19 +2372,19 @@
           },
           "choices": {
             "nl": [
-              "som",
               "aantal rijen",
+              "som",
               "max",
               "join"
             ],
             "en": [
-              "sum",
               "row count",
+              "sum",
               "max",
               "join"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Count.",
             "en": "Count."
@@ -2465,18 +2465,18 @@
           "choices": {
             "nl": [
               "ok",
-              "FORM->FROM",
+              "t fout",
               "* fout",
-              "t fout"
+              "FORM->FROM"
             ],
             "en": [
               "ok",
-              "FORM->FROM",
+              "t wrong",
               "* wrong",
-              "t wrong"
+              "FORM->FROM"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "FROM.",
             "en": "FROM."
@@ -2505,19 +2505,19 @@
           },
           "choices": {
             "nl": [
-              "CSS",
               "rijen koppelen",
+              "CSS",
               "drop",
               "limit"
             ],
             "en": [
-              "CSS",
               "link rows",
+              "CSS",
               "drop",
               "limit"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Join.",
             "en": "Join."
@@ -2532,18 +2532,18 @@
           "choices": {
             "nl": [
               "kleur",
-              "unieke id",
               "Lua",
+              "unieke id",
               "comment"
             ],
             "en": [
               "color",
-              "unique id",
               "Lua",
+              "unique id",
               "comment"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "PK.",
             "en": "PK."
@@ -2558,18 +2558,18 @@
           "choices": {
             "nl": [
               "true",
-              "use IS NULL",
               "crash",
+              "use IS NULL",
               "1"
             ],
             "en": [
               "true",
-              "use IS NULL",
               "crash",
+              "use IS NULL",
               "1"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "IS NULL.",
             "en": "IS NULL."
@@ -2597,19 +2597,19 @@
           },
           "choices": {
             "nl": [
-              "5 tabellen",
               "max 5 rijen",
+              "5 tabellen",
               "5 joins",
               "error"
             ],
             "en": [
-              "5 tables",
               "max 5 rows",
+              "5 tables",
               "5 joins",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Limit.",
             "en": "Limit."
@@ -2627,19 +2627,19 @@
       },
       "choices": {
         "nl": [
-          "select",
           "nieuwe rijen",
+          "select",
           "CSS",
           "Lua"
         ],
         "en": [
-          "select",
           "new rows",
+          "select",
           "CSS",
           "Lua"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Insert.",
         "en": "Insert."
@@ -2654,18 +2654,18 @@
       "choices": {
         "nl": [
           "drop table always",
-          "rijen weg",
           "CSS",
+          "rijen weg",
           "compile"
         ],
         "en": [
           "always drop table",
-          "remove rows",
           "CSS",
+          "remove rows",
           "compile"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Delete.",
         "en": "Delete."
@@ -2679,19 +2679,19 @@
       },
       "choices": {
         "nl": [
-          "delete 1 row",
           "verwijdert tabel",
+          "delete 1 row",
           "UPDATE",
           "JOIN"
         ],
         "en": [
-          "delete 1 row",
           "removes table",
+          "delete 1 row",
           "UPDATE",
           "JOIN"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Drop.",
         "en": "Drop."
@@ -2758,18 +2758,18 @@
       "choices": {
         "nl": [
           "alleen matches",
-          "links behouden + matches",
           "DELETE",
+          "links behouden + matches",
           "DROP"
         ],
         "en": [
           "matches only",
-          "keep left + matches",
           "DELETE",
+          "keep left + matches",
           "DROP"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Left.",
         "en": "Left."
@@ -2784,18 +2784,18 @@
       "choices": {
         "nl": [
           "boek",
-          "sneller zoeken",
           "CSS z-index only",
+          "sneller zoeken",
           "Godot"
         ],
         "en": [
           "book",
-          "faster lookup",
           "CSS z-index only",
+          "faster lookup",
           "Godot"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Index.",
         "en": "Index."
@@ -2810,18 +2810,18 @@
       "choices": {
         "nl": [
           "werkt als '' ",
-          "meestal IS NULL gebruiken",
           "altijd true",
+          "meestal IS NULL gebruiken",
           "crash OS"
         ],
         "en": [
           "works like ''",
-          "usually use IS NULL",
           "always true",
+          "usually use IS NULL",
           "crash OS"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "IS NULL.",
         "en": "IS NULL."
@@ -2835,19 +2835,19 @@
       },
       "choices": {
         "nl": [
-          "CSS",
           "groep statements atomair",
+          "CSS",
           "Lua pcall",
           "Rust mut"
         ],
         "en": [
-          "CSS",
           "group statements atomically",
+          "CSS",
           "Lua pcall",
           "Rust mut"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Tx.",
         "en": "Tx."
@@ -2862,18 +2862,18 @@
       "choices": {
         "nl": [
           "undo",
-          "bevestig transactie",
           "DROP",
+          "bevestig transactie",
           "JOIN"
         ],
         "en": [
           "undo",
-          "confirm transaction",
           "DROP",
+          "confirm transaction",
           "JOIN"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Commit.",
         "en": "Commit."
@@ -2913,19 +2913,19 @@
       },
       "choices": {
         "nl": [
-          "UI only",
           "opgeslagen query",
+          "UI only",
           "C array",
           "npm"
         ],
         "en": [
-          "UI only",
           "stored query",
+          "UI only",
           "C array",
           "npm"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "View.",
         "en": "View."
@@ -2940,18 +2940,18 @@
       "choices": {
         "nl": [
           "sort",
-          "unieke waarden",
           "JOIN force",
+          "unieke waarden",
           "DROP"
         ],
         "en": [
           "sort",
-          "unique values",
           "JOIN force",
+          "unique values",
           "DROP"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Distinct.",
         "en": "Distinct."
@@ -2966,18 +2966,18 @@
       "choices": {
         "nl": [
           "loops",
-          "bereikfilter",
           "CSS",
+          "bereikfilter",
           "Lua"
         ],
         "en": [
           "loops",
-          "range filter",
           "CSS",
+          "range filter",
           "Lua"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Between.",
         "en": "Between."
@@ -2991,19 +2991,19 @@
       },
       "choices": {
         "nl": [
-          "vendor leak",
           "origineel oefenen",
+          "vendor leak",
           "betaald",
           "cert"
         ],
         "en": [
-          "vendor leak",
           "original practice",
+          "vendor leak",
           "paid",
           "cert"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Origineel.",
         "en": "Original."
@@ -3059,19 +3059,19 @@
       },
       "choices": {
         "nl": [
-          "oplopend",
           "aflopend",
+          "oplopend",
           "delete",
           "join"
         ],
         "en": [
-          "asc",
           "desc",
+          "asc",
           "delete",
           "join"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Descending.",
         "en": "Descending."
@@ -3087,18 +3087,18 @@
       "choices": {
         "nl": [
           "som",
-          "aantal rijen",
+          "max",
           "avg",
-          "max"
+          "aantal rijen"
         ],
         "en": [
           "sum",
-          "row count",
+          "max",
           "avg",
-          "max"
+          "row count"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Count.",
         "en": "Count."
@@ -3114,18 +3114,18 @@
       "choices": {
         "nl": [
           "ok",
-          "FORM->FROM",
+          "t fout",
           "* fout",
-          "t fout"
+          "FORM->FROM"
         ],
         "en": [
           "ok",
-          "FORM->FROM",
+          "t wrong",
           "* wrong",
-          "t wrong"
+          "FORM->FROM"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "FROM.",
         "en": "FROM."
@@ -3157,18 +3157,18 @@
       "choices": {
         "nl": [
           "CSS",
-          "rijen koppelen",
           "drop",
+          "rijen koppelen",
           "limit"
         ],
         "en": [
           "CSS",
-          "link rows",
           "drop",
+          "link rows",
           "limit"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Join.",
         "en": "Join."
@@ -3184,18 +3184,18 @@
       "choices": {
         "nl": [
           "kleur",
-          "unieke id",
           "Lua",
+          "unieke id",
           "comment"
         ],
         "en": [
           "color",
-          "unique id",
           "Lua",
+          "unique id",
           "comment"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "PK.",
         "en": "PK."
@@ -3211,18 +3211,18 @@
       "choices": {
         "nl": [
           "true",
-          "use IS NULL",
+          "1",
           "crash",
-          "1"
+          "use IS NULL"
         ],
         "en": [
           "true",
-          "use IS NULL",
+          "1",
           "crash",
-          "1"
+          "use IS NULL"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "IS NULL.",
         "en": "IS NULL."
@@ -3252,19 +3252,19 @@
       },
       "choices": {
         "nl": [
-          "5 tabellen",
           "max 5 rijen",
+          "5 tabellen",
           "5 joins",
           "error"
         ],
         "en": [
-          "5 tables",
           "max 5 rows",
+          "5 tables",
           "5 joins",
           "error"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Limit.",
         "en": "Limit."
@@ -3280,18 +3280,18 @@
       "choices": {
         "nl": [
           "1 rij",
-          "kan alles",
+          "always error",
           "noop",
-          "always error"
+          "kan alles"
         ],
         "en": [
           "1 row",
-          "can delete all",
+          "always error",
           "noop",
-          "always error"
+          "can delete all"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Dangerous.",
         "en": "Dangerous."
@@ -3307,18 +3307,18 @@
       "choices": {
         "nl": [
           "CSS",
-          "aggregatie groepen",
+          "C",
           "Lua",
-          "C"
+          "aggregatie groepen"
         ],
         "en": [
           "CSS",
-          "aggregation groups",
+          "C",
           "Lua",
-          "C"
+          "aggregation groups"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Group.",
         "en": "Group."
@@ -3349,18 +3349,18 @@
       "choices": {
         "nl": [
           "GET",
-          "SELECT",
+          "trace",
           "print",
-          "trace"
+          "SELECT"
         ],
         "en": [
           "GET",
-          "SELECT",
+          "trace",
           "print",
-          "trace"
+          "SELECT"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "SELECT.",
         "en": "SELECT."
@@ -3391,18 +3391,18 @@
       "choices": {
         "nl": [
           "oplopend",
-          "aflopend",
+          "join",
           "delete",
-          "join"
+          "aflopend"
         ],
         "en": [
           "asc",
-          "desc",
+          "join",
           "delete",
-          "join"
+          "desc"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Descending.",
         "en": "Descending."
@@ -3417,19 +3417,19 @@
       },
       "choices": {
         "nl": [
-          "som",
           "aantal rijen",
+          "som",
           "avg",
           "max"
         ],
         "en": [
-          "sum",
           "row count",
+          "sum",
           "avg",
           "max"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Count.",
         "en": "Count."
@@ -3444,19 +3444,19 @@
       },
       "choices": {
         "nl": [
-          "ok",
           "FORM->FROM",
+          "ok",
           "* fout",
           "t fout"
         ],
         "en": [
-          "ok",
           "FORM->FROM",
+          "ok",
           "* wrong",
           "t wrong"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "FROM.",
         "en": "FROM."
@@ -3488,18 +3488,18 @@
       "choices": {
         "nl": [
           "CSS",
-          "rijen koppelen",
           "drop",
+          "rijen koppelen",
           "limit"
         ],
         "en": [
           "CSS",
-          "link rows",
           "drop",
+          "link rows",
           "limit"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Join.",
         "en": "Join."
@@ -3514,19 +3514,19 @@
       },
       "choices": {
         "nl": [
-          "kleur",
           "unieke id",
+          "kleur",
           "Lua",
           "comment"
         ],
         "en": [
-          "color",
           "unique id",
+          "color",
           "Lua",
           "comment"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "PK.",
         "en": "PK."
@@ -3541,19 +3541,19 @@
       },
       "choices": {
         "nl": [
-          "true",
           "use IS NULL",
+          "true",
           "crash",
           "1"
         ],
         "en": [
-          "true",
           "use IS NULL",
+          "true",
           "crash",
           "1"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "IS NULL.",
         "en": "IS NULL."
@@ -3584,18 +3584,18 @@
       "choices": {
         "nl": [
           "5 tabellen",
-          "max 5 rijen",
+          "error",
           "5 joins",
-          "error"
+          "max 5 rijen"
         ],
         "en": [
           "5 tables",
-          "max 5 rows",
+          "error",
           "5 joins",
-          "error"
+          "max 5 rows"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Limit.",
         "en": "Limit."
@@ -3611,18 +3611,18 @@
       "choices": {
         "nl": [
           "1 rij",
-          "kan alles",
           "noop",
+          "kan alles",
           "always error"
         ],
         "en": [
           "1 row",
-          "can delete all",
           "noop",
+          "can delete all",
           "always error"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Dangerous.",
         "en": "Dangerous."
@@ -3679,19 +3679,19 @@
       },
       "choices": {
         "nl": [
-          "GET",
           "SELECT",
+          "GET",
           "print",
           "trace"
         ],
         "en": [
-          "GET",
           "SELECT",
+          "GET",
           "print",
           "trace"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "SELECT.",
         "en": "SELECT."
@@ -3722,18 +3722,18 @@
       "choices": {
         "nl": [
           "oplopend",
-          "aflopend",
           "delete",
+          "aflopend",
           "join"
         ],
         "en": [
           "asc",
-          "desc",
           "delete",
+          "desc",
           "join"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Descending.",
         "en": "Descending."
@@ -3749,18 +3749,18 @@
       "choices": {
         "nl": [
           "som",
-          "aantal rijen",
           "avg",
+          "aantal rijen",
           "max"
         ],
         "en": [
           "sum",
-          "row count",
           "avg",
+          "row count",
           "max"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Count.",
         "en": "Count."
@@ -3776,18 +3776,18 @@
       "choices": {
         "nl": [
           "ok",
-          "FORM->FROM",
+          "t fout",
           "* fout",
-          "t fout"
+          "FORM->FROM"
         ],
         "en": [
           "ok",
-          "FORM->FROM",
+          "t wrong",
           "* wrong",
-          "t wrong"
+          "FORM->FROM"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "FROM.",
         "en": "FROM."
@@ -3819,18 +3819,18 @@
       "choices": {
         "nl": [
           "CSS",
-          "rijen koppelen",
+          "limit",
           "drop",
-          "limit"
+          "rijen koppelen"
         ],
         "en": [
           "CSS",
-          "link rows",
+          "limit",
           "drop",
-          "limit"
+          "link rows"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Join.",
         "en": "Join."

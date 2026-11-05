@@ -30,18 +30,18 @@
           "choices": {
             "nl": [
               "CSS kleur",
-              "koptekst",
               "SQL",
+              "koptekst",
               "Lua"
             ],
             "en": [
               "CSS color",
-              "heading",
               "SQL",
+              "heading",
               "Lua"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Heading.",
             "en": "Heading."
@@ -121,18 +121,18 @@
           "choices": {
             "nl": [
               "grid only",
-              "flexbox",
               "SQL",
+              "flexbox",
               "C"
             ],
             "en": [
               "grid only",
-              "flexbox",
               "SQL",
+              "flexbox",
               "C"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Flex.",
             "en": "Flex."
@@ -174,18 +174,18 @@
           "choices": {
             "nl": [
               "buiten",
-              "binnenruimte",
               "font",
+              "binnenruimte",
               "alt"
             ],
             "en": [
               "outside",
-              "inner space",
               "font",
+              "inner space",
               "alt"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Padding.",
             "en": "Padding."
@@ -266,18 +266,18 @@
           "choices": {
             "nl": [
               "SQL",
-              "responsive",
               "Lua",
+              "responsive",
               "C"
             ],
             "en": [
               "SQL",
-              "responsive",
               "Lua",
+              "responsive",
               "C"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Media.",
             "en": "Media."
@@ -292,18 +292,18 @@
           "choices": {
             "nl": [
               "SQL",
-              "afgeronde hoeken",
+              "GPU",
               "Lua",
-              "GPU"
+              "afgeronde hoeken"
             ],
             "en": [
               "SQL",
-              "rounded corners",
+              "GPU",
               "Lua",
-              "GPU"
+              "rounded corners"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Radius.",
             "en": "Radius."
@@ -348,19 +348,19 @@
           },
           "choices": {
             "nl": [
-              "afbeelding",
               "link",
+              "afbeelding",
               "tabel",
               "script verplicht"
             ],
             "en": [
-              "image",
               "link",
+              "image",
               "table",
               "script required"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Link.",
             "en": "Link."
@@ -374,18 +374,18 @@
           "choices": {
             "nl": [
               "padding only",
-              "paragraaf",
+              "pointer",
               "python",
-              "pointer"
+              "paragraaf"
             ],
             "en": [
               "padding only",
-              "paragraph",
+              "pointer",
               "python",
-              "pointer"
+              "paragraph"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Paragraph.",
             "en": "Paragraph."
@@ -399,19 +399,19 @@
           },
           "choices": {
             "nl": [
-              "CSS",
               "kop",
+              "CSS",
               "SQL",
               "Lua"
             ],
             "en": [
-              "CSS",
               "heading",
+              "CSS",
               "SQL",
               "Lua"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Heading.",
             "en": "Heading."
@@ -440,18 +440,18 @@
           "choices": {
             "nl": [
               "SQL",
-              "tekstkleur",
+              "cert",
               "GPU",
-              "cert"
+              "tekstkleur"
             ],
             "en": [
               "SQL",
-              "text color",
+              "cert",
               "GPU",
-              "cert"
+              "text color"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Color.",
             "en": "Color."
@@ -465,19 +465,19 @@
           },
           "choices": {
             "nl": [
-              "grid only",
               "flexbox",
+              "grid only",
               "SQL",
               "C"
             ],
             "en": [
-              "grid only",
               "flexbox",
+              "grid only",
               "SQL",
               "C"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Flex.",
             "en": "Flex."
@@ -492,18 +492,18 @@
           "choices": {
             "nl": [
               "ok",
-              "im->img",
+              "slash",
               "src always wrong",
-              "slash"
+              "im->img"
             ],
             "en": [
               "ok",
-              "im->img",
+              "slash",
               "src always wrong",
-              "slash"
+              "im->img"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "img.",
             "en": "img."
@@ -519,18 +519,18 @@
           "choices": {
             "nl": [
               "buiten",
-              "binnenruimte",
               "font",
+              "binnenruimte",
               "alt"
             ],
             "en": [
               "outside",
-              "inner space",
               "font",
+              "inner space",
               "alt"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Padding.",
             "en": "Padding."
@@ -571,18 +571,18 @@
           "choices": {
             "nl": [
               "class",
-              "id",
               "tag",
+              "id",
               "pseudo"
             ],
             "en": [
               "class",
-              "id",
               "tag",
+              "id",
               "pseudo"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "id.",
             "en": "id."
@@ -719,18 +719,18 @@
           "choices": {
             "nl": [
               "CSS",
-              "kop",
+              "Lua",
               "SQL",
-              "Lua"
+              "kop"
             ],
             "en": [
               "CSS",
-              "heading",
+              "Lua",
               "SQL",
-              "Lua"
+              "heading"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Heading.",
             "en": "Heading."
@@ -758,19 +758,19 @@
           },
           "choices": {
             "nl": [
-              "SQL",
               "tekstkleur",
+              "SQL",
               "GPU",
               "cert"
             ],
             "en": [
-              "SQL",
               "text color",
+              "SQL",
               "GPU",
               "cert"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Color.",
             "en": "Color."
@@ -811,18 +811,18 @@
           "choices": {
             "nl": [
               "ok",
-              "im->img",
+              "slash",
               "src always wrong",
-              "slash"
+              "im->img"
             ],
             "en": [
               "ok",
-              "im->img",
+              "slash",
               "src always wrong",
-              "slash"
+              "im->img"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "img.",
             "en": "img."
@@ -838,18 +838,18 @@
           "choices": {
             "nl": [
               "buiten",
-              "binnenruimte",
+              "alt",
               "font",
-              "alt"
+              "binnenruimte"
             ],
             "en": [
               "outside",
-              "inner space",
+              "alt",
               "font",
-              "alt"
+              "inner space"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Padding.",
             "en": "Padding."
@@ -864,18 +864,18 @@
           "choices": {
             "nl": [
               "class",
-              "id",
               "tag",
+              "id",
               "pseudo"
             ],
             "en": [
               "class",
-              "id",
               "tag",
+              "id",
               "pseudo"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "id.",
             "en": "id."
@@ -930,18 +930,18 @@
           "choices": {
             "nl": [
               "SQL",
-              "afgeronde hoeken",
               "Lua",
+              "afgeronde hoeken",
               "GPU"
             ],
             "en": [
               "SQL",
-              "rounded corners",
               "Lua",
+              "rounded corners",
               "GPU"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Radius.",
             "en": "Radius."
@@ -993,18 +993,18 @@
           "choices": {
             "nl": [
               "alleen JS",
-              "CSS in HTML",
+              "C header",
               "Python",
-              "C header"
+              "CSS in HTML"
             ],
             "en": [
               "JS only",
-              "CSS in HTML",
+              "C header",
               "Python",
-              "C header"
+              "CSS in HTML"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Embedded CSS.",
             "en": "Embedded CSS."
@@ -1019,18 +1019,18 @@
           "choices": {
             "nl": [
               "CSS",
-              "kop",
               "SQL",
+              "kop",
               "Lua"
             ],
             "en": [
               "CSS",
-              "heading",
               "SQL",
+              "heading",
               "Lua"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Heading.",
             "en": "Heading."
@@ -1059,18 +1059,18 @@
           "choices": {
             "nl": [
               "SQL",
-              "tekstkleur",
+              "cert",
               "GPU",
-              "cert"
+              "tekstkleur"
             ],
             "en": [
               "SQL",
-              "text color",
+              "cert",
               "GPU",
-              "cert"
+              "text color"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Color.",
             "en": "Color."
@@ -1084,19 +1084,19 @@
           },
           "choices": {
             "nl": [
-              "grid only",
               "flexbox",
+              "grid only",
               "SQL",
               "C"
             ],
             "en": [
-              "grid only",
               "flexbox",
+              "grid only",
               "SQL",
               "C"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Flex.",
             "en": "Flex."
@@ -1110,19 +1110,19 @@
           },
           "choices": {
             "nl": [
-              "ok",
               "im->img",
+              "ok",
               "src always wrong",
               "slash"
             ],
             "en": [
-              "ok",
               "im->img",
+              "ok",
               "src always wrong",
               "slash"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "img.",
             "en": "img."
@@ -1138,18 +1138,18 @@
           "choices": {
             "nl": [
               "buiten",
-              "binnenruimte",
+              "alt",
               "font",
-              "alt"
+              "binnenruimte"
             ],
             "en": [
               "outside",
-              "inner space",
+              "alt",
               "font",
-              "alt"
+              "inner space"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Padding.",
             "en": "Padding."
@@ -1163,19 +1163,19 @@
           },
           "choices": {
             "nl": [
-              "altijd leeg",
               "toegankelijke tekst",
+              "altijd leeg",
               "CSS",
               "verboden"
             ],
             "en": [
-              "always empty",
               "accessible text",
+              "always empty",
               "CSS",
               "forbidden"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Alt.",
             "en": "Alt."
@@ -1190,18 +1190,18 @@
           "choices": {
             "nl": [
               "class",
-              "id",
               "tag",
+              "id",
               "pseudo"
             ],
             "en": [
               "class",
-              "id",
               "tag",
+              "id",
               "pseudo"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "id.",
             "en": "id."
@@ -1230,18 +1230,18 @@
           "choices": {
             "nl": [
               "SQL",
-              "responsive",
+              "C",
               "Lua",
-              "C"
+              "responsive"
             ],
             "en": [
               "SQL",
-              "responsive",
+              "C",
               "Lua",
-              "C"
+              "responsive"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Media.",
             "en": "Media."
@@ -1287,18 +1287,18 @@
           "choices": {
             "nl": [
               "buiten border",
-              "binnenruimte",
+              "GPU",
               "SQL",
-              "GPU"
+              "binnenruimte"
             ],
             "en": [
               "outside border",
-              "inner space",
+              "GPU",
               "SQL",
-              "GPU"
+              "inner space"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Padding.",
             "en": "Padding."
@@ -1312,18 +1312,18 @@
           "choices": {
             "nl": [
               "font",
-              "buitenafstand",
               "alt text",
+              "buitenafstand",
               "nil"
             ],
             "en": [
               "font",
-              "outer gap",
               "alt text",
+              "outer gap",
               "nil"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Margin.",
             "en": "Margin."
@@ -1338,18 +1338,18 @@
           "choices": {
             "nl": [
               "CSS",
-              "kop",
+              "Lua",
               "SQL",
-              "Lua"
+              "kop"
             ],
             "en": [
               "CSS",
-              "heading",
+              "Lua",
               "SQL",
-              "Lua"
+              "heading"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Heading.",
             "en": "Heading."
@@ -1378,18 +1378,18 @@
           "choices": {
             "nl": [
               "SQL",
-              "tekstkleur",
               "GPU",
+              "tekstkleur",
               "cert"
             ],
             "en": [
               "SQL",
-              "text color",
               "GPU",
+              "text color",
               "cert"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Color.",
             "en": "Color."
@@ -1430,18 +1430,18 @@
           "choices": {
             "nl": [
               "ok",
-              "im->img",
+              "slash",
               "src always wrong",
-              "slash"
+              "im->img"
             ],
             "en": [
               "ok",
-              "im->img",
+              "slash",
               "src always wrong",
-              "slash"
+              "im->img"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "img.",
             "en": "img."
@@ -1457,18 +1457,18 @@
           "choices": {
             "nl": [
               "buiten",
-              "binnenruimte",
+              "alt",
               "font",
-              "alt"
+              "binnenruimte"
             ],
             "en": [
               "outside",
-              "inner space",
+              "alt",
               "font",
-              "alt"
+              "inner space"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Padding.",
             "en": "Padding."
@@ -1509,18 +1509,18 @@
           "choices": {
             "nl": [
               "class",
-              "id",
+              "pseudo",
               "tag",
-              "pseudo"
+              "id"
             ],
             "en": [
               "class",
-              "id",
+              "pseudo",
               "tag",
-              "pseudo"
+              "id"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "id.",
             "en": "id."
@@ -1549,18 +1549,18 @@
           "choices": {
             "nl": [
               "SQL",
-              "responsive",
+              "C",
               "Lua",
-              "C"
+              "responsive"
             ],
             "en": [
               "SQL",
-              "responsive",
+              "C",
               "Lua",
-              "C"
+              "responsive"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Media.",
             "en": "Media."
@@ -1587,18 +1587,18 @@
           "choices": {
             "nl": [
               "grid only",
-              "flexbox layout",
+              "Lua",
               "SQL",
-              "Lua"
+              "flexbox layout"
             ],
             "en": [
               "grid only",
-              "flexbox layout",
+              "Lua",
               "SQL",
-              "Lua"
+              "flexbox layout"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Flex.",
             "en": "Flex."
@@ -1612,18 +1612,18 @@
           "choices": {
             "nl": [
               "font weight",
-              "hoofdas uitlijnen",
               "alt",
+              "hoofdas uitlijnen",
               "nil"
             ],
             "en": [
               "font weight",
-              "main-axis align",
               "alt",
+              "main-axis align",
               "nil"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Justify.",
             "en": "Justify."
@@ -1637,19 +1637,19 @@
           },
           "choices": {
             "nl": [
-              "CSS",
               "kop",
+              "CSS",
               "SQL",
               "Lua"
             ],
             "en": [
-              "CSS",
               "heading",
+              "CSS",
               "SQL",
               "Lua"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Heading.",
             "en": "Heading."
@@ -1704,18 +1704,18 @@
           "choices": {
             "nl": [
               "ok",
-              "im->img",
+              "slash",
               "src always wrong",
-              "slash"
+              "im->img"
             ],
             "en": [
               "ok",
-              "im->img",
+              "slash",
               "src always wrong",
-              "slash"
+              "im->img"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "img.",
             "en": "img."
@@ -1731,18 +1731,18 @@
           "choices": {
             "nl": [
               "buiten",
-              "binnenruimte",
               "font",
+              "binnenruimte",
               "alt"
             ],
             "en": [
               "outside",
-              "inner space",
               "font",
+              "inner space",
               "alt"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Padding.",
             "en": "Padding."
@@ -1757,18 +1757,18 @@
           "choices": {
             "nl": [
               "altijd leeg",
-              "toegankelijke tekst",
               "CSS",
+              "toegankelijke tekst",
               "verboden"
             ],
             "en": [
               "always empty",
-              "accessible text",
               "CSS",
+              "accessible text",
               "forbidden"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Alt.",
             "en": "Alt."
@@ -1783,18 +1783,18 @@
           "choices": {
             "nl": [
               "class",
-              "id",
               "tag",
+              "id",
               "pseudo"
             ],
             "en": [
               "class",
-              "id",
               "tag",
+              "id",
               "pseudo"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "id.",
             "en": "id."
@@ -1906,18 +1906,18 @@
           "choices": {
             "nl": [
               "SQL",
-              "responsive regel",
+              "C macro only",
               "Lua",
-              "C macro only"
+              "responsive regel"
             ],
             "en": [
               "SQL",
-              "responsive rule",
+              "C macro only",
               "Lua",
-              "C macro only"
+              "responsive rule"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Media.",
             "en": "Media."
@@ -1931,18 +1931,18 @@
           "choices": {
             "nl": [
               "nutteloos",
-              "helpt mobiel schalen",
+              "cert",
               "GPU",
-              "cert"
+              "helpt mobiel schalen"
             ],
             "en": [
               "useless",
-              "helps mobile scale",
+              "cert",
               "GPU",
-              "cert"
+              "helps mobile scale"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Viewport.",
             "en": "Viewport."
@@ -1957,18 +1957,18 @@
           "choices": {
             "nl": [
               "CSS",
-              "kop",
               "SQL",
+              "kop",
               "Lua"
             ],
             "en": [
               "CSS",
-              "heading",
               "SQL",
+              "heading",
               "Lua"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Heading.",
             "en": "Heading."
@@ -1996,19 +1996,19 @@
           },
           "choices": {
             "nl": [
-              "SQL",
               "tekstkleur",
+              "SQL",
               "GPU",
               "cert"
             ],
             "en": [
-              "SQL",
               "text color",
+              "SQL",
               "GPU",
               "cert"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Color.",
             "en": "Color."
@@ -2022,19 +2022,19 @@
           },
           "choices": {
             "nl": [
-              "grid only",
               "flexbox",
+              "grid only",
               "SQL",
               "C"
             ],
             "en": [
-              "grid only",
               "flexbox",
+              "grid only",
               "SQL",
               "C"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Flex.",
             "en": "Flex."
@@ -2128,18 +2128,18 @@
           "choices": {
             "nl": [
               "class",
-              "id",
               "tag",
+              "id",
               "pseudo"
             ],
             "en": [
               "class",
-              "id",
               "tag",
+              "id",
               "pseudo"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "id.",
             "en": "id."
@@ -2168,18 +2168,18 @@
           "choices": {
             "nl": [
               "SQL",
-              "afgeronde hoeken",
               "Lua",
+              "afgeronde hoeken",
               "GPU"
             ],
             "en": [
               "SQL",
-              "rounded corners",
               "Lua",
+              "rounded corners",
               "GPU"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Radius.",
             "en": "Radius."
@@ -2206,18 +2206,18 @@
           "choices": {
             "nl": [
               "SQL key",
-              "CSS haakje",
+              "Rust mut",
               "Lua local",
-              "Rust mut"
+              "CSS haakje"
             ],
             "en": [
               "SQL key",
-              "CSS hook",
+              "Rust mut",
               "Lua local",
-              "Rust mut"
+              "CSS hook"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Class.",
             "en": "Class."
@@ -2231,18 +2231,18 @@
           "choices": {
             "nl": [
               "alleen JS",
-              "klikbaar element",
               "C pointer",
+              "klikbaar element",
               "nil"
             ],
             "en": [
               "JS only",
-              "clickable element",
               "C pointer",
+              "clickable element",
               "nil"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Button.",
             "en": "Button."
@@ -2257,18 +2257,18 @@
           "choices": {
             "nl": [
               "CSS",
-              "kop",
+              "Lua",
               "SQL",
-              "Lua"
+              "kop"
             ],
             "en": [
               "CSS",
-              "heading",
+              "Lua",
               "SQL",
-              "Lua"
+              "heading"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Heading.",
             "en": "Heading."
@@ -2297,18 +2297,18 @@
           "choices": {
             "nl": [
               "SQL",
-              "tekstkleur",
               "GPU",
+              "tekstkleur",
               "cert"
             ],
             "en": [
               "SQL",
-              "text color",
               "GPU",
+              "text color",
               "cert"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Color.",
             "en": "Color."
@@ -2349,18 +2349,18 @@
           "choices": {
             "nl": [
               "ok",
-              "im->img",
+              "slash",
               "src always wrong",
-              "slash"
+              "im->img"
             ],
             "en": [
               "ok",
-              "im->img",
+              "slash",
               "src always wrong",
-              "slash"
+              "im->img"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "img.",
             "en": "img."
@@ -2375,19 +2375,19 @@
           },
           "choices": {
             "nl": [
-              "buiten",
               "binnenruimte",
+              "buiten",
               "font",
               "alt"
             ],
             "en": [
-              "outside",
               "inner space",
+              "outside",
               "font",
               "alt"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Padding.",
             "en": "Padding."
@@ -2402,18 +2402,18 @@
           "choices": {
             "nl": [
               "altijd leeg",
-              "toegankelijke tekst",
               "CSS",
+              "toegankelijke tekst",
               "verboden"
             ],
             "en": [
               "always empty",
-              "accessible text",
               "CSS",
+              "accessible text",
               "forbidden"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Alt.",
             "en": "Alt."
@@ -2428,18 +2428,18 @@
           "choices": {
             "nl": [
               "class",
-              "id",
               "tag",
+              "id",
               "pseudo"
             ],
             "en": [
               "class",
-              "id",
               "tag",
+              "id",
               "pseudo"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "id.",
             "en": "id."
@@ -2468,18 +2468,18 @@
           "choices": {
             "nl": [
               "SQL",
-              "responsive",
               "Lua",
+              "responsive",
               "C"
             ],
             "en": [
               "SQL",
-              "responsive",
               "Lua",
+              "responsive",
               "C"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Media.",
             "en": "Media."
@@ -2543,18 +2543,18 @@
       "choices": {
         "nl": [
           "SQL",
-          "kiest h1 elementen",
           "GPU",
+          "kiest h1 elementen",
           "cert"
         ],
         "en": [
           "SQL",
-          "selects h1 elements",
           "GPU",
+          "selects h1 elements",
           "cert"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Selector.",
         "en": "Selector."
@@ -2569,18 +2569,18 @@
       "choices": {
         "nl": [
           "zelfde",
-          "id vs class selector",
           "Lua",
+          "id vs class selector",
           "C"
         ],
         "en": [
           "same",
-          "id vs class selector",
           "Lua",
+          "id vs class selector",
           "C"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Different.",
         "en": "Different."
@@ -2595,18 +2595,18 @@
       "choices": {
         "nl": [
           "zelfde always",
-          "inline vs block (typisch)",
           "SQL",
+          "inline vs block (typisch)",
           "cert"
         ],
         "en": [
           "always same",
-          "inline vs block (typical)",
           "SQL",
+          "inline vs block (typical)",
           "cert"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Display.",
         "en": "Display."
@@ -2620,19 +2620,19 @@
       },
       "choices": {
         "nl": [
-          "kleur",
           "nadruk/semantic",
+          "kleur",
           "GPU",
           "nil"
         ],
         "en": [
-          "color",
           "emphasis/semantic",
+          "color",
           "GPU",
           "nil"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Semantics.",
         "en": "Semantics."
@@ -2647,18 +2647,18 @@
       "choices": {
         "nl": [
           "zwart",
-          "wit",
           "rood",
+          "wit",
           "blauw"
         ],
         "en": [
           "black",
-          "white",
           "red",
+          "white",
           "blue"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "White.",
         "en": "White."
@@ -2673,18 +2673,18 @@
       "choices": {
         "nl": [
           "SQL",
-          "afgeronde hoeken",
           "Lua end",
+          "afgeronde hoeken",
           "C"
         ],
         "en": [
           "SQL",
-          "rounded corners",
           "Lua end",
+          "rounded corners",
           "C"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Radius.",
         "en": "Radius."
@@ -2699,18 +2699,18 @@
       "choices": {
         "nl": [
           "flow normal",
-          "uit normal flow",
           "SQL",
+          "uit normal flow",
           "cert"
         ],
         "en": [
           "normal flow",
-          "out of normal flow",
           "SQL",
+          "out of normal flow",
           "cert"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Absolute.",
         "en": "Absolute."
@@ -2725,18 +2725,18 @@
       "choices": {
         "nl": [
           "SQL index",
-          "stapelvolgorde",
+          "GPU only",
           "Lua",
-          "GPU only"
+          "stapelvolgorde"
         ],
         "en": [
           "SQL index",
-          "stack order",
+          "GPU only",
           "Lua",
-          "GPU only"
+          "stack order"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Stack.",
         "en": "Stack."
@@ -2750,19 +2750,19 @@
       },
       "choices": {
         "nl": [
-          "px only",
           "root font-relative",
+          "px only",
           "SQL",
           "C"
         ],
         "en": [
-          "px only",
           "root font-relative",
+          "px only",
           "SQL",
           "C"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "rem.",
         "en": "rem."
@@ -2777,18 +2777,18 @@
       "choices": {
         "nl": [
           "display none",
-          "transparantie",
+          "cert",
           "Lua",
-          "cert"
+          "transparantie"
         ],
         "en": [
           "display none",
-          "transparency",
+          "cert",
           "Lua",
-          "cert"
+          "transparency"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Opacity.",
         "en": "Opacity."
@@ -2802,19 +2802,19 @@
       },
       "choices": {
         "nl": [
-          "::before only",
           ":hover",
+          "::before only",
           "SQL",
           "C"
         ],
         "en": [
-          "::before only",
           ":hover",
+          "::before only",
           "SQL",
           "C"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": ":hover.",
         "en": ":hover."
@@ -2828,19 +2828,19 @@
       },
       "choices": {
         "nl": [
-          "geen betekenis",
           "page/section header",
+          "geen betekenis",
           "Lua",
           "Rust"
         ],
         "en": [
-          "no meaning",
           "page/section header",
+          "no meaning",
           "Lua",
           "Rust"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Semantic.",
         "en": "Semantic."
@@ -2854,19 +2854,19 @@
       },
       "choices": {
         "nl": [
-          "voor decoratief soms",
+          "C",
           "nooit ooit",
           "SQL",
-          "C"
+          "voor decoratief soms"
         ],
         "en": [
-          "sometimes decorative",
+          "C",
           "never ever",
           "SQL",
-          "C"
+          "sometimes decorative"
         ]
       },
-      "answer": 0,
+      "answer": 3,
       "why": {
         "nl": "Decorative.",
         "en": "Decorative."
@@ -2880,19 +2880,19 @@
       },
       "choices": {
         "nl": [
-          "W3C leak",
           "origineel oefenen",
+          "W3C leak",
           "betaald",
           "cert leak"
         ],
         "en": [
-          "W3C leak",
           "original practice",
+          "W3C leak",
           "paid",
           "cert leak"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Original.",
         "en": "Original."
@@ -2907,18 +2907,18 @@
       "choices": {
         "nl": [
           "CSS",
-          "kop",
           "SQL",
+          "kop",
           "Lua"
         ],
         "en": [
           "CSS",
-          "heading",
           "SQL",
+          "heading",
           "Lua"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Heading.",
         "en": "Heading."
@@ -2949,18 +2949,18 @@
       "choices": {
         "nl": [
           "SQL",
-          "tekstkleur",
+          "cert",
           "GPU",
-          "cert"
+          "tekstkleur"
         ],
         "en": [
           "SQL",
-          "text color",
+          "cert",
           "GPU",
-          "cert"
+          "text color"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Color.",
         "en": "Color."
@@ -2975,19 +2975,19 @@
       },
       "choices": {
         "nl": [
-          "grid only",
           "flexbox",
+          "grid only",
           "SQL",
           "C"
         ],
         "en": [
-          "grid only",
           "flexbox",
+          "grid only",
           "SQL",
           "C"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Flex.",
         "en": "Flex."
@@ -3003,18 +3003,18 @@
       "choices": {
         "nl": [
           "ok",
-          "im->img",
           "src always wrong",
+          "im->img",
           "slash"
         ],
         "en": [
           "ok",
-          "im->img",
           "src always wrong",
+          "im->img",
           "slash"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "img.",
         "en": "img."
@@ -3031,18 +3031,18 @@
       "choices": {
         "nl": [
           "buiten",
-          "binnenruimte",
+          "alt",
           "font",
-          "alt"
+          "binnenruimte"
         ],
         "en": [
           "outside",
-          "inner space",
+          "alt",
           "font",
-          "alt"
+          "inner space"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Padding.",
         "en": "Padding."
@@ -3057,19 +3057,19 @@
       },
       "choices": {
         "nl": [
-          "altijd leeg",
           "toegankelijke tekst",
+          "altijd leeg",
           "CSS",
           "verboden"
         ],
         "en": [
-          "always empty",
           "accessible text",
+          "always empty",
           "CSS",
           "forbidden"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Alt.",
         "en": "Alt."
@@ -3084,19 +3084,19 @@
       },
       "choices": {
         "nl": [
-          "class",
           "id",
+          "class",
           "tag",
           "pseudo"
         ],
         "en": [
-          "class",
           "id",
+          "class",
           "tag",
           "pseudo"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "id.",
         "en": "id."
@@ -3127,18 +3127,18 @@
       "choices": {
         "nl": [
           "SQL",
-          "responsive",
           "Lua",
+          "responsive",
           "C"
         ],
         "en": [
           "SQL",
-          "responsive",
           "Lua",
+          "responsive",
           "C"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Media.",
         "en": "Media."
@@ -3154,18 +3154,18 @@
       "choices": {
         "nl": [
           "SQL",
-          "afgeronde hoeken",
+          "GPU",
           "Lua",
-          "GPU"
+          "afgeronde hoeken"
         ],
         "en": [
           "SQL",
-          "rounded corners",
+          "GPU",
           "Lua",
-          "GPU"
+          "rounded corners"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Radius.",
         "en": "Radius."
@@ -3208,18 +3208,18 @@
       "choices": {
         "nl": [
           "alleen JS",
-          "klikbaar element",
           "C",
+          "klikbaar element",
           "nil"
         ],
         "en": [
           "JS only",
-          "clickable element",
           "C",
+          "clickable element",
           "nil"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Button.",
         "en": "Button."
@@ -3234,19 +3234,19 @@
       },
       "choices": {
         "nl": [
-          "CSS",
           "kop",
+          "CSS",
           "SQL",
           "Lua"
         ],
         "en": [
-          "CSS",
           "heading",
+          "CSS",
           "SQL",
           "Lua"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Heading.",
         "en": "Heading."
@@ -3277,18 +3277,18 @@
       "choices": {
         "nl": [
           "SQL",
-          "tekstkleur",
           "GPU",
+          "tekstkleur",
           "cert"
         ],
         "en": [
           "SQL",
-          "text color",
           "GPU",
+          "text color",
           "cert"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Color.",
         "en": "Color."
@@ -3330,19 +3330,19 @@
       },
       "choices": {
         "nl": [
-          "ok",
           "im->img",
+          "ok",
           "src always wrong",
           "slash"
         ],
         "en": [
-          "ok",
           "im->img",
+          "ok",
           "src always wrong",
           "slash"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "img.",
         "en": "img."
@@ -3412,19 +3412,19 @@
       },
       "choices": {
         "nl": [
-          "class",
           "id",
+          "class",
           "tag",
           "pseudo"
         ],
         "en": [
-          "class",
           "id",
+          "class",
           "tag",
           "pseudo"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "id.",
         "en": "id."
@@ -3455,18 +3455,18 @@
       "choices": {
         "nl": [
           "SQL",
-          "responsive",
           "Lua",
+          "responsive",
           "C"
         ],
         "en": [
           "SQL",
-          "responsive",
           "Lua",
+          "responsive",
           "C"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Media.",
         "en": "Media."
@@ -3481,19 +3481,19 @@
       },
       "choices": {
         "nl": [
-          "SQL",
           "afgeronde hoeken",
+          "SQL",
           "Lua",
           "GPU"
         ],
         "en": [
-          "SQL",
           "rounded corners",
+          "SQL",
           "Lua",
           "GPU"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Radius.",
         "en": "Radius."
@@ -3509,18 +3509,18 @@
       "choices": {
         "nl": [
           "font",
-          "buitenafstand",
+          "nil",
           "alt",
-          "nil"
+          "buitenafstand"
         ],
         "en": [
           "font",
-          "outer gap",
+          "nil",
           "alt",
-          "nil"
+          "outer gap"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Margin.",
         "en": "Margin."
@@ -3562,19 +3562,19 @@
       },
       "choices": {
         "nl": [
-          "CSS",
           "kop",
+          "CSS",
           "SQL",
           "Lua"
         ],
         "en": [
-          "CSS",
           "heading",
+          "CSS",
           "SQL",
           "Lua"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Heading.",
         "en": "Heading."
@@ -3632,18 +3632,18 @@
       "choices": {
         "nl": [
           "grid only",
-          "flexbox",
           "SQL",
+          "flexbox",
           "C"
         ],
         "en": [
           "grid only",
-          "flexbox",
           "SQL",
+          "flexbox",
           "C"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Flex.",
         "en": "Flex."
@@ -3659,18 +3659,18 @@
       "choices": {
         "nl": [
           "ok",
-          "im->img",
+          "slash",
           "src always wrong",
-          "slash"
+          "im->img"
         ],
         "en": [
           "ok",
-          "im->img",
+          "slash",
           "src always wrong",
-          "slash"
+          "im->img"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "img.",
         "en": "img."
@@ -3686,19 +3686,19 @@
       },
       "choices": {
         "nl": [
-          "buiten",
           "binnenruimte",
+          "buiten",
           "font",
           "alt"
         ],
         "en": [
-          "outside",
           "inner space",
+          "outside",
           "font",
           "alt"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Padding.",
         "en": "Padding."
@@ -3741,18 +3741,18 @@
       "choices": {
         "nl": [
           "class",
-          "id",
           "tag",
+          "id",
           "pseudo"
         ],
         "en": [
           "class",
-          "id",
           "tag",
+          "id",
           "pseudo"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "id.",
         "en": "id."

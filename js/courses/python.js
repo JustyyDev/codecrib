@@ -30,18 +30,18 @@
           "choices": {
             "nl": [
               "Console.WriteLine",
-              "print",
               "echo",
+              "print",
               "trace"
             ],
             "en": [
               "Console.WriteLine",
-              "print",
               "echo",
+              "print",
               "trace"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "print is de standaard.",
             "en": "print is the standard."
@@ -55,18 +55,18 @@
           "choices": {
             "nl": [
               "ja",
-              "nee",
               "alleen in loops",
+              "nee",
               "alleen in classes"
             ],
             "en": [
               "yes",
-              "no",
               "only in loops",
+              "no",
               "only in classes"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Optioneel, niet nodig.",
             "en": "Optional, not required."
@@ -175,18 +175,18 @@
           "choices": {
             "nl": [
               "geen bug",
-              "prnt typo, moet print",
               "hi is fout",
+              "prnt typo, moet print",
               "quotes"
             ],
             "en": [
               "no bug",
-              "prnt typo, need print",
               "hi wrong",
+              "prnt typo, need print",
               "quotes"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "NameError.",
             "en": "NameError."
@@ -241,19 +241,19 @@
           },
           "choices": {
             "nl": [
-              "else if",
-              "end if",
               "error if",
+              "end if",
+              "else if",
               "early if"
             ],
             "en": [
-              "else if",
-              "end if",
               "error if",
+              "end if",
+              "else if",
               "early if"
             ]
           },
-          "answer": 0,
+          "answer": 2,
           "why": {
             "nl": "else if.",
             "en": "else if."
@@ -346,18 +346,18 @@
           "choices": {
             "nl": [
               "3",
-              "3.5",
               "4",
+              "3.5",
               "error"
             ],
             "en": [
               "3",
-              "3.5",
               "4",
+              "3.5",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "/ geeft float.",
             "en": "/ yields float."
@@ -397,18 +397,18 @@
           "choices": {
             "nl": [
               "5",
-              "6",
+              "error",
               "23",
-              "error"
+              "6"
             ],
             "en": [
               "5",
-              "6",
+              "error",
               "23",
-              "error"
+              "6"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "2*3=6.",
             "en": "2*3=6."
@@ -424,18 +424,18 @@
           "choices": {
             "nl": [
               "true",
-              "True",
               "TRUE",
+              "True",
               "yes"
             ],
             "en": [
               "true",
-              "True",
               "TRUE",
+              "True",
               "yes"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "True met T.",
             "en": "Capital T."
@@ -464,18 +464,18 @@
           "choices": {
             "nl": [
               "3.5",
-              "3",
+              "error",
               "4",
-              "error"
+              "3"
             ],
             "en": [
               "3.5",
-              "3",
+              "error",
               "4",
-              "error"
+              "3"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Floor division.",
             "en": "Floor division."
@@ -491,18 +491,18 @@
           "choices": {
             "nl": [
               "geen bug",
-              "prnt typo, moet print",
+              "quotes",
               "hi is fout",
-              "quotes"
+              "prnt typo, moet print"
             ],
             "en": [
               "no bug",
-              "prnt typo, need print",
+              "quotes",
               "hi wrong",
-              "quotes"
+              "prnt typo, need print"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "NameError.",
             "en": "NameError."
@@ -518,18 +518,18 @@
           "choices": {
             "nl": [
               "2",
-              "3",
               "4",
+              "3",
               "error"
             ],
             "en": [
               "2",
-              "3",
               "4",
+              "3",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "3 items.",
             "en": "3 items."
@@ -557,19 +557,19 @@
           },
           "choices": {
             "nl": [
-              "else if",
+              "early if",
               "end if",
               "error if",
-              "early if"
+              "else if"
             ],
             "en": [
-              "else if",
+              "early if",
               "end if",
               "error if",
-              "early if"
+              "else if"
             ]
           },
-          "answer": 0,
+          "answer": 3,
           "why": {
             "nl": "else if.",
             "en": "else if."
@@ -583,19 +583,19 @@
           },
           "choices": {
             "nl": [
-              "stopt loop",
-              "start loop",
               "print",
+              "start loop",
+              "stopt loop",
               "import"
             ],
             "en": [
-              "stops loop",
-              "starts loop",
               "print",
+              "starts loop",
+              "stops loop",
               "import"
             ]
           },
-          "answer": 0,
+          "answer": 2,
           "why": {
             "nl": "Break.",
             "en": "Break."
@@ -609,19 +609,19 @@
           },
           "choices": {
             "nl": [
-              "abc",
               "ab c",
+              "abc",
               "error",
               "a"
             ],
             "en": [
-              "abc",
               "ab c",
+              "abc",
               "error",
               "a"
             ]
           },
-          "answer": 0,
+          "answer": 1,
           "why": {
             "nl": "Concat.",
             "en": "Concat."
@@ -648,18 +648,18 @@
           "choices": {
             "nl": [
               "A",
-              "B",
               "C",
+              "B",
               "AB"
             ],
             "en": [
               "A",
-              "B",
               "C",
+              "B",
               "AB"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "elif x>=5.",
             "en": "elif x>=5."
@@ -673,18 +673,18 @@
           "choices": {
             "nl": [
               "else if",
-              "elif",
               "elseif",
+              "elif",
               "elsif"
             ],
             "en": [
               "else if",
-              "elif",
               "elseif",
+              "elif",
               "elsif"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "elif.",
             "en": "elif."
@@ -699,18 +699,18 @@
           "choices": {
             "nl": [
               "5",
-              "6",
+              "error",
               "23",
-              "error"
+              "6"
             ],
             "en": [
               "5",
-              "6",
+              "error",
               "23",
-              "error"
+              "6"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "2*3=6.",
             "en": "2*3=6."
@@ -766,18 +766,18 @@
           "choices": {
             "nl": [
               "3.5",
-              "3",
               "4",
+              "3",
               "error"
             ],
             "en": [
               "3.5",
-              "3",
               "4",
+              "3",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Floor division.",
             "en": "Floor division."
@@ -792,19 +792,19 @@
           },
           "choices": {
             "nl": [
-              "geen bug",
               "prnt typo, moet print",
+              "geen bug",
               "hi is fout",
               "quotes"
             ],
             "en": [
-              "no bug",
               "prnt typo, need print",
+              "no bug",
               "hi wrong",
               "quotes"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "NameError.",
             "en": "NameError."
@@ -820,18 +820,18 @@
           "choices": {
             "nl": [
               "2",
-              "3",
+              "error",
               "4",
-              "error"
+              "3"
             ],
             "en": [
               "2",
-              "3",
+              "error",
               "4",
-              "error"
+              "3"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "3 items.",
             "en": "3 items."
@@ -859,19 +859,19 @@
           },
           "choices": {
             "nl": [
-              "else if",
               "end if",
+              "else if",
               "error if",
               "early if"
             ],
             "en": [
-              "else if",
               "end if",
+              "else if",
               "error if",
               "early if"
             ]
           },
-          "answer": 0,
+          "answer": 1,
           "why": {
             "nl": "else if.",
             "en": "else if."
@@ -911,19 +911,19 @@
           },
           "choices": {
             "nl": [
-              "abc",
+              "a",
               "ab c",
               "error",
-              "a"
+              "abc"
             ],
             "en": [
-              "abc",
+              "a",
               "ab c",
               "error",
-              "a"
+              "abc"
             ]
           },
-          "answer": 0,
+          "answer": 3,
           "why": {
             "nl": "Concat.",
             "en": "Concat."
@@ -950,18 +950,18 @@
           "choices": {
             "nl": [
               "3",
-              "4",
               "10",
+              "4",
               "9"
             ],
             "en": [
               "3",
-              "4",
               "10",
+              "4",
               "9"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "0,3,6,9.",
             "en": "0,3,6,9."
@@ -975,18 +975,18 @@
           "choices": {
             "nl": [
               "1,2,3",
-              "0,1,2",
+              "3",
               "0,1,2,3",
-              "3"
+              "0,1,2"
             ],
             "en": [
               "1,2,3",
-              "0,1,2",
+              "3",
               "0,1,2,3",
-              "3"
+              "0,1,2"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "0 t/m 2.",
             "en": "0 through 2."
@@ -1027,19 +1027,19 @@
           },
           "choices": {
             "nl": [
-              "true",
               "True",
+              "true",
               "TRUE",
               "yes"
             ],
             "en": [
-              "true",
               "True",
+              "true",
               "TRUE",
               "yes"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "True met T.",
             "en": "Capital T."
@@ -1068,18 +1068,18 @@
           "choices": {
             "nl": [
               "3.5",
-              "3",
+              "error",
               "4",
-              "error"
+              "3"
             ],
             "en": [
               "3.5",
-              "3",
+              "error",
               "4",
-              "error"
+              "3"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Floor division.",
             "en": "Floor division."
@@ -1095,18 +1095,18 @@
           "choices": {
             "nl": [
               "geen bug",
-              "prnt typo, moet print",
               "hi is fout",
+              "prnt typo, moet print",
               "quotes"
             ],
             "en": [
               "no bug",
-              "prnt typo, need print",
               "hi wrong",
+              "prnt typo, need print",
               "quotes"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "NameError.",
             "en": "NameError."
@@ -1121,19 +1121,19 @@
           },
           "choices": {
             "nl": [
-              "2",
               "3",
+              "2",
               "4",
               "error"
             ],
             "en": [
-              "2",
               "3",
+              "2",
               "4",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "3 items.",
             "en": "3 items."
@@ -1161,19 +1161,19 @@
           },
           "choices": {
             "nl": [
-              "else if",
+              "early if",
               "end if",
               "error if",
-              "early if"
+              "else if"
             ],
             "en": [
-              "else if",
+              "early if",
               "end if",
               "error if",
-              "early if"
+              "else if"
             ]
           },
-          "answer": 0,
+          "answer": 3,
           "why": {
             "nl": "else if.",
             "en": "else if."
@@ -1187,19 +1187,19 @@
           },
           "choices": {
             "nl": [
-              "stopt loop",
+              "import",
               "start loop",
               "print",
-              "import"
+              "stopt loop"
             ],
             "en": [
-              "stops loop",
+              "import",
               "starts loop",
               "print",
-              "import"
+              "stops loop"
             ]
           },
-          "answer": 0,
+          "answer": 3,
           "why": {
             "nl": "Break.",
             "en": "Break."
@@ -1213,19 +1213,19 @@
           },
           "choices": {
             "nl": [
-              "abc",
               "ab c",
+              "abc",
               "error",
               "a"
             ],
             "en": [
-              "abc",
               "ab c",
+              "abc",
               "error",
               "a"
             ]
           },
-          "answer": 0,
+          "answer": 1,
           "why": {
             "nl": "Concat.",
             "en": "Concat."
@@ -1252,18 +1252,18 @@
           "choices": {
             "nl": [
               "10",
-              "20",
+              "error",
               "30",
-              "error"
+              "20"
             ],
             "en": [
               "10",
-              "20",
+              "error",
               "30",
-              "error"
+              "20"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Index 1.",
             "en": "Index 1."
@@ -1277,18 +1277,18 @@
           "choices": {
             "nl": [
               "'hp'",
-              "100",
+              "None",
               "error",
-              "None"
+              "100"
             ],
             "en": [
               "'hp'",
-              "100",
+              "None",
               "error",
-              "None"
+              "100"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Dict lookup.",
             "en": "Dict lookup."
@@ -1330,18 +1330,18 @@
           "choices": {
             "nl": [
               "true",
-              "True",
+              "yes",
               "TRUE",
-              "yes"
+              "True"
             ],
             "en": [
               "true",
-              "True",
+              "yes",
               "TRUE",
-              "yes"
+              "True"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "True met T.",
             "en": "Capital T."
@@ -1370,18 +1370,18 @@
           "choices": {
             "nl": [
               "3.5",
-              "3",
+              "error",
               "4",
-              "error"
+              "3"
             ],
             "en": [
               "3.5",
-              "3",
+              "error",
               "4",
-              "error"
+              "3"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Floor division.",
             "en": "Floor division."
@@ -1397,18 +1397,18 @@
           "choices": {
             "nl": [
               "geen bug",
-              "prnt typo, moet print",
               "hi is fout",
+              "prnt typo, moet print",
               "quotes"
             ],
             "en": [
               "no bug",
-              "prnt typo, need print",
               "hi wrong",
+              "prnt typo, need print",
               "quotes"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "NameError.",
             "en": "NameError."
@@ -1424,18 +1424,18 @@
           "choices": {
             "nl": [
               "2",
-              "3",
               "4",
+              "3",
               "error"
             ],
             "en": [
               "2",
-              "3",
               "4",
+              "3",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "3 items.",
             "en": "3 items."
@@ -1463,19 +1463,19 @@
           },
           "choices": {
             "nl": [
-              "else if",
+              "early if",
               "end if",
               "error if",
-              "early if"
+              "else if"
             ],
             "en": [
-              "else if",
+              "early if",
               "end if",
               "error if",
-              "early if"
+              "else if"
             ]
           },
-          "answer": 0,
+          "answer": 3,
           "why": {
             "nl": "else if.",
             "en": "else if."
@@ -1515,19 +1515,19 @@
           },
           "choices": {
             "nl": [
-              "abc",
+              "a",
               "ab c",
               "error",
-              "a"
+              "abc"
             ],
             "en": [
-              "abc",
+              "a",
               "ab c",
               "error",
-              "a"
+              "abc"
             ]
           },
-          "answer": 0,
+          "answer": 3,
           "why": {
             "nl": "Concat.",
             "en": "Concat."
@@ -1553,19 +1553,19 @@
           },
           "choices": {
             "nl": [
-              "function",
               "def",
+              "function",
               "fn",
               "method"
             ],
             "en": [
-              "function",
               "def",
+              "function",
               "fn",
               "method"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "def.",
             "en": "def."
@@ -1578,19 +1578,19 @@
           },
           "choices": {
             "nl": [
-              "23",
               "5",
+              "23",
               "None",
               "error"
             ],
             "en": [
-              "23",
               "5",
+              "23",
               "None",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "2+3.",
             "en": "2+3."
@@ -1605,18 +1605,18 @@
           "choices": {
             "nl": [
               "5",
-              "6",
               "23",
+              "6",
               "error"
             ],
             "en": [
               "5",
-              "6",
               "23",
+              "6",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "2*3=6.",
             "en": "2*3=6."
@@ -1632,18 +1632,18 @@
           "choices": {
             "nl": [
               "true",
-              "True",
+              "yes",
               "TRUE",
-              "yes"
+              "True"
             ],
             "en": [
               "true",
-              "True",
+              "yes",
               "TRUE",
-              "yes"
+              "True"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "True met T.",
             "en": "Capital T."
@@ -1672,18 +1672,18 @@
           "choices": {
             "nl": [
               "3.5",
-              "3",
               "4",
+              "3",
               "error"
             ],
             "en": [
               "3.5",
-              "3",
               "4",
+              "3",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Floor division.",
             "en": "Floor division."
@@ -1791,19 +1791,19 @@
           },
           "choices": {
             "nl": [
-              "stopt loop",
+              "import",
               "start loop",
               "print",
-              "import"
+              "stopt loop"
             ],
             "en": [
-              "stops loop",
+              "import",
               "starts loop",
               "print",
-              "import"
+              "stops loop"
             ]
           },
-          "answer": 0,
+          "answer": 3,
           "why": {
             "nl": "Break.",
             "en": "Break."
@@ -1856,18 +1856,18 @@
           "choices": {
             "nl": [
               "TypeError",
-              "ValueError",
               "SyntaxError",
+              "ValueError",
               "geen"
             ],
             "en": [
               "TypeError",
-              "ValueError",
               "SyntaxError",
+              "ValueError",
               "none"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "ValueError.",
             "en": "ValueError."
@@ -1880,19 +1880,19 @@
           },
           "choices": {
             "nl": [
-              "catch",
               "except",
+              "catch",
               "rescue",
               "handle"
             ],
             "en": [
-              "catch",
               "except",
+              "catch",
               "rescue",
               "handle"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "except.",
             "en": "except."
@@ -1907,18 +1907,18 @@
           "choices": {
             "nl": [
               "5",
-              "6",
+              "error",
               "23",
-              "error"
+              "6"
             ],
             "en": [
               "5",
-              "6",
+              "error",
               "23",
-              "error"
+              "6"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "2*3=6.",
             "en": "2*3=6."
@@ -1974,18 +1974,18 @@
           "choices": {
             "nl": [
               "3.5",
-              "3",
               "4",
+              "3",
               "error"
             ],
             "en": [
               "3.5",
-              "3",
               "4",
+              "3",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Floor division.",
             "en": "Floor division."
@@ -2000,19 +2000,19 @@
           },
           "choices": {
             "nl": [
-              "geen bug",
               "prnt typo, moet print",
+              "geen bug",
               "hi is fout",
               "quotes"
             ],
             "en": [
-              "no bug",
               "prnt typo, need print",
+              "no bug",
               "hi wrong",
               "quotes"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "NameError.",
             "en": "NameError."
@@ -2027,19 +2027,19 @@
           },
           "choices": {
             "nl": [
-              "2",
               "3",
+              "2",
               "4",
               "error"
             ],
             "en": [
-              "2",
               "3",
+              "2",
               "4",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "3 items.",
             "en": "3 items."
@@ -2067,19 +2067,19 @@
           },
           "choices": {
             "nl": [
-              "else if",
               "end if",
+              "else if",
               "error if",
               "early if"
             ],
             "en": [
-              "else if",
               "end if",
+              "else if",
               "error if",
               "early if"
             ]
           },
-          "answer": 0,
+          "answer": 1,
           "why": {
             "nl": "else if.",
             "en": "else if."
@@ -2093,19 +2093,19 @@
           },
           "choices": {
             "nl": [
-              "stopt loop",
-              "start loop",
               "print",
+              "start loop",
+              "stopt loop",
               "import"
             ],
             "en": [
-              "stops loop",
-              "starts loop",
               "print",
+              "starts loop",
+              "stops loop",
               "import"
             ]
           },
-          "answer": 0,
+          "answer": 2,
           "why": {
             "nl": "Break.",
             "en": "Break."
@@ -2158,18 +2158,18 @@
           "choices": {
             "nl": [
               "4",
-              "3",
+              "error",
               "3.9",
-              "error"
+              "3"
             ],
             "en": [
               "4",
-              "3",
+              "error",
               "3.9",
-              "error"
+              "3"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Naar beneden.",
             "en": "Rounds down."
@@ -2209,18 +2209,18 @@
           "choices": {
             "nl": [
               "5",
-              "6",
               "23",
+              "6",
               "error"
             ],
             "en": [
               "5",
-              "6",
               "23",
+              "6",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "2*3=6.",
             "en": "2*3=6."
@@ -2236,18 +2236,18 @@
           "choices": {
             "nl": [
               "true",
-              "True",
               "TRUE",
+              "True",
               "yes"
             ],
             "en": [
               "true",
-              "True",
               "TRUE",
+              "True",
               "yes"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "True met T.",
             "en": "Capital T."
@@ -2275,19 +2275,19 @@
           },
           "choices": {
             "nl": [
-              "3.5",
               "3",
+              "3.5",
               "4",
               "error"
             ],
             "en": [
-              "3.5",
               "3",
+              "3.5",
               "4",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Floor division.",
             "en": "Floor division."
@@ -2303,18 +2303,18 @@
           "choices": {
             "nl": [
               "geen bug",
-              "prnt typo, moet print",
+              "quotes",
               "hi is fout",
-              "quotes"
+              "prnt typo, moet print"
             ],
             "en": [
               "no bug",
-              "prnt typo, need print",
+              "quotes",
               "hi wrong",
-              "quotes"
+              "prnt typo, need print"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "NameError.",
             "en": "NameError."
@@ -2330,18 +2330,18 @@
           "choices": {
             "nl": [
               "2",
-              "3",
               "4",
+              "3",
               "error"
             ],
             "en": [
               "2",
-              "3",
               "4",
+              "3",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "3 items.",
             "en": "3 items."
@@ -2459,19 +2459,19 @@
           },
           "choices": {
             "nl": [
-              "voor max",
               "om te stoppen op q",
+              "voor max",
               "verplicht in Python",
               "sorteert de lijst"
             ],
             "en": [
-              "for max",
               "to stop on q",
+              "for max",
               "required in Python",
               "sorts the list"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Verlaat de loop.",
             "en": "Leaves the loop."
@@ -2485,18 +2485,18 @@
           "choices": {
             "nl": [
               "0",
-              "error",
+              "''",
               "None",
-              "''"
+              "error"
             ],
             "en": [
               "0",
-              "error",
+              "''",
               "None",
-              "''"
+              "error"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Lege sequence error.",
             "en": "Empty sequence error."
@@ -2511,18 +2511,18 @@
           "choices": {
             "nl": [
               "5",
-              "6",
               "23",
+              "6",
               "error"
             ],
             "en": [
               "5",
-              "6",
               "23",
+              "6",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "2*3=6.",
             "en": "2*3=6."
@@ -2577,19 +2577,19 @@
           },
           "choices": {
             "nl": [
-              "3.5",
               "3",
+              "3.5",
               "4",
               "error"
             ],
             "en": [
-              "3.5",
               "3",
+              "3.5",
               "4",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Floor division.",
             "en": "Floor division."
@@ -2604,19 +2604,19 @@
           },
           "choices": {
             "nl": [
-              "geen bug",
               "prnt typo, moet print",
+              "geen bug",
               "hi is fout",
               "quotes"
             ],
             "en": [
-              "no bug",
               "prnt typo, need print",
+              "no bug",
               "hi wrong",
               "quotes"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "NameError.",
             "en": "NameError."
@@ -2632,18 +2632,18 @@
           "choices": {
             "nl": [
               "2",
-              "3",
               "4",
+              "3",
               "error"
             ],
             "en": [
               "2",
-              "3",
               "4",
+              "3",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "3 items.",
             "en": "3 items."
@@ -2697,19 +2697,19 @@
           },
           "choices": {
             "nl": [
-              "stopt loop",
               "start loop",
+              "stopt loop",
               "print",
               "import"
             ],
             "en": [
-              "stops loop",
               "starts loop",
+              "stops loop",
               "print",
               "import"
             ]
           },
-          "answer": 0,
+          "answer": 1,
           "why": {
             "nl": "Break.",
             "en": "Break."
@@ -2754,18 +2754,18 @@
       "choices": {
         "nl": [
           "statement only",
-          "functie/call",
+          "keyword only",
           "class",
-          "keyword only"
+          "functie/call"
         ],
         "en": [
           "statement only",
-          "function/call",
+          "keyword only",
           "class",
-          "keyword only"
+          "function/call"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Je roept print() aan.",
         "en": "You call print()."
@@ -2780,18 +2780,18 @@
       "choices": {
         "nl": [
           "3.5",
-          "3",
+          "error",
           "4",
-          "error"
+          "3"
         ],
         "en": [
           "3.5",
-          "3",
+          "error",
           "4",
-          "error"
+          "3"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Floor division.",
         "en": "Floor division."
@@ -2806,18 +2806,18 @@
       "choices": {
         "nl": [
           "2",
-          "3",
           "4",
+          "3",
           "error"
         ],
         "en": [
           "2",
-          "3",
           "4",
+          "3",
           "error"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "3 tekens.",
         "en": "3 chars."
@@ -2832,18 +2832,18 @@
       "choices": {
         "nl": [
           "AB",
-          "ab",
+          "error",
           "Ab",
-          "error"
+          "ab"
         ],
         "en": [
           "AB",
-          "ab",
+          "error",
           "Ab",
-          "error"
+          "ab"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Alles lower.",
         "en": "All lower."
@@ -2859,17 +2859,17 @@
         "nl": [
           "0",
           "lege string",
-          "null-achtige singleton",
-          "False alleen"
+          "False alleen",
+          "null-achtige singleton"
         ],
         "en": [
           "0",
           "empty string",
-          "null-like singleton",
-          "False only"
+          "False only",
+          "null-like singleton"
         ]
       },
-      "answer": 2,
+      "answer": 3,
       "why": {
         "nl": "None.",
         "en": "None."
@@ -2883,19 +2883,19 @@
       },
       "choices": {
         "nl": [
-          "push",
           "append",
+          "push",
           "add",
           "insertOnly"
         ],
         "en": [
-          "push",
           "append",
+          "push",
           "add",
           "insertOnly"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "append.",
         "en": "append."
@@ -2910,18 +2910,18 @@
       "choices": {
         "nl": [
           "None",
-          "KeyError",
+          "IndexError",
           "0",
-          "IndexError"
+          "KeyError"
         ],
         "en": [
           "None",
-          "KeyError",
+          "IndexError",
           "0",
-          "IndexError"
+          "KeyError"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "KeyError.",
         "en": "KeyError."
@@ -2961,19 +2961,19 @@
       },
       "choices": {
         "nl": [
-          "&& ||",
           "and or",
+          "&& ||",
           "AND OR",
           "& | only"
         ],
         "en": [
-          "&& ||",
           "and or",
+          "&& ||",
           "AND OR",
           "& | only"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Woorden.",
         "en": "Words."
@@ -2988,18 +2988,18 @@
       "choices": {
         "nl": [
           "index verplicht",
-          "itereert elementen",
+          "zelfde als while False",
           "werkt niet",
-          "zelfde als while False"
+          "itereert elementen"
         ],
         "en": [
           "index required",
-          "iterates elements",
+          "same as while False",
           "never works",
-          "same as while False"
+          "iterates elements"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Elementen.",
         "en": "Elements."
@@ -3091,19 +3091,19 @@
       },
       "choices": {
         "nl": [
-          "[1,2,3]",
           "[4,5]",
+          "[1,2,3]",
           "error",
           "[1,2][3]"
         ],
         "en": [
-          "[1,2,3]",
           "[4,5]",
+          "[1,2,3]",
           "error",
           "[1,2][3]"
         ]
       },
-      "answer": 0,
+      "answer": 1,
       "why": {
         "nl": "Concat.",
         "en": "Concat."
@@ -3117,19 +3117,19 @@
       },
       "choices": {
         "nl": [
-          "True",
           "False",
+          "True",
           "error",
           "None"
         ],
         "en": [
-          "True",
           "False",
+          "True",
           "error",
           "None"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Lege string falsy.",
         "en": "Empty string falsy."
@@ -3169,19 +3169,19 @@
       },
       "choices": {
         "nl": [
-          "sluit file netjes",
-          "alleen Windows",
           "compileert C",
+          "alleen Windows",
+          "sluit file netjes",
           "start thread"
         ],
         "en": [
-          "closes file cleanly",
-          "Windows only",
           "compiles C",
+          "Windows only",
+          "closes file cleanly",
           "starts thread"
         ]
       },
-      "answer": 0,
+      "answer": 2,
       "why": {
         "nl": "Context manager.",
         "en": "Context manager."
@@ -3196,18 +3196,18 @@
       "choices": {
         "nl": [
           "3",
-          "2",
+          "error",
           "1",
-          "error"
+          "2"
         ],
         "en": [
           "3",
-          "2",
+          "error",
           "1",
-          "error"
+          "2"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Unieke waarden.",
         "en": "Unique values."
@@ -3222,18 +3222,18 @@
       "choices": {
         "nl": [
           "percent",
-          "rest bij deling",
           "string only",
+          "rest bij deling",
           "power"
         ],
         "en": [
           "percent",
-          "remainder",
           "string only",
+          "remainder",
           "power"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Rest.",
         "en": "Remainder."
@@ -3247,19 +3247,19 @@
       },
       "choices": {
         "nl": [
-          "gelekt",
           "origineel oefenmateriaal",
+          "gelekt",
           "betaald cert",
           "compiler"
         ],
         "en": [
-          "leaked",
           "original practice",
+          "leaked",
           "paid cert",
           "compiler"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Origineel.",
         "en": "Original."
@@ -3274,18 +3274,18 @@
       "choices": {
         "nl": [
           "5",
-          "6",
+          "error",
           "23",
-          "error"
+          "6"
         ],
         "en": [
           "5",
-          "6",
+          "error",
           "23",
-          "error"
+          "6"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "2*3=6.",
         "en": "2*3=6."
@@ -3372,18 +3372,18 @@
       "choices": {
         "nl": [
           "geen bug",
-          "prnt typo, moet print",
           "hi is fout",
+          "prnt typo, moet print",
           "quotes"
         ],
         "en": [
           "no bug",
-          "prnt typo, need print",
           "hi wrong",
+          "prnt typo, need print",
           "quotes"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "NameError.",
         "en": "NameError."
@@ -3400,18 +3400,18 @@
       "choices": {
         "nl": [
           "2",
-          "3",
+          "error",
           "4",
-          "error"
+          "3"
         ],
         "en": [
           "2",
-          "3",
+          "error",
           "4",
-          "error"
+          "3"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "3 items.",
         "en": "3 items."
@@ -3441,19 +3441,19 @@
       },
       "choices": {
         "nl": [
-          "else if",
+          "early if",
           "end if",
           "error if",
-          "early if"
+          "else if"
         ],
         "en": [
-          "else if",
+          "early if",
           "end if",
           "error if",
-          "early if"
+          "else if"
         ]
       },
-      "answer": 0,
+      "answer": 3,
       "why": {
         "nl": "else if.",
         "en": "else if."
@@ -3468,19 +3468,19 @@
       },
       "choices": {
         "nl": [
-          "stopt loop",
-          "start loop",
           "print",
+          "start loop",
+          "stopt loop",
           "import"
         ],
         "en": [
-          "stops loop",
-          "starts loop",
           "print",
+          "starts loop",
+          "stops loop",
           "import"
         ]
       },
-      "answer": 0,
+      "answer": 2,
       "why": {
         "nl": "Break.",
         "en": "Break."
@@ -3495,19 +3495,19 @@
       },
       "choices": {
         "nl": [
-          "abc",
-          "ab c",
           "error",
+          "ab c",
+          "abc",
           "a"
         ],
         "en": [
-          "abc",
-          "ab c",
           "error",
+          "ab c",
+          "abc",
           "a"
         ]
       },
-      "answer": 0,
+      "answer": 2,
       "why": {
         "nl": "Concat.",
         "en": "Concat."
@@ -3523,18 +3523,18 @@
       "choices": {
         "nl": [
           "None",
-          "KeyError",
+          "''",
           "0",
-          "''"
+          "KeyError"
         ],
         "en": [
           "None",
-          "KeyError",
+          "''",
           "0",
-          "''"
+          "KeyError"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "KeyError.",
         "en": "KeyError."
@@ -3565,18 +3565,18 @@
       "choices": {
         "nl": [
           "1,2,3",
-          "0,1,2",
+          "3",
           "0,1,2,3",
-          "3"
+          "0,1,2"
         ],
         "en": [
           "1,2,3",
-          "0,1,2",
+          "3",
           "0,1,2,3",
-          "3"
+          "0,1,2"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "0..2.",
         "en": "0..2."
@@ -3592,18 +3592,18 @@
       "choices": {
         "nl": [
           "True",
-          "False",
           "error",
+          "False",
           "None"
         ],
         "en": [
           "True",
-          "False",
           "error",
+          "False",
           "None"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Empty falsy.",
         "en": "Empty falsy."
@@ -3618,19 +3618,19 @@
       },
       "choices": {
         "nl": [
-          "5",
           "6",
+          "5",
           "23",
           "error"
         ],
         "en": [
-          "5",
           "6",
+          "5",
           "23",
           "error"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "2*3=6.",
         "en": "2*3=6."
@@ -3716,19 +3716,19 @@
       },
       "choices": {
         "nl": [
-          "geen bug",
           "prnt typo, moet print",
+          "geen bug",
           "hi is fout",
           "quotes"
         ],
         "en": [
-          "no bug",
           "prnt typo, need print",
+          "no bug",
           "hi wrong",
           "quotes"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "NameError.",
         "en": "NameError."
@@ -3786,19 +3786,19 @@
       },
       "choices": {
         "nl": [
-          "else if",
           "end if",
+          "else if",
           "error if",
           "early if"
         ],
         "en": [
-          "else if",
           "end if",
+          "else if",
           "error if",
           "early if"
         ]
       },
-      "answer": 0,
+      "answer": 1,
       "why": {
         "nl": "else if.",
         "en": "else if."
@@ -3813,19 +3813,19 @@
       },
       "choices": {
         "nl": [
-          "stopt loop",
-          "start loop",
           "print",
+          "start loop",
+          "stopt loop",
           "import"
         ],
         "en": [
-          "stops loop",
-          "starts loop",
           "print",
+          "starts loop",
+          "stops loop",
           "import"
         ]
       },
-      "answer": 0,
+      "answer": 2,
       "why": {
         "nl": "Break.",
         "en": "Break."
@@ -3868,18 +3868,18 @@
       "choices": {
         "nl": [
           "None",
-          "KeyError",
           "0",
+          "KeyError",
           "''"
         ],
         "en": [
           "None",
-          "KeyError",
           "0",
+          "KeyError",
           "''"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "KeyError.",
         "en": "KeyError."
@@ -3909,19 +3909,19 @@
       },
       "choices": {
         "nl": [
-          "1,2,3",
           "0,1,2",
+          "1,2,3",
           "0,1,2,3",
           "3"
         ],
         "en": [
-          "1,2,3",
           "0,1,2",
+          "1,2,3",
           "0,1,2,3",
           "3"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "0..2.",
         "en": "0..2."
@@ -3937,18 +3937,18 @@
       "choices": {
         "nl": [
           "True",
-          "False",
           "error",
+          "False",
           "None"
         ],
         "en": [
           "True",
-          "False",
           "error",
+          "False",
           "None"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Empty falsy.",
         "en": "Empty falsy."
@@ -3964,18 +3964,18 @@
       "choices": {
         "nl": [
           "5",
-          "6",
+          "error",
           "23",
-          "error"
+          "6"
         ],
         "en": [
           "5",
-          "6",
+          "error",
           "23",
-          "error"
+          "6"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "2*3=6.",
         "en": "2*3=6."

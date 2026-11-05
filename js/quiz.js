@@ -12,20 +12,44 @@
     return item.type || (item.fill != null ? "fill" : (item.bug != null ? "bug" : "mc"));
   }
 
+  // Build a display copy with shuffled MC options (same perm for nl/en).
+  // Correctness is tracked by remapped answer index / original option identity.
+  function withShuffledChoices(item) {
+    if (!item || !item.choices || !item.choices.nl || item.fill != null && qType(item) === "fill") {
+      return item;
+    }
+    if (qType(item) === "fill") return item;
+    const nl = item.choices.nl || [];
+    const en = item.choices.en || [];
+    if (nl.length < 2 || nl.length !== en.length) return item;
+    const perm = shuffle([...Array(nl.length).keys()]);
+    const newNl = perm.map((i) => nl[i]);
+    const newEn = perm.map((i) => en[i]);
+    const newAnswer = perm.indexOf(item.answer);
+    return Object.assign({}, item, {
+      choices: { nl: newNl, en: newEn },
+      answer: newAnswer,
+      _origAnswer: item.answer,
+      _choicePerm: perm
+    });
+  }
+
   function renderOne(container, item, qi, opts) {
     opts = opts || {};
     const L = opts.lang || CodeCribI18n.getLang();
+    const original = item;
+    const display = (opts.shuffleChoices === false) ? item : withShuffledChoices(item);
     const box = document.createElement("div");
     box.className = "q";
     box.dataset.qi = String(qi);
     const h = document.createElement("h3");
-    const kind = qType(item);
+    const kind = qType(original);
     const tag = kind === "fill" ? " [fill]" : (kind === "bug" ? " [bug]" : (kind === "print" ? " [print]" : ""));
-    h.textContent = (qi + 1) + ". " + item.q[L] + tag;
+    h.textContent = (qi + 1) + ". " + display.q[L] + tag;
     box.appendChild(h);
-    if (item.code) {
+    if (display.code) {
       const pre = document.createElement("pre");
-      pre.textContent = item.code;
+      pre.textContent = display.code;
       box.appendChild(pre);
     }
     const fb = document.createElement("div");
@@ -34,10 +58,18 @@
     function finish(ok) {
       box.dataset.locked = "1";
       fb.className = "feedback " + (ok ? "ok" : "bad");
-      fb.textContent = (ok ? CodeCribI18n.t("correct") : CodeCribI18n.t("wrong")) + " " + (item.why[L] || "");
-      if (opts.onAnswer) opts.onAnswer(ok, item, qi);
+      fb.textContent = (ok ? CodeCribI18n.t("correct") : CodeCribI18n.t("wrong")) + " " + (display.why[L] || "");
+      if (opts.onAnswer) opts.onAnswer(ok, original, qi);
       if (w.CodeCribSrs && opts.srs) {
-        CodeCribSrs.recordAnswer(opts.srs.courseId, opts.srs.lessonId, opts.srs.qIndex != null ? opts.srs.qIndex : qi, ok, item, opts.srs.source || "lesson");
+        // Store ORIGINAL item so SRS stays stable; shuffle happens again on review render.
+        CodeCribSrs.recordAnswer(
+          opts.srs.courseId,
+          opts.srs.lessonId,
+          opts.srs.qIndex != null ? opts.srs.qIndex : qi,
+          ok,
+          original,
+          opts.srs.source || "lesson"
+        );
       }
     }
 
@@ -49,7 +81,7 @@
       const input = document.createElement("input");
       input.type = "text";
       input.autocomplete = "off";
-      input.placeholder = (item.fillHint && item.fillHint[L]) || "...";
+      input.placeholder = (display.fillHint && display.fillHint[L]) || "...";
       input.style.flex = "1";
       input.style.minWidth = "160px";
       input.style.padding = ".65rem .8rem";
@@ -65,7 +97,7 @@
       btn.addEventListener("click", () => {
         if (box.dataset.locked) return;
         const got = String(input.value || "").trim();
-        const answers = Array.isArray(item.fill) ? item.fill : [item.fill];
+        const answers = Array.isArray(display.fill) ? display.fill : [display.fill];
         const ok = answers.some((a) => String(a).trim().toLowerCase() === got.toLowerCase());
         input.disabled = true; btn.disabled = true;
         finish(ok);
@@ -75,19 +107,20 @@
     } else {
       const optsEl = document.createElement("div");
       optsEl.className = "opts";
-      const choices = item.choices[L];
+      const choices = display.choices[L];
       choices.forEach((label, ci) => {
         const b = document.createElement("button");
         b.type = "button";
         b.textContent = String.fromCharCode(97 + ci) + ") " + label;
+        b.dataset.choiceIndex = String(ci);
         b.addEventListener("click", () => {
           if (box.dataset.locked) return;
           Array.from(optsEl.children).forEach((btn, idx) => {
             btn.disabled = true;
-            if (idx === item.answer) btn.classList.add("correct");
-            if (idx === ci && ci !== item.answer) btn.classList.add("wrong");
+            if (idx === display.answer) btn.classList.add("correct");
+            if (idx === ci && ci !== display.answer) btn.classList.add("wrong");
           });
-          finish(ci === item.answer);
+          finish(ci === display.answer);
         });
         optsEl.appendChild(b);
       });
@@ -114,11 +147,15 @@
     let list = items.map((it, i) => Object.assign({}, it, { _bankIndex: it.id != null ? it.id : i }));
     list = doShuffle === false ? list : shuffle(list);
     if (takeN && takeN > 0 && list.length > takeN) list = list.slice(0, takeN);
-    const answers = new Array(list.length).fill(null);
-    list.forEach((item, qi) => {
+    // Shuffle options per question for display; keep originals for SRS
+    const displayList = list.map((it) => withShuffledChoices(it));
+    const answers = new Array(displayList.length).fill(null);
+
+    displayList.forEach((item, qi) => {
+      const original = list[qi];
       const box = document.createElement("div");
       box.className = "q";
-      const kind = qType(item);
+      const kind = qType(original);
       const h = document.createElement("h3");
       h.textContent = (qi + 1) + ". " + item.q[L];
       box.appendChild(h);
@@ -140,8 +177,6 @@
         input.addEventListener("change", () => {
           const answersList = Array.isArray(item.fill) ? item.fill : [item.fill];
           const got = input.value.trim().toLowerCase();
-          answers[qi] = answersList.some((a) => String(a).toLowerCase() === got) ? item.answer != null ? item.answer : 0 : -1;
-          // store special: for fill, answer index 0 means correct sentinel
           answers[qi] = answersList.some((a) => String(a).toLowerCase() === got) ? "OK" : "BAD";
         });
         box.appendChild(input);
@@ -163,28 +198,30 @@
       }
       container.appendChild(box);
     });
+
     return {
-      items: list,
+      items: displayList,
+      originals: list,
       score() {
         let s = 0;
-        list.forEach((item, i) => {
-          const kind = qType(item);
+        displayList.forEach((item, i) => {
+          const kind = qType(list[i]);
           let ok = false;
           if (kind === "fill") ok = answers[i] === "OK";
           else ok = answers[i] === item.answer;
           if (ok) s++;
           if (w.CodeCribSrs && srsOpts) {
-            CodeCribSrs.recordAnswer(srsOpts.courseId, "exam", item._bankIndex, ok, item, "exam");
+            CodeCribSrs.recordAnswer(srsOpts.courseId, "exam", list[i]._bankIndex, ok, list[i], "exam");
           }
         });
-        return { score: s, total: list.length, answers };
+        return { score: s, total: displayList.length, answers };
       },
       reveal(result) {
         Array.from(container.querySelectorAll(".q")).forEach((box, qi) => {
-          const item = list[qi];
+          const item = displayList[qi];
           let fb = box.querySelector(".feedback");
           if (!fb) { fb = document.createElement("div"); box.appendChild(fb); }
-          const kind = qType(item);
+          const kind = qType(list[qi]);
           let ok = false;
           if (kind === "fill") ok = result.answers[qi] === "OK";
           else {
@@ -209,5 +246,5 @@
     };
   }
 
-  w.CodeCribQuiz = { renderQuiz, renderExam, shuffle, renderOne, qType };
+  w.CodeCribQuiz = { renderQuiz, renderExam, shuffle, renderOne, qType, withShuffledChoices };
 })(window);

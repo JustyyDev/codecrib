@@ -30,18 +30,18 @@
           "choices": {
             "nl": [
               "Schrijft tekst zonder nieuwe regel",
-              "Schrijft tekst en een nieuwe regel",
+              "Leest een bestand",
               "Opent een venster",
-              "Leest een bestand"
+              "Schrijft tekst en een nieuwe regel"
             ],
             "en": [
               "Writes text without a new line",
-              "Writes text and a new line",
+              "Reads a file",
               "Opens a window",
-              "Reads a file"
+              "Writes text and a new line"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "WriteLine = write + line. Write doet alleen de tekst.",
             "en": "WriteLine = write + line. Write only prints the text."
@@ -80,19 +80,19 @@
           },
           "choices": {
             "nl": [
-              "3.5",
               "3",
+              "3.5",
               "4",
               "error"
             ],
             "en": [
-              "3.5",
               "3",
+              "3.5",
               "4",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Truncates.",
             "en": "Truncates."
@@ -121,19 +121,19 @@
           },
           "choices": {
             "nl": [
-              "ok",
               "compile error",
+              "ok",
               "null",
               "0"
             ],
             "en": [
-              "ok",
               "compile error",
+              "ok",
               "null",
               "0"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Needs init.",
             "en": "Needs init."
@@ -148,19 +148,19 @@
           },
           "choices": {
             "nl": [
-              "7",
               "8",
+              "7",
               "6",
               "9"
             ],
             "en": [
-              "7",
               "8",
+              "7",
               "6",
               "9"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "8.",
             "en": "8."
@@ -241,18 +241,18 @@
           "choices": {
             "nl": [
               "3",
-              "1",
               "0",
+              "1",
               "3.33"
             ],
             "en": [
               "3",
-              "1",
               "0",
+              "1",
               "3.33"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "1.",
             "en": "1."
@@ -267,18 +267,18 @@
           "choices": {
             "nl": [
               "except",
-              "catch",
+              "handle",
               "rescue",
-              "handle"
+              "catch"
             ],
             "en": [
               "except",
-              "catch",
+              "handle",
               "rescue",
-              "handle"
+              "catch"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "catch.",
             "en": "catch."
@@ -293,18 +293,18 @@
           "choices": {
             "nl": [
               "true",
-              "compile error",
+              "1",
               "false",
-              "1"
+              "compile error"
             ],
             "en": [
               "true",
-              "compile error",
+              "1",
               "false",
-              "1"
+              "compile error"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "No implicit.",
             "en": "No implicit."
@@ -345,19 +345,19 @@
           },
           "choices": {
             "nl": [
-              "Hi {n}",
               "Hi Justy",
+              "Hi {n}",
               "Hi $Justy",
               "een error"
             ],
             "en": [
-              "Hi {n}",
               "Hi Justy",
+              "Hi {n}",
               "Hi $Justy",
               "an error"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "De $ maakt {n} tot de waarde van n.",
             "en": "The $ makes {n} become the value of n."
@@ -465,18 +465,18 @@
           "choices": {
             "nl": [
               "7",
-              "8",
               "6",
+              "8",
               "9"
             ],
             "en": [
               "7",
-              "8",
               "6",
+              "8",
               "9"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "8.",
             "en": "8."
@@ -531,18 +531,18 @@
           "choices": {
             "nl": [
               "stopt",
-              "fall-through",
               "error always",
+              "fall-through",
               "SQL"
             ],
             "en": [
               "stops",
-              "fall-through",
               "always error",
+              "fall-through",
               "SQL"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Fall-through.",
             "en": "Fall-through."
@@ -556,19 +556,19 @@
           },
           "choices": {
             "nl": [
-              "3",
               "1",
+              "3",
               "0",
               "3.33"
             ],
             "en": [
-              "3",
               "1",
+              "3",
               "0",
               "3.33"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "1.",
             "en": "1."
@@ -582,19 +582,19 @@
           },
           "choices": {
             "nl": [
-              "except",
               "catch",
+              "except",
               "rescue",
               "handle"
             ],
             "en": [
-              "except",
               "catch",
+              "except",
               "rescue",
               "handle"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "catch.",
             "en": "catch."
@@ -647,18 +647,18 @@
           "choices": {
             "nl": [
               "3.5",
-              "3",
               "4",
+              "3",
               "compile error"
             ],
             "en": [
               "3.5",
-              "3",
               "4",
+              "3",
               "compile error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Integer deling gooit het deel achter de komma weg.",
             "en": "Integer division truncates toward zero."
@@ -697,19 +697,19 @@
           },
           "choices": {
             "nl": [
-              "3.5",
               "3",
+              "3.5",
               "4",
               "error"
             ],
             "en": [
-              "3.5",
               "3",
+              "3.5",
               "4",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Truncates.",
             "en": "Truncates."
@@ -738,19 +738,19 @@
           },
           "choices": {
             "nl": [
-              "ok",
               "compile error",
+              "ok",
               "null",
               "0"
             ],
             "en": [
-              "ok",
               "compile error",
+              "ok",
               "null",
               "0"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Needs init.",
             "en": "Needs init."
@@ -766,18 +766,18 @@
           "choices": {
             "nl": [
               "7",
-              "8",
+              "9",
               "6",
-              "9"
+              "8"
             ],
             "en": [
               "7",
-              "8",
+              "9",
               "6",
-              "9"
+              "8"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "8.",
             "en": "8."
@@ -792,18 +792,18 @@
           "choices": {
             "nl": [
               "ignore",
-              "case-sensitive default",
               "error",
+              "case-sensitive default",
               "SQL"
             ],
             "en": [
               "ignore",
-              "case-sensitive default",
               "error",
+              "case-sensitive default",
               "SQL"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Case sensitive.",
             "en": "Case sensitive."
@@ -832,18 +832,18 @@
           "choices": {
             "nl": [
               "stopt",
-              "fall-through",
+              "SQL",
               "error always",
-              "SQL"
+              "fall-through"
             ],
             "en": [
               "stops",
-              "fall-through",
+              "SQL",
               "always error",
-              "SQL"
+              "fall-through"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Fall-through.",
             "en": "Fall-through."
@@ -858,18 +858,18 @@
           "choices": {
             "nl": [
               "3",
-              "1",
               "0",
+              "1",
               "3.33"
             ],
             "en": [
               "3",
-              "1",
               "0",
+              "1",
               "3.33"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "1.",
             "en": "1."
@@ -948,18 +948,18 @@
           "choices": {
             "nl": [
               "True",
-              "False",
+              "error",
               "1",
-              "error"
+              "False"
             ],
             "en": [
               "True",
-              "False",
+              "error",
               "1",
-              "error"
+              "False"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "H en h zijn niet hetzelfde in C# strings (standaard).",
             "en": "H and h are different under default string rules."
@@ -973,18 +973,18 @@
           "choices": {
             "nl": [
               "2",
-              "3",
               "4",
+              "3",
               "null"
             ],
             "en": [
               "2",
-              "3",
               "4",
+              "3",
               "null"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Drie tekens: a, b, c.",
             "en": "Three characters: a, b, c."
@@ -999,18 +999,18 @@
           "choices": {
             "nl": [
               "3.5",
-              "3",
               "4",
+              "3",
               "error"
             ],
             "en": [
               "3.5",
-              "3",
               "4",
+              "3",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Truncates.",
             "en": "Truncates."
@@ -1067,18 +1067,18 @@
           "choices": {
             "nl": [
               "7",
-              "8",
+              "9",
               "6",
-              "9"
+              "8"
             ],
             "en": [
               "7",
-              "8",
+              "9",
               "6",
-              "9"
+              "8"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "8.",
             "en": "8."
@@ -1093,18 +1093,18 @@
           "choices": {
             "nl": [
               "ignore",
-              "case-sensitive default",
               "error",
+              "case-sensitive default",
               "SQL"
             ],
             "en": [
               "ignore",
-              "case-sensitive default",
               "error",
+              "case-sensitive default",
               "SQL"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Case sensitive.",
             "en": "Case sensitive."
@@ -1133,18 +1133,18 @@
           "choices": {
             "nl": [
               "stopt",
-              "fall-through",
               "error always",
+              "fall-through",
               "SQL"
             ],
             "en": [
               "stops",
-              "fall-through",
               "always error",
+              "fall-through",
               "SQL"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Fall-through.",
             "en": "Fall-through."
@@ -1158,19 +1158,19 @@
           },
           "choices": {
             "nl": [
-              "3",
               "1",
+              "3",
               "0",
               "3.33"
             ],
             "en": [
-              "3",
               "1",
+              "3",
               "0",
               "3.33"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "1.",
             "en": "1."
@@ -1184,19 +1184,19 @@
           },
           "choices": {
             "nl": [
-              "except",
               "catch",
+              "except",
               "rescue",
               "handle"
             ],
             "en": [
-              "except",
               "catch",
+              "except",
               "rescue",
               "handle"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "catch.",
             "en": "catch."
@@ -1211,18 +1211,18 @@
           "choices": {
             "nl": [
               "true",
-              "compile error",
               "false",
+              "compile error",
               "1"
             ],
             "en": [
               "true",
-              "compile error",
               "false",
+              "compile error",
               "1"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "No implicit.",
             "en": "No implicit."
@@ -1249,18 +1249,18 @@
           "choices": {
             "nl": [
               "A",
-              "B",
+              "AB",
               "C",
-              "AB"
+              "B"
             ],
             "en": [
               "A",
-              "B",
+              "AB",
               "C",
-              "AB"
+              "B"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "x &lt; 5 faalt, dus else if x &gt;= 5 wint: B.",
             "en": "x &lt; 5 fails, so else if x &gt;= 5 wins: B."
@@ -1274,18 +1274,18 @@
           "choices": {
             "nl": [
               "3",
-              "3.33",
               "1",
+              "3.33",
               "0"
             ],
             "en": [
               "3",
-              "3.33",
               "1",
+              "3.33",
               "0"
             ]
           },
-          "answer": 2,
+          "answer": 1,
           "why": {
             "nl": "10 = 3*3 + 1, rest is 1.",
             "en": "10 = 3*3 + 1, remainder 1."
@@ -1300,18 +1300,18 @@
           "choices": {
             "nl": [
               "3.5",
-              "3",
+              "error",
               "4",
-              "error"
+              "3"
             ],
             "en": [
               "3.5",
-              "3",
+              "error",
               "4",
-              "error"
+              "3"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Truncates.",
             "en": "Truncates."
@@ -1341,18 +1341,18 @@
           "choices": {
             "nl": [
               "ok",
-              "compile error",
+              "0",
               "null",
-              "0"
+              "compile error"
             ],
             "en": [
               "ok",
-              "compile error",
+              "0",
               "null",
-              "0"
+              "compile error"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Needs init.",
             "en": "Needs init."
@@ -1434,18 +1434,18 @@
           "choices": {
             "nl": [
               "stopt",
-              "fall-through",
+              "SQL",
               "error always",
-              "SQL"
+              "fall-through"
             ],
             "en": [
               "stops",
-              "fall-through",
+              "SQL",
               "always error",
-              "SQL"
+              "fall-through"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Fall-through.",
             "en": "Fall-through."
@@ -1486,18 +1486,18 @@
           "choices": {
             "nl": [
               "except",
-              "catch",
+              "handle",
               "rescue",
-              "handle"
+              "catch"
             ],
             "en": [
               "except",
-              "catch",
+              "handle",
               "rescue",
-              "handle"
+              "catch"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "catch.",
             "en": "catch."
@@ -1512,18 +1512,18 @@
           "choices": {
             "nl": [
               "true",
-              "compile error",
+              "1",
               "false",
-              "1"
+              "compile error"
             ],
             "en": [
               "true",
-              "compile error",
+              "1",
               "false",
-              "1"
+              "compile error"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "No implicit.",
             "en": "No implicit."
@@ -1549,19 +1549,19 @@
           },
           "choices": {
             "nl": [
-              "alleen Ma",
               "Ma en Di",
+              "alleen Ma",
               "alleen Di",
               "compile error altijd"
             ],
             "en": [
-              "only Mon",
               "Mon and Tue",
+              "only Mon",
               "only Tue",
               "always a compile error"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Fall-through: je blijft doorlopen tot een break.",
             "en": "Fall-through: execution continues until a break."
@@ -1601,18 +1601,18 @@
           "choices": {
             "nl": [
               "3.5",
-              "3",
               "4",
+              "3",
               "error"
             ],
             "en": [
               "3.5",
-              "3",
               "4",
+              "3",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Truncates.",
             "en": "Truncates."
@@ -1642,18 +1642,18 @@
           "choices": {
             "nl": [
               "ok",
-              "compile error",
+              "0",
               "null",
-              "0"
+              "compile error"
             ],
             "en": [
               "ok",
-              "compile error",
+              "0",
               "null",
-              "0"
+              "compile error"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Needs init.",
             "en": "Needs init."
@@ -1669,18 +1669,18 @@
           "choices": {
             "nl": [
               "7",
-              "8",
               "6",
+              "8",
               "9"
             ],
             "en": [
               "7",
-              "8",
               "6",
+              "8",
               "9"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "8.",
             "en": "8."
@@ -1695,18 +1695,18 @@
           "choices": {
             "nl": [
               "ignore",
-              "case-sensitive default",
+              "SQL",
               "error",
-              "SQL"
+              "case-sensitive default"
             ],
             "en": [
               "ignore",
-              "case-sensitive default",
+              "SQL",
               "error",
-              "SQL"
+              "case-sensitive default"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Case sensitive.",
             "en": "Case sensitive."
@@ -1735,18 +1735,18 @@
           "choices": {
             "nl": [
               "stopt",
-              "fall-through",
+              "SQL",
               "error always",
-              "SQL"
+              "fall-through"
             ],
             "en": [
               "stops",
-              "fall-through",
+              "SQL",
               "always error",
-              "SQL"
+              "fall-through"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Fall-through.",
             "en": "Fall-through."
@@ -1761,18 +1761,18 @@
           "choices": {
             "nl": [
               "3",
-              "1",
+              "3.33",
               "0",
-              "3.33"
+              "1"
             ],
             "en": [
               "3",
-              "1",
+              "3.33",
               "0",
-              "3.33"
+              "1"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "1.",
             "en": "1."
@@ -1786,19 +1786,19 @@
           },
           "choices": {
             "nl": [
-              "except",
               "catch",
+              "except",
               "rescue",
               "handle"
             ],
             "en": [
-              "except",
               "catch",
+              "except",
               "rescue",
               "handle"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "catch.",
             "en": "catch."
@@ -1813,18 +1813,18 @@
           "choices": {
             "nl": [
               "true",
-              "compile error",
+              "1",
               "false",
-              "1"
+              "compile error"
             ],
             "en": [
               "true",
-              "compile error",
+              "1",
               "false",
-              "1"
+              "compile error"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "No implicit.",
             "en": "No implicit."
@@ -1851,18 +1851,18 @@
           "choices": {
             "nl": [
               "3",
-              "4",
               "10",
+              "4",
               "oneindig"
             ],
             "en": [
               "3",
-              "4",
               "10",
+              "4",
               "forever"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Waarden 0,3,6,9: vier keer.",
             "en": "Values 0,3,6,9: four times."
@@ -1943,18 +1943,18 @@
           "choices": {
             "nl": [
               "ok",
-              "compile error",
+              "0",
               "null",
-              "0"
+              "compile error"
             ],
             "en": [
               "ok",
-              "compile error",
+              "0",
               "null",
-              "0"
+              "compile error"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Needs init.",
             "en": "Needs init."
@@ -1970,18 +1970,18 @@
           "choices": {
             "nl": [
               "7",
-              "8",
               "6",
+              "8",
               "9"
             ],
             "en": [
               "7",
-              "8",
               "6",
+              "8",
               "9"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "8.",
             "en": "8."
@@ -1996,18 +1996,18 @@
           "choices": {
             "nl": [
               "ignore",
-              "case-sensitive default",
               "error",
+              "case-sensitive default",
               "SQL"
             ],
             "en": [
               "ignore",
-              "case-sensitive default",
               "error",
+              "case-sensitive default",
               "SQL"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Case sensitive.",
             "en": "Case sensitive."
@@ -2088,18 +2088,18 @@
           "choices": {
             "nl": [
               "except",
-              "catch",
+              "handle",
               "rescue",
-              "handle"
+              "catch"
             ],
             "en": [
               "except",
-              "catch",
+              "handle",
               "rescue",
-              "handle"
+              "catch"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "catch.",
             "en": "catch."
@@ -2176,19 +2176,19 @@
           },
           "choices": {
             "nl": [
-              "2",
               "3",
+              "2",
               "4",
               "0"
             ],
             "en": [
-              "2",
               "3",
+              "2",
               "4",
               "0"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Drie elementen.",
             "en": "Three elements."
@@ -2244,18 +2244,18 @@
           "choices": {
             "nl": [
               "ok",
-              "compile error",
               "null",
+              "compile error",
               "0"
             ],
             "en": [
               "ok",
-              "compile error",
               "null",
+              "compile error",
               "0"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Needs init.",
             "en": "Needs init."
@@ -2297,18 +2297,18 @@
           "choices": {
             "nl": [
               "ignore",
-              "case-sensitive default",
               "error",
+              "case-sensitive default",
               "SQL"
             ],
             "en": [
               "ignore",
-              "case-sensitive default",
               "error",
+              "case-sensitive default",
               "SQL"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Case sensitive.",
             "en": "Case sensitive."
@@ -2337,18 +2337,18 @@
           "choices": {
             "nl": [
               "stopt",
-              "fall-through",
               "error always",
+              "fall-through",
               "SQL"
             ],
             "en": [
               "stops",
-              "fall-through",
               "always error",
+              "fall-through",
               "SQL"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Fall-through.",
             "en": "Fall-through."
@@ -2363,18 +2363,18 @@
           "choices": {
             "nl": [
               "3",
-              "1",
+              "3.33",
               "0",
-              "3.33"
+              "1"
             ],
             "en": [
               "3",
-              "1",
+              "3.33",
               "0",
-              "3.33"
+              "1"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "1.",
             "en": "1."
@@ -2388,19 +2388,19 @@
           },
           "choices": {
             "nl": [
-              "except",
               "catch",
+              "except",
               "rescue",
               "handle"
             ],
             "en": [
-              "except",
               "catch",
+              "except",
               "rescue",
               "handle"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "catch.",
             "en": "catch."
@@ -2415,18 +2415,18 @@
           "choices": {
             "nl": [
               "true",
-              "compile error",
               "false",
+              "compile error",
               "1"
             ],
             "en": [
               "true",
-              "compile error",
               "false",
+              "compile error",
               "1"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "No implicit.",
             "en": "No implicit."
@@ -2453,18 +2453,18 @@
           "choices": {
             "nl": [
               "Geeft altijd 0 terug",
-              "Geeft niets terug",
+              "Alleen voor errors",
               "Alleen voor Main",
-              "Alleen voor errors"
+              "Geeft niets terug"
             ],
             "en": [
               "Always returns 0",
-              "Returns nothing",
+              "Only for errors",
               "Only for Main",
-              "Only for errors"
+              "Returns nothing"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "void = geen waarde teruggeven.",
             "en": "void = do not return a value."
@@ -2477,19 +2477,19 @@
           },
           "choices": {
             "nl": [
-              "23",
               "5",
+              "23",
               "2",
               "error"
             ],
             "en": [
-              "23",
               "5",
+              "23",
               "2",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "2+3=5.",
             "en": "2+3=5."
@@ -2545,18 +2545,18 @@
           "choices": {
             "nl": [
               "ok",
-              "compile error",
+              "0",
               "null",
-              "0"
+              "compile error"
             ],
             "en": [
               "ok",
-              "compile error",
+              "0",
               "null",
-              "0"
+              "compile error"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Needs init.",
             "en": "Needs init."
@@ -2597,19 +2597,19 @@
           },
           "choices": {
             "nl": [
-              "ignore",
               "case-sensitive default",
+              "ignore",
               "error",
               "SQL"
             ],
             "en": [
-              "ignore",
               "case-sensitive default",
+              "ignore",
               "error",
               "SQL"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Case sensitive.",
             "en": "Case sensitive."
@@ -2638,18 +2638,18 @@
           "choices": {
             "nl": [
               "stopt",
-              "fall-through",
               "error always",
+              "fall-through",
               "SQL"
             ],
             "en": [
               "stops",
-              "fall-through",
               "always error",
+              "fall-through",
               "SQL"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Fall-through.",
             "en": "Fall-through."
@@ -2689,19 +2689,19 @@
           },
           "choices": {
             "nl": [
-              "except",
               "catch",
+              "except",
               "rescue",
               "handle"
             ],
             "en": [
-              "except",
               "catch",
+              "except",
               "rescue",
               "handle"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "catch.",
             "en": "catch."
@@ -2716,18 +2716,18 @@
           "choices": {
             "nl": [
               "true",
-              "compile error",
+              "1",
               "false",
-              "1"
+              "compile error"
             ],
             "en": [
               "true",
-              "compile error",
+              "1",
               "false",
-              "1"
+              "compile error"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "No implicit.",
             "en": "No implicit."
@@ -2754,18 +2754,18 @@
           "choices": {
             "nl": [
               "Alleen bij errors",
-              "Alleen zonder errors",
               "Na try, met of zonder catch-hit",
+              "Alleen zonder errors",
               "Nooit in console apps"
             ],
             "en": [
               "Only on errors",
-              "Only without errors",
               "After try, with or without a catch hit",
+              "Only without errors",
               "Never in console apps"
             ]
           },
-          "answer": 2,
+          "answer": 1,
           "why": {
             "nl": "finally is voor opruimen, met of zonder exception.",
             "en": "finally is for cleanup, with or without an exception."
@@ -2779,18 +2779,18 @@
           "choices": {
             "nl": [
               "NullReferenceException",
-              "FormatException",
               "geen error",
+              "FormatException",
               "StackOverflowException"
             ],
             "en": [
               "NullReferenceException",
-              "FormatException",
               "no error",
+              "FormatException",
               "StackOverflowException"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "De tekst past niet in het getal-formaat.",
             "en": "The text does not match a number format."
@@ -2805,18 +2805,18 @@
           "choices": {
             "nl": [
               "3.5",
-              "3",
               "4",
+              "3",
               "error"
             ],
             "en": [
               "3.5",
-              "3",
               "4",
+              "3",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Truncates.",
             "en": "Truncates."
@@ -2845,19 +2845,19 @@
           },
           "choices": {
             "nl": [
-              "ok",
               "compile error",
+              "ok",
               "null",
               "0"
             ],
             "en": [
-              "ok",
               "compile error",
+              "ok",
               "null",
               "0"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Needs init.",
             "en": "Needs init."
@@ -2873,18 +2873,18 @@
           "choices": {
             "nl": [
               "7",
-              "8",
+              "9",
               "6",
-              "9"
+              "8"
             ],
             "en": [
               "7",
-              "8",
+              "9",
               "6",
-              "9"
+              "8"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "8.",
             "en": "8."
@@ -2899,18 +2899,18 @@
           "choices": {
             "nl": [
               "ignore",
-              "case-sensitive default",
+              "SQL",
               "error",
-              "SQL"
+              "case-sensitive default"
             ],
             "en": [
               "ignore",
-              "case-sensitive default",
+              "SQL",
               "error",
-              "SQL"
+              "case-sensitive default"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Case sensitive.",
             "en": "Case sensitive."
@@ -2939,18 +2939,18 @@
           "choices": {
             "nl": [
               "stopt",
-              "fall-through",
+              "SQL",
               "error always",
-              "SQL"
+              "fall-through"
             ],
             "en": [
               "stops",
-              "fall-through",
+              "SQL",
               "always error",
-              "SQL"
+              "fall-through"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Fall-through.",
             "en": "Fall-through."
@@ -2965,18 +2965,18 @@
           "choices": {
             "nl": [
               "3",
-              "1",
               "0",
+              "1",
               "3.33"
             ],
             "en": [
               "3",
-              "1",
               "0",
+              "1",
               "3.33"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "1.",
             "en": "1."
@@ -2990,19 +2990,19 @@
           },
           "choices": {
             "nl": [
-              "except",
               "catch",
+              "except",
               "rescue",
               "handle"
             ],
             "en": [
-              "except",
               "catch",
+              "except",
               "rescue",
               "handle"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "catch.",
             "en": "catch."
@@ -3017,18 +3017,18 @@
           "choices": {
             "nl": [
               "true",
-              "compile error",
+              "1",
               "false",
-              "1"
+              "compile error"
             ],
             "en": [
               "true",
-              "compile error",
+              "1",
               "false",
-              "1"
+              "compile error"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "No implicit.",
             "en": "No implicit."
@@ -3047,18 +3047,18 @@
       "choices": {
         "nl": [
           "4.5",
-          "4",
+          "error",
           "5",
-          "error"
+          "4"
         ],
         "en": [
           "4.5",
-          "4",
+          "error",
           "5",
-          "error"
+          "4"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "int/int truncates.",
         "en": "int/int truncates."
@@ -3072,19 +3072,19 @@
       },
       "choices": {
         "nl": [
-          "geen",
           "WriteLine voegt nieuwe regel toe",
+          "geen",
           "Write alleen voor ints",
           "WriteLine schrijft naar file"
         ],
         "en": [
-          "none",
           "WriteLine adds a new line",
+          "none",
           "Write only for ints",
           "WriteLine writes to a file"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "WriteLine eindigt met newline.",
         "en": "WriteLine ends with a newline."
@@ -3100,17 +3100,17 @@
         "nl": [
           "int 0",
           "geldig",
-          "compile error",
-          "null"
+          "null",
+          "compile error"
         ],
         "en": [
           "int 0",
           "valid",
-          "compile error",
-          "null"
+          "null",
+          "compile error"
         ]
       },
-      "answer": 2,
+      "answer": 3,
       "why": {
         "nl": "var heeft initializer nodig.",
         "en": "var needs an initializer."
@@ -3124,19 +3124,19 @@
       },
       "choices": {
         "nl": [
-          "ok",
           "vaak compile error zonder m",
+          "ok",
           "wordt int",
           "wordt string"
         ],
         "en": [
-          "ok",
           "often compile error without m",
+          "ok",
           "becomes int",
           "becomes string"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Gebruik 2.5m voor decimal.",
         "en": "Use 2.5m for decimal."
@@ -3150,19 +3150,19 @@
       },
       "choices": {
         "nl": [
-          "{1+2}",
           "3",
+          "{1+2}",
           "1+2",
           "error"
         ],
         "en": [
-          "{1+2}",
           "3",
+          "{1+2}",
           "1+2",
           "error"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Interpolatie evalueert de expressie.",
         "en": "Interpolation evaluates the expression."
@@ -3177,18 +3177,18 @@
       "choices": {
         "nl": [
           "True",
-          "False",
+          "null",
           "error",
-          "null"
+          "False"
         ],
         "en": [
           "True",
-          "False",
+          "null",
           "error",
-          "null"
+          "False"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Case-sensitive.",
         "en": "Case-sensitive."
@@ -3202,19 +3202,19 @@
       },
       "choices": {
         "nl": [
-          "2",
           "2.5",
+          "2",
           "0",
           "4"
         ],
         "en": [
-          "2",
           "2.5",
+          "2",
           "0",
           "4"
         ]
       },
-      "answer": 0,
+      "answer": 1,
       "why": {
         "nl": "Rest 2.",
         "en": "Remainder 2."
@@ -3229,18 +3229,18 @@
       "choices": {
         "nl": [
           "A",
-          "B",
+          "geen",
           "beide",
-          "geen"
+          "B"
         ],
         "en": [
           "A",
-          "B",
+          "neither",
           "both",
-          "neither"
+          "B"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "else-pad.",
         "en": "else path."
@@ -3254,19 +3254,19 @@
       },
       "choices": {
         "nl": [
-          "ja",
-          "nee",
           "alleen in loops",
+          "nee",
+          "ja",
           "alleen met ints"
         ],
         "en": [
-          "yes",
-          "no",
           "only in loops",
+          "no",
+          "yes",
           "only with ints"
         ]
       },
-      "answer": 0,
+      "answer": 2,
       "why": {
         "nl": "Short-circuit: rechts wordt niet geëvalueerd.",
         "en": "Right side is skipped."
@@ -3280,19 +3280,19 @@
       },
       "choices": {
         "nl": [
-          "ja",
+          "compile error altijd",
           "nee",
           "alleen default",
-          "compile error altijd"
+          "ja"
         ],
         "en": [
-          "yes",
+          "always compile error",
           "no",
           "only default",
-          "always compile error"
+          "yes"
         ]
       },
-      "answer": 0,
+      "answer": 3,
       "why": {
         "nl": "Ja, tot break/return.",
         "en": "Yes, until break/return."
@@ -3307,18 +3307,18 @@
       "choices": {
         "nl": [
           "2",
-          "3",
+          "1",
           "4",
-          "1"
+          "3"
         ],
         "en": [
           "2",
-          "3",
+          "1",
           "4",
-          "1"
+          "3"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "0,1,2.",
         "en": "0,1,2."
@@ -3332,19 +3332,19 @@
       },
       "choices": {
         "nl": [
-          "1",
-          "2",
           "0",
+          "2",
+          "1",
           "error"
         ],
         "en": [
-          "1",
-          "2",
           "0",
+          "2",
+          "1",
           "error"
         ]
       },
-      "answer": 0,
+      "answer": 2,
       "why": {
         "nl": "Postfix geeft oude waarde.",
         "en": "Postfix yields old value."
@@ -3359,18 +3359,18 @@
       "choices": {
         "nl": [
           "1",
-          "2",
           "0",
+          "2",
           "error"
         ],
         "en": [
           "1",
-          "2",
           "0",
+          "2",
           "error"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Prefix verhoogt eerst.",
         "en": "Prefix increments first."
@@ -3384,19 +3384,19 @@
       },
       "choices": {
         "nl": [
-          "5",
-          "6",
           "2",
+          "6",
+          "5",
           "error"
         ],
         "en": [
-          "5",
-          "6",
           "2",
+          "6",
+          "5",
           "error"
         ]
       },
-      "answer": 0,
+      "answer": 2,
       "why": {
         "nl": "Eerste element.",
         "en": "First element."
@@ -3411,18 +3411,18 @@
       "choices": {
         "nl": [
           "3",
-          "4",
+          "null",
           "0",
-          "null"
+          "4"
         ],
         "en": [
           "3",
-          "4",
+          "null",
           "0",
-          "null"
+          "4"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Lengte 4.",
         "en": "Length 4."
@@ -3438,17 +3438,17 @@
         "nl": [
           "2",
           "1",
-          "exception",
-          "0"
+          "0",
+          "exception"
         ],
         "en": [
           "2",
           "1",
-          "exception",
-          "0"
+          "0",
+          "exception"
         ]
       },
-      "answer": 2,
+      "answer": 3,
       "why": {
         "nl": "Index 2 bestaat niet.",
         "en": "Index 2 is out of range."
@@ -3463,18 +3463,18 @@
       "choices": {
         "nl": [
           "return 0",
-          "geen return waarde",
+          "static",
           "private",
-          "static"
+          "geen return waarde"
         ],
         "en": [
           "return 0",
-          "no return value",
+          "static",
           "private",
-          "static"
+          "no return value"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "void = niets terug.",
         "en": "void returns nothing."
@@ -3489,18 +3489,18 @@
       "choices": {
         "nl": [
           "nee",
-          "ja (elke route een waarde)",
+          "alleen recursive",
           "alleen bij errors",
-          "alleen recursive"
+          "ja (elke route een waarde)"
         ],
         "en": [
           "no",
-          "yes (every path a value)",
+          "only recursive",
           "only on errors",
-          "only recursive"
+          "yes (every path a value)"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Alle paden moeten een int teruggeven.",
         "en": "All paths must return an int."
@@ -3515,18 +3515,18 @@
       "choices": {
         "nl": [
           "alleen syntax errors",
-          "runtime exceptions",
           "compiler warnings",
+          "runtime exceptions",
           "CSS bugs"
         ],
         "en": [
           "only syntax errors",
-          "runtime exceptions",
           "compiler warnings",
+          "runtime exceptions",
           "CSS bugs"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Runtime exceptions.",
         "en": "Runtime exceptions."
@@ -3540,19 +3540,19 @@
       },
       "choices": {
         "nl": [
-          "ja",
-          "nee",
           "alleen in Main",
+          "nee",
+          "ja",
           "alleen met throw"
         ],
         "en": [
-          "yes",
-          "no",
           "only in Main",
+          "no",
+          "yes",
           "only with throw"
         ]
       },
-      "answer": 0,
+      "answer": 2,
       "why": {
         "nl": "Bijna altijd.",
         "en": "Almost always."
@@ -3567,18 +3567,18 @@
       "choices": {
         "nl": [
           "\"12\"",
-          "12",
+          "error",
           "1.2",
-          "error"
+          "12"
         ],
         "en": [
           "\"12\"",
-          "12",
+          "error",
           "1.2",
-          "error"
+          "12"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Parsed int.",
         "en": "Parsed int."
@@ -3593,18 +3593,18 @@
       "choices": {
         "nl": [
           "true",
-          "compile error in C#",
           "false",
+          "compile error in C#",
           "1"
         ],
         "en": [
           "true",
-          "compile error in C#",
           "false",
+          "compile error in C#",
           "1"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Geen impliciete int-naar-bool.",
         "en": "No implicit int-to-bool."
@@ -3619,18 +3619,18 @@
       "choices": {
         "nl": [
           "ok",
-          "compile error (gebruik 'A')",
+          "null",
           "wordt string",
-          "null"
+          "compile error (gebruik 'A')"
         ],
         "en": [
           "ok",
-          "compile error (use 'A')",
+          "null",
           "becomes string",
-          "null"
+          "compile error (use 'A')"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "char gebruikt enkele quotes.",
         "en": "char uses single quotes."
@@ -3645,18 +3645,18 @@
       "choices": {
         "nl": [
           "0",
-          "NullReferenceException",
+          "compile error altijd",
           "\"null\"",
-          "compile error altijd"
+          "NullReferenceException"
         ],
         "en": [
           "0",
-          "NullReferenceException",
+          "always compile error",
           "\"null\"",
-          "always compile error"
+          "NullReferenceException"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Null dereference.",
         "en": "Null dereference."
@@ -3697,18 +3697,18 @@
       "choices": {
         "nl": [
           "nodig index",
-          "loopt elementen",
+          "zelfde als switch",
           "werkt nooit op arrays",
-          "zelfde als switch"
+          "loopt elementen"
         ],
         "en": [
           "needs index",
-          "walks elements",
+          "same as switch",
           "never works on arrays",
-          "same as switch"
+          "walks elements"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Itereert over elementen.",
         "en": "Iterates elements."
@@ -3723,18 +3723,18 @@
       "choices": {
         "nl": [
           "verplicht",
-          "optioneel vangnet",
           "verboden",
+          "optioneel vangnet",
           "alleen voor strings"
         ],
         "en": [
           "required",
-          "optional catch-all",
           "forbidden",
+          "optional catch-all",
           "strings only"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Optioneel.",
         "en": "Optional."
@@ -3749,18 +3749,18 @@
       "choices": {
         "nl": [
           "3",
-          "3.5",
           "4",
+          "3.5",
           "error"
         ],
         "en": [
           "3",
-          "3.5",
           "4",
+          "3.5",
           "error"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Een kant is double.",
         "en": "One side is double."
@@ -3775,18 +3775,18 @@
       "choices": {
         "nl": [
           "snellere code",
-          "pauzeren om state te bekijken",
+          "arrays sorteren",
           "strings trimmen",
-          "arrays sorteren"
+          "pauzeren om state te bekijken"
         ],
         "en": [
           "faster code",
-          "pause to inspect state",
+          "sort arrays",
           "trim strings",
-          "sort arrays"
+          "pause to inspect state"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Debuggen.",
         "en": "Debugging."
@@ -3801,18 +3801,18 @@
       "choices": {
         "nl": [
           "gelekt van Microsoft",
-          "origineel oefenmateriaal",
           "betaald certificaat",
+          "origineel oefenmateriaal",
           "Haxe compiler errors"
         ],
         "en": [
           "leaked from Microsoft",
-          "original practice material",
           "a paid certificate",
+          "original practice material",
           "Haxe compiler errors"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Altijd origineel.",
         "en": "Always original."
@@ -3869,19 +3869,19 @@
       },
       "choices": {
         "nl": [
-          "ok",
           "compile error",
+          "ok",
           "null",
           "0"
         ],
         "en": [
-          "ok",
           "compile error",
+          "ok",
           "null",
           "0"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Needs init.",
         "en": "Needs init."
@@ -3898,18 +3898,18 @@
       "choices": {
         "nl": [
           "7",
-          "8",
           "6",
+          "8",
           "9"
         ],
         "en": [
           "7",
-          "8",
           "6",
+          "8",
           "9"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "8.",
         "en": "8."
@@ -3993,19 +3993,19 @@
       },
       "choices": {
         "nl": [
-          "3",
           "1",
+          "3",
           "0",
           "3.33"
         ],
         "en": [
-          "3",
           "1",
+          "3",
           "0",
           "3.33"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "1.",
         "en": "1."
@@ -4021,18 +4021,18 @@
       "choices": {
         "nl": [
           "except",
-          "catch",
           "rescue",
+          "catch",
           "handle"
         ],
         "en": [
           "except",
-          "catch",
           "rescue",
+          "catch",
           "handle"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "catch.",
         "en": "catch."
@@ -4048,18 +4048,18 @@
       "choices": {
         "nl": [
           "true",
-          "compile error",
+          "1",
           "false",
-          "1"
+          "compile error"
         ],
         "en": [
           "true",
-          "compile error",
+          "1",
           "false",
-          "1"
+          "compile error"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "No implicit.",
         "en": "No implicit."
@@ -4074,19 +4074,19 @@
       },
       "choices": {
         "nl": [
-          "tweede",
           "eerste",
+          "tweede",
           "error",
           "length"
         ],
         "en": [
-          "second",
           "first",
+          "second",
           "error",
           "length"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "First.",
         "en": "First."
@@ -4102,18 +4102,18 @@
       "choices": {
         "nl": [
           "alleen errors",
-          "bijna altijd",
+          "SQL",
           "nooit",
-          "SQL"
+          "bijna altijd"
         ],
         "en": [
           "errors only",
-          "almost always",
+          "SQL",
           "never",
-          "SQL"
+          "almost always"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Almost always.",
         "en": "Almost always."
@@ -4156,18 +4156,18 @@
       "choices": {
         "nl": [
           "3.5",
-          "3",
+          "error",
           "4",
-          "error"
+          "3"
         ],
         "en": [
           "3.5",
-          "3",
+          "error",
           "4",
-          "error"
+          "3"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Truncates.",
         "en": "Truncates."
@@ -4226,19 +4226,19 @@
       },
       "choices": {
         "nl": [
-          "7",
           "8",
+          "7",
           "6",
           "9"
         ],
         "en": [
-          "7",
           "8",
+          "7",
           "6",
           "9"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "8.",
         "en": "8."

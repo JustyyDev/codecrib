@@ -30,18 +30,18 @@
           "choices": {
             "nl": [
               "print",
-              "fmt.Println",
               "console.log",
+              "fmt.Println",
               "trace"
             ],
             "en": [
               "print",
-              "fmt.Println",
               "console.log",
+              "fmt.Println",
               "trace"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "fmt.",
             "en": "fmt."
@@ -54,19 +54,19 @@
           },
           "choices": {
             "nl": [
-              "CSS",
               "executable entry package",
+              "CSS",
               "SQL",
               "Lua"
             ],
             "en": [
-              "CSS",
               "executable entry package",
+              "CSS",
               "SQL",
               "Lua"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "main.",
             "en": "main."
@@ -81,18 +81,18 @@
           "choices": {
             "nl": [
               "echo",
-              "fmt.Println",
               "SELECT",
+              "fmt.Println",
               "CSS"
             ],
             "en": [
               "echo",
-              "fmt.Println",
               "SELECT",
+              "fmt.Println",
               "CSS"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Print API.",
             "en": "Print API."
@@ -120,19 +120,19 @@
           },
           "choices": {
             "nl": [
-              "verboden",
               "mag",
+              "verboden",
               "alleen loops",
               "SQL"
             ],
             "en": [
-              "forbidden",
               "allowed",
+              "forbidden",
               "loops only",
               "SQL"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Allowed.",
             "en": "Allowed."
@@ -198,19 +198,19 @@
           },
           "choices": {
             "nl": [
-              "1",
               "0",
+              "1",
               "-1",
               "2"
             ],
             "en": [
-              "1",
               "0",
+              "1",
               "-1",
               "2"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Usually 0.",
             "en": "Usually 0."
@@ -225,18 +225,18 @@
           "choices": {
             "nl": [
               "nee",
-              "ja",
               "alleen CSS",
+              "ja",
               "alleen SQL"
             ],
             "en": [
               "no",
-              "yes",
               "CSS only",
+              "yes",
               "SQL only"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Yes.",
             "en": "Yes."
@@ -251,18 +251,18 @@
           "choices": {
             "nl": [
               "negeren",
-              "try/catch of Result/err",
               "CSS",
+              "try/catch of Result/err",
               "GPU"
             ],
             "en": [
               "ignore",
-              "try/catch or Result/err",
               "CSS",
+              "try/catch or Result/err",
               "GPU"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Handle.",
             "en": "Handle."
@@ -276,19 +276,19 @@
           },
           "choices": {
             "nl": [
-              "speed",
               "mensen",
+              "speed",
               "compile must",
               "cert"
             ],
             "en": [
-              "speed",
               "humans",
+              "speed",
               "compile must",
               "cert"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Docs.",
             "en": "Docs."
@@ -303,18 +303,18 @@
           "choices": {
             "nl": [
               "CSS",
-              "waarde",
               "DNS",
+              "waarde",
               "GPU only"
             ],
             "en": [
               "CSS",
-              "a value",
               "DNS",
+              "a value",
               "GPU only"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Value.",
             "en": "Value."
@@ -384,18 +384,18 @@
           "choices": {
             "nl": [
               "boolean",
-              "bool",
+              "bit",
               "Bool",
-              "bit"
+              "bool"
             ],
             "en": [
               "boolean",
-              "bool",
+              "bit",
               "Bool",
-              "bit"
+              "bool"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "bool.",
             "en": "bool."
@@ -409,19 +409,19 @@
           },
           "choices": {
             "nl": [
-              "echo",
               "fmt.Println",
+              "echo",
               "SELECT",
               "CSS"
             ],
             "en": [
-              "echo",
               "fmt.Println",
+              "echo",
               "SELECT",
               "CSS"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Print API.",
             "en": "Print API."
@@ -475,19 +475,19 @@
           },
           "choices": {
             "nl": [
-              "assign",
               "vergelijking",
+              "assign",
               "import",
               "join"
             ],
             "en": [
-              "assign",
               "comparison",
+              "assign",
               "import",
               "join"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Compare.",
             "en": "Compare."
@@ -502,18 +502,18 @@
           "choices": {
             "nl": [
               "efficiënt",
-              "kan hangen",
               "SQL",
+              "kan hangen",
               "CSS"
             ],
             "en": [
               "efficient",
-              "can hang",
               "SQL",
+              "can hang",
               "CSS"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Hang risk.",
             "en": "Hang risk."
@@ -528,18 +528,18 @@
           "choices": {
             "nl": [
               "1",
-              "0",
+              "2",
               "-1",
-              "2"
+              "0"
             ],
             "en": [
               "1",
-              "0",
+              "2",
               "-1",
-              "2"
+              "0"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Usually 0.",
             "en": "Usually 0."
@@ -553,19 +553,19 @@
           },
           "choices": {
             "nl": [
-              "nee",
               "ja",
+              "nee",
               "alleen CSS",
               "alleen SQL"
             ],
             "en": [
-              "no",
               "yes",
+              "no",
               "CSS only",
               "SQL only"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Yes.",
             "en": "Yes."
@@ -580,18 +580,18 @@
           "choices": {
             "nl": [
               "negeren",
-              "try/catch of Result/err",
+              "GPU",
               "CSS",
-              "GPU"
+              "try/catch of Result/err"
             ],
             "en": [
               "ignore",
-              "try/catch or Result/err",
+              "GPU",
               "CSS",
-              "GPU"
+              "try/catch or Result/err"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Handle.",
             "en": "Handle."
@@ -605,19 +605,19 @@
           },
           "choices": {
             "nl": [
-              "speed",
               "mensen",
+              "speed",
               "compile must",
               "cert"
             ],
             "en": [
-              "speed",
               "humans",
+              "speed",
               "compile must",
               "cert"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Docs.",
             "en": "Docs."
@@ -669,19 +669,19 @@
           },
           "choices": {
             "nl": [
-              "B",
+              "error",
               "C",
               "beide",
-              "error"
+              "B"
             ],
             "en": [
-              "B",
+              "error",
               "C",
               "both",
-              "error"
+              "B"
             ]
           },
-          "answer": 0,
+          "answer": 3,
           "why": {
             "nl": "B.",
             "en": "B."
@@ -695,18 +695,18 @@
           "choices": {
             "nl": [
               "wel standaard",
-              "meestal if-expressie niet; gebruik if",
+              "CSS",
               "SQL",
-              "CSS"
+              "meestal if-expressie niet; gebruik if"
             ],
             "en": [
               "yes standard",
-              "usually no; use if",
+              "CSS",
               "SQL",
-              "CSS"
+              "usually no; use if"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Use if.",
             "en": "Use if."
@@ -721,18 +721,18 @@
           "choices": {
             "nl": [
               "echo",
-              "fmt.Println",
+              "CSS",
               "SELECT",
-              "CSS"
+              "fmt.Println"
             ],
             "en": [
               "echo",
-              "fmt.Println",
+              "CSS",
               "SELECT",
-              "CSS"
+              "fmt.Println"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Print API.",
             "en": "Print API."
@@ -760,19 +760,19 @@
           },
           "choices": {
             "nl": [
-              "verboden",
               "mag",
+              "verboden",
               "alleen loops",
               "SQL"
             ],
             "en": [
-              "forbidden",
               "allowed",
+              "forbidden",
               "loops only",
               "SQL"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Allowed.",
             "en": "Allowed."
@@ -787,18 +787,18 @@
           "choices": {
             "nl": [
               "assign",
-              "vergelijking",
               "import",
+              "vergelijking",
               "join"
             ],
             "en": [
               "assign",
-              "comparison",
               "import",
+              "comparison",
               "join"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Compare.",
             "en": "Compare."
@@ -812,19 +812,19 @@
           },
           "choices": {
             "nl": [
-              "efficiënt",
               "kan hangen",
+              "efficiënt",
               "SQL",
               "CSS"
             ],
             "en": [
-              "efficient",
               "can hang",
+              "efficient",
               "SQL",
               "CSS"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Hang risk.",
             "en": "Hang risk."
@@ -864,19 +864,19 @@
           },
           "choices": {
             "nl": [
-              "nee",
               "ja",
+              "nee",
               "alleen CSS",
               "alleen SQL"
             ],
             "en": [
-              "no",
               "yes",
+              "no",
               "CSS only",
               "SQL only"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Yes.",
             "en": "Yes."
@@ -891,18 +891,18 @@
           "choices": {
             "nl": [
               "negeren",
-              "try/catch of Result/err",
+              "GPU",
               "CSS",
-              "GPU"
+              "try/catch of Result/err"
             ],
             "en": [
               "ignore",
-              "try/catch or Result/err",
+              "GPU",
               "CSS",
-              "GPU"
+              "try/catch or Result/err"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Handle.",
             "en": "Handle."
@@ -917,18 +917,18 @@
           "choices": {
             "nl": [
               "speed",
-              "mensen",
               "compile must",
+              "mensen",
               "cert"
             ],
             "en": [
               "speed",
-              "humans",
               "compile must",
+              "humans",
               "cert"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Docs.",
             "en": "Docs."
@@ -943,18 +943,18 @@
           "choices": {
             "nl": [
               "CSS",
-              "waarde",
+              "GPU only",
               "DNS",
-              "GPU only"
+              "waarde"
             ],
             "en": [
               "CSS",
-              "a value",
+              "GPU only",
               "DNS",
-              "GPU only"
+              "a value"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Value.",
             "en": "Value."
@@ -1006,18 +1006,18 @@
           "choices": {
             "nl": [
               "ja",
-              "nee, for",
               "elif",
+              "nee, for",
               "loop"
             ],
             "en": [
               "yes",
-              "no, for",
               "elif",
+              "no, for",
               "loop"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Only for.",
             "en": "Only for."
@@ -1032,18 +1032,18 @@
           "choices": {
             "nl": [
               "echo",
-              "fmt.Println",
               "SELECT",
+              "fmt.Println",
               "CSS"
             ],
             "en": [
               "echo",
-              "fmt.Println",
               "SELECT",
+              "fmt.Println",
               "CSS"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Print API.",
             "en": "Print API."
@@ -1071,19 +1071,19 @@
           },
           "choices": {
             "nl": [
-              "verboden",
               "mag",
+              "verboden",
               "alleen loops",
               "SQL"
             ],
             "en": [
-              "forbidden",
               "allowed",
+              "forbidden",
               "loops only",
               "SQL"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Allowed.",
             "en": "Allowed."
@@ -1098,18 +1098,18 @@
           "choices": {
             "nl": [
               "assign",
-              "vergelijking",
+              "join",
               "import",
-              "join"
+              "vergelijking"
             ],
             "en": [
               "assign",
-              "comparison",
+              "join",
               "import",
-              "join"
+              "comparison"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Compare.",
             "en": "Compare."
@@ -1150,18 +1150,18 @@
           "choices": {
             "nl": [
               "1",
-              "0",
               "-1",
+              "0",
               "2"
             ],
             "en": [
               "1",
-              "0",
               "-1",
+              "0",
               "2"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Usually 0.",
             "en": "Usually 0."
@@ -1202,18 +1202,18 @@
           "choices": {
             "nl": [
               "negeren",
-              "try/catch of Result/err",
+              "GPU",
               "CSS",
-              "GPU"
+              "try/catch of Result/err"
             ],
             "en": [
               "ignore",
-              "try/catch or Result/err",
+              "GPU",
               "CSS",
-              "GPU"
+              "try/catch or Result/err"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Handle.",
             "en": "Handle."
@@ -1228,18 +1228,18 @@
           "choices": {
             "nl": [
               "speed",
-              "mensen",
               "compile must",
+              "mensen",
               "cert"
             ],
             "en": [
               "speed",
-              "humans",
               "compile must",
+              "humans",
               "cert"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Docs.",
             "en": "Docs."
@@ -1254,18 +1254,18 @@
           "choices": {
             "nl": [
               "CSS",
-              "waarde",
+              "GPU only",
               "DNS",
-              "GPU only"
+              "waarde"
             ],
             "en": [
               "CSS",
-              "a value",
+              "GPU only",
               "DNS",
-              "GPU only"
+              "a value"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Value.",
             "en": "Value."
@@ -1292,18 +1292,18 @@
           "choices": {
             "nl": [
               "push",
-              "append",
               "add",
+              "append",
               "insert"
             ],
             "en": [
               "push",
-              "append",
               "add",
+              "append",
               "insert"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "append.",
             "en": "append."
@@ -1316,19 +1316,19 @@
           },
           "choices": {
             "nl": [
-              "100",
-              "nil",
               "0 always error",
+              "nil",
+              "100",
               "'hp'"
             ],
             "en": [
-              "100",
-              "nil",
               "0 always error",
+              "nil",
+              "100",
               "'hp'"
             ]
           },
-          "answer": 0,
+          "answer": 2,
           "why": {
             "nl": "100.",
             "en": "100."
@@ -1343,18 +1343,18 @@
           "choices": {
             "nl": [
               "echo",
-              "fmt.Println",
               "SELECT",
+              "fmt.Println",
               "CSS"
             ],
             "en": [
               "echo",
-              "fmt.Println",
               "SELECT",
+              "fmt.Println",
               "CSS"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Print API.",
             "en": "Print API."
@@ -1383,18 +1383,18 @@
           "choices": {
             "nl": [
               "verboden",
-              "mag",
               "alleen loops",
+              "mag",
               "SQL"
             ],
             "en": [
               "forbidden",
-              "allowed",
               "loops only",
+              "allowed",
               "SQL"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Allowed.",
             "en": "Allowed."
@@ -1409,18 +1409,18 @@
           "choices": {
             "nl": [
               "assign",
-              "vergelijking",
               "import",
+              "vergelijking",
               "join"
             ],
             "en": [
               "assign",
-              "comparison",
               "import",
+              "comparison",
               "join"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Compare.",
             "en": "Compare."
@@ -1461,18 +1461,18 @@
           "choices": {
             "nl": [
               "1",
-              "0",
               "-1",
+              "0",
               "2"
             ],
             "en": [
               "1",
-              "0",
               "-1",
+              "0",
               "2"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Usually 0.",
             "en": "Usually 0."
@@ -1513,18 +1513,18 @@
           "choices": {
             "nl": [
               "negeren",
-              "try/catch of Result/err",
+              "GPU",
               "CSS",
-              "GPU"
+              "try/catch of Result/err"
             ],
             "en": [
               "ignore",
-              "try/catch or Result/err",
+              "GPU",
               "CSS",
-              "GPU"
+              "try/catch or Result/err"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Handle.",
             "en": "Handle."
@@ -1538,19 +1538,19 @@
           },
           "choices": {
             "nl": [
-              "speed",
               "mensen",
+              "speed",
               "compile must",
               "cert"
             ],
             "en": [
-              "speed",
               "humans",
+              "speed",
               "compile must",
               "cert"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Docs.",
             "en": "Docs."
@@ -1627,19 +1627,19 @@
           },
           "choices": {
             "nl": [
-              "5",
+              "nil",
               "23",
               "error",
-              "nil"
+              "5"
             ],
             "en": [
-              "5",
+              "nil",
               "23",
               "error",
-              "nil"
+              "5"
             ]
           },
-          "answer": 0,
+          "answer": 3,
           "why": {
             "nl": "5.",
             "en": "5."
@@ -1654,18 +1654,18 @@
           "choices": {
             "nl": [
               "echo",
-              "fmt.Println",
+              "CSS",
               "SELECT",
-              "CSS"
+              "fmt.Println"
             ],
             "en": [
               "echo",
-              "fmt.Println",
+              "CSS",
               "SELECT",
-              "CSS"
+              "fmt.Println"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Print API.",
             "en": "Print API."
@@ -1693,19 +1693,19 @@
           },
           "choices": {
             "nl": [
-              "verboden",
               "mag",
+              "verboden",
               "alleen loops",
               "SQL"
             ],
             "en": [
-              "forbidden",
               "allowed",
+              "forbidden",
               "loops only",
               "SQL"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Allowed.",
             "en": "Allowed."
@@ -1720,18 +1720,18 @@
           "choices": {
             "nl": [
               "assign",
-              "vergelijking",
+              "join",
               "import",
-              "join"
+              "vergelijking"
             ],
             "en": [
               "assign",
-              "comparison",
+              "join",
               "import",
-              "join"
+              "comparison"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Compare.",
             "en": "Compare."
@@ -1771,19 +1771,19 @@
           },
           "choices": {
             "nl": [
-              "1",
               "0",
+              "1",
               "-1",
               "2"
             ],
             "en": [
-              "1",
               "0",
+              "1",
               "-1",
               "2"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Usually 0.",
             "en": "Usually 0."
@@ -1798,18 +1798,18 @@
           "choices": {
             "nl": [
               "nee",
-              "ja",
+              "alleen SQL",
               "alleen CSS",
-              "alleen SQL"
+              "ja"
             ],
             "en": [
               "no",
-              "yes",
+              "SQL only",
               "CSS only",
-              "SQL only"
+              "yes"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Yes.",
             "en": "Yes."
@@ -1823,19 +1823,19 @@
           },
           "choices": {
             "nl": [
-              "negeren",
               "try/catch of Result/err",
+              "negeren",
               "CSS",
               "GPU"
             ],
             "en": [
-              "ignore",
               "try/catch or Result/err",
+              "ignore",
               "CSS",
               "GPU"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Handle.",
             "en": "Handle."
@@ -1850,18 +1850,18 @@
           "choices": {
             "nl": [
               "speed",
-              "mensen",
               "compile must",
+              "mensen",
               "cert"
             ],
             "en": [
               "speed",
-              "humans",
               "compile must",
+              "humans",
               "cert"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Docs.",
             "en": "Docs."
@@ -1914,18 +1914,18 @@
           "choices": {
             "nl": [
               "CSS",
-              "standaard foutcheck",
+              "Lua pcall only",
               "exceptions verplicht",
-              "Lua pcall only"
+              "standaard foutcheck"
             ],
             "en": [
               "CSS",
-              "standard error check",
+              "Lua pcall only",
               "exceptions required",
-              "Lua pcall only"
+              "standard error check"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Idiom.",
             "en": "Idiom."
@@ -1964,19 +1964,19 @@
           },
           "choices": {
             "nl": [
-              "echo",
               "fmt.Println",
+              "echo",
               "SELECT",
               "CSS"
             ],
             "en": [
-              "echo",
               "fmt.Println",
+              "echo",
               "SELECT",
               "CSS"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Print API.",
             "en": "Print API."
@@ -2057,18 +2057,18 @@
           "choices": {
             "nl": [
               "efficiënt",
-              "kan hangen",
               "SQL",
+              "kan hangen",
               "CSS"
             ],
             "en": [
               "efficient",
-              "can hang",
               "SQL",
+              "can hang",
               "CSS"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Hang risk.",
             "en": "Hang risk."
@@ -2082,19 +2082,19 @@
           },
           "choices": {
             "nl": [
-              "1",
               "0",
+              "1",
               "-1",
               "2"
             ],
             "en": [
-              "1",
               "0",
+              "1",
               "-1",
               "2"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Usually 0.",
             "en": "Usually 0."
@@ -2109,18 +2109,18 @@
           "choices": {
             "nl": [
               "nee",
-              "ja",
               "alleen CSS",
+              "ja",
               "alleen SQL"
             ],
             "en": [
               "no",
-              "yes",
               "CSS only",
+              "yes",
               "SQL only"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Yes.",
             "en": "Yes."
@@ -2134,19 +2134,19 @@
           },
           "choices": {
             "nl": [
-              "negeren",
               "try/catch of Result/err",
+              "negeren",
               "CSS",
               "GPU"
             ],
             "en": [
-              "ignore",
               "try/catch or Result/err",
+              "ignore",
               "CSS",
               "GPU"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Handle.",
             "en": "Handle."
@@ -2187,18 +2187,18 @@
           "choices": {
             "nl": [
               "CSS",
-              "waarde",
               "DNS",
+              "waarde",
               "GPU only"
             ],
             "en": [
               "CSS",
-              "a value",
               "DNS",
+              "a value",
               "GPU only"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Value.",
             "en": "Value."
@@ -2249,19 +2249,19 @@
           },
           "choices": {
             "nl": [
-              "nee",
               "ja, exported identifiers",
+              "nee",
               "SQL",
               "CSS"
             ],
             "en": [
-              "no",
               "yes, exported identifiers",
+              "no",
               "SQL",
               "CSS"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Capital.",
             "en": "Capital."
@@ -2276,18 +2276,18 @@
           "choices": {
             "nl": [
               "echo",
-              "fmt.Println",
               "SELECT",
+              "fmt.Println",
               "CSS"
             ],
             "en": [
               "echo",
-              "fmt.Println",
               "SELECT",
+              "fmt.Println",
               "CSS"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Print API.",
             "en": "Print API."
@@ -2316,18 +2316,18 @@
           "choices": {
             "nl": [
               "verboden",
-              "mag",
               "alleen loops",
+              "mag",
               "SQL"
             ],
             "en": [
               "forbidden",
-              "allowed",
               "loops only",
+              "allowed",
               "SQL"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Allowed.",
             "en": "Allowed."
@@ -2342,18 +2342,18 @@
           "choices": {
             "nl": [
               "assign",
-              "vergelijking",
               "import",
+              "vergelijking",
               "join"
             ],
             "en": [
               "assign",
-              "comparison",
               "import",
+              "comparison",
               "join"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Compare.",
             "en": "Compare."
@@ -2394,18 +2394,18 @@
           "choices": {
             "nl": [
               "1",
-              "0",
+              "2",
               "-1",
-              "2"
+              "0"
             ],
             "en": [
               "1",
-              "0",
+              "2",
               "-1",
-              "2"
+              "0"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Usually 0.",
             "en": "Usually 0."
@@ -2420,18 +2420,18 @@
           "choices": {
             "nl": [
               "nee",
-              "ja",
               "alleen CSS",
+              "ja",
               "alleen SQL"
             ],
             "en": [
               "no",
-              "yes",
               "CSS only",
+              "yes",
               "SQL only"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Yes.",
             "en": "Yes."
@@ -2445,19 +2445,19 @@
           },
           "choices": {
             "nl": [
-              "negeren",
               "try/catch of Result/err",
+              "negeren",
               "CSS",
               "GPU"
             ],
             "en": [
-              "ignore",
               "try/catch or Result/err",
+              "ignore",
               "CSS",
               "GPU"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Handle.",
             "en": "Handle."
@@ -2472,18 +2472,18 @@
           "choices": {
             "nl": [
               "speed",
-              "mensen",
               "compile must",
+              "mensen",
               "cert"
             ],
             "en": [
               "speed",
-              "humans",
               "compile must",
+              "humans",
               "cert"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Docs.",
             "en": "Docs."
@@ -2497,19 +2497,19 @@
           },
           "choices": {
             "nl": [
-              "CSS",
               "waarde",
+              "CSS",
               "DNS",
               "GPU only"
             ],
             "en": [
-              "CSS",
               "a value",
+              "CSS",
               "DNS",
               "GPU only"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Value.",
             "en": "Value."
@@ -2536,18 +2536,18 @@
           "choices": {
             "nl": [
               "meteen",
-              "einde functie",
+              "CSS",
               "SQL",
-              "CSS"
+              "einde functie"
             ],
             "en": [
               "immediately",
-              "end of function",
+              "CSS",
               "SQL",
-              "CSS"
+              "end of function"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "End.",
             "en": "End."
@@ -2561,18 +2561,18 @@
           "choices": {
             "nl": [
               "error",
-              "LIFO volgorde",
               "SQL",
+              "LIFO volgorde",
               "CSS"
             ],
             "en": [
               "error",
-              "LIFO order",
               "SQL",
+              "LIFO order",
               "CSS"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "LIFO.",
             "en": "LIFO."
@@ -2586,19 +2586,19 @@
           },
           "choices": {
             "nl": [
-              "echo",
               "fmt.Println",
+              "echo",
               "SELECT",
               "CSS"
             ],
             "en": [
-              "echo",
               "fmt.Println",
+              "echo",
               "SELECT",
               "CSS"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Print API.",
             "en": "Print API."
@@ -2627,18 +2627,18 @@
           "choices": {
             "nl": [
               "verboden",
-              "mag",
+              "SQL",
               "alleen loops",
-              "SQL"
+              "mag"
             ],
             "en": [
               "forbidden",
-              "allowed",
+              "SQL",
               "loops only",
-              "SQL"
+              "allowed"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Allowed.",
             "en": "Allowed."
@@ -2653,18 +2653,18 @@
           "choices": {
             "nl": [
               "assign",
-              "vergelijking",
+              "join",
               "import",
-              "join"
+              "vergelijking"
             ],
             "en": [
               "assign",
-              "comparison",
+              "join",
               "import",
-              "join"
+              "comparison"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Compare.",
             "en": "Compare."
@@ -2679,18 +2679,18 @@
           "choices": {
             "nl": [
               "efficiënt",
-              "kan hangen",
+              "CSS",
               "SQL",
-              "CSS"
+              "kan hangen"
             ],
             "en": [
               "efficient",
-              "can hang",
+              "CSS",
               "SQL",
-              "CSS"
+              "can hang"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Hang risk.",
             "en": "Hang risk."
@@ -2705,18 +2705,18 @@
           "choices": {
             "nl": [
               "1",
-              "0",
+              "2",
               "-1",
-              "2"
+              "0"
             ],
             "en": [
               "1",
-              "0",
+              "2",
               "-1",
-              "2"
+              "0"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Usually 0.",
             "en": "Usually 0."
@@ -2731,18 +2731,18 @@
           "choices": {
             "nl": [
               "nee",
-              "ja",
+              "alleen SQL",
               "alleen CSS",
-              "alleen SQL"
+              "ja"
             ],
             "en": [
               "no",
-              "yes",
+              "SQL only",
               "CSS only",
-              "SQL only"
+              "yes"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Yes.",
             "en": "Yes."
@@ -2756,19 +2756,19 @@
           },
           "choices": {
             "nl": [
-              "negeren",
               "try/catch of Result/err",
+              "negeren",
               "CSS",
               "GPU"
             ],
             "en": [
-              "ignore",
               "try/catch or Result/err",
+              "ignore",
               "CSS",
               "GPU"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Handle.",
             "en": "Handle."
@@ -2783,18 +2783,18 @@
           "choices": {
             "nl": [
               "speed",
-              "mensen",
               "compile must",
+              "mensen",
               "cert"
             ],
             "en": [
               "speed",
-              "humans",
               "compile must",
+              "humans",
               "cert"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Docs.",
             "en": "Docs."
@@ -2808,19 +2808,19 @@
           },
           "choices": {
             "nl": [
-              "CSS",
               "waarde",
+              "CSS",
               "DNS",
               "GPU only"
             ],
             "en": [
-              "CSS",
               "a value",
+              "CSS",
               "DNS",
               "GPU only"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Value.",
             "en": "Value."
@@ -2838,19 +2838,19 @@
       },
       "choices": {
         "nl": [
-          "OS process always",
           "lichte concurrentie",
+          "OS process always",
           "SQL",
           "CSS"
         ],
         "en": [
-          "always OS process",
           "lightweight concurrency",
+          "always OS process",
           "SQL",
           "CSS"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "go.",
         "en": "go."
@@ -2865,18 +2865,18 @@
       "choices": {
         "nl": [
           "TV",
-          "communicatie tussen goroutines",
           "pip",
+          "communicatie tussen goroutines",
           "Lua"
         ],
         "en": [
           "TV",
-          "talk between goroutines",
           "pip",
+          "talk between goroutines",
           "Lua"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "chan.",
         "en": "chan."
@@ -2890,19 +2890,19 @@
       },
       "choices": {
         "nl": [
-          "CSS",
           "uitstellen tot functie-einde",
+          "CSS",
           "SQL",
           "git"
         ],
         "en": [
-          "CSS",
           "delay until func end",
+          "CSS",
           "SQL",
           "git"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "defer.",
         "en": "defer."
@@ -2917,18 +2917,18 @@
       "choices": {
         "nl": [
           "Roblox",
-          "dependency modules",
+          "Godot",
           "SQL",
-          "Godot"
+          "dependency modules"
         ],
         "en": [
           "Roblox",
-          "dependency modules",
+          "Godot",
           "SQL",
-          "Godot"
+          "dependency modules"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "modules.",
         "en": "modules."
@@ -2943,18 +2943,18 @@
       "choices": {
         "nl": [
           "crash always",
-          "lengte 0 mogelijk",
           "SQL",
+          "lengte 0 mogelijk",
           "CSS"
         ],
         "en": [
           "always crash",
-          "len 0 possible",
           "SQL",
+          "len 0 possible",
           "CSS"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "OK-ish.",
         "en": "OK-ish."
@@ -2969,18 +2969,18 @@
       "choices": {
         "nl": [
           "SQL",
-          "itereer slice/map",
+          "C",
           "CSS only",
-          "C"
+          "itereer slice/map"
         ],
         "en": [
           "SQL",
-          "iterate slice/map",
+          "C",
           "CSS only",
-          "C"
+          "iterate slice/map"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "range.",
         "en": "range."
@@ -2995,18 +2995,18 @@
       "choices": {
         "nl": [
           "class Java verplicht",
-          "velden groeperen",
           "CSS",
+          "velden groeperen",
           "npm"
         ],
         "en": [
           "Java class required",
-          "group fields",
           "CSS",
+          "group fields",
           "npm"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "struct.",
         "en": "struct."
@@ -3021,18 +3021,18 @@
       "choices": {
         "nl": [
           "modulo",
-          "pointer type",
+          "Lua",
           "SQL",
-          "Lua"
+          "pointer type"
         ],
         "en": [
           "modulo",
-          "pointer type",
+          "Lua",
           "SQL",
-          "Lua"
+          "pointer type"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Pointer.",
         "en": "Pointer."
@@ -3072,19 +3072,19 @@
       },
       "choices": {
         "nl": [
-          "C malloc only",
           "slices/maps/chans maken",
+          "C malloc only",
           "pip",
           "Lua"
         ],
         "en": [
-          "C malloc only",
           "make slices/maps/chans",
+          "C malloc only",
           "pip",
           "Lua"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "make.",
         "en": "make."
@@ -3099,18 +3099,18 @@
       "choices": {
         "nl": [
           "print only",
-          "error maken",
+          "CSS",
           "SQL",
-          "CSS"
+          "error maken"
         ],
         "en": [
           "print only",
-          "build error",
+          "CSS",
           "SQL",
-          "CSS"
+          "build error"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "error.",
         "en": "error."
@@ -3125,18 +3125,18 @@
       "choices": {
         "nl": [
           "CSS beautify only",
-          "standaard formatter",
+          "Rustfmt only",
           "SQL",
-          "Rustfmt only"
+          "standaard formatter"
         ],
         "en": [
           "CSS beautify only",
-          "standard formatter",
+          "Rustfmt only",
           "SQL",
-          "Rustfmt only"
+          "standard formatter"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "fmt.",
         "en": "fmt."
@@ -3150,19 +3150,19 @@
       },
       "choices": {
         "nl": [
-          "main alias",
           "package init hook",
+          "main alias",
           "SQL",
           "CSS"
         ],
         "en": [
-          "main alias",
           "package init hook",
+          "main alias",
           "SQL",
           "CSS"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "init.",
         "en": "init."
@@ -3176,19 +3176,19 @@
       },
       "choices": {
         "nl": [
-          "ja always",
           "meestal nee",
+          "ja always",
           "SQL",
           "CSS"
         ],
         "en": [
-          "yes always",
           "usually no",
+          "yes always",
           "SQL",
           "CSS"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Inside funcs.",
         "en": "Inside funcs."
@@ -3202,19 +3202,19 @@
       },
       "choices": {
         "nl": [
-          "Google leak",
           "origineel oefenen",
+          "Google leak",
           "betaald",
           "cert"
         ],
         "en": [
-          "Google leak",
           "original practice",
+          "Google leak",
           "paid",
           "cert"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Origineel.",
         "en": "Original."
@@ -3229,18 +3229,18 @@
       "choices": {
         "nl": [
           "echo",
-          "fmt.Println",
           "SELECT",
+          "fmt.Println",
           "CSS"
         ],
         "en": [
           "echo",
-          "fmt.Println",
           "SELECT",
+          "fmt.Println",
           "CSS"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Print API.",
         "en": "Print API."
@@ -3271,18 +3271,18 @@
       "choices": {
         "nl": [
           "verboden",
-          "mag",
           "alleen loops",
+          "mag",
           "SQL"
         ],
         "en": [
           "forbidden",
-          "allowed",
           "loops only",
+          "allowed",
           "SQL"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Allowed.",
         "en": "Allowed."
@@ -3298,18 +3298,18 @@
       "choices": {
         "nl": [
           "assign",
-          "vergelijking",
           "import",
+          "vergelijking",
           "join"
         ],
         "en": [
           "assign",
-          "comparison",
           "import",
+          "comparison",
           "join"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Compare.",
         "en": "Compare."
@@ -3325,18 +3325,18 @@
       "choices": {
         "nl": [
           "efficiënt",
-          "kan hangen",
           "SQL",
+          "kan hangen",
           "CSS"
         ],
         "en": [
           "efficient",
-          "can hang",
           "SQL",
+          "can hang",
           "CSS"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Hang risk.",
         "en": "Hang risk."
@@ -3352,18 +3352,18 @@
       "choices": {
         "nl": [
           "1",
-          "0",
           "-1",
+          "0",
           "2"
         ],
         "en": [
           "1",
-          "0",
           "-1",
+          "0",
           "2"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Usually 0.",
         "en": "Usually 0."
@@ -3379,18 +3379,18 @@
       "choices": {
         "nl": [
           "nee",
-          "ja",
+          "alleen SQL",
           "alleen CSS",
-          "alleen SQL"
+          "ja"
         ],
         "en": [
           "no",
-          "yes",
+          "SQL only",
           "CSS only",
-          "SQL only"
+          "yes"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Yes.",
         "en": "Yes."
@@ -3406,18 +3406,18 @@
       "choices": {
         "nl": [
           "negeren",
-          "try/catch of Result/err",
+          "GPU",
           "CSS",
-          "GPU"
+          "try/catch of Result/err"
         ],
         "en": [
           "ignore",
-          "try/catch or Result/err",
+          "GPU",
           "CSS",
-          "GPU"
+          "try/catch or Result/err"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Handle.",
         "en": "Handle."
@@ -3432,19 +3432,19 @@
       },
       "choices": {
         "nl": [
-          "speed",
           "mensen",
+          "speed",
           "compile must",
           "cert"
         ],
         "en": [
-          "speed",
           "humans",
+          "speed",
           "compile must",
           "cert"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Docs.",
         "en": "Docs."
@@ -3459,19 +3459,19 @@
       },
       "choices": {
         "nl": [
-          "CSS",
           "waarde",
+          "CSS",
           "DNS",
           "GPU only"
         ],
         "en": [
-          "CSS",
           "a value",
+          "CSS",
           "DNS",
           "GPU only"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Value.",
         "en": "Value."
@@ -3513,19 +3513,19 @@
       },
       "choices": {
         "nl": [
-          "nutteloos",
           "kan helpen",
+          "nutteloos",
           "verboden",
           "SQL only"
         ],
         "en": [
-          "useless",
           "can help",
+          "useless",
           "forbidden",
           "SQL only"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Helps.",
         "en": "Helps."
@@ -3541,18 +3541,18 @@
       "choices": {
         "nl": [
           "echo",
-          "fmt.Println",
+          "CSS",
           "SELECT",
-          "CSS"
+          "fmt.Println"
         ],
         "en": [
           "echo",
-          "fmt.Println",
+          "CSS",
           "SELECT",
-          "CSS"
+          "fmt.Println"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Print API.",
         "en": "Print API."
@@ -3583,18 +3583,18 @@
       "choices": {
         "nl": [
           "verboden",
-          "mag",
+          "SQL",
           "alleen loops",
-          "SQL"
+          "mag"
         ],
         "en": [
           "forbidden",
-          "allowed",
+          "SQL",
           "loops only",
-          "SQL"
+          "allowed"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Allowed.",
         "en": "Allowed."
@@ -3609,19 +3609,19 @@
       },
       "choices": {
         "nl": [
-          "assign",
           "vergelijking",
+          "assign",
           "import",
           "join"
         ],
         "en": [
-          "assign",
           "comparison",
+          "assign",
           "import",
           "join"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Compare.",
         "en": "Compare."
@@ -3637,18 +3637,18 @@
       "choices": {
         "nl": [
           "efficiënt",
-          "kan hangen",
+          "CSS",
           "SQL",
-          "CSS"
+          "kan hangen"
         ],
         "en": [
           "efficient",
-          "can hang",
+          "CSS",
           "SQL",
-          "CSS"
+          "can hang"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Hang risk.",
         "en": "Hang risk."
@@ -3664,18 +3664,18 @@
       "choices": {
         "nl": [
           "1",
-          "0",
+          "2",
           "-1",
-          "2"
+          "0"
         ],
         "en": [
           "1",
-          "0",
+          "2",
           "-1",
-          "2"
+          "0"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Usually 0.",
         "en": "Usually 0."
@@ -3690,19 +3690,19 @@
       },
       "choices": {
         "nl": [
-          "nee",
           "ja",
+          "nee",
           "alleen CSS",
           "alleen SQL"
         ],
         "en": [
-          "no",
           "yes",
+          "no",
           "CSS only",
           "SQL only"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Yes.",
         "en": "Yes."
@@ -3799,18 +3799,18 @@
       "choices": {
         "nl": [
           "nee",
-          "ja",
+          "alleen boeken",
           "nooit",
-          "alleen boeken"
+          "ja"
         ],
         "en": [
           "no",
-          "yes",
+          "books only",
           "never",
-          "books only"
+          "yes"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Yes.",
         "en": "Yes."
@@ -3826,18 +3826,18 @@
       "choices": {
         "nl": [
           "nutteloos",
-          "kan helpen",
+          "SQL only",
           "verboden",
-          "SQL only"
+          "kan helpen"
         ],
         "en": [
           "useless",
-          "can help",
+          "SQL only",
           "forbidden",
-          "SQL only"
+          "can help"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Helps.",
         "en": "Helps."
@@ -3852,19 +3852,19 @@
       },
       "choices": {
         "nl": [
-          "echo",
           "fmt.Println",
+          "echo",
           "SELECT",
           "CSS"
         ],
         "en": [
-          "echo",
           "fmt.Println",
+          "echo",
           "SELECT",
           "CSS"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Print API.",
         "en": "Print API."
@@ -3894,19 +3894,19 @@
       },
       "choices": {
         "nl": [
-          "verboden",
           "mag",
+          "verboden",
           "alleen loops",
           "SQL"
         ],
         "en": [
-          "forbidden",
           "allowed",
+          "forbidden",
           "loops only",
           "SQL"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Allowed.",
         "en": "Allowed."
@@ -3922,18 +3922,18 @@
       "choices": {
         "nl": [
           "assign",
-          "vergelijking",
           "import",
+          "vergelijking",
           "join"
         ],
         "en": [
           "assign",
-          "comparison",
           "import",
+          "comparison",
           "join"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Compare.",
         "en": "Compare."
@@ -3949,18 +3949,18 @@
       "choices": {
         "nl": [
           "efficiënt",
-          "kan hangen",
           "SQL",
+          "kan hangen",
           "CSS"
         ],
         "en": [
           "efficient",
-          "can hang",
           "SQL",
+          "can hang",
           "CSS"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Hang risk.",
         "en": "Hang risk."
@@ -3976,18 +3976,18 @@
       "choices": {
         "nl": [
           "1",
-          "0",
+          "2",
           "-1",
-          "2"
+          "0"
         ],
         "en": [
           "1",
-          "0",
+          "2",
           "-1",
-          "2"
+          "0"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Usually 0.",
         "en": "Usually 0."
@@ -4030,18 +4030,18 @@
       "choices": {
         "nl": [
           "negeren",
-          "try/catch of Result/err",
           "CSS",
+          "try/catch of Result/err",
           "GPU"
         ],
         "en": [
           "ignore",
-          "try/catch or Result/err",
           "CSS",
+          "try/catch or Result/err",
           "GPU"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Handle.",
         "en": "Handle."
@@ -4057,18 +4057,18 @@
       "choices": {
         "nl": [
           "speed",
-          "mensen",
           "compile must",
+          "mensen",
           "cert"
         ],
         "en": [
           "speed",
-          "humans",
           "compile must",
+          "humans",
           "cert"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Docs.",
         "en": "Docs."
@@ -4083,19 +4083,19 @@
       },
       "choices": {
         "nl": [
-          "CSS",
           "waarde",
+          "CSS",
           "DNS",
           "GPU only"
         ],
         "en": [
-          "CSS",
           "a value",
+          "CSS",
           "DNS",
           "GPU only"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Value.",
         "en": "Value."
@@ -4111,18 +4111,18 @@
       "choices": {
         "nl": [
           "nee",
-          "ja",
+          "alleen boeken",
           "nooit",
-          "alleen boeken"
+          "ja"
         ],
         "en": [
           "no",
-          "yes",
+          "books only",
           "never",
-          "books only"
+          "yes"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Yes.",
         "en": "Yes."

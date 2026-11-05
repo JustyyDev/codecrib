@@ -30,18 +30,18 @@
           "choices": {
             "nl": [
               "print",
-              "console.log",
+              "WriteLine",
               "echo",
-              "WriteLine"
+              "console.log"
             ],
             "en": [
               "print",
-              "console.log",
+              "WriteLine",
               "echo",
-              "WriteLine"
+              "console.log"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "console.log.",
             "en": "console.log."
@@ -81,18 +81,18 @@
           "choices": {
             "nl": [
               "23",
-              "5",
+              "NaN",
               "undefined",
-              "NaN"
+              "5"
             ],
             "en": [
               "23",
-              "5",
+              "NaN",
               "undefined",
-              "NaN"
+              "5"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "5.",
             "en": "5."
@@ -147,19 +147,19 @@
           },
           "choices": {
             "nl": [
-              "null",
               "object",
+              "null",
               "undefined",
               "number"
             ],
             "en": [
-              "null",
               "object",
+              "null",
               "undefined",
               "number"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Quirk.",
             "en": "Quirk."
@@ -174,18 +174,18 @@
           "choices": {
             "nl": [
               "ok",
-              "const regels breken dit",
+              "semicolon",
               "1 fout",
-              "semicolon"
+              "const regels breken dit"
             ],
             "en": [
               "ok",
-              "const rules break this",
+              "semicolon",
               "1 wrong",
-              "semicolon"
+              "const rules break this"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "const rules.",
             "en": "const rules."
@@ -200,19 +200,19 @@
           },
           "choices": {
             "nl": [
-              "false",
               "true",
+              "false",
               "null",
               "error"
             ],
             "en": [
-              "false",
               "true",
+              "false",
               "null",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "true.",
             "en": "true."
@@ -241,18 +241,18 @@
           "choices": {
             "nl": [
               "function only always",
-              "block scope",
               "geen scope",
+              "block scope",
               "global only"
             ],
             "en": [
               "function only always",
-              "block scope",
               "no scope",
+              "block scope",
               "global only"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Block.",
             "en": "Block."
@@ -267,18 +267,18 @@
           "choices": {
             "nl": [
               "6",
-              "51",
+              "NaN",
               "error",
-              "NaN"
+              "51"
             ],
             "en": [
               "6",
-              "51",
+              "NaN",
               "error",
-              "NaN"
+              "51"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Concat.",
             "en": "Concat."
@@ -292,19 +292,19 @@
           },
           "choices": {
             "nl": [
-              "true",
               "false",
+              "true",
               "1",
               "error"
             ],
             "en": [
-              "true",
               "false",
+              "true",
               "1",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "false.",
             "en": "false."
@@ -345,18 +345,18 @@
           "choices": {
             "nl": [
               "==",
-              "===",
+              "~=",
               "=",
-              "~="
+              "==="
             ],
             "en": [
               "==",
-              "===",
+              "~=",
               "=",
-              "~="
+              "==="
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "===.",
             "en": "===."
@@ -370,18 +370,18 @@
           "choices": {
             "nl": [
               "ok",
-              "TypeError meestal",
               "wordt let",
+              "TypeError meestal",
               "silent"
             ],
             "en": [
               "ok",
-              "TypeError usually",
               "becomes let",
+              "TypeError usually",
               "silent"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Mag niet herbinden.",
             "en": "Cannot rebind."
@@ -423,18 +423,18 @@
           "choices": {
             "nl": [
               "zelfde",
-              "=== is streng",
               "== verboden",
+              "=== is streng",
               "alleen strings"
             ],
             "en": [
               "same",
-              "=== is strict",
               "== forbidden",
+              "=== is strict",
               "strings only"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Strict.",
             "en": "Strict."
@@ -463,18 +463,18 @@
           "choices": {
             "nl": [
               "null",
-              "object",
+              "number",
               "undefined",
-              "number"
+              "object"
             ],
             "en": [
               "null",
-              "object",
+              "number",
               "undefined",
-              "number"
+              "object"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Quirk.",
             "en": "Quirk."
@@ -515,19 +515,19 @@
           },
           "choices": {
             "nl": [
-              "false",
               "true",
+              "false",
               "null",
               "error"
             ],
             "en": [
-              "false",
               "true",
+              "false",
               "null",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "true.",
             "en": "true."
@@ -555,19 +555,19 @@
           },
           "choices": {
             "nl": [
-              "function only always",
               "block scope",
+              "function only always",
               "geen scope",
               "global only"
             ],
             "en": [
-              "function only always",
               "block scope",
+              "function only always",
               "no scope",
               "global only"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Block.",
             "en": "Block."
@@ -582,18 +582,18 @@
           "choices": {
             "nl": [
               "6",
-              "51",
+              "NaN",
               "error",
-              "NaN"
+              "51"
             ],
             "en": [
               "6",
-              "51",
+              "NaN",
               "error",
-              "NaN"
+              "51"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Concat.",
             "en": "Concat."
@@ -608,18 +608,18 @@
           "choices": {
             "nl": [
               "true",
-              "false",
               "1",
+              "false",
               "error"
             ],
             "en": [
               "true",
-              "false",
               "1",
+              "false",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "false.",
             "en": "false."
@@ -645,19 +645,19 @@
           },
           "choices": {
             "nl": [
-              "B",
               "C",
+              "B",
               "beide",
               "niks"
             ],
             "en": [
-              "B",
               "C",
+              "B",
               "both",
               "nothing"
             ]
           },
-          "answer": 0,
+          "answer": 1,
           "why": {
             "nl": "x>=5.",
             "en": "x>=5."
@@ -670,19 +670,19 @@
           },
           "choices": {
             "nl": [
-              "ja",
+              "alleen 'true'",
               "nee",
               "alleen cijfers",
-              "alleen 'true'"
+              "ja"
             ],
             "en": [
-              "yes",
+              "only 'true'",
               "no",
               "digits only",
-              "only 'true'"
+              "yes"
             ]
           },
-          "answer": 0,
+          "answer": 3,
           "why": {
             "nl": "Ja.",
             "en": "Yes."
@@ -697,18 +697,18 @@
           "choices": {
             "nl": [
               "23",
-              "5",
               "undefined",
+              "5",
               "NaN"
             ],
             "en": [
               "23",
-              "5",
               "undefined",
+              "5",
               "NaN"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "5.",
             "en": "5."
@@ -724,18 +724,18 @@
           "choices": {
             "nl": [
               "zelfde",
-              "=== is streng",
+              "alleen strings",
               "== verboden",
-              "alleen strings"
+              "=== is streng"
             ],
             "en": [
               "same",
-              "=== is strict",
+              "strings only",
               "== forbidden",
-              "strings only"
+              "=== is strict"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Strict.",
             "en": "Strict."
@@ -764,18 +764,18 @@
           "choices": {
             "nl": [
               "null",
-              "object",
               "undefined",
+              "object",
               "number"
             ],
             "en": [
               "null",
-              "object",
               "undefined",
+              "object",
               "number"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Quirk.",
             "en": "Quirk."
@@ -789,19 +789,19 @@
           },
           "choices": {
             "nl": [
-              "ok",
               "const regels breken dit",
+              "ok",
               "1 fout",
               "semicolon"
             ],
             "en": [
-              "ok",
               "const rules break this",
+              "ok",
               "1 wrong",
               "semicolon"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "const rules.",
             "en": "const rules."
@@ -856,19 +856,19 @@
           },
           "choices": {
             "nl": [
-              "function only always",
               "block scope",
+              "function only always",
               "geen scope",
               "global only"
             ],
             "en": [
-              "function only always",
               "block scope",
+              "function only always",
               "no scope",
               "global only"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Block.",
             "en": "Block."
@@ -882,19 +882,19 @@
           },
           "choices": {
             "nl": [
-              "6",
               "51",
+              "6",
               "error",
               "NaN"
             ],
             "en": [
-              "6",
               "51",
+              "6",
               "error",
               "NaN"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Concat.",
             "en": "Concat."
@@ -972,18 +972,18 @@
           "choices": {
             "nl": [
               "alleen keys",
-              "waarden/itereerbaar",
+              "SQL rows",
               "alleen DOM",
-              "SQL rows"
+              "waarden/itereerbaar"
             ],
             "en": [
               "keys only",
-              "values/iterable",
+              "SQL rows",
               "DOM only",
-              "SQL rows"
+              "values/iterable"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Iterable values.",
             "en": "Iterable values."
@@ -1025,18 +1025,18 @@
           "choices": {
             "nl": [
               "zelfde",
-              "=== is streng",
+              "alleen strings",
               "== verboden",
-              "alleen strings"
+              "=== is streng"
             ],
             "en": [
               "same",
-              "=== is strict",
+              "strings only",
               "== forbidden",
-              "strings only"
+              "=== is strict"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Strict.",
             "en": "Strict."
@@ -1091,18 +1091,18 @@
           "choices": {
             "nl": [
               "ok",
-              "const regels breken dit",
+              "semicolon",
               "1 fout",
-              "semicolon"
+              "const regels breken dit"
             ],
             "en": [
               "ok",
-              "const rules break this",
+              "semicolon",
               "1 wrong",
-              "semicolon"
+              "const rules break this"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "const rules.",
             "en": "const rules."
@@ -1117,19 +1117,19 @@
           },
           "choices": {
             "nl": [
-              "false",
               "true",
+              "false",
               "null",
               "error"
             ],
             "en": [
-              "false",
               "true",
+              "false",
               "null",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "true.",
             "en": "true."
@@ -1184,18 +1184,18 @@
           "choices": {
             "nl": [
               "6",
-              "51",
+              "NaN",
               "error",
-              "NaN"
+              "51"
             ],
             "en": [
               "6",
-              "51",
+              "NaN",
               "error",
-              "NaN"
+              "51"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Concat.",
             "en": "Concat."
@@ -1210,18 +1210,18 @@
           "choices": {
             "nl": [
               "true",
-              "false",
               "1",
+              "false",
               "error"
             ],
             "en": [
               "true",
-              "false",
               "1",
+              "false",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "false.",
             "en": "false."
@@ -1248,18 +1248,18 @@
           "choices": {
             "nl": [
               "10",
-              "20",
               "30",
+              "20",
               "undefined"
             ],
             "en": [
               "10",
-              "20",
               "30",
+              "20",
               "undefined"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Index 1.",
             "en": "Index 1."
@@ -1299,18 +1299,18 @@
           "choices": {
             "nl": [
               "23",
-              "5",
+              "NaN",
               "undefined",
-              "NaN"
+              "5"
             ],
             "en": [
               "23",
-              "5",
+              "NaN",
               "undefined",
-              "NaN"
+              "5"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "5.",
             "en": "5."
@@ -1326,18 +1326,18 @@
           "choices": {
             "nl": [
               "zelfde",
-              "=== is streng",
               "== verboden",
+              "=== is streng",
               "alleen strings"
             ],
             "en": [
               "same",
-              "=== is strict",
               "== forbidden",
+              "=== is strict",
               "strings only"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Strict.",
             "en": "Strict."
@@ -1366,18 +1366,18 @@
           "choices": {
             "nl": [
               "null",
-              "object",
               "undefined",
+              "object",
               "number"
             ],
             "en": [
               "null",
-              "object",
               "undefined",
+              "object",
               "number"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Quirk.",
             "en": "Quirk."
@@ -1391,19 +1391,19 @@
           },
           "choices": {
             "nl": [
-              "ok",
               "const regels breken dit",
+              "ok",
               "1 fout",
               "semicolon"
             ],
             "en": [
-              "ok",
               "const rules break this",
+              "ok",
               "1 wrong",
               "semicolon"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "const rules.",
             "en": "const rules."
@@ -1459,18 +1459,18 @@
           "choices": {
             "nl": [
               "function only always",
-              "block scope",
+              "global only",
               "geen scope",
-              "global only"
+              "block scope"
             ],
             "en": [
               "function only always",
-              "block scope",
+              "global only",
               "no scope",
-              "global only"
+              "block scope"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Block.",
             "en": "Block."
@@ -1484,19 +1484,19 @@
           },
           "choices": {
             "nl": [
-              "6",
               "51",
+              "6",
               "error",
               "NaN"
             ],
             "en": [
-              "6",
               "51",
+              "6",
               "error",
               "NaN"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Concat.",
             "en": "Concat."
@@ -1510,19 +1510,19 @@
           },
           "choices": {
             "nl": [
-              "true",
               "false",
+              "true",
               "1",
               "error"
             ],
             "en": [
-              "true",
               "false",
+              "true",
               "1",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "false.",
             "en": "false."
@@ -1600,18 +1600,18 @@
           "choices": {
             "nl": [
               "23",
-              "5",
               "undefined",
+              "5",
               "NaN"
             ],
             "en": [
               "23",
-              "5",
               "undefined",
+              "5",
               "NaN"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "5.",
             "en": "5."
@@ -1627,18 +1627,18 @@
           "choices": {
             "nl": [
               "zelfde",
-              "=== is streng",
               "== verboden",
+              "=== is streng",
               "alleen strings"
             ],
             "en": [
               "same",
-              "=== is strict",
               "== forbidden",
+              "=== is strict",
               "strings only"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Strict.",
             "en": "Strict."
@@ -1693,18 +1693,18 @@
           "choices": {
             "nl": [
               "ok",
-              "const regels breken dit",
+              "semicolon",
               "1 fout",
-              "semicolon"
+              "const regels breken dit"
             ],
             "en": [
               "ok",
-              "const rules break this",
+              "semicolon",
               "1 wrong",
-              "semicolon"
+              "const rules break this"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "const rules.",
             "en": "const rules."
@@ -1760,18 +1760,18 @@
           "choices": {
             "nl": [
               "function only always",
-              "block scope",
               "geen scope",
+              "block scope",
               "global only"
             ],
             "en": [
               "function only always",
-              "block scope",
               "no scope",
+              "block scope",
               "global only"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Block.",
             "en": "Block."
@@ -1786,18 +1786,18 @@
           "choices": {
             "nl": [
               "6",
-              "51",
+              "NaN",
               "error",
-              "NaN"
+              "51"
             ],
             "en": [
               "6",
-              "51",
+              "NaN",
               "error",
-              "NaN"
+              "51"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Concat.",
             "en": "Concat."
@@ -1875,18 +1875,18 @@
           "choices": {
             "nl": [
               "null",
-              "gooit error",
+              "0",
               "''",
-              "0"
+              "gooit error"
             ],
             "en": [
               "null",
-              "throws",
+              "0",
               "''",
-              "0"
+              "throws"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Throws.",
             "en": "Throws."
@@ -1928,18 +1928,18 @@
           "choices": {
             "nl": [
               "zelfde",
-              "=== is streng",
               "== verboden",
+              "=== is streng",
               "alleen strings"
             ],
             "en": [
               "same",
-              "=== is strict",
               "== forbidden",
+              "=== is strict",
               "strings only"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Strict.",
             "en": "Strict."
@@ -1968,18 +1968,18 @@
           "choices": {
             "nl": [
               "null",
-              "object",
+              "number",
               "undefined",
-              "number"
+              "object"
             ],
             "en": [
               "null",
-              "object",
+              "number",
               "undefined",
-              "number"
+              "object"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Quirk.",
             "en": "Quirk."
@@ -1994,18 +1994,18 @@
           "choices": {
             "nl": [
               "ok",
-              "const regels breken dit",
+              "semicolon",
               "1 fout",
-              "semicolon"
+              "const regels breken dit"
             ],
             "en": [
               "ok",
-              "const rules break this",
+              "semicolon",
               "1 wrong",
-              "semicolon"
+              "const rules break this"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "const rules.",
             "en": "const rules."
@@ -2021,18 +2021,18 @@
           "choices": {
             "nl": [
               "false",
-              "true",
+              "error",
               "null",
-              "error"
+              "true"
             ],
             "en": [
               "false",
-              "true",
+              "error",
               "null",
-              "error"
+              "true"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "true.",
             "en": "true."
@@ -2060,19 +2060,19 @@
           },
           "choices": {
             "nl": [
-              "function only always",
               "block scope",
+              "function only always",
               "geen scope",
               "global only"
             ],
             "en": [
-              "function only always",
               "block scope",
+              "function only always",
               "no scope",
               "global only"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Block.",
             "en": "Block."
@@ -2086,19 +2086,19 @@
           },
           "choices": {
             "nl": [
-              "6",
               "51",
+              "6",
               "error",
               "NaN"
             ],
             "en": [
-              "6",
               "51",
+              "6",
               "error",
               "NaN"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Concat.",
             "en": "Concat."
@@ -2113,18 +2113,18 @@
           "choices": {
             "nl": [
               "true",
-              "false",
               "1",
+              "false",
               "error"
             ],
             "en": [
               "true",
-              "false",
               "1",
+              "false",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "false.",
             "en": "false."
@@ -2151,18 +2151,18 @@
           "choices": {
             "nl": [
               "alle matches",
-              "eerste match",
               "SQL",
+              "eerste match",
               "cookies"
             ],
             "en": [
               "all matches",
-              "first match",
               "SQL",
+              "first match",
               "cookies"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Eerste.",
             "en": "First."
@@ -2201,19 +2201,19 @@
           },
           "choices": {
             "nl": [
-              "23",
               "5",
+              "23",
               "undefined",
               "NaN"
             ],
             "en": [
-              "23",
               "5",
+              "23",
               "undefined",
               "NaN"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "5.",
             "en": "5."
@@ -2269,18 +2269,18 @@
           "choices": {
             "nl": [
               "null",
-              "object",
+              "number",
               "undefined",
-              "number"
+              "object"
             ],
             "en": [
               "null",
-              "object",
+              "number",
               "undefined",
-              "number"
+              "object"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Quirk.",
             "en": "Quirk."
@@ -2294,19 +2294,19 @@
           },
           "choices": {
             "nl": [
-              "ok",
               "const regels breken dit",
+              "ok",
               "1 fout",
               "semicolon"
             ],
             "en": [
-              "ok",
               "const rules break this",
+              "ok",
               "1 wrong",
               "semicolon"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "const rules.",
             "en": "const rules."
@@ -2321,19 +2321,19 @@
           },
           "choices": {
             "nl": [
-              "false",
               "true",
+              "false",
               "null",
               "error"
             ],
             "en": [
-              "false",
               "true",
+              "false",
               "null",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "true.",
             "en": "true."
@@ -2362,18 +2362,18 @@
           "choices": {
             "nl": [
               "function only always",
-              "block scope",
               "geen scope",
+              "block scope",
               "global only"
             ],
             "en": [
               "function only always",
-              "block scope",
               "no scope",
+              "block scope",
               "global only"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Block.",
             "en": "Block."
@@ -2387,19 +2387,19 @@
           },
           "choices": {
             "nl": [
-              "6",
               "51",
+              "6",
               "error",
               "NaN"
             ],
             "en": [
-              "6",
               "51",
+              "6",
               "error",
               "NaN"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Concat.",
             "en": "Concat."
@@ -2414,18 +2414,18 @@
           "choices": {
             "nl": [
               "true",
-              "false",
+              "error",
               "1",
-              "error"
+              "false"
             ],
             "en": [
               "true",
-              "false",
+              "error",
               "1",
-              "error"
+              "false"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "false.",
             "en": "false."
@@ -2477,18 +2477,18 @@
           "choices": {
             "nl": [
               "niets",
-              "verhoogt n",
+              "shuffle",
               "reset",
-              "shuffle"
+              "verhoogt n"
             ],
             "en": [
               "nothing",
-              "increments n",
+              "shuffle",
               "reset",
-              "shuffle"
+              "increments n"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "+1.",
             "en": "+1."
@@ -2503,18 +2503,18 @@
           "choices": {
             "nl": [
               "23",
-              "5",
               "undefined",
+              "5",
               "NaN"
             ],
             "en": [
               "23",
-              "5",
               "undefined",
+              "5",
               "NaN"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "5.",
             "en": "5."
@@ -2530,18 +2530,18 @@
           "choices": {
             "nl": [
               "zelfde",
-              "=== is streng",
+              "alleen strings",
               "== verboden",
-              "alleen strings"
+              "=== is streng"
             ],
             "en": [
               "same",
-              "=== is strict",
+              "strings only",
               "== forbidden",
-              "strings only"
+              "=== is strict"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Strict.",
             "en": "Strict."
@@ -2570,18 +2570,18 @@
           "choices": {
             "nl": [
               "null",
-              "object",
+              "number",
               "undefined",
-              "number"
+              "object"
             ],
             "en": [
               "null",
-              "object",
+              "number",
               "undefined",
-              "number"
+              "object"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Quirk.",
             "en": "Quirk."
@@ -2622,19 +2622,19 @@
           },
           "choices": {
             "nl": [
-              "false",
               "true",
+              "false",
               "null",
               "error"
             ],
             "en": [
-              "false",
               "true",
+              "false",
               "null",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "true.",
             "en": "true."
@@ -2663,18 +2663,18 @@
           "choices": {
             "nl": [
               "function only always",
-              "block scope",
               "geen scope",
+              "block scope",
               "global only"
             ],
             "en": [
               "function only always",
-              "block scope",
               "no scope",
+              "block scope",
               "global only"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Block.",
             "en": "Block."
@@ -2689,18 +2689,18 @@
           "choices": {
             "nl": [
               "6",
-              "51",
               "error",
+              "51",
               "NaN"
             ],
             "en": [
               "6",
-              "51",
               "error",
+              "51",
               "NaN"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Concat.",
             "en": "Concat."
@@ -2715,18 +2715,18 @@
           "choices": {
             "nl": [
               "true",
-              "false",
+              "error",
               "1",
-              "error"
+              "false"
             ],
             "en": [
               "true",
-              "false",
+              "error",
               "1",
-              "error"
+              "false"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "false.",
             "en": "false."
@@ -2804,18 +2804,18 @@
           "choices": {
             "nl": [
               "23",
-              "5",
               "undefined",
+              "5",
               "NaN"
             ],
             "en": [
               "23",
-              "5",
               "undefined",
+              "5",
               "NaN"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "5.",
             "en": "5."
@@ -2831,18 +2831,18 @@
           "choices": {
             "nl": [
               "zelfde",
-              "=== is streng",
               "== verboden",
+              "=== is streng",
               "alleen strings"
             ],
             "en": [
               "same",
-              "=== is strict",
               "== forbidden",
+              "=== is strict",
               "strings only"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Strict.",
             "en": "Strict."
@@ -2871,18 +2871,18 @@
           "choices": {
             "nl": [
               "null",
-              "object",
               "undefined",
+              "object",
               "number"
             ],
             "en": [
               "null",
-              "object",
               "undefined",
+              "object",
               "number"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Quirk.",
             "en": "Quirk."
@@ -2897,18 +2897,18 @@
           "choices": {
             "nl": [
               "ok",
-              "const regels breken dit",
+              "semicolon",
               "1 fout",
-              "semicolon"
+              "const regels breken dit"
             ],
             "en": [
               "ok",
-              "const rules break this",
+              "semicolon",
               "1 wrong",
-              "semicolon"
+              "const rules break this"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "const rules.",
             "en": "const rules."
@@ -2924,18 +2924,18 @@
           "choices": {
             "nl": [
               "false",
-              "true",
+              "error",
               "null",
-              "error"
+              "true"
             ],
             "en": [
               "false",
-              "true",
+              "error",
               "null",
-              "error"
+              "true"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "true.",
             "en": "true."
@@ -2964,18 +2964,18 @@
           "choices": {
             "nl": [
               "function only always",
-              "block scope",
+              "global only",
               "geen scope",
-              "global only"
+              "block scope"
             ],
             "en": [
               "function only always",
-              "block scope",
+              "global only",
               "no scope",
-              "global only"
+              "block scope"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Block.",
             "en": "Block."
@@ -2989,19 +2989,19 @@
           },
           "choices": {
             "nl": [
-              "6",
               "51",
+              "6",
               "error",
               "NaN"
             ],
             "en": [
-              "6",
               "51",
+              "6",
               "error",
               "NaN"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Concat.",
             "en": "Concat."
@@ -3016,18 +3016,18 @@
           "choices": {
             "nl": [
               "true",
-              "false",
               "1",
+              "false",
               "error"
             ],
             "en": [
               "true",
-              "false",
               "1",
+              "false",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "false.",
             "en": "false."
@@ -3086,18 +3086,18 @@
       "choices": {
         "nl": [
           "verboden",
-          "mag muteren inhoud",
+          "error altijd",
           "wordt let",
-          "error altijd"
+          "mag muteren inhoud"
         ],
         "en": [
           "forbidden",
-          "may mutate contents",
+          "always error",
           "becomes let",
-          "always error"
+          "may mutate contents"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Binding vast, inhoud niet.",
         "en": "Binding fixed, contents not."
@@ -3112,18 +3112,18 @@
       "choices": {
         "nl": [
           "true",
-          "false",
+          "error",
           "NaN",
-          "error"
+          "false"
         ],
         "en": [
           "true",
-          "false",
+          "error",
           "NaN",
-          "error"
+          "false"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Strict.",
         "en": "Strict."
@@ -3137,19 +3137,19 @@
       },
       "choices": {
         "nl": [
-          "true",
+          "undefined",
           "false",
           "error",
-          "undefined"
+          "true"
         ],
         "en": [
-          "true",
+          "undefined",
           "false",
           "error",
-          "undefined"
+          "true"
         ]
       },
-      "answer": 0,
+      "answer": 3,
       "why": {
         "nl": "Coercion.",
         "en": "Coercion."
@@ -3164,18 +3164,18 @@
       "choices": {
         "nl": [
           "false",
-          "true",
+          "error",
           "null",
-          "error"
+          "true"
         ],
         "en": [
           "false",
-          "true",
+          "error",
           "null",
-          "error"
+          "true"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "true.",
         "en": "true."
@@ -3215,19 +3215,19 @@
       },
       "choices": {
         "nl": [
-          "string interp",
-          "alleen Python",
           "SQL",
+          "alleen Python",
+          "string interp",
           "comment"
         ],
         "en": [
-          "string interp",
-          "Python only",
           "SQL",
+          "Python only",
+          "string interp",
           "comment"
         ]
       },
-      "answer": 0,
+      "answer": 2,
       "why": {
         "nl": "Template literal.",
         "en": "Template literal."
@@ -3242,18 +3242,18 @@
       "choices": {
         "nl": [
           "true",
-          "false",
           "1",
+          "false",
           "error"
         ],
         "en": [
           "true",
-          "false",
           "1",
+          "false",
           "error"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Gebruik Number.isNaN.",
         "en": "Use Number.isNaN."
@@ -3267,19 +3267,19 @@
       },
       "choices": {
         "nl": [
-          "concat-achtig",
+          "error",
           "SQL join",
           "CSS",
-          "error"
+          "concat-achtig"
         ],
         "en": [
-          "concat-like",
+          "error",
           "SQL join",
           "CSS",
-          "error"
+          "concat-like"
         ]
       },
-      "answer": 0,
+      "answer": 3,
       "why": {
         "nl": "Spread.",
         "en": "Spread."
@@ -3294,18 +3294,18 @@
       "choices": {
         "nl": [
           "sync only",
-          "async result ketting",
           "CSS",
+          "async result ketting",
           "python def"
         ],
         "en": [
           "sync only",
-          "async result chain",
           "CSS",
+          "async result chain",
           "python def"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Async.",
         "en": "Async."
@@ -3346,18 +3346,18 @@
       "choices": {
         "nl": [
           "Node only",
-          "DOM helper",
+          "Rust",
           "SQL",
-          "Rust"
+          "DOM helper"
         ],
         "en": [
           "Node only",
-          "DOM helper",
+          "Rust",
           "SQL",
-          "Rust"
+          "DOM helper"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "DOM.",
         "en": "DOM."
@@ -3372,18 +3372,18 @@
       "choices": {
         "nl": [
           "parse",
-          "object naar string",
+          "hash",
           "compile",
-          "hash"
+          "object naar string"
         ],
         "en": [
           "parse",
-          "object to string",
+          "hash",
           "compile",
-          "hash"
+          "object to string"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Serialize.",
         "en": "Serialize."
@@ -3398,18 +3398,18 @@
       "choices": {
         "nl": [
           "bitwise only",
-          "fallback als links falsy",
           "SQL OR tabel",
+          "fallback als links falsy",
           "error"
         ],
         "en": [
           "bitwise only",
-          "fallback if left falsy",
           "SQL OR table",
+          "fallback if left falsy",
           "error"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Fallback.",
         "en": "Fallback."
@@ -3423,19 +3423,19 @@
       },
       "choices": {
         "nl": [
-          "verplicht",
           "safe access",
+          "verplicht",
           "python",
           "lua"
         ],
         "en": [
-          "required",
           "safe access",
+          "required",
           "python",
           "lua"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Optional chaining.",
         "en": "Optional chaining."
@@ -3449,19 +3449,19 @@
       },
       "choices": {
         "nl": [
-          "muteert altijd",
           "nieuwe array",
+          "muteert altijd",
           "verwijdert keys",
           "SQL"
         ],
         "en": [
-          "always mutates",
           "new array",
+          "always mutates",
           "deletes keys",
           "SQL"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "New array.",
         "en": "New array."
@@ -3475,19 +3475,19 @@
       },
       "choices": {
         "nl": [
-          "'use strict'",
+          "off altijd",
           "SQL mode",
           "CSS",
-          "off altijd"
+          "'use strict'"
         ],
         "en": [
-          "'use strict'",
+          "always off",
           "SQL mode",
           "CSS",
-          "always off"
+          "'use strict'"
         ]
       },
-      "answer": 0,
+      "answer": 3,
       "why": {
         "nl": "Directive.",
         "en": "Directive."
@@ -3501,19 +3501,19 @@
       },
       "choices": {
         "nl": [
-          "stopt default actie",
-          "verwijdert DOM",
           "compileert",
+          "verwijdert DOM",
+          "stopt default actie",
           "shuffle"
         ],
         "en": [
-          "stops default action",
-          "removes DOM",
           "compiles",
+          "removes DOM",
+          "stops default action",
           "shuffle"
         ]
       },
-      "answer": 0,
+      "answer": 2,
       "why": {
         "nl": "Prevent.",
         "en": "Prevent."
@@ -3554,18 +3554,18 @@
       "choices": {
         "nl": [
           "officieel MDN test",
-          "origineel oefenen",
+          "leaked",
           "betaald",
-          "leaked"
+          "origineel oefenen"
         ],
         "en": [
           "official MDN test",
-          "original practice",
+          "leaked",
           "paid",
-          "leaked"
+          "original practice"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Origineel.",
         "en": "Original."
@@ -3608,18 +3608,18 @@
       "choices": {
         "nl": [
           "zelfde",
-          "=== is streng",
           "== verboden",
+          "=== is streng",
           "alleen strings"
         ],
         "en": [
           "same",
-          "=== is strict",
           "== forbidden",
+          "=== is strict",
           "strings only"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Strict.",
         "en": "Strict."
@@ -3677,18 +3677,18 @@
       "choices": {
         "nl": [
           "ok",
-          "const regels breken dit",
           "1 fout",
+          "const regels breken dit",
           "semicolon"
         ],
         "en": [
           "ok",
-          "const rules break this",
           "1 wrong",
+          "const rules break this",
           "semicolon"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "const rules.",
         "en": "const rules."
@@ -3704,19 +3704,19 @@
       },
       "choices": {
         "nl": [
-          "false",
           "true",
+          "false",
           "null",
           "error"
         ],
         "en": [
-          "false",
           "true",
+          "false",
           "null",
           "error"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "true.",
         "en": "true."
@@ -3800,19 +3800,19 @@
       },
       "choices": {
         "nl": [
-          "true",
           "false",
+          "true",
           "1",
           "error"
         ],
         "en": [
-          "true",
           "false",
+          "true",
           "1",
           "error"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "false.",
         "en": "false."
@@ -3896,19 +3896,19 @@
       },
       "choices": {
         "nl": [
-          "'Hi ${n}'",
           "`Hi ${n}`",
+          "'Hi ${n}'",
           "f'Hi'",
           "$\"Hi\""
         ],
         "en": [
-          "'Hi ${n}'",
           "`Hi ${n}`",
+          "'Hi ${n}'",
           "f'Hi'",
           "$\"Hi\""
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Backticks.",
         "en": "Backticks."
@@ -3924,18 +3924,18 @@
       "choices": {
         "nl": [
           "23",
-          "5",
+          "NaN",
           "undefined",
-          "NaN"
+          "5"
         ],
         "en": [
           "23",
-          "5",
+          "NaN",
           "undefined",
-          "NaN"
+          "5"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "5.",
         "en": "5."
@@ -3951,19 +3951,19 @@
       },
       "choices": {
         "nl": [
-          "zelfde",
           "=== is streng",
+          "zelfde",
           "== verboden",
           "alleen strings"
         ],
         "en": [
-          "same",
           "=== is strict",
+          "same",
           "== forbidden",
           "strings only"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Strict.",
         "en": "Strict."
@@ -3994,18 +3994,18 @@
       "choices": {
         "nl": [
           "null",
-          "object",
+          "number",
           "undefined",
-          "number"
+          "object"
         ],
         "en": [
           "null",
-          "object",
+          "number",
           "undefined",
-          "number"
+          "object"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Quirk.",
         "en": "Quirk."
@@ -4049,18 +4049,18 @@
       "choices": {
         "nl": [
           "false",
-          "true",
           "null",
+          "true",
           "error"
         ],
         "en": [
           "false",
-          "true",
           "null",
+          "true",
           "error"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "true.",
         "en": "true."
@@ -4117,19 +4117,19 @@
       },
       "choices": {
         "nl": [
-          "6",
           "51",
+          "6",
           "error",
           "NaN"
         ],
         "en": [
-          "6",
           "51",
+          "6",
           "error",
           "NaN"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Concat.",
         "en": "Concat."
@@ -4144,19 +4144,19 @@
       },
       "choices": {
         "nl": [
-          "true",
           "false",
+          "true",
           "1",
           "error"
         ],
         "en": [
-          "true",
           "false",
+          "true",
           "1",
           "error"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "false.",
         "en": "false."
@@ -4172,18 +4172,18 @@
       "choices": {
         "nl": [
           "->",
-          "=>",
+          "def",
           "fn",
-          "def"
+          "=>"
         ],
         "en": [
           "->",
-          "=>",
+          "def",
           "fn",
-          "def"
+          "=>"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "=>.",
         "en": "=>."
@@ -4268,18 +4268,18 @@
       "choices": {
         "nl": [
           "23",
-          "5",
           "undefined",
+          "5",
           "NaN"
         ],
         "en": [
           "23",
-          "5",
           "undefined",
+          "5",
           "NaN"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "5.",
         "en": "5."

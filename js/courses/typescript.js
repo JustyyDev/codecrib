@@ -30,18 +30,18 @@
           "choices": {
             "nl": [
               "Java",
-              "JavaScript",
+              "LLVM only",
               "SQL",
-              "LLVM only"
+              "JavaScript"
             ],
             "en": [
               "Java",
-              "JavaScript",
+              "LLVM only",
               "SQL",
-              "LLVM only"
+              "JavaScript"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "JS.",
             "en": "JS."
@@ -55,18 +55,18 @@
           "choices": {
             "nl": [
               "msg -&gt; string",
-              "msg: string",
+              "msg as",
               "string msg",
-              "msg as"
+              "msg: string"
             ],
             "en": [
               "msg -&gt; string",
-              "msg: string",
+              "msg as",
               "string msg",
-              "msg as"
+              "msg: string"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": ": type.",
             "en": " : type."
@@ -96,18 +96,18 @@
           "choices": {
             "nl": [
               "runtime class",
-              "object shape type",
               "SQL",
+              "object shape type",
               "Lua"
             ],
             "en": [
               "runtime class",
-              "object shape type",
               "SQL",
+              "object shape type",
               "Lua"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Shape.",
             "en": "Shape."
@@ -147,19 +147,19 @@
           },
           "choices": {
             "nl": [
-              "strengste",
               "escape hatch",
+              "strengste",
               "SQL",
               "nil"
             ],
             "en": [
-              "strictest",
               "escape hatch",
+              "strictest",
               "SQL",
               "nil"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Escape.",
             "en": "Escape."
@@ -188,18 +188,18 @@
           "choices": {
             "nl": [
               "losser",
-              "strengere checks",
+              "Godot",
               "pip",
-              "Godot"
+              "strengere checks"
             ],
             "en": [
               "looser",
-              "stricter checks",
+              "Godot",
               "pip",
-              "Godot"
+              "stricter checks"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Stricter.",
             "en": "Stricter."
@@ -240,18 +240,18 @@
           "choices": {
             "nl": [
               "ok",
-              "type mismatch",
               "semicolon",
+              "type mismatch",
               "const"
             ],
             "en": [
               "ok",
-              "type mismatch",
               "semicolon",
+              "type mismatch",
               "const"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Wrong type.",
             "en": "Wrong type."
@@ -358,18 +358,18 @@
           "choices": {
             "nl": [
               "strengste",
-              "ontsnappingstype",
               "SQL",
+              "ontsnappingstype",
               "nil"
             ],
             "en": [
               "strictest",
-              "escape hatch type",
               "SQL",
+              "escape hatch type",
               "nil"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Escape.",
             "en": "Escape."
@@ -383,19 +383,19 @@
           },
           "choices": {
             "nl": [
-              "Java",
               "JavaScript",
+              "Java",
               "SQL",
               "LLVM only"
             ],
             "en": [
-              "Java",
               "JavaScript",
+              "Java",
               "SQL",
               "LLVM only"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "JS.",
             "en": "JS."
@@ -424,19 +424,19 @@
           },
           "choices": {
             "nl": [
-              "runtime class",
               "object shape type",
+              "runtime class",
               "SQL",
               "Lua"
             ],
             "en": [
-              "runtime class",
               "object shape type",
+              "runtime class",
               "SQL",
               "Lua"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Shape.",
             "en": "Shape."
@@ -451,18 +451,18 @@
           "choices": {
             "nl": [
               "alleen string",
-              "union",
+              "error",
               "SQL",
-              "error"
+              "union"
             ],
             "en": [
               "string only",
-              "union",
+              "error",
               "SQL",
-              "error"
+              "union"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Union.",
             "en": "Union."
@@ -517,18 +517,18 @@
           "choices": {
             "nl": [
               "name!:",
-              "name?:",
               "name||",
+              "name?:",
               "name~"
             ],
             "en": [
               "name!:",
-              "name?:",
               "name||",
+              "name?:",
               "name~"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "?.",
             "en": "?."
@@ -570,18 +570,18 @@
           "choices": {
             "nl": [
               "zelfde",
-              "unknown veiliger",
+              "CSS",
               "SQL",
-              "CSS"
+              "unknown veiliger"
             ],
             "en": [
               "same",
-              "unknown safer",
+              "CSS",
               "SQL",
-              "CSS"
+              "unknown safer"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Safer.",
             "en": "Safer."
@@ -622,18 +622,18 @@
           "choices": {
             "nl": [
               "verboden",
-              "gebruikelijk streng",
               "SQL",
+              "gebruikelijk streng",
               "CSS"
             ],
             "en": [
               "forbidden",
-              "common strict",
               "SQL",
+              "common strict",
               "CSS"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Strict.",
             "en": "Strict."
@@ -647,18 +647,18 @@
           "choices": {
             "nl": [
               "CSS",
-              "A of B",
               "SQL OR tabel",
+              "A of B",
               "Lua"
             ],
             "en": [
               "CSS",
-              "A or B",
               "SQL OR table",
+              "A or B",
               "Lua"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Union.",
             "en": "Union."
@@ -673,18 +673,18 @@
           "choices": {
             "nl": [
               "Java",
-              "JavaScript",
               "SQL",
+              "JavaScript",
               "LLVM only"
             ],
             "en": [
               "Java",
-              "JavaScript",
               "SQL",
+              "JavaScript",
               "LLVM only"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "JS.",
             "en": "JS."
@@ -714,18 +714,18 @@
           "choices": {
             "nl": [
               "runtime class",
-              "object shape type",
+              "Lua",
               "SQL",
-              "Lua"
+              "object shape type"
             ],
             "en": [
               "runtime class",
-              "object shape type",
+              "Lua",
               "SQL",
-              "Lua"
+              "object shape type"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Shape.",
             "en": "Shape."
@@ -740,18 +740,18 @@
           "choices": {
             "nl": [
               "alleen string",
-              "union",
               "SQL",
+              "union",
               "error"
             ],
             "en": [
               "string only",
-              "union",
               "SQL",
+              "union",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Union.",
             "en": "Union."
@@ -766,18 +766,18 @@
           "choices": {
             "nl": [
               "strengste",
-              "escape hatch",
+              "nil",
               "SQL",
-              "nil"
+              "escape hatch"
             ],
             "en": [
               "strictest",
-              "escape hatch",
+              "nil",
               "SQL",
-              "nil"
+              "escape hatch"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Escape.",
             "en": "Escape."
@@ -806,18 +806,18 @@
           "choices": {
             "nl": [
               "losser",
-              "strengere checks",
               "pip",
+              "strengere checks",
               "Godot"
             ],
             "en": [
               "looser",
-              "stricter checks",
               "pip",
+              "stricter checks",
               "Godot"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Stricter.",
             "en": "Stricter."
@@ -832,18 +832,18 @@
           "choices": {
             "nl": [
               "name!:",
-              "name?:",
               "name||",
+              "name?:",
               "name~"
             ],
             "en": [
               "name!:",
-              "name?:",
               "name||",
+              "name?:",
               "name~"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "?.",
             "en": "?."
@@ -857,19 +857,19 @@
           },
           "choices": {
             "nl": [
-              "ok",
               "type mismatch",
+              "ok",
               "semicolon",
               "const"
             ],
             "en": [
-              "ok",
               "type mismatch",
+              "ok",
               "semicolon",
               "const"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Wrong type.",
             "en": "Wrong type."
@@ -884,19 +884,19 @@
           },
           "choices": {
             "nl": [
-              "zelfde",
               "unknown veiliger",
+              "zelfde",
               "SQL",
               "CSS"
             ],
             "en": [
-              "same",
               "unknown safer",
+              "same",
               "SQL",
               "CSS"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Safer.",
             "en": "Safer."
@@ -923,18 +923,18 @@
           "choices": {
             "nl": [
               "3",
-              "4",
+              "0",
               "10",
-              "0"
+              "4"
             ],
             "en": [
               "3",
-              "4",
+              "0",
               "10",
-              "0"
+              "4"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "4.",
             "en": "4."
@@ -974,18 +974,18 @@
           "choices": {
             "nl": [
               "Java",
-              "JavaScript",
+              "LLVM only",
               "SQL",
-              "LLVM only"
+              "JavaScript"
             ],
             "en": [
               "Java",
-              "JavaScript",
+              "LLVM only",
               "SQL",
-              "LLVM only"
+              "JavaScript"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "JS.",
             "en": "JS."
@@ -1014,19 +1014,19 @@
           },
           "choices": {
             "nl": [
-              "runtime class",
               "object shape type",
+              "runtime class",
               "SQL",
               "Lua"
             ],
             "en": [
-              "runtime class",
               "object shape type",
+              "runtime class",
               "SQL",
               "Lua"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Shape.",
             "en": "Shape."
@@ -1041,18 +1041,18 @@
           "choices": {
             "nl": [
               "alleen string",
-              "union",
               "SQL",
+              "union",
               "error"
             ],
             "en": [
               "string only",
-              "union",
               "SQL",
+              "union",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Union.",
             "en": "Union."
@@ -1067,18 +1067,18 @@
           "choices": {
             "nl": [
               "strengste",
-              "escape hatch",
+              "nil",
               "SQL",
-              "nil"
+              "escape hatch"
             ],
             "en": [
               "strictest",
-              "escape hatch",
+              "nil",
               "SQL",
-              "nil"
+              "escape hatch"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Escape.",
             "en": "Escape."
@@ -1107,18 +1107,18 @@
           "choices": {
             "nl": [
               "losser",
-              "strengere checks",
               "pip",
+              "strengere checks",
               "Godot"
             ],
             "en": [
               "looser",
-              "stricter checks",
               "pip",
+              "stricter checks",
               "Godot"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Stricter.",
             "en": "Stricter."
@@ -1133,18 +1133,18 @@
           "choices": {
             "nl": [
               "name!:",
-              "name?:",
+              "name~",
               "name||",
-              "name~"
+              "name?:"
             ],
             "en": [
               "name!:",
-              "name?:",
+              "name~",
               "name||",
-              "name~"
+              "name?:"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "?.",
             "en": "?."
@@ -1224,18 +1224,18 @@
           "choices": {
             "nl": [
               "tuple only",
-              "array of numbers",
+              "Lua 1-based",
               "SQL",
-              "Lua 1-based"
+              "array of numbers"
             ],
             "en": [
               "tuple only",
-              "array of numbers",
+              "Lua 1-based",
               "SQL",
-              "Lua 1-based"
+              "array of numbers"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Array.",
             "en": "Array."
@@ -1249,18 +1249,18 @@
           "choices": {
             "nl": [
               "string",
-              "number",
+              "void",
               "any verplicht",
-              "void"
+              "number"
             ],
             "en": [
               "string",
-              "number",
+              "void",
               "any required",
-              "void"
+              "number"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "number.",
             "en": "number."
@@ -1275,18 +1275,18 @@
           "choices": {
             "nl": [
               "Java",
-              "JavaScript",
               "SQL",
+              "JavaScript",
               "LLVM only"
             ],
             "en": [
               "Java",
-              "JavaScript",
               "SQL",
+              "JavaScript",
               "LLVM only"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "JS.",
             "en": "JS."
@@ -1316,18 +1316,18 @@
           "choices": {
             "nl": [
               "runtime class",
-              "object shape type",
+              "Lua",
               "SQL",
-              "Lua"
+              "object shape type"
             ],
             "en": [
               "runtime class",
-              "object shape type",
+              "Lua",
               "SQL",
-              "Lua"
+              "object shape type"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Shape.",
             "en": "Shape."
@@ -1342,18 +1342,18 @@
           "choices": {
             "nl": [
               "alleen string",
-              "union",
+              "error",
               "SQL",
-              "error"
+              "union"
             ],
             "en": [
               "string only",
-              "union",
+              "error",
               "SQL",
-              "error"
+              "union"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Union.",
             "en": "Union."
@@ -1368,18 +1368,18 @@
           "choices": {
             "nl": [
               "strengste",
-              "escape hatch",
               "SQL",
+              "escape hatch",
               "nil"
             ],
             "en": [
               "strictest",
-              "escape hatch",
               "SQL",
+              "escape hatch",
               "nil"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Escape.",
             "en": "Escape."
@@ -1408,18 +1408,18 @@
           "choices": {
             "nl": [
               "losser",
-              "strengere checks",
+              "Godot",
               "pip",
-              "Godot"
+              "strengere checks"
             ],
             "en": [
               "looser",
-              "stricter checks",
+              "Godot",
               "pip",
-              "Godot"
+              "stricter checks"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Stricter.",
             "en": "Stricter."
@@ -1434,18 +1434,18 @@
           "choices": {
             "nl": [
               "name!:",
-              "name?:",
               "name||",
+              "name?:",
               "name~"
             ],
             "en": [
               "name!:",
-              "name?:",
               "name||",
+              "name?:",
               "name~"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "?.",
             "en": "?."
@@ -1460,18 +1460,18 @@
           "choices": {
             "nl": [
               "ok",
-              "type mismatch",
+              "const",
               "semicolon",
-              "const"
+              "type mismatch"
             ],
             "en": [
               "ok",
-              "type mismatch",
+              "const",
               "semicolon",
-              "const"
+              "type mismatch"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Wrong type.",
             "en": "Wrong type."
@@ -1487,18 +1487,18 @@
           "choices": {
             "nl": [
               "zelfde",
-              "unknown veiliger",
+              "CSS",
               "SQL",
-              "CSS"
+              "unknown veiliger"
             ],
             "en": [
               "same",
-              "unknown safer",
+              "CSS",
               "SQL",
-              "CSS"
+              "unknown safer"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Safer.",
             "en": "Safer."
@@ -1575,19 +1575,19 @@
           },
           "choices": {
             "nl": [
-              "Java",
               "JavaScript",
+              "Java",
               "SQL",
               "LLVM only"
             ],
             "en": [
-              "Java",
               "JavaScript",
+              "Java",
               "SQL",
               "LLVM only"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "JS.",
             "en": "JS."
@@ -1617,18 +1617,18 @@
           "choices": {
             "nl": [
               "alleen string",
-              "union",
+              "error",
               "SQL",
-              "error"
+              "union"
             ],
             "en": [
               "string only",
-              "union",
+              "error",
               "SQL",
-              "error"
+              "union"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Union.",
             "en": "Union."
@@ -1643,18 +1643,18 @@
           "choices": {
             "nl": [
               "strengste",
-              "escape hatch",
+              "nil",
               "SQL",
-              "nil"
+              "escape hatch"
             ],
             "en": [
               "strictest",
-              "escape hatch",
+              "nil",
               "SQL",
-              "nil"
+              "escape hatch"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Escape.",
             "en": "Escape."
@@ -1683,18 +1683,18 @@
           "choices": {
             "nl": [
               "losser",
-              "strengere checks",
               "pip",
+              "strengere checks",
               "Godot"
             ],
             "en": [
               "looser",
-              "stricter checks",
               "pip",
+              "stricter checks",
               "Godot"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Stricter.",
             "en": "Stricter."
@@ -1735,18 +1735,18 @@
           "choices": {
             "nl": [
               "ok",
-              "type mismatch",
+              "const",
               "semicolon",
-              "const"
+              "type mismatch"
             ],
             "en": [
               "ok",
-              "type mismatch",
+              "const",
               "semicolon",
-              "const"
+              "type mismatch"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Wrong type.",
             "en": "Wrong type."
@@ -1814,18 +1814,18 @@
           "choices": {
             "nl": [
               "nee",
-              "vaak ja",
+              "CSS",
               "SQL",
-              "CSS"
+              "vaak ja"
             ],
             "en": [
               "no",
-              "often yes",
+              "CSS",
               "SQL",
-              "CSS"
+              "often yes"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Yes.",
             "en": "Yes."
@@ -1839,18 +1839,18 @@
           "choices": {
             "nl": [
               "alleen string",
-              "union",
               "SQL",
+              "union",
               "Lua"
             ],
             "en": [
               "string only",
-              "union",
               "SQL",
+              "union",
               "Lua"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Union.",
             "en": "Union."
@@ -1865,18 +1865,18 @@
           "choices": {
             "nl": [
               "Java",
-              "JavaScript",
+              "LLVM only",
               "SQL",
-              "LLVM only"
+              "JavaScript"
             ],
             "en": [
               "Java",
-              "JavaScript",
+              "LLVM only",
               "SQL",
-              "LLVM only"
+              "JavaScript"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "JS.",
             "en": "JS."
@@ -1932,18 +1932,18 @@
           "choices": {
             "nl": [
               "strengste",
-              "escape hatch",
+              "nil",
               "SQL",
-              "nil"
+              "escape hatch"
             ],
             "en": [
               "strictest",
-              "escape hatch",
+              "nil",
               "SQL",
-              "nil"
+              "escape hatch"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Escape.",
             "en": "Escape."
@@ -1972,18 +1972,18 @@
           "choices": {
             "nl": [
               "losser",
-              "strengere checks",
+              "Godot",
               "pip",
-              "Godot"
+              "strengere checks"
             ],
             "en": [
               "looser",
-              "stricter checks",
+              "Godot",
               "pip",
-              "Godot"
+              "stricter checks"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Stricter.",
             "en": "Stricter."
@@ -1998,18 +1998,18 @@
           "choices": {
             "nl": [
               "name!:",
-              "name?:",
               "name||",
+              "name?:",
               "name~"
             ],
             "en": [
               "name!:",
-              "name?:",
               "name||",
+              "name?:",
               "name~"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "?.",
             "en": "?."
@@ -2102,19 +2102,19 @@
           },
           "choices": {
             "nl": [
-              "number",
               "geen return waarde",
+              "number",
               "SQL",
               "nil"
             ],
             "en": [
-              "number",
               "no return value",
+              "number",
               "SQL",
               "nil"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "void.",
             "en": "void."
@@ -2153,19 +2153,19 @@
           },
           "choices": {
             "nl": [
-              "Java",
               "JavaScript",
+              "Java",
               "SQL",
               "LLVM only"
             ],
             "en": [
-              "Java",
               "JavaScript",
+              "Java",
               "SQL",
               "LLVM only"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "JS.",
             "en": "JS."
@@ -2195,18 +2195,18 @@
           "choices": {
             "nl": [
               "runtime class",
-              "object shape type",
               "SQL",
+              "object shape type",
               "Lua"
             ],
             "en": [
               "runtime class",
-              "object shape type",
               "SQL",
+              "object shape type",
               "Lua"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Shape.",
             "en": "Shape."
@@ -2221,18 +2221,18 @@
           "choices": {
             "nl": [
               "alleen string",
-              "union",
               "SQL",
+              "union",
               "error"
             ],
             "en": [
               "string only",
-              "union",
               "SQL",
+              "union",
               "error"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Union.",
             "en": "Union."
@@ -2246,19 +2246,19 @@
           },
           "choices": {
             "nl": [
-              "strengste",
               "escape hatch",
+              "strengste",
               "SQL",
               "nil"
             ],
             "en": [
-              "strictest",
               "escape hatch",
+              "strictest",
               "SQL",
               "nil"
             ]
           },
-          "answer": 1,
+          "answer": 0,
           "why": {
             "nl": "Escape.",
             "en": "Escape."
@@ -2313,18 +2313,18 @@
           "choices": {
             "nl": [
               "name!:",
-              "name?:",
+              "name~",
               "name||",
-              "name~"
+              "name?:"
             ],
             "en": [
               "name!:",
-              "name?:",
+              "name~",
               "name||",
-              "name~"
+              "name?:"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "?.",
             "en": "?."
@@ -2339,18 +2339,18 @@
           "choices": {
             "nl": [
               "ok",
-              "type mismatch",
+              "const",
               "semicolon",
-              "const"
+              "type mismatch"
             ],
             "en": [
               "ok",
-              "type mismatch",
+              "const",
               "semicolon",
-              "const"
+              "type mismatch"
             ]
           },
-          "answer": 1,
+          "answer": 3,
           "why": {
             "nl": "Wrong type.",
             "en": "Wrong type."
@@ -2366,18 +2366,18 @@
           "choices": {
             "nl": [
               "zelfde",
-              "unknown veiliger",
               "SQL",
+              "unknown veiliger",
               "CSS"
             ],
             "en": [
               "same",
-              "unknown safer",
               "SQL",
+              "unknown safer",
               "CSS"
             ]
           },
-          "answer": 1,
+          "answer": 2,
           "why": {
             "nl": "Safer.",
             "en": "Safer."
@@ -2421,19 +2421,19 @@
       },
       "choices": {
         "nl": [
-          "CSS",
           "type Name = ...",
+          "CSS",
           "SQL",
           "Lua"
         ],
         "en": [
-          "CSS",
           "type Name = ...",
+          "CSS",
           "SQL",
           "Lua"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Alias.",
         "en": "Alias."
@@ -2448,18 +2448,18 @@
       "choices": {
         "nl": [
           "muteert meer",
-          "niet schrijven",
+          "git",
           "pip",
-          "git"
+          "niet schrijven"
         ],
         "en": [
           "mutates more",
-          "no write",
+          "git",
           "pip",
-          "git"
+          "no write"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Readonly.",
         "en": "Readonly."
@@ -2500,18 +2500,18 @@
       "choices": {
         "nl": [
           "runtime always safe",
-          "type assertion",
           "SQL",
+          "type assertion",
           "CSS"
         ],
         "en": [
           "always runtime safe",
-          "type assertion",
           "SQL",
+          "type assertion",
           "CSS"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Assertion.",
         "en": "Assertion."
@@ -2525,19 +2525,19 @@
       },
       "choices": {
         "nl": [
-          "CSS",
           "herbruikbare types",
+          "CSS",
           "SQL",
           "Lua table"
         ],
         "en": [
-          "CSS",
           "reusable types",
+          "CSS",
           "SQL",
           "Lua table"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Generics.",
         "en": "Generics."
@@ -2577,19 +2577,19 @@
       },
       "choices": {
         "nl": [
-          "name!:",
           "name?:",
+          "name!:",
           "name||",
           "name~"
         ],
         "en": [
-          "name!:",
           "name?:",
+          "name!:",
           "name||",
           "name~"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "?.",
         "en": "?."
@@ -2604,18 +2604,18 @@
       "choices": {
         "nl": [
           "string",
-          "onmogelijk/pad",
           "SQL",
+          "onmogelijk/pad",
           "nil"
         ],
         "en": [
           "string",
-          "impossible/path",
           "SQL",
+          "impossible/path",
           "nil"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "never.",
         "en": "never."
@@ -2629,19 +2629,19 @@
       },
       "choices": {
         "nl": [
-          "zelfde",
           "unknown veiliger",
+          "zelfde",
           "SQL",
           "CSS"
         ],
         "en": [
-          "same",
           "unknown safer",
+          "same",
           "SQL",
           "CSS"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Safer.",
         "en": "Safer."
@@ -2656,18 +2656,18 @@
       "choices": {
         "nl": [
           "SQL",
-          "class voldoet aan interface",
+          "Lua",
           "pip",
-          "Lua"
+          "class voldoet aan interface"
         ],
         "en": [
           "SQL",
-          "class satisfies interface",
+          "Lua",
           "pip",
-          "Lua"
+          "class satisfies interface"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Implements.",
         "en": "Implements."
@@ -2682,18 +2682,18 @@
       "choices": {
         "nl": [
           "array any",
-          "vaste paar-vorm",
+          "CSS",
           "SQL row only",
-          "CSS"
+          "vaste paar-vorm"
         ],
         "en": [
           "any array",
-          "fixed pair shape",
+          "CSS",
           "SQL row only",
-          "CSS"
+          "fixed pair shape"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Tuple.",
         "en": "Tuple."
@@ -2733,19 +2733,19 @@
       },
       "choices": {
         "nl": [
-          "runtime code",
           "ambient type decl",
+          "runtime code",
           "SQL",
           "CSS"
         ],
         "en": [
-          "runtime code",
           "ambient type decl",
+          "runtime code",
           "SQL",
           "CSS"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Declare.",
         "en": "Declare."
@@ -2760,18 +2760,18 @@
       "choices": {
         "nl": [
           "MS leak",
-          "origineel oefenen",
+          "cert",
           "betaald",
-          "cert"
+          "origineel oefenen"
         ],
         "en": [
           "MS leak",
-          "original practice",
+          "cert",
           "paid",
-          "cert"
+          "original practice"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Origineel.",
         "en": "Original."
@@ -2786,18 +2786,18 @@
       "choices": {
         "nl": [
           "Java",
-          "JavaScript",
           "SQL",
+          "JavaScript",
           "LLVM only"
         ],
         "en": [
           "Java",
-          "JavaScript",
           "SQL",
+          "JavaScript",
           "LLVM only"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "JS.",
         "en": "JS."
@@ -2829,18 +2829,18 @@
       "choices": {
         "nl": [
           "runtime class",
-          "object shape type",
+          "Lua",
           "SQL",
-          "Lua"
+          "object shape type"
         ],
         "en": [
           "runtime class",
-          "object shape type",
+          "Lua",
           "SQL",
-          "Lua"
+          "object shape type"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Shape.",
         "en": "Shape."
@@ -2856,18 +2856,18 @@
       "choices": {
         "nl": [
           "alleen string",
-          "union",
           "SQL",
+          "union",
           "error"
         ],
         "en": [
           "string only",
-          "union",
           "SQL",
+          "union",
           "error"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Union.",
         "en": "Union."
@@ -2882,19 +2882,19 @@
       },
       "choices": {
         "nl": [
-          "strengste",
           "escape hatch",
+          "strengste",
           "SQL",
           "nil"
         ],
         "en": [
-          "strictest",
           "escape hatch",
+          "strictest",
           "SQL",
           "nil"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Escape.",
         "en": "Escape."
@@ -2951,19 +2951,19 @@
       },
       "choices": {
         "nl": [
-          "name!:",
           "name?:",
+          "name!:",
           "name||",
           "name~"
         ],
         "en": [
-          "name!:",
           "name?:",
+          "name!:",
           "name||",
           "name~"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "?.",
         "en": "?."
@@ -3007,18 +3007,18 @@
       "choices": {
         "nl": [
           "zelfde",
-          "unknown veiliger",
           "SQL",
+          "unknown veiliger",
           "CSS"
         ],
         "en": [
           "same",
-          "unknown safer",
           "SQL",
+          "unknown safer",
           "CSS"
         ]
       },
-      "answer": 1,
+      "answer": 2,
       "why": {
         "nl": "Safer.",
         "en": "Safer."
@@ -3048,19 +3048,19 @@
       },
       "choices": {
         "nl": [
-          "meer mutatie",
           "niet schrijven",
+          "meer mutatie",
           "pip",
           "git"
         ],
         "en": [
-          "more mutation",
           "no write",
+          "more mutation",
           "pip",
           "git"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Readonly.",
         "en": "Readonly."
@@ -3076,18 +3076,18 @@
       "choices": {
         "nl": [
           "CSS",
-          "herbruikbare types",
+          "Lua",
           "SQL",
-          "Lua"
+          "herbruikbare types"
         ],
         "en": [
           "CSS",
-          "reusable types",
+          "Lua",
           "SQL",
-          "Lua"
+          "reusable types"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Generics.",
         "en": "Generics."
@@ -3130,18 +3130,18 @@
       "choices": {
         "nl": [
           "Java",
-          "JavaScript",
+          "LLVM only",
           "SQL",
-          "LLVM only"
+          "JavaScript"
         ],
         "en": [
           "Java",
-          "JavaScript",
+          "LLVM only",
           "SQL",
-          "LLVM only"
+          "JavaScript"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "JS.",
         "en": "JS."
@@ -3173,18 +3173,18 @@
       "choices": {
         "nl": [
           "runtime class",
-          "object shape type",
+          "Lua",
           "SQL",
-          "Lua"
+          "object shape type"
         ],
         "en": [
           "runtime class",
-          "object shape type",
+          "Lua",
           "SQL",
-          "Lua"
+          "object shape type"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Shape.",
         "en": "Shape."
@@ -3199,19 +3199,19 @@
       },
       "choices": {
         "nl": [
-          "alleen string",
           "union",
+          "alleen string",
           "SQL",
           "error"
         ],
         "en": [
-          "string only",
           "union",
+          "string only",
           "SQL",
           "error"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Union.",
         "en": "Union."
@@ -3296,18 +3296,18 @@
       "choices": {
         "nl": [
           "name!:",
-          "name?:",
+          "name~",
           "name||",
-          "name~"
+          "name?:"
         ],
         "en": [
           "name!:",
-          "name?:",
+          "name~",
           "name||",
-          "name~"
+          "name?:"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "?.",
         "en": "?."
@@ -3351,18 +3351,18 @@
       "choices": {
         "nl": [
           "zelfde",
-          "unknown veiliger",
+          "CSS",
           "SQL",
-          "CSS"
+          "unknown veiliger"
         ],
         "en": [
           "same",
-          "unknown safer",
+          "CSS",
           "SQL",
-          "CSS"
+          "unknown safer"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Safer.",
         "en": "Safer."
@@ -3392,19 +3392,19 @@
       },
       "choices": {
         "nl": [
-          "meer mutatie",
           "niet schrijven",
+          "meer mutatie",
           "pip",
           "git"
         ],
         "en": [
-          "more mutation",
           "no write",
+          "more mutation",
           "pip",
           "git"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Readonly.",
         "en": "Readonly."
@@ -3420,18 +3420,18 @@
       "choices": {
         "nl": [
           "CSS",
-          "herbruikbare types",
+          "Lua",
           "SQL",
-          "Lua"
+          "herbruikbare types"
         ],
         "en": [
           "CSS",
-          "reusable types",
+          "Lua",
           "SQL",
-          "Lua"
+          "reusable types"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Generics.",
         "en": "Generics."
@@ -3446,19 +3446,19 @@
       },
       "choices": {
         "nl": [
-          "runtime always safe",
           "type assertion",
+          "runtime always safe",
           "SQL",
           "CSS"
         ],
         "en": [
-          "always runtime safe",
           "type assertion",
+          "always runtime safe",
           "SQL",
           "CSS"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Assertion.",
         "en": "Assertion."
@@ -3516,19 +3516,19 @@
       },
       "choices": {
         "nl": [
-          "runtime class",
           "object shape type",
+          "runtime class",
           "SQL",
           "Lua"
         ],
         "en": [
-          "runtime class",
           "object shape type",
+          "runtime class",
           "SQL",
           "Lua"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Shape.",
         "en": "Shape."
@@ -3571,18 +3571,18 @@
       "choices": {
         "nl": [
           "strengste",
-          "escape hatch",
+          "nil",
           "SQL",
-          "nil"
+          "escape hatch"
         ],
         "en": [
           "strictest",
-          "escape hatch",
+          "nil",
           "SQL",
-          "nil"
+          "escape hatch"
         ]
       },
-      "answer": 1,
+      "answer": 3,
       "why": {
         "nl": "Escape.",
         "en": "Escape."
@@ -3612,19 +3612,19 @@
       },
       "choices": {
         "nl": [
-          "losser",
           "strengere checks",
+          "losser",
           "pip",
           "Godot"
         ],
         "en": [
-          "looser",
           "stricter checks",
+          "looser",
           "pip",
           "Godot"
         ]
       },
-      "answer": 1,
+      "answer": 0,
       "why": {
         "nl": "Stricter.",
         "en": "Stricter."
