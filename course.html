@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#c2185b" />
+  <meta name="description" content="CodeCrib: free friendly coding lessons in many languages. NL and EN." />
+  <title>CodeCrib course</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=IBM+Plex+Mono:wght@400;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" /><span data-i18n="brand">CodeCrib</span></a>
+    <button type="button" class="menu-toggle" aria-expanded="false" data-i18n="menu">Menu</button>
+    <nav class="nav">
+      <a href="index.html" data-nav="home" data-i18n="nav_home">Home</a>
+      <a href="index.html#courses" data-nav="course" data-i18n="nav_course">Cursussen</a>
+      <a href="exam.html" data-nav="exam" data-i18n="nav_exam">Proefexamen</a>
+      <button type="button" class="lang-btn" data-lang="nl">NL</button>
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 id="course-title">Cursus</h1>
+      <p class="tagline" id="course-intro"></p>
+      <div>
+        <strong data-i18n="progress">Voortgang</strong>
+        <span id="progress-label" class="pill">0/0</span>
+        <div class="progress-bar" aria-hidden="true"><span id="progress-fill"></span></div>
+      </div>
+      <div class="hero-actions" style="margin-top:.8rem">
+        <a class="btn secondary" id="exam-link" href="exam.html">Proefexamen</a>
+        <a class="btn ghost" href="index.html#courses" data-i18n="nav_course">Cursussen</a>
+      </div>
+    </section>
+    <ul class="lesson-list" id="lesson-list"></ul>
+  </main>
+
+  <footer class="site-footer">
+    <div data-i18n="footer">made by JustyTCCD</div>
+    <div class="tiny" data-i18n="footer_note"></div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/courses-registry.js"></script>
+  <script src="js/course-utils.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    let COURSE = null;
+    async function boot() {
+      const id = CodeCribUtil.courseId();
+      COURSE = await CodeCribUtil.ensureCourse(id);
+      render();
+    }
+    function render() {
+      const id = COURSE.id;
+      const L = CodeCribI18n.getLang();
+      document.getElementById("course-title").textContent = COURSE.title[L];
+      document.getElementById("course-intro").textContent = COURSE.intro[L];
+      document.getElementById("exam-link").href = "exam.html?course=" + id;
+      document.getElementById("exam-link").textContent = CodeCribI18n.t("cta_exam");
+      const ul = document.getElementById("lesson-list");
+      ul.innerHTML = "";
+      COURSE.lessons.forEach((les) => {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.href = "lesson.html?course=" + id + "&id=" + les.id;
+        const left = document.createElement("span");
+        left.textContent = CodeCribI18n.t("lesson") + " " + les.id + ": " + les.title[L];
+        const right = document.createElement("span");
+        right.className = "meta";
+        if (CodeCribProgress.isDone(id, les.id)) { right.className = "done-dot"; right.textContent = CodeCribI18n.t("done"); }
+        else right.textContent = "->";
+        a.appendChild(left); a.appendChild(right); li.appendChild(a); ul.appendChild(li);
+      });
+      const { done, total } = CodeCribProgress.lessonCount(id, COURSE.lessons.length);
+      document.getElementById("progress-label").textContent = done + "/" + total;
+      document.getElementById("progress-fill").style.width = (total ? Math.round(done/total*100) : 0) + "%";
+      document.title = "CodeCrib - " + COURSE.title[L];
+    }
+    document.addEventListener("DOMContentLoaded", () => boot().catch(console.error));
+    document.addEventListener("codecrib:lang", () => { if (COURSE) render(); });
+  </script>
+</body>
+</html>

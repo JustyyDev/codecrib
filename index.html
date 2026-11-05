@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#c2185b" />
+  <meta name="description" content="CodeCrib: free friendly coding lessons in many languages. NL and EN." />
+  <title>CodeCrib</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=IBM+Plex+Mono:wght@400;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" /><span data-i18n="brand">CodeCrib</span></a>
+    <button type="button" class="menu-toggle" aria-expanded="false" data-i18n="menu">Menu</button>
+    <nav class="nav">
+      <a href="index.html" data-nav="home" data-i18n="nav_home">Home</a>
+      <a href="index.html#courses" data-nav="course" data-i18n="nav_course">Cursussen</a>
+      <a href="exam.html" data-nav="exam" data-i18n="nav_exam">Proefexamen</a>
+      <button type="button" class="lang-btn" data-lang="nl">NL</button>
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 data-i18n="hero_title">Leer coderen in een chill crib</h1>
+      <p class="tagline" data-i18n="hero_tag"></p>
+      <div class="hero-actions">
+        <a class="btn" href="#courses" data-i18n="cta_start">Bekijk cursussen</a>
+        <a class="btn secondary" href="exam.html?course=csharp" data-i18n="cta_exam">Proefexamen</a>
+      </div>
+    </section>
+    <section class="grid cards">
+      <article class="card"><h2 data-i18n="card1_t"></h2><p data-i18n="card1_p"></p></article>
+      <article class="card"><h2 data-i18n="card2_t"></h2><p data-i18n="card2_p"></p></article>
+      <article class="card"><h2 data-i18n="card3_t"></h2><p data-i18n="card3_p"></p></article>
+    </section>
+    <section id="courses" style="margin-top:2rem">
+      <h2 data-i18n="pick_title">Kies een taal</h2>
+      <p class="tagline" data-i18n="pick_sub"></p>
+      <div id="course-groups"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div data-i18n="footer">made by JustyTCCD</div>
+    <div class="tiny" data-i18n="footer_note"></div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/courses-registry.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    function renderPicker() {
+      const L = CodeCribI18n.getLang();
+      const root = document.getElementById("course-groups");
+      root.innerHTML = "";
+      CodeCribGroups.forEach((g) => {
+        const block = document.createElement("div");
+        block.className = "group-block";
+        const h = document.createElement("h2");
+        h.textContent = g.title[L];
+        block.appendChild(h);
+        const grid = document.createElement("div");
+        grid.className = "lang-grid";
+        CodeCribRegistry.filter((c) => c.group === g.id).forEach((c) => {
+          const a = document.createElement("a");
+          a.className = "lang-card";
+          a.href = "course.html?course=" + c.id;
+          a.innerHTML = '<img src="' + c.badge + '" alt="" /><div><h3></h3><p></p><div class="flavor"></div></div>';
+          a.querySelector("h3").textContent = c.title[L];
+          a.querySelector("p").textContent = c.blurb[L];
+          a.querySelector(".flavor").textContent = c.flavor[L];
+          grid.appendChild(a);
+        });
+        block.appendChild(grid);
+        root.appendChild(block);
+      });
+    }
+    document.addEventListener("DOMContentLoaded", renderPicker);
+    document.addEventListener("codecrib:lang", renderPicker);
+  </script>
+</body>
+</html>
