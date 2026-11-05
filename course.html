@@ -43,6 +43,7 @@
         <a class="btn ghost" href="index.html#courses" data-i18n="nav_course"></a>
       </div>
     </section>
+    <div id="kids-stickers" class="kids-sticker-shelf" hidden></div>
     <ul class="lesson-list" id="lesson-list"></ul>
     <h2 data-i18n="challenges" style="margin-top:1.5rem"></h2>
     <ul class="lesson-list" id="challenge-list"></ul>
@@ -57,6 +58,9 @@
   <script src="js/progress.js"></script>
   <script src="js/courses-registry.js"></script>
   <script src="js/course-utils.js"></script>
+  <script src="js/kids-settings.js"></script>
+  <script src="js/kids-progress.js"></script>
+  <link rel="stylesheet" href="css/kids.css" />
   <script src="js/app.js"></script>
   <script>
     let COURSE = null;
@@ -70,11 +74,26 @@
       document.getElementById("course-intro").textContent = COURSE.intro[L];
       document.getElementById("exam-link").href = "exam.html?course=" + id;
       document.getElementById("cert-link").href = "certificate.html?course=" + id;
+      const kids = !!(COURSE.kids || (CodeCribUtil.meta(id)||{}).kids);
+      const shelf = document.getElementById("kids-stickers");
+      if (shelf) {
+        if (kids && window.CodeCribKidsStickers) {
+          shelf.hidden = false; shelf.innerHTML = "";
+          const earned = CodeCribKidsStickers.list(id);
+          ["star","heart","rocket","flower","smile","moon","fish","tree"].forEach((name) => {
+            const im = document.createElement("img");
+            im.src = "assets/stickers/" + name + ".svg"; im.alt = name;
+            if (Object.keys(earned).some((lid) => earned[lid].sticker === name)) im.classList.add("earned");
+            shelf.appendChild(im);
+          });
+        } else shelf.hidden = true;
+      }
       const ul = document.getElementById("lesson-list"); ul.innerHTML = "";
       COURSE.lessons.forEach((les) => {
         const li = document.createElement("li");
         const a = document.createElement("a");
-        a.href = "lesson.html?course=" + id + "&id=" + les.id;
+        const kids = !!(COURSE.kids || (CodeCribUtil.meta(id)||{}).kids);
+        a.href = (kids ? "lesson-kids.html" : "lesson.html") + "?course=" + id + "&id=" + les.id;
         const left = document.createElement("span");
         left.textContent = CodeCribI18n.t("lesson") + " " + les.id + ": " + les.title[L];
         const right = document.createElement("span");

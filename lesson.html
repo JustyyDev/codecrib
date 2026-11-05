@@ -63,7 +63,12 @@
   <script>
     let COURSE=null, LES=null, editor=null;
     async function boot(){
-      COURSE = await CodeCribUtil.ensureCourse(CodeCribUtil.courseId());
+      const cid0 = CodeCribUtil.courseId();
+      COURSE = await CodeCribUtil.ensureCourse(cid0);
+      if (COURSE.kids || (CodeCribUtil.meta(cid0)||{}).kids) {
+        location.replace("lesson-kids.html?course="+encodeURIComponent(cid0)+"&id="+(CodeCribUtil.param("id","1")));
+        return;
+      }
       const id = parseInt(CodeCribUtil.param("id","1"),10)||1;
       LES = COURSE.lessons.find(x=>x.id===id) || COURSE.lessons[0];
       await render();

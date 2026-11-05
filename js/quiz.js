@@ -55,10 +55,39 @@
     const fb = document.createElement("div");
     fb.className = "feedback";
 
+    let kidsTries = 0;
+    const kidsMode = !!(opts.kidsMode || (opts.srs && opts.srs.kidsMode));
+    function kidsAlmost() {
+      const L2 = CodeCribI18n.getLang();
+      const hints = (original.hints && original.hints[L2]) || [];
+      const msg = (CodeCribI18n.t("kids_almost") || "Bijna! Probeer het nog eens.");
+      const hint = hints[Math.min(kidsTries - 1, Math.max(hints.length - 1, 0))] || (display.why[L2] || "");
+      return msg + (hint ? " " + hint : "");
+    }
     function finish(ok) {
+      if (kidsMode && !ok) {
+        kidsTries++;
+        fb.className = "feedback kids-soft-bad";
+        fb.textContent = kidsAlmost();
+        if (opts.onAnswer) opts.onAnswer(false, original, qi);
+        // Soft fail: do not lock; allow retry. Still record for SRS after 3 tries as soft miss.
+        if (kidsTries >= 3 && w.CodeCribSrs && opts.srs) {
+          CodeCribSrs.recordAnswer(
+            opts.srs.courseId,
+            opts.srs.lessonId,
+            opts.srs.qIndex != null ? opts.srs.qIndex : qi,
+            false,
+            original,
+            opts.srs.source || "lesson"
+          );
+        }
+        return;
+      }
       box.dataset.locked = "1";
       fb.className = "feedback " + (ok ? "ok" : "bad");
-      fb.textContent = (ok ? CodeCribI18n.t("correct") : CodeCribI18n.t("wrong")) + " " + (display.why[L] || "");
+      const okMsg = kidsMode ? (CodeCribI18n.t("kids_nice") || CodeCribI18n.t("correct")) : CodeCribI18n.t("correct");
+      const badMsg = CodeCribI18n.t("wrong");
+      fb.textContent = (ok ? okMsg : badMsg) + " " + (display.why[L] || "");
       if (opts.onAnswer) opts.onAnswer(ok, original, qi);
       if (w.CodeCribSrs && opts.srs) {
         // Store ORIGINAL item so SRS stays stable; shuffle happens again on review render.
@@ -115,12 +144,19 @@
         b.dataset.choiceIndex = String(ci);
         b.addEventListener("click", () => {
           if (box.dataset.locked) return;
+          const ok = ci === display.answer;
+          if (kidsMode && !ok) {
+            b.classList.add("wrong");
+            setTimeout(() => b.classList.remove("wrong"), 600);
+            finish(false);
+            return;
+          }
           Array.from(optsEl.children).forEach((btn, idx) => {
             btn.disabled = true;
             if (idx === display.answer) btn.classList.add("correct");
             if (idx === ci && ci !== display.answer) btn.classList.add("wrong");
           });
-          finish(ci === display.answer);
+          finish(ok);
         });
         optsEl.appendChild(b);
       });
@@ -136,6 +172,7 @@
     items.forEach((item, qi) => {
       renderOne(container, item, qi, {
         lang: L,
+        kidsMode: !!(srsOpts && srsOpts.kidsMode),
         srs: srsOpts ? Object.assign({}, srsOpts, { qIndex: item._bankIndex != null ? item._bankIndex : qi }) : null
       });
     });

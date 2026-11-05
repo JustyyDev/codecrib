@@ -19,7 +19,7 @@
       card3_t: "Challenges + cert",
       card3_p: "Haal exam >=80% en challenges, download een CodeCrib certificaat.",
       pick_title: "Kies een taal",
-      pick_sub: "Gegroepeerd op Games, Web, Systems en Data.",
+      pick_sub: "Gegroepeerd op Junior, Games, Web, Systems en Data.",
       course_title: "Cursus",
       course_intro: "Korte lessen met editor, quizzes en challenges.",
       progress: "Voortgang",
@@ -75,6 +75,8 @@
       review_box: "Box",
       recap_title: "Recap eerdere lessen",
       recap_intro: "Mix van eerdere vragen in deze cursus. Herhaling = onthouden.",
+      kids_almost: "Bijna! Probeer het nog eens.",
+      kids_nice: "Goed zo!",
       lang: "NL"
     },
     en: {
@@ -95,7 +97,7 @@
       card3_t: "Challenges + cert",
       card3_p: "Pass exam >=80% and challenges, download a CodeCrib certificate.",
       pick_title: "Pick a language",
-      pick_sub: "Grouped into Games, Web, Systems and Data.",
+      pick_sub: "Grouped into Junior, Games, Web, Systems and Data.",
       course_title: "Course",
       course_intro: "Short lessons with editor, quizzes and challenges.",
       progress: "Progress",
@@ -151,6 +153,8 @@
       review_box: "Box",
       recap_title: "Earlier lessons recap",
       recap_intro: "Mixed questions from earlier lessons in this course. Repetition builds memory.",
+      kids_almost: "Almost! Try again.",
+      kids_nice: "Well done!",
       lang: "EN"
     }
   };

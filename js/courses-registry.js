@@ -55,9 +55,14 @@
     { id: "sql", group: "data", accent: "#336791", badge: "assets/badges/sql.svg",
       title: { nl: "SQL voor beginners", en: "SQL for beginners" },
       blurb: { nl: "SELECT, JOIN, aggregates, constraints.", en: "SELECT, JOIN, aggregates, constraints." },
-      flavor: { nl: "Data", en: "Data" }, file: "js/courses/sql.js" }
+      flavor: { nl: "Data", en: "Data" }, file: "js/courses/sql.js" },
+    { id: "python-kids", group: "kids", kids: true, accent: "#2d6a4f", badge: "assets/badges/python-kids.svg",
+      title: { nl: "Python Junior (8-12)", en: "Python Junior (8-12)" },
+      blurb: { nl: "Korte lessen voor kinderen. Rustig tempo, stickers, digibord-modus.", en: "Short lessons for kids. Calm pace, stickers, board mode." },
+      flavor: { nl: "Kids / Junior", en: "Kids / Junior" }, file: "js/courses/python-kids.js" }
   ];
   w.CodeCribGroups = [
+    { id: "kids", title: { nl: "Junior / Kids", en: "Junior / Kids" } },
     { id: "games", title: { nl: "Games", en: "Games" } },
     { id: "web", title: { nl: "Web", en: "Web" } },
     { id: "systems", title: { nl: "Systems", en: "Systems" } },
