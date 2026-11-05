@@ -1,5 +1,6 @@
 (function (w) {
-  const runnable = new Set(["javascript", "typescript", "python", "lua", "sql", "htmlcss"]);
+  const runnable = new Set(["javascript", "typescript", "python", "lua", "sql", "htmlcss", "csharp"]);
+  let csharpReady = null;
   let pyodidePromise = null;
   let sqlPromise = null;
   let fengariReady = null;
@@ -170,6 +171,24 @@ INSERT INTO items(id,title,owner_id) VALUES (1,'Sword',1),(2,'Shield',1),(3,'Pot
     }
   }
 
+
+  async function ensureCsharp() {
+    if (w.CodeCribCsharp) return;
+    if (!csharpReady) {
+      // relative to page URL (GitHub Pages friendly)
+      const base = (document.currentScript && document.currentScript.src) ? document.currentScript.src.replace(/[^\/]+$/, "") : "js/runtime/";
+      // Prefer path next to runners.js
+      let src = "js/runtime/csharp-runner.js";
+      const scripts = document.querySelectorAll("script[src]");
+      scripts.forEach((s) => {
+        if (/runtime\/runners\.js/.test(s.src)) src = s.src.replace(/runners\.js.*/, "csharp-runner.js");
+      });
+      csharpReady = loadScript(src);
+    }
+    await csharpReady;
+    if (!w.CodeCribCsharp) throw new Error("C# runner failed to load");
+  }
+
   async function runHtmlPreview(code, frame) {
     if (!frame) return { ok: true, out: "(preview updated)" };
     frame.srcdoc = code;
@@ -191,12 +210,20 @@ INSERT INTO items(id,title,owner_id) VALUES (1,'Sword',1),(2,'Shield',1),(3,'Pot
     if (L === "lua" || L === "luau") return runLua(code);
     if (L === "sql") return runSql(code);
     if (L === "htmlcss" || L === "html" || L === "css") return runHtmlPreview(code, opts.previewFrame);
-    // Simulated: not executed
+    if (L === "csharp" || L === "cs" || L === "c#") {
+      await ensureCsharp();
+      const res = w.CodeCribCsharp.run(code, opts);
+      return { ok: res.ok, out: normalizeOut(res.out), label: res.label || w.CodeCribCsharp.label };
+    }
+    // Simulated: not executed in browser
+    const en = !(w.CodeCribI18n && w.CodeCribI18n.getLang && w.CodeCribI18n.getLang() === "nl");
     return {
       ok: true,
       out: "",
       simulated: true,
-      message: "This language is not executed in the browser yet. Use Run check to compare against the expected output / tests."
+      message: en
+        ? "This language is not executed in the browser yet (no live runtime here)."
+        : "Deze taal wordt hier nog niet echt uitgevoerd in de browser (geen live runtime)."
     };
   }
 
@@ -218,7 +245,7 @@ INSERT INTO items(id,title,owner_id) VALUES (1,'Sword',1),(2,'Shield',1),(3,'Pot
 
   w.CodeCribRunners = {
     runnable,
-    isRunnable(lang) { return runnable.has((lang || "").toLowerCase()) || ["js","ts","py","html","css"].includes((lang||"").toLowerCase()); },
+    isRunnable(lang) { const L=(lang||"").toLowerCase(); return runnable.has(L) || ["js","ts","py","html","css","cs","c#"].includes(L); },
     run,
     checkExpected,
     checkTests,

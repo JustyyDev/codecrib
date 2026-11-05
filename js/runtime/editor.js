@@ -152,35 +152,39 @@
             ok = ok && CodeCribRunners.checkExpected(res.out, opts.expected);
             if (!ok) extra += "\nExpected:\n" + opts.expected;
           }
-          out.textContent = (res.out || "(no output)") + extra;
+          const lab = res.label ? ("[" + res.label + "]\n") : "";
+          out.textContent = lab + (res.out || "(no output)") + extra;
           out.classList.add(ok ? "ok" : "bad");
           return { ok, out: res.out };
         }
-        // Non-runnable: expected-output / pattern check only after "virtual run"
-        const note = (CodeCribI18n && CodeCribI18n.getLang() === "en")
-          ? "Not executed in the browser yet.\n"
-          : "Nog niet echt uitgevoerd in de browser.\n";
-        if (opts.tests && opts.tests.length) {
-          // For non-runnable we treat the editor text as the "program" and check contains patterns in code OR require expected string typed in a special way.
-          // Spec: compare to stated expected output. User pastes what they think output is in a marker, OR we check code contains required snippets via tests of type code_contains.
-          const fails = [];
-          opts.tests.forEach((t, i) => {
-            if (t.type === "code_contains" && !code.includes(t.value)) fails.push("Test " + (i + 1) + ": code must include `" + t.value + "`");
-            if (t.type === "code_regex" && !(new RegExp(t.value)).test(code)) fails.push("Test " + (i + 1) + ": code pattern failed");
-          });
-          const ok = fails.length === 0;
-          out.textContent = note + (ok ? "Checks passed." : fails.join("\n"));
-          out.classList.add(ok ? "ok" : "bad");
-          return { ok, out: "", simulated: true };
+        // Non-runnable: code checks only, show expected output clearly
+        const en = CodeCribI18n && CodeCribI18n.getLang() === "en";
+        const note = en
+          ? "Not run in the browser (no live runtime for this language yet)."
+          : "Niet uitgevoerd in de browser (nog geen live runtime voor deze taal).";
+        const fails = [];
+        (opts.tests || []).forEach((t, i) => {
+          if (t.type === "code_contains" && !code.includes(t.value)) fails.push("Test " + (i + 1) + ": code must include `" + t.value + "`");
+          if (t.type === "code_regex" && !(new RegExp(t.value)).test(code)) fails.push("Test " + (i + 1) + ": code pattern failed");
+        });
+        const ok = fails.length === 0 && (!(opts.tests || []).length ? false : true);
+        let msg = note;
+        if ((opts.tests || []).length) msg += "\n" + (ok ? (en ? "Code checks passed." : "Code-checks geslaagd.") : fails.join("\n"));
+        if (opts.expected != null && opts.expected !== "") {
+          msg += (en ? "\n\nExpected output (run locally / when runtime exists):\n" : "\n\nVerwachte output (lokaal / als er een runtime is):\n") + opts.expected;
+        } else {
+          const outHints = (opts.tests || []).filter((t) => t.type === "equals" || t.type === "contains");
+          if (outHints.length) {
+            msg += en ? "\n\nExpected output hints:" : "\n\nVerwachte output-hints:";
+            outHints.forEach((t) => { msg += "\n- " + t.type + ": " + t.value; });
+          }
         }
-        if (opts.expected != null) {
-          out.textContent = note + "Expected output when you run this locally:\n" + opts.expected;
-          out.classList.add("bad");
-          return { ok: false, out: "", simulated: true };
+        if (!(opts.tests || []).length && (opts.expected == null || opts.expected === "")) {
+          msg += en ? "\nNo automatic output check for this exercise." : "\nGeen automatische output-check voor deze oefening.";
         }
-        out.textContent = note;
-        out.classList.add("bad");
-        return { ok: false, out: "", simulated: true };
+        out.textContent = msg;
+        out.classList.add(ok && (opts.tests || []).length ? "ok" : "bad");
+        return { ok: ok && (opts.tests || []).length > 0, out: "", simulated: true };
       } catch (e) {
         out.textContent = String(e && e.message || e);
         out.classList.add("bad");

@@ -320,14 +320,11 @@
         "starter": "Console.WriteLine(\"Hallo\");\n",
         "tests": [
           {
-            "type": "code_contains",
-            "value": "Console.WriteLine"
-          },
-          {
-            "type": "code_contains",
+            "type": "equals",
             "value": "Hallo"
           }
-        ]
+        ],
+        "expected": "Hallo"
       }
     },
     {
@@ -4322,23 +4319,19 @@
     {
       "id": "c1",
       "title": {
-        "nl": "WriteLine som",
-        "en": "WriteLine sum"
+        "nl": "Som printen",
+        "en": "Print a sum"
       },
       "prompt": {
-        "nl": "Schrijf C# die 2+3 zou printen. Code moet Console.WriteLine bevatten en 2+3 of 5.",
-        "en": "Write C# that would print 2+3. Must include Console.WriteLine and 2+3 or 5."
+        "nl": "Schrijf C# die 2+3 print (uitkomst 5) met Console.WriteLine.",
+        "en": "Write C# that prints 2+3 (result 5) with Console.WriteLine."
       },
       "lang": "csharp",
-      "starter": "using System;\nclass P {\n  static void Main() {\n    // print 5\n  }\n}\n",
+      "starter": "Console.WriteLine(2 + 3);\n",
       "tests": [
         {
-          "type": "code_contains",
-          "value": "Console.WriteLine"
-        },
-        {
-          "type": "code_regex",
-          "value": "2\\s*\\+\\s*3|WriteLine\\(5\\)"
+          "type": "equals",
+          "value": "5"
         }
       ]
     },
@@ -4349,19 +4342,15 @@
         "en": "If ready"
       },
       "prompt": {
-        "nl": "Gebruik if en Console.WriteLine.",
-        "en": "Use if and Console.WriteLine."
+        "nl": "Als x >= 5, print B met Console.WriteLine.",
+        "en": "If x >= 5, print B with Console.WriteLine."
       },
       "lang": "csharp",
-      "starter": "using System;\nclass P { static void Main() {\nint x=5;\n\n}}\n",
+      "starter": "int x = 5;\nif (x >= 5) {\n  Console.WriteLine(\"B\");\n}\n",
       "tests": [
         {
-          "type": "code_contains",
-          "value": "if"
-        },
-        {
-          "type": "code_contains",
-          "value": "Console.WriteLine"
+          "type": "equals",
+          "value": "B"
         }
       ]
     }
